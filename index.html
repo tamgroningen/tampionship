@@ -322,7 +322,7 @@ function processMatches() {
           let ratingBonus = 0;
 
           if (partij.sets.length === 0) {
-            if (isWinner) { pts = 25; reason = 'walkover'; }
+            if (isWinner) { pts = 15; reason = 'walkover'; }
           } else if (isWinner) {
             // Check for straight sets win (won all sets)
             const setsLost = partij.sets.filter(s =>
@@ -850,7 +850,7 @@ function renderRules(app) {
         <tr><td>Gewonnen in straight sets (2-0)</td><td>60</td></tr>
         <tr><td>Gewonnen (2-1)</td><td>50</td></tr>
         <tr><td>Verloren maar set gewonnen</td><td>10</td></tr>
-        <tr><td>Walkover winst</td><td>25</td></tr>
+        <tr><td>Walkover winst</td><td>15</td></tr>
         <tr><td>Verloren zonder set</td><td>0</td></tr>
       </table>
       <h4>Bonuspunten</h4>
