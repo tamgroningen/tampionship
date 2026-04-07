@@ -67,9 +67,12 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .partij-sets { color: #aaa; font-family: monospace; }
 .partij-points { font-weight: 700; min-width: 40px; text-align: right; }
 .partij-points.win { color: #4ade80; }
+.partij-points.straight { color: #4ade80; }
 .partij-points.partial { color: #facc15; }
 .partij-points.wo { color: #60a5fa; }
 .partij-points.loss { color: #666; }
+.partij-rating { font-size: 10px; color: #888; font-family: monospace; }
+.rating-bonus { padding: 2px 16px 6px; font-size: 11px; color: #facc15; text-align: right; }
 
 .team-bonus { padding: 8px 16px; border-top: 1px solid #2a2a3e; font-size: 13px; color: #4ade80; text-align: right; }
 
@@ -306,11 +309,28 @@ function processMatches() {
 
           let pts = 0;
           let reason = '';
+          let ratingBonus = 0;
 
           if (partij.sets.length === 0) {
             if (isWinner) { pts = 25; reason = 'walkover'; }
           } else if (isWinner) {
-            pts = 50; reason = 'win';
+            // Check for straight sets win (won all sets)
+            const setsLost = partij.sets.filter(s =>
+              side === 'home' ? s[1] > s[0] : s[0] > s[1]
+            ).length;
+            pts = setsLost === 0 ? 60 : 50;
+            reason = setsLost === 0 ? 'straight' : 'win';
+            // Rating bonus: compare aggregate ratings
+            const myRatings = data.ratings?.filter(r => r != null) || [];
+            const oppSide = side === 'home' ? partij.away : partij.home;
+            const oppRatings = oppSide.ratings?.filter(r => r != null) || [];
+            if (myRatings.length > 0 && oppRatings.length > 0) {
+              const myAvg = myRatings.reduce((a, b) => a + b, 0) / myRatings.length;
+              const oppAvg = oppRatings.reduce((a, b) => a + b, 0) / oppRatings.length;
+              const diff = myAvg - oppAvg; // positive = I'm worse (higher number)
+              if (diff > 0.5) { ratingBonus = 20; }
+              else if (diff > 0) { ratingBonus = 10; }
+            }
           } else {
             const setsWon = partij.sets.filter(s =>
               side === 'home' ? s[0] > s[1] : s[1] > s[0]
@@ -324,7 +344,9 @@ function processMatches() {
           }
           playerMatchData[pName].partijen.push({
             type: partij.type, sets: partij.sets, setScores: partij.set_scores,
-            won: isWinner, points: pts, reason,
+            won: isWinner, points: pts + ratingBonus, basePoints: pts, ratingBonus, reason,
+            myRatings: data.ratings || [],
+            oppRatings: (side === 'home' ? partij.away : partij.home).ratings || [],
             opponent: side === 'home' ? partij.away : partij.home,
             partner: data.players.length > 1 ? data.players.filter(n => n !== pName) : [],
           });
@@ -726,13 +748,21 @@ function renderBreakdown(app) {
         const ptsCls = p.reason;
         const ptsLabel = p.points > 0 ? `+${p.points}` : '0';
 
+        // Rating display
+        const myR = p.myRatings?.filter(r => r != null).map(r => r.toFixed(4)) || [];
+        const oppR = p.oppRatings?.filter(r => r != null).map(r => r.toFixed(4)) || [];
+        const ratingStr = myR.length && oppR.length ? `${myR.join('+')} vs ${oppR.join('+')}` : '';
+
         html += `
           <div class="partij-row">
             <div class="partij-type">${p.type}</div>
-            <div class="partij-detail">${detail}</div>
+            <div class="partij-detail">${detail}${ratingStr ? `<div class="partij-rating">${ratingStr}</div>` : ''}</div>
             <div class="partij-sets">${p.setScores || 'WO'}</div>
             <div class="partij-points ${ptsCls}">${ptsLabel}</div>
           </div>`;
+        if (p.ratingBonus > 0) {
+          html += `<div class="rating-bonus">Upset bonus +${p.ratingBonus}</div>`;
+        }
       }
 
       if (md.teamWinBonus) {
