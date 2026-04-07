@@ -766,9 +766,11 @@ function renderBreakdown(app) {
         </div>`;
 
       for (const p of md.partijen) {
-        const oppNames = p.opponent.players?.join(', ') || '?';
-        const partnerStr = p.partner.length > 0 ? ` + ${p.partner.join(', ')}` : '';
-        const detail = `${partnerStr ? currentPlayer + partnerStr : ''} vs ${oppNames}`;
+        const firstName = n => n.split(' ')[0];
+        const oppNames = p.opponent.players?.map(firstName).join(', ') || '?';
+        const myName = firstName(currentPlayer);
+        const partnerStr = p.partner.length > 0 ? ` + ${p.partner.map(firstName).join(', ')}` : '';
+        const detail = `${myName}${partnerStr} vs ${oppNames}`;
         const ptsCls = p.reason;
         const ptsLabel = p.points > 0 ? `+${p.points}` : '0';
 
