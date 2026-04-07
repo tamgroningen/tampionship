@@ -785,10 +785,15 @@ function renderBreakdown(app) {
           isAway ? `${s[1]}-${s[0]}` : `${s[0]}-${s[1]}`
         ).join(' ') || 'WO';
 
-        // Rating display
-        const myR = p.myRatings?.filter(r => r != null).map(r => r.toFixed(4)) || [];
-        const oppR = p.oppRatings?.filter(r => r != null).map(r => r.toFixed(4)) || [];
-        const ratingStr = myR.length && oppR.length ? `${myR.join('+')} vs ${oppR.join('+')}` : '';
+        // Rating display — show average for doubles
+        const myR = p.myRatings?.filter(r => r != null) || [];
+        const oppR = p.oppRatings?.filter(r => r != null) || [];
+        let ratingStr = '';
+        if (myR.length && oppR.length) {
+          const myAvg = (myR.reduce((a, b) => a + b, 0) / myR.length).toFixed(4);
+          const oppAvg = (oppR.reduce((a, b) => a + b, 0) / oppR.length).toFixed(4);
+          ratingStr = `${myAvg} vs ${oppAvg}`;
+        }
 
         html += `
           <div class="partij-row">
