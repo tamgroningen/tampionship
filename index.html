@@ -86,16 +86,23 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .section-label { padding: 12px 16px 4px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
 
 /* Mini leaderboards */
-.mini-boards { display: flex; flex-direction: column; gap: 8px; position: fixed; right: 16px; top: 80px; width: 180px; z-index: 5; }
+.mini-boards { display: flex; flex-direction: column; gap: 8px; position: fixed; left: calc(75% + 110px); top: 120px; width: 180px; z-index: 5; transform: translateX(-50%); }
 .mini-board { background: #1a1a2e; border-radius: 8px; padding: 10px 12px; }
 .mini-board h4 { font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
 .mini-entry { display: flex; align-items: center; padding: 3px 0; font-size: 12px; }
 .mini-entry .mini-medal { width: 18px; font-size: 13px; }
 .mini-entry .mini-name { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .mini-entry .mini-value { color: #c084fc; font-weight: 600; font-size: 11px; margin-left: 4px; }
-@media (max-width: 900px) {
-  .mini-boards { position: static; flex-direction: row; width: auto; margin: 8px 0; }
-  .mini-board { flex: 1; }
+/* Mobile: hide sidebar, show hamburger */
+.hamburger { display: none; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #c084fc; font-size: 22px; cursor: pointer; padding: 8px; }
+.mobile-drawer { display: none; position: fixed; inset: 0; z-index: 50; }
+.mobile-drawer.open { display: flex; }
+.mobile-drawer-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+.mobile-drawer-content { position: relative; background: #1a1a2e; width: 260px; height: 100%; padding: 60px 16px 16px; overflow-y: auto; }
+.mobile-drawer-close { position: absolute; top: 12px; right: 12px; background: none; border: none; color: #888; font-size: 24px; cursor: pointer; }
+@media (max-width: 1000px) {
+  .mini-boards { display: none !important; }
+  .hamburger { display: block; }
 }
 
 /* Login button in header */
@@ -491,7 +498,7 @@ function render() {
   // }
 
   if (currentView === 'leaderboard') {
-    header.innerHTML = `<h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div>${authHtml}`;
+    header.innerHTML = `<button class="hamburger" onclick="toggleDrawer()">☰</button><h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div>${authHtml}`;
     renderLeaderboard(app);
   } else if (currentView === 'squad') {
     header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Squad</div>${authHtml}`;
@@ -758,6 +765,36 @@ function showBreakdown(playerName) {
   history.pushState({ view: 'breakdown', player: playerName, user: currentUser }, '');
   render();
   window.scrollTo(0, 0);
+}
+
+// === Mobile drawer ===
+function toggleDrawer() {
+  const existing = document.getElementById('mobileDrawer');
+  if (existing) { existing.remove(); return; }
+
+  const weekendWinners = getWeekendWinners(calculateLeaderboard());
+  const topPicks = getTopPicks();
+  const medals = ['🥇', '🥈', '🥉'];
+
+  let html = '<div class="mini-board"><h4>Weekend winnaars</h4>';
+  if (weekendWinners.length && weekendWinners[0].lastWeekendPts > 0) {
+    weekendWinners.forEach((u, i) => {
+      html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${u.user}</span><span class="mini-value">+${u.lastWeekendPts}</span></div>`;
+    });
+  } else {
+    html += '<div style="color:#555;font-size:12px">Nog geen data</div>';
+  }
+  html += '</div><div class="mini-board" style="margin-top:12px"><h4>Top picks</h4>';
+  topPicks.forEach((p, i) => {
+    html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${p.name}</span><span class="mini-value">${p.count}x</span></div>`;
+  });
+  html += '</div>';
+
+  const drawer = document.createElement('div');
+  drawer.id = 'mobileDrawer';
+  drawer.className = 'mobile-drawer open';
+  drawer.innerHTML = `<div class="mobile-drawer-overlay" onclick="toggleDrawer()"></div><div class="mobile-drawer-content"><button class="mobile-drawer-close" onclick="toggleDrawer()">✕</button>${html}</div>`;
+  document.body.appendChild(drawer);
 }
 
 // === Login Modal ===
