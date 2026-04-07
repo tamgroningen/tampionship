@@ -748,6 +748,13 @@ function renderBreakdown(app) {
         const ptsCls = p.reason;
         const ptsLabel = p.points > 0 ? `+${p.points}` : '0';
 
+        // Show set scores from TAM player's perspective
+        // p.sets is always [home, away] — flip if player was on away side
+        const isAway = p.opponent.team && md.homeTeam === p.opponent.team;
+        const displaySets = p.sets?.map(s =>
+          isAway ? `${s[1]}-${s[0]}` : `${s[0]}-${s[1]}`
+        ).join(' ') || 'WO';
+
         // Rating display
         const myR = p.myRatings?.filter(r => r != null).map(r => r.toFixed(4)) || [];
         const oppR = p.oppRatings?.filter(r => r != null).map(r => r.toFixed(4)) || [];
@@ -757,7 +764,7 @@ function renderBreakdown(app) {
           <div class="partij-row">
             <div class="partij-type">${p.type}</div>
             <div class="partij-detail">${detail}${ratingStr ? `<div class="partij-rating">${ratingStr}</div>` : ''}</div>
-            <div class="partij-sets">${p.setScores || 'WO'}</div>
+            <div class="partij-sets">${displaySets}</div>
             <div class="partij-points ${ptsCls}">${ptsLabel}</div>
           </div>`;
         if (p.ratingBonus > 0) {
