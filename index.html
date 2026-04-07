@@ -14,7 +14,7 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 
 .back-btn { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #c084fc; font-size: 20px; cursor: pointer; padding: 8px; }
 
-#app { max-width: 600px; margin: 0 auto; padding: 8px; }
+#app { max-width: 600px; margin: 0 auto; padding: 8px; position: relative; }
 
 /* Leaderboard */
 .leaderboard-row { display: flex; align-items: center; padding: 12px 16px; margin: 4px 0; background: #1a1a2e; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
@@ -86,13 +86,17 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .section-label { padding: 12px 16px 4px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
 
 /* Mini leaderboards */
-.mini-boards { display: flex; gap: 8px; margin: 8px 0 16px; }
-.mini-board { flex: 1; background: #1a1a2e; border-radius: 8px; padding: 12px; }
-.mini-board h4 { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-.mini-entry { display: flex; align-items: center; padding: 4px 0; font-size: 13px; }
-.mini-entry .mini-medal { width: 20px; font-size: 14px; }
+.mini-boards { display: flex; flex-direction: column; gap: 8px; position: fixed; right: 16px; top: 80px; width: 180px; z-index: 5; }
+.mini-board { background: #1a1a2e; border-radius: 8px; padding: 10px 12px; }
+.mini-board h4 { font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.mini-entry { display: flex; align-items: center; padding: 3px 0; font-size: 12px; }
+.mini-entry .mini-medal { width: 18px; font-size: 13px; }
 .mini-entry .mini-name { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.mini-entry .mini-value { color: #c084fc; font-weight: 600; font-size: 12px; margin-left: 4px; }
+.mini-entry .mini-value { color: #c084fc; font-weight: 600; font-size: 11px; margin-left: 4px; }
+@media (max-width: 900px) {
+  .mini-boards { position: static; flex-direction: row; width: auto; margin: 8px 0; }
+  .mini-board { flex: 1; }
+}
 
 /* Login button in header */
 .login-btn { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: #3a2a5e; border: 1px solid #7b3fa0; color: #c084fc; font-size: 12px; cursor: pointer; padding: 6px 12px; border-radius: 6px; }
