@@ -323,16 +323,31 @@ function processMatches() {
             // Walkover
             breakdown = { matchWin: isWinner ? 15 : 0, setsWon: 0, gamesWon: 0, tiebreaks: 0, straightSets: 0, comeback: 0, upset: 0 };
           } else {
-            // Count sets, games, tiebreaks from player's perspective
-            const mySetsWon = partij.sets.filter(s => side === 'home' ? s[0] > s[1] : s[1] > s[0]).length;
-            const myGamesWon = partij.sets.reduce((sum, s) => sum + (side === 'home' ? s[0] : s[1]), 0);
+            // Detect match tiebreak: 3rd set where either score > 7 (e.g. 10-8, 7-10)
+            const isMatchTiebreak = (s) => s[0] > 7 || s[1] > 7;
 
-            // Tiebreak: a set where one side scored 7 and the other 6
-            const tiebreaksWon = partij.sets.filter(s => {
+            // Count sets won (match tiebreak counts as 1 set)
+            const mySetsWon = partij.sets.filter(s => side === 'home' ? s[0] > s[1] : s[1] > s[0]).length;
+
+            // Count games won — exclude match tiebreak (not real games)
+            const myGamesWon = partij.sets
+              .filter(s => !isMatchTiebreak(s))
+              .reduce((sum, s) => sum + (side === 'home' ? s[0] : s[1]), 0);
+
+            // Tiebreak: regular 7-6 set OR winning the match tiebreak
+            const regularTiebreaksWon = partij.sets.filter(s => {
+              if (isMatchTiebreak(s)) return false;
               const my = side === 'home' ? s[0] : s[1];
               const opp = side === 'home' ? s[1] : s[0];
               return my === 7 && opp === 6;
             }).length;
+            const matchTiebreakWon = partij.sets.filter(s => {
+              if (!isMatchTiebreak(s)) return false;
+              const my = side === 'home' ? s[0] : s[1];
+              const opp = side === 'home' ? s[1] : s[0];
+              return my > opp;
+            }).length;
+            const tiebreaksWon = regularTiebreaksWon + matchTiebreakWon;
 
             // Straight sets: won without losing a set
             const setsLost = partij.sets.filter(s => side === 'home' ? s[1] > s[0] : s[0] > s[1]).length;
