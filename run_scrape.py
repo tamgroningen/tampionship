@@ -154,7 +154,11 @@ def main():
     # Step 1: Login
     t = time.time()
     print("Logging in...", end=" ", flush=True)
-    session = login("florisbokx", "hcCbqb8G4p")
+    username = os.environ.get("KNLTB_USERNAME")
+    password = os.environ.get("KNLTB_PASSWORD")
+    if not username or not password:
+        raise RuntimeError("Set KNLTB_USERNAME and KNLTB_PASSWORD environment variables")
+    session = login(username, password)
     print(f"done ({time.time()-t:.1f}s)")
 
     # Step 2: Get all team match URLs from all 23 TAM teams

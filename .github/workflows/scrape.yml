@@ -22,6 +22,9 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run scraper
+        env:
+          KNLTB_USERNAME: ${{ secrets.KNLTB_USERNAME }}
+          KNLTB_PASSWORD: ${{ secrets.KNLTB_PASSWORD }}
         run: python run_scrape.py
 
       - name: Commit updated data

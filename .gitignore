@@ -5,3 +5,4 @@ cron_scrape.sh
 .DS_Store
 __pycache__/
 .wrangler/
+worker/
