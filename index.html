@@ -60,6 +60,7 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .match-score-badge { background: #3a2a5e; padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 14px; }
 .match-score-badge.win { background: #1a4a2e; color: #4ade80; }
 .match-score-badge.loss { background: #4a1a1a; color: #f87171; }
+.match-score-badge.draw { background: #3a3a1a; color: #facc15; }
 
 .partij-row { padding: 8px 16px; border-top: 1px solid #2a2a3e; display: flex; align-items: center; gap: 8px; font-size: 13px; }
 .partij-type { width: 36px; font-weight: 600; color: #888; }
@@ -363,20 +364,23 @@ function processMatches() {
       }
     }
 
+    const teamDraw = ts.home === ts.away;
+
     for (const [pName, pd] of Object.entries(playerMatchData)) {
       const playerOnHomeSide = pd.side === 'home';
       const playerTeamWon = (playerOnHomeSide && homeWon) || (!playerOnHomeSide && !homeWon);
       pd.teamWinBonus = playerTeamWon;
+      pd.teamDrawBonus = teamDraw;
 
       const partijPts = pd.partijen.reduce((s, p) => s + p.points, 0);
-      const bonusPts = pd.teamWinBonus ? 10 : 0;
+      const bonusPts = pd.teamWinBonus ? 10 : pd.teamDrawBonus ? 5 : 0;
       const matchTotal = partijPts + bonusPts;
 
       const detail = {
         homeTeam: match.home_team, awayTeam: match.away_team,
         teamScore: match.team_score, round: match.round, league: match.league,
         date: match.date, weekendKey,
-        partijen: pd.partijen, teamWinBonus: pd.teamWinBonus,
+        partijen: pd.partijen, teamWinBonus: pd.teamWinBonus, teamDrawBonus: pd.teamDrawBonus,
         matchTotal, counted: true,
       };
 
@@ -756,7 +760,7 @@ function renderBreakdown(app) {
       const homeIsTam = md.homeTeam.startsWith('TAM');
       const homeName = homeIsTam ? `<span class="tam">${md.homeTeam}</span>` : md.homeTeam;
       const awayName = md.awayTeam.startsWith('TAM') ? `<span class="tam">${md.awayTeam}</span>` : md.awayTeam;
-      const badgeCls = md.teamWinBonus ? 'win' : 'loss';
+      const badgeCls = md.teamWinBonus ? 'win' : md.teamDrawBonus ? 'draw' : 'loss';
       const dimmed = md.counted === false ? ' dimmed' : '';
 
       html += `<div class="match-card${dimmed}">
@@ -800,6 +804,8 @@ function renderBreakdown(app) {
 
       if (md.teamWinBonus) {
         html += '<div class="team-bonus">Team win bonus +10</div>';
+      } else if (md.teamDrawBonus) {
+        html += '<div class="team-bonus" style="color:#facc15">Team gelijkspel bonus +5</div>';
       }
 
       html += `
@@ -845,8 +851,9 @@ function renderRules(app) {
       <h4>Bonuspunten</h4>
       <table>
         <tr><td>Team wint de wedstrijd</td><td>+10</td></tr>
-        <tr><td>Upset: tegenstander 0-0.5 beter gerankt</td><td>+10</td></tr>
-        <tr><td>Upset: tegenstander 0.5+ beter gerankt</td><td>+20</td></tr>
+        <tr><td>Team gelijkspel</td><td>+5</td></tr>
+        <tr><td>Upset: tegenstander 0-0.5 beter gerated</td><td>+10</td></tr>
+        <tr><td>Upset: tegenstander 0.5+ beter gerated</td><td>+20</td></tr>
       </table>
       <h4>Regels</h4>
       <table>
@@ -859,7 +866,7 @@ function renderRules(app) {
       <p style="font-size:13px;color:#888;line-height:1.5">
         Bij een overwinning wordt de KNLTB-rating van beide spelers vergeleken.
         Bij dubbels wordt het gemiddelde van beide spelers gebruikt.
-        Een lager getal = betere rating. Als je wint van een beter gerankte tegenstander krijg je extra punten.
+        Een lager getal = betere rating. Als je wint van een beter gerate tegenstander krijg je extra punten.
       </p>
     </div>`;
 }
