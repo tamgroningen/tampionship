@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAMpionship</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a1a; color: #e0e0e0; min-height: 100vh; }
+
+header { background: linear-gradient(135deg, #2d1b4e, #1a0a2e); padding: 16px; text-align: center; position: sticky; top: 0; z-index: 10; border-bottom: 2px solid #7b3fa0; }
+header h1 { font-size: 24px; color: #c084fc; letter-spacing: 2px; }
+header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
+
+.back-btn { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #c084fc; font-size: 20px; cursor: pointer; padding: 8px; }
+
+#app { max-width: 600px; margin: 0 auto; padding: 8px; }
+
+/* Leaderboard */
+.leaderboard-row { display: flex; align-items: center; padding: 12px 16px; margin: 4px 0; background: #1a1a2e; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.leaderboard-row:hover { background: #2a2a3e; }
+.leaderboard-row.top-1 { background: linear-gradient(135deg, #2d2a10, #1a1a2e); border-left: 3px solid #ffd700; }
+.leaderboard-row.top-2 { background: linear-gradient(135deg, #2a2a2a, #1a1a2e); border-left: 3px solid #c0c0c0; }
+.leaderboard-row.top-3 { background: linear-gradient(135deg, #2d1a10, #1a1a2e); border-left: 3px solid #cd7f32; }
+.rank { width: 36px; font-weight: 700; font-size: 16px; color: #888; }
+.top-1 .rank { color: #ffd700; }
+.top-2 .rank { color: #c0c0c0; }
+.top-3 .rank { color: #cd7f32; }
+.avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; margin-right: 10px; background: #2a2a3e; flex-shrink: 0; }
+.avatar-large { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin: 0 auto 8px; display: block; background: #2a2a3e; }
+.user-name { flex: 1; font-size: 15px; }
+.user-points { font-weight: 700; font-size: 16px; color: #c084fc; }
+.user-delta { font-size: 11px; color: #4ade80; margin-left: 6px; opacity: 0.8; }
+.user-movement { font-size: 11px; margin-right: 4px; min-width: 28px; text-align: center; }
+.user-movement.up { color: #4ade80; }
+.user-movement.down { color: #f87171; }
+.user-movement.same { color: #666; }
+
+/* Squad view */
+.squad-header { text-align: center; padding: 20px 16px; }
+.squad-header h2 { font-size: 22px; color: #fff; }
+.squad-header .total { font-size: 28px; color: #c084fc; font-weight: 700; margin-top: 4px; }
+.squad-header .total span { font-size: 14px; color: #888; }
+
+.player-row { display: flex; align-items: center; padding: 12px 16px; margin: 4px 0; background: #1a1a2e; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.player-row:hover { background: #2a2a3e; }
+.player-name { flex: 1; font-size: 15px; }
+.player-price { font-size: 12px; color: #888; margin-right: 12px; }
+.player-points { font-weight: 700; font-size: 16px; color: #c084fc; }
+
+/* Breakdown view */
+.breakdown-header { text-align: center; padding: 20px 16px; }
+.breakdown-header h2 { font-size: 20px; color: #fff; }
+.breakdown-header .total { font-size: 24px; color: #c084fc; font-weight: 700; margin-top: 4px; }
+
+.match-card { background: #1a1a2e; border-radius: 8px; margin: 8px 0; overflow: hidden; }
+.match-card-header { padding: 12px 16px; background: #2a2a3e; display: flex; justify-content: space-between; align-items: center; }
+.match-teams { font-size: 14px; }
+.match-teams .tam { color: #c084fc; font-weight: 600; }
+.match-score-badge { background: #3a2a5e; padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 14px; }
+.match-score-badge.win { background: #1a4a2e; color: #4ade80; }
+.match-score-badge.loss { background: #4a1a1a; color: #f87171; }
+
+.partij-row { padding: 8px 16px; border-top: 1px solid #2a2a3e; display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.partij-type { width: 36px; font-weight: 600; color: #888; }
+.partij-detail { flex: 1; }
+.partij-sets { color: #aaa; font-family: monospace; }
+.partij-points { font-weight: 700; min-width: 40px; text-align: right; }
+.partij-points.win { color: #4ade80; }
+.partij-points.partial { color: #facc15; }
+.partij-points.wo { color: #60a5fa; }
+.partij-points.loss { color: #666; }
+
+.team-bonus { padding: 8px 16px; border-top: 1px solid #2a2a3e; font-size: 13px; color: #4ade80; text-align: right; }
+
+.match-total { padding: 8px 16px; border-top: 2px solid #3a3a5e; display: flex; justify-content: space-between; font-weight: 700; font-size: 14px; }
+.match-total .pts { color: #c084fc; }
+
+.no-matches { text-align: center; padding: 40px; color: #666; }
+
+.match-card.dimmed { opacity: 0.4; }
+.match-card.dimmed .match-card-header::after { content: 'niet geteld'; font-size: 10px; color: #f87171; margin-left: 8px; }
+
+.weekend-label { padding: 12px 16px 4px; font-size: 12px; color: #c084fc; text-transform: uppercase; letter-spacing: 1px; border-top: 1px solid #2a2a3e; margin-top: 12px; }
+
+.section-label { padding: 12px 16px 4px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <h1>TAMpionship</h1>
+  <div class="subtitle">KNLTB voorjaar Tennis 2026</div>
+</header>
+
+<div id="app"></div>
+
+<script>
+let squads, players, matches;
+let playerPointsMap = {};
+let currentView = 'leaderboard';
+let currentUser = null;
+let currentPlayer = null;
+
+async function loadData() {
+  [squads, players, matches] = await Promise.all([
+    fetch('tampionship_squads.json').then(r => r.json()),
+    fetch('tampionship_players.json').then(r => r.json()),
+    fetch('knltb_matches.json').then(r => r.json()),
+  ]);
+  processMatches();
+  render();
+}
+
+function isPlayed(m) {
+  return /^\d+\s*[–-]\s*\d+$/.test(m.team_score);
+}
+
+function parseTeamScore(score) {
+  const parts = score.split(/[–-]/).map(s => parseInt(s.trim()));
+  return { home: parts[0], away: parts[1] };
+}
+
+function parseDate(dateStr) {
+  // Parse "6-4-2026" -> Date object
+  if (!dateStr) return null;
+  const [d, m, y] = dateStr.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function getWeekendKey(dateStr) {
+  // Group Sat-Mon into same weekend. Key = the Saturday date.
+  const d = parseDate(dateStr);
+  if (!d) return '';
+  const dow = d.getDay(); // 0=Sun, 1=Mon, 6=Sat
+  const sat = new Date(d);
+  if (dow === 0) sat.setDate(d.getDate() - 1);      // Sun -> prev Sat
+  else if (dow === 1) sat.setDate(d.getDate() - 2);  // Mon -> prev Sat
+  // else it's already Sat (or another day, just use as-is)
+  return `${sat.getFullYear()}-${sat.getMonth()+1}-${sat.getDate()}`;
+}
+
+function processMatches() {
+  const playerNames = new Set(players.map(p => p.name));
+  playerPointsMap = {};
+
+  for (const name of playerNames) {
+    playerPointsMap[name] = { totalPoints: 0, matchDetails: [] };
+  }
+
+  const playedMatches = matches.filter(isPlayed);
+
+  // First pass: compute points per player per match
+  const playerMatchResults = {}; // playerName -> [{matchTotal, weekendKey, date, detail}]
+
+  for (const match of playedMatches) {
+    const ts = parseTeamScore(match.team_score);
+    const homeWon = ts.home > ts.away;
+    const homeTam = match.home_team.startsWith('TAM');
+    const awayTam = match.away_team.startsWith('TAM');
+    const weekendKey = getWeekendKey(match.date);
+
+    const playerMatchData = {};
+
+    for (const partij of match.partijen) {
+      const sides = [
+        { data: partij.home, side: 'home', isWinner: partij.home.won, isTam: homeTam },
+        { data: partij.away, side: 'away', isWinner: partij.away.won, isTam: awayTam },
+      ];
+
+      for (const { data, side, isWinner, isTam } of sides) {
+        if (!isTam || !data.players || data.players.length === 0) continue;
+
+        for (const pName of data.players) {
+          if (!playerNames.has(pName)) continue;
+
+          let pts = 0;
+          let reason = '';
+
+          if (partij.sets.length === 0) {
+            if (isWinner) { pts = 25; reason = 'walkover'; }
+          } else if (isWinner) {
+            pts = 50; reason = 'win';
+          } else {
+            const setsWon = partij.sets.filter(s =>
+              side === 'home' ? s[0] > s[1] : s[1] > s[0]
+            ).length;
+            if (setsWon > 0) { pts = 10; reason = 'partial'; }
+            else { reason = 'loss'; }
+          }
+
+          if (!playerMatchData[pName]) {
+            playerMatchData[pName] = { side, partijen: [], teamWinBonus: false };
+          }
+          playerMatchData[pName].partijen.push({
+            type: partij.type, sets: partij.sets, setScores: partij.set_scores,
+            won: isWinner, points: pts, reason,
+            opponent: side === 'home' ? partij.away : partij.home,
+            partner: data.players.length > 1 ? data.players.filter(n => n !== pName) : [],
+          });
+        }
+      }
+    }
+
+    for (const [pName, pd] of Object.entries(playerMatchData)) {
+      const playerOnHomeSide = pd.side === 'home';
+      const playerTeamWon = (playerOnHomeSide && homeWon) || (!playerOnHomeSide && !homeWon);
+      pd.teamWinBonus = playerTeamWon;
+
+      const partijPts = pd.partijen.reduce((s, p) => s + p.points, 0);
+      const bonusPts = pd.teamWinBonus ? 10 : 0;
+      const matchTotal = partijPts + bonusPts;
+
+      const detail = {
+        homeTeam: match.home_team, awayTeam: match.away_team,
+        teamScore: match.team_score, round: match.round, league: match.league,
+        date: match.date, weekendKey,
+        partijen: pd.partijen, teamWinBonus: pd.teamWinBonus,
+        matchTotal, counted: true,
+      };
+
+      if (!playerMatchResults[pName]) playerMatchResults[pName] = [];
+      playerMatchResults[pName].push(detail);
+    }
+  }
+
+  // Second pass: for each player, per weekend, only count the best match
+  for (const [pName, matchList] of Object.entries(playerMatchResults)) {
+    // Group by weekend
+    const byWeekend = {};
+    for (const md of matchList) {
+      const key = md.weekendKey || md.date || 'unknown';
+      if (!byWeekend[key]) byWeekend[key] = [];
+      byWeekend[key].push(md);
+    }
+
+    // For each weekend with multiple matches, mark only the best as counted
+    for (const [wk, wkMatches] of Object.entries(byWeekend)) {
+      if (wkMatches.length > 1) {
+        wkMatches.sort((a, b) => b.matchTotal - a.matchTotal);
+        for (let i = 1; i < wkMatches.length; i++) {
+          wkMatches[i].counted = false;
+        }
+      }
+    }
+
+    // Accumulate only counted matches
+    if (!playerPointsMap[pName]) continue;
+    playerPointsMap[pName].matchDetails = matchList;
+    playerPointsMap[pName].totalPoints = matchList
+      .filter(md => md.counted)
+      .reduce((s, md) => s + md.matchTotal, 0);
+  }
+}
+
+function getAllWeekendKeys() {
+  const keys = new Set();
+  for (const pd of Object.values(playerPointsMap)) {
+    for (const md of pd.matchDetails) {
+      if (md.counted && md.weekendKey) keys.add(md.weekendKey);
+    }
+  }
+  return Array.from(keys).sort();
+}
+
+function getLastWeekendKey() {
+  let latest = '';
+  for (const pd of Object.values(playerPointsMap)) {
+    for (const md of pd.matchDetails) {
+      if (md.counted && md.weekendKey && md.weekendKey > latest) {
+        latest = md.weekendKey;
+      }
+    }
+  }
+  return latest;
+}
+
+function getPlayerLastWeekendPts(pName, lastWk) {
+  const pd = playerPointsMap[pName];
+  if (!pd) return 0;
+  return pd.matchDetails
+    .filter(md => md.counted && md.weekendKey === lastWk)
+    .reduce((s, md) => s + md.matchTotal, 0);
+}
+
+function getPlayerPtsExcludingWeekend(pName, excludeWk) {
+  const pd = playerPointsMap[pName];
+  if (!pd) return 0;
+  return pd.matchDetails
+    .filter(md => md.counted && md.weekendKey !== excludeWk)
+    .reduce((s, md) => s + md.matchTotal, 0);
+}
+
+function calculateLeaderboard() {
+  const lastWk = getLastWeekendKey();
+  const filtered = squads.filter(u => !u.user.match(/\(\d+\)$/));
+
+  // Current standings
+  const current = filtered.map(u => {
+    const pts = (u.squad || []).reduce((sum, pName) => sum + (playerPointsMap[pName]?.totalPoints || 0), 0);
+    const lastWkPts = (u.squad || []).reduce((sum, pName) => sum + getPlayerLastWeekendPts(pName, lastWk), 0);
+    return { ...u, totalPoints: pts, lastWeekendPts: lastWkPts };
+  });
+
+  // Previous standings (before last weekend)
+  const previous = filtered.map(u => {
+    const pts = (u.squad || []).reduce((sum, pName) => sum + getPlayerPtsExcludingWeekend(pName, lastWk), 0);
+    return { user: u.user, totalPoints: pts };
+  }).sort((a, b) => b.totalPoints - a.totalPoints);
+
+  const prevRankMap = {};
+  previous.forEach((u, i) => { prevRankMap[u.user] = i + 1; });
+
+  // Sort current and compute movement
+  current.sort((a, b) => b.totalPoints - a.totalPoints);
+  current.forEach((u, i) => {
+    const currentRank = i + 1;
+    const prevRank = prevRankMap[u.user] || currentRank;
+    u.movement = prevRank - currentRank; // positive = moved up
+  });
+
+  return current;
+}
+
+function render() {
+  const app = document.getElementById('app');
+  const header = document.getElementById('header');
+
+  if (currentView === 'leaderboard') {
+    header.innerHTML = '<h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div>';
+    renderLeaderboard(app);
+  } else if (currentView === 'squad') {
+    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Squad</div>`;
+    renderSquad(app);
+  } else if (currentView === 'breakdown') {
+    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Breakdown</div>`;
+    renderBreakdown(app);
+  }
+}
+
+function renderLeaderboard(app) {
+  const lb = calculateLeaderboard();
+  let html = '<div class="section-label">Leaderboard</div>';
+  const showMovement = getAllWeekendKeys().length > 1;
+  lb.forEach((u, i) => {
+    const rank = i + 1;
+    const cls = rank <= 3 ? ` top-${rank}` : '';
+    const avatar = u.avatar ? `<img class="avatar" src="${u.avatar}" onerror="this.style.display='none'">` : '';
+    const delta = u.lastWeekendPts > 0 ? `<span class="user-delta">+${u.lastWeekendPts}</span>` : '';
+    let moveHtml = '';
+    if (showMovement) {
+      if (u.movement > 0) moveHtml = `<span class="user-movement up">&#9650;${u.movement}</span>`;
+      else if (u.movement < 0) moveHtml = `<span class="user-movement down">&#9660;${Math.abs(u.movement)}</span>`;
+      else moveHtml = `<span class="user-movement same">=</span>`;
+    }
+    html += `
+      <div class="leaderboard-row${cls}" onclick="showSquad('${u.user.replace(/'/g, "\\'")}')">
+        <div class="rank">#${rank}</div>
+        ${avatar}
+        <div class="user-name">${u.user} ${moveHtml}</div>
+        <div class="user-points">${u.totalPoints}${delta}</div>
+      </div>`;
+  });
+  app.innerHTML = html;
+}
+
+function renderSquad(app) {
+  const user = squads.find(u => u.user === currentUser);
+  if (!user) return;
+
+  const squadWithPts = user.squad.map(pName => {
+    const player = players.find(p => p.name === pName);
+    return {
+      name: pName,
+      price: player?.price || 0,
+      points: playerPointsMap[pName]?.totalPoints || 0,
+    };
+  }).sort((a, b) => b.points - a.points);
+
+  const totalPts = squadWithPts.reduce((s, p) => s + p.points, 0);
+
+  const userObj = squads.find(u => u.user === currentUser);
+  const avatarUrl = userObj?.avatar || '';
+  const avatarImg = avatarUrl ? `<img class="avatar-large" src="${avatarUrl}" onerror="this.style.display='none'">` : '';
+
+  let html = `
+    <div class="squad-header">
+      ${avatarImg}
+      <h2>${currentUser}</h2>
+      <div class="total">${totalPts} <span>punten</span></div>
+    </div>
+    <div class="section-label">Squad</div>`;
+
+  for (const p of squadWithPts) {
+    html += `
+      <div class="player-row" onclick="showBreakdown('${p.name.replace(/'/g, "\\'")}')">
+        <div class="player-name">${p.name}</div>
+        <div class="player-price">&euro;${p.price}</div>
+        <div class="player-points">${p.points}</div>
+      </div>`;
+  }
+  app.innerHTML = html;
+}
+
+function renderBreakdown(app) {
+  const pd = playerPointsMap[currentPlayer];
+  if (!pd) {
+    app.innerHTML = '<div class="no-matches">Geen data gevonden</div>';
+    return;
+  }
+
+  let html = `
+    <div class="breakdown-header">
+      <h2>${currentPlayer}</h2>
+      <div class="total">${pd.totalPoints} punten</div>
+    </div>`;
+
+  if (pd.matchDetails.length === 0) {
+    html += '<div class="no-matches">Nog geen wedstrijden gespeeld</div>';
+  }
+
+  // Group by weekend
+  const byWeekend = {};
+  for (const md of pd.matchDetails) {
+    const key = md.weekendKey || md.date || 'unknown';
+    if (!byWeekend[key]) byWeekend[key] = [];
+    byWeekend[key].push(md);
+  }
+
+  for (const [wk, wkMatches] of Object.entries(byWeekend)) {
+    // Weekend label with date
+    const dateStr = wkMatches[0]?.date || '';
+    const hasMultiple = wkMatches.length > 1;
+    if (hasMultiple) {
+      html += `<div class="weekend-label">Weekend ${dateStr}${hasMultiple ? ' — beste telt' : ''}</div>`;
+    }
+
+    for (const md of wkMatches) {
+      const homeIsTam = md.homeTeam.startsWith('TAM');
+      const homeName = homeIsTam ? `<span class="tam">${md.homeTeam}</span>` : md.homeTeam;
+      const awayName = md.awayTeam.startsWith('TAM') ? `<span class="tam">${md.awayTeam}</span>` : md.awayTeam;
+      const badgeCls = md.teamWinBonus ? 'win' : 'loss';
+      const dimmed = md.counted === false ? ' dimmed' : '';
+
+      html += `<div class="match-card${dimmed}">
+        <div class="match-card-header">
+          <div class="match-teams">${homeName} - ${awayName}</div>
+          <div class="match-score-badge ${badgeCls}">${md.teamScore}</div>
+        </div>`;
+
+      for (const p of md.partijen) {
+        const oppNames = p.opponent.players?.join(', ') || '?';
+        const partnerStr = p.partner.length > 0 ? ` + ${p.partner.join(', ')}` : '';
+        const detail = `${partnerStr ? currentPlayer + partnerStr : ''} vs ${oppNames}`;
+        const ptsCls = p.reason;
+        const ptsLabel = p.points > 0 ? `+${p.points}` : '0';
+
+        html += `
+          <div class="partij-row">
+            <div class="partij-type">${p.type}</div>
+            <div class="partij-detail">${detail}</div>
+            <div class="partij-sets">${p.setScores || 'WO'}</div>
+            <div class="partij-points ${ptsCls}">${ptsLabel}</div>
+          </div>`;
+      }
+
+      if (md.teamWinBonus) {
+        html += '<div class="team-bonus">Team win bonus +10</div>';
+      }
+
+      html += `
+        <div class="match-total">
+          <span>${md.date || md.round || 'Wedstrijd'}</span>
+          <span class="pts">${md.counted === false ? '' : '+'}${md.matchTotal}</span>
+        </div>
+      </div>`;
+    }
+  }
+
+  app.innerHTML = html;
+}
+
+function showSquad(userName) {
+  currentUser = userName;
+  currentView = 'squad';
+  history.pushState({ view: 'squad', user: userName }, '');
+  render();
+  window.scrollTo(0, 0);
+}
+
+function showBreakdown(playerName) {
+  currentPlayer = playerName;
+  currentView = 'breakdown';
+  history.pushState({ view: 'breakdown', player: playerName, user: currentUser }, '');
+  render();
+  window.scrollTo(0, 0);
+}
+
+function goBack() {
+  if (currentView === 'breakdown') {
+    currentView = 'squad';
+  } else {
+    currentView = 'leaderboard';
+    currentUser = null;
+  }
+  render();
+  window.scrollTo(0, 0);
+}
+
+window.addEventListener('popstate', (e) => {
+  if (e.state) {
+    currentView = e.state.view;
+    currentUser = e.state.user;
+    currentPlayer = e.state.player;
+  } else {
+    currentView = 'leaderboard';
+    currentUser = null;
+    currentPlayer = null;
+  }
+  render();
+});
+
+loadData();
+</script>
+</body>
+</html>
