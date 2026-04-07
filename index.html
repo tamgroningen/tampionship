@@ -466,15 +466,16 @@ function render() {
   const app = document.getElementById('app');
   const header = document.getElementById('header');
 
-  const loggedIn = isLoggedIn();
-  const loggedUser = getLoggedInUser();
-  let authHtml;
-  if (loggedIn && loggedUser) {
-    const av = loggedUser.avatar ? `<img src="${loggedUser.avatar}" onerror="this.style.display='none'">` : '';
-    authHtml = `<div class="logged-in-badge">${av}<span>${loggedUser.user}</span><button class="logout-btn" onclick="logout()">uitloggen</button></div>`;
-  } else {
-    authHtml = `<button class="login-btn" onclick="showLoginModal()">Inloggen</button>`;
-  }
+  // Auth UI disabled for now — uncomment when wildcard feature is confirmed
+  const authHtml = '';
+  // const loggedIn = isLoggedIn();
+  // const loggedUser = getLoggedInUser();
+  // if (loggedIn && loggedUser) {
+  //   const av = loggedUser.avatar ? `<img src="${loggedUser.avatar}" onerror="this.style.display='none'">` : '';
+  //   authHtml = `<div class="logged-in-badge">${av}<span>${loggedUser.user}</span><button class="logout-btn" onclick="logout()">uitloggen</button></div>`;
+  // } else {
+  //   authHtml = `<button class="login-btn" onclick="showLoginModal()">Inloggen</button>`;
+  // }
 
   if (currentView === 'leaderboard') {
     header.innerHTML = `<h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div>${authHtml}`;
