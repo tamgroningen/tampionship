@@ -599,8 +599,8 @@ function renderLeaderboard(app) {
   });
   html += '</div>';
 
-  // Top picks
-  html += '<div class="mini-board"><h4>Top picks</h4>';
+  // Popular picks
+  html += '<div class="mini-board"><h4>Popular picks</h4>';
   topPicks.forEach((p, i) => {
     html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${p.name}</span><span class="mini-value">${p.count}x</span></div>`;
   });
@@ -889,7 +889,7 @@ function toggleDrawer() {
   mvps.forEach((p, i) => {
     html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${p.name}</span><span class="mini-value">${p.pts}</span></div>`;
   });
-  html += '</div><div class="mini-board" style="margin-top:12px"><h4>Top picks</h4>';
+  html += '</div><div class="mini-board" style="margin-top:12px"><h4>Popular picks</h4>';
   topPicks.forEach((p, i) => {
     html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${p.name}</span><span class="mini-value">${p.count}x</span></div>`;
   });
