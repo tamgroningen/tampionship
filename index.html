@@ -60,7 +60,6 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .match-score-badge { background: #3a2a5e; padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 14px; }
 .match-score-badge.win { background: #1a4a2e; color: #4ade80; }
 .match-score-badge.loss { background: #4a1a1a; color: #f87171; }
-.match-score-badge.draw { background: #3a3a1a; color: #facc15; }
 
 .partij-row { padding: 8px 16px; border-top: 1px solid #2a2a3e; display: flex; align-items: center; gap: 8px; font-size: 13px; }
 .partij-type { width: 36px; font-weight: 600; color: #888; }
@@ -73,7 +72,7 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .partij-points.wo { color: #60a5fa; }
 .partij-points.loss { color: #666; }
 .partij-rating { font-size: 10px; color: #888; font-family: monospace; }
-.rating-bonus { padding: 2px 16px 6px; font-size: 11px; color: #facc15; text-align: right; }
+.partij-bonuses { font-size: 10px; color: #facc15; margin-top: 2px; }
 
 .team-bonus { padding: 8px 16px; border-top: 1px solid #2a2a3e; font-size: 13px; color: #4ade80; text-align: right; }
 
@@ -317,70 +316,85 @@ function processMatches() {
         for (const pName of data.players) {
           if (!playerNames.has(pName)) continue;
 
-          let pts = 0;
-          let reason = '';
-          let ratingBonus = 0;
+          const oppSide = side === 'home' ? partij.away : partij.home;
+          let breakdown = {};
 
           if (partij.sets.length === 0) {
-            if (isWinner) { pts = 15; reason = 'walkover'; }
-          } else if (isWinner) {
-            // Check for straight sets win (won all sets)
-            const setsLost = partij.sets.filter(s =>
-              side === 'home' ? s[1] > s[0] : s[0] > s[1]
-            ).length;
-            pts = setsLost === 0 ? 60 : 50;
-            reason = setsLost === 0 ? 'straight' : 'win';
-            // Rating bonus: compare aggregate ratings
+            // Walkover
+            breakdown = { matchWin: isWinner ? 15 : 0, setsWon: 0, gamesWon: 0, tiebreaks: 0, straightSets: 0, comeback: 0, upset: 0 };
+          } else {
+            // Count sets, games, tiebreaks from player's perspective
+            const mySetsWon = partij.sets.filter(s => side === 'home' ? s[0] > s[1] : s[1] > s[0]).length;
+            const myGamesWon = partij.sets.reduce((sum, s) => sum + (side === 'home' ? s[0] : s[1]), 0);
+
+            // Tiebreak: a set where one side scored 7 and the other 6
+            const tiebreaksWon = partij.sets.filter(s => {
+              const my = side === 'home' ? s[0] : s[1];
+              const opp = side === 'home' ? s[1] : s[0];
+              return my === 7 && opp === 6;
+            }).length;
+
+            // Straight sets: won without losing a set
+            const setsLost = partij.sets.filter(s => side === 'home' ? s[1] > s[0] : s[0] > s[1]).length;
+            const straightSets = isWinner && setsLost === 0;
+
+            // Comeback: lost first set but won the match
+            const firstSetLost = partij.sets.length > 0 && (side === 'home' ? partij.sets[0][1] > partij.sets[0][0] : partij.sets[0][0] > partij.sets[0][1]);
+            const comebackWin = isWinner && firstSetLost;
+
+            // Upset: beat a better-rated opponent (lower number = better)
             const myRatings = data.ratings?.filter(r => r != null) || [];
-            const oppSide = side === 'home' ? partij.away : partij.home;
             const oppRatings = oppSide.ratings?.filter(r => r != null) || [];
-            if (myRatings.length > 0 && oppRatings.length > 0) {
+            let isUpset = false;
+            if (isWinner && myRatings.length > 0 && oppRatings.length > 0) {
               const myAvg = myRatings.reduce((a, b) => a + b, 0) / myRatings.length;
               const oppAvg = oppRatings.reduce((a, b) => a + b, 0) / oppRatings.length;
-              const diff = myAvg - oppAvg; // positive = I'm worse (higher number)
-              if (diff > 0.5) { ratingBonus = 20; }
-              else if (diff > 0) { ratingBonus = 10; }
+              isUpset = myAvg > oppAvg; // my rating is worse (higher) = upset
             }
-          } else {
-            const setsWon = partij.sets.filter(s =>
-              side === 'home' ? s[0] > s[1] : s[1] > s[0]
-            ).length;
-            if (setsWon > 0) { pts = 10; reason = 'partial'; }
-            else { reason = 'loss'; }
+
+            breakdown = {
+              matchWin: isWinner ? 15 : 0,
+              setsWon: mySetsWon * 5,
+              gamesWon: myGamesWon * 2,
+              tiebreaks: tiebreaksWon * 3,
+              straightSets: straightSets ? 15 : 0,
+              comeback: comebackWin ? 10 : 0,
+              upset: isUpset ? 10 : 0,
+            };
           }
+
+          const pts = Object.values(breakdown).reduce((a, b) => a + b, 0);
 
           if (!playerMatchData[pName]) {
             playerMatchData[pName] = { side, partijen: [], teamWinBonus: false };
           }
           playerMatchData[pName].partijen.push({
             type: partij.type, sets: partij.sets, setScores: partij.set_scores,
-            won: isWinner, points: pts + ratingBonus, basePoints: pts, ratingBonus, reason,
+            won: isWinner, points: pts, breakdown,
+            reason: isWinner ? (breakdown.straightSets ? 'straight' : 'win') : (breakdown.setsWon > 0 ? 'partial' : 'loss'),
             myRatings: data.ratings || [],
-            oppRatings: (side === 'home' ? partij.away : partij.home).ratings || [],
-            opponent: side === 'home' ? partij.away : partij.home,
+            oppRatings: oppSide.ratings || [],
+            opponent: oppSide,
             partner: data.players.length > 1 ? data.players.filter(n => n !== pName) : [],
           });
         }
       }
     }
 
-    const teamDraw = ts.home === ts.away;
-
     for (const [pName, pd] of Object.entries(playerMatchData)) {
       const playerOnHomeSide = pd.side === 'home';
       const playerTeamWon = (playerOnHomeSide && homeWon) || (!playerOnHomeSide && !homeWon);
       pd.teamWinBonus = playerTeamWon;
-      pd.teamDrawBonus = teamDraw;
 
       const partijPts = pd.partijen.reduce((s, p) => s + p.points, 0);
-      const bonusPts = pd.teamWinBonus ? 10 : pd.teamDrawBonus ? 5 : 0;
+      const bonusPts = pd.teamWinBonus ? 40 : 0;
       const matchTotal = partijPts + bonusPts;
 
       const detail = {
         homeTeam: match.home_team, awayTeam: match.away_team,
         teamScore: match.team_score, round: match.round, league: match.league,
         date: match.date, weekendKey,
-        partijen: pd.partijen, teamWinBonus: pd.teamWinBonus, teamDrawBonus: pd.teamDrawBonus,
+        partijen: pd.partijen, teamWinBonus: pd.teamWinBonus,
         matchTotal, counted: true,
       };
 
@@ -760,7 +774,7 @@ function renderBreakdown(app) {
       const homeIsTam = md.homeTeam.startsWith('TAM');
       const homeName = homeIsTam ? `<span class="tam">${md.homeTeam}</span>` : md.homeTeam;
       const awayName = md.awayTeam.startsWith('TAM') ? `<span class="tam">${md.awayTeam}</span>` : md.awayTeam;
-      const badgeCls = md.teamWinBonus ? 'win' : md.teamDrawBonus ? 'draw' : 'loss';
+      const badgeCls = md.teamWinBonus ? 'win' : 'loss';
       const dimmed = md.counted === false ? ' dimmed' : '';
 
       html += `<div class="match-card${dimmed}">
@@ -795,22 +809,25 @@ function renderBreakdown(app) {
           ratingStr = `${myAvg} vs ${oppAvg}`;
         }
 
+        // Breakdown detail
+        const bd = p.breakdown || {};
+        const bonusTags = [];
+        if (bd.straightSets) bonusTags.push('straight sets +15');
+        if (bd.comeback) bonusTags.push('comeback +10');
+        if (bd.upset) bonusTags.push('upset +10');
+        const bonusStr = bonusTags.length ? `<div class="partij-bonuses">${bonusTags.join(' · ')}</div>` : '';
+
         html += `
           <div class="partij-row">
             <div class="partij-type">${p.type}</div>
-            <div class="partij-detail">${detail}${ratingStr ? `<div class="partij-rating">${ratingStr}</div>` : ''}</div>
+            <div class="partij-detail">${detail}${ratingStr ? `<div class="partij-rating">${ratingStr}</div>` : ''}${bonusStr}</div>
             <div class="partij-sets">${displaySets}</div>
-            <div class="partij-points ${ptsCls}">${ptsLabel}</div>
+            <div class="partij-points ${ptsCls}">+${p.points}</div>
           </div>`;
-        if (p.ratingBonus > 0) {
-          html += `<div class="rating-bonus">Upset bonus +${p.ratingBonus}</div>`;
-        }
       }
 
       if (md.teamWinBonus) {
-        html += '<div class="team-bonus">Team win bonus +10</div>';
-      } else if (md.teamDrawBonus) {
-        html += '<div class="team-bonus" style="color:#facc15">Team gelijkspel bonus +5</div>';
+        html += '<div class="team-bonus">Team matchday win +40</div>';
       }
 
       html += `
@@ -845,20 +862,19 @@ function showBreakdown(playerName) {
 function renderRules(app) {
   app.innerHTML = `
     <div class="rules-content">
-      <h4>Punten per partij</h4>
+      <h4>Basispunten</h4>
       <table>
-        <tr><td>Gewonnen in straight sets (2-0)</td><td>60</td></tr>
-        <tr><td>Gewonnen (2-1)</td><td>50</td></tr>
-        <tr><td>Verloren maar set gewonnen</td><td>10</td></tr>
-        <tr><td>Walkover winst</td><td>15</td></tr>
-        <tr><td>Verloren zonder set</td><td>0</td></tr>
+        <tr><td>Wedstrijd gewonnen</td><td>15</td></tr>
+        <tr><td>Per gewonnen set</td><td>5</td></tr>
+        <tr><td>Per gewonnen game</td><td>2</td></tr>
+        <tr><td>Tiebreak gewonnen (7-6)</td><td>3</td></tr>
       </table>
       <h4>Bonuspunten</h4>
       <table>
-        <tr><td>Team wint de wedstrijd</td><td>+10</td></tr>
-        <tr><td>Team gelijkspel</td><td>+5</td></tr>
-        <tr><td>Upset: tegenstander 0-0.5 betere rating</td><td>+10</td></tr>
-        <tr><td>Upset: tegenstander 0.5+ betere rating</td><td>+20</td></tr>
+        <tr><td>Overwinning in straight sets</td><td>+15</td></tr>
+        <tr><td>Comeback win (eerste set verloren)</td><td>+10</td></tr>
+        <tr><td>Stunt (tegenstander met betere rating)</td><td>+10</td></tr>
+        <tr><td>Team matchday win</td><td>+40</td></tr>
       </table>
       <h4>Regels</h4>
       <table>
@@ -871,7 +887,7 @@ function renderRules(app) {
       <p style="font-size:13px;color:#888;line-height:1.5">
         Bij een overwinning wordt de KNLTB-rating van beide spelers vergeleken.
         Bij dubbels wordt het gemiddelde van beide spelers gebruikt.
-        Een lager getal = betere rating. Als je wint van een tegenstander met een betere rating krijg je extra punten.
+        Een lager getal = betere rating. Als je wint van een tegenstander met een betere rating krijg je +10 stuntbonus.
       </p>
     </div>`;
 }
