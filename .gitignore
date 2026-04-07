@@ -4,3 +4,4 @@ cron_scrape.sh
 .claude/
 .DS_Store
 __pycache__/
+.wrangler/

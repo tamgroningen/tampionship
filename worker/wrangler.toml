@@ -1,0 +1,7 @@
+name = "tampionship"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "TAMP_DATA"
+id = "e1e4e9cb13fb46389bb1105bdfdb001c"

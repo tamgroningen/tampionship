@@ -84,6 +84,55 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .weekend-label { padding: 12px 16px 4px; font-size: 12px; color: #c084fc; text-transform: uppercase; letter-spacing: 1px; border-top: 1px solid #2a2a3e; margin-top: 12px; }
 
 .section-label { padding: 12px 16px 4px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+
+/* Login button in header */
+.login-btn { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: #3a2a5e; border: 1px solid #7b3fa0; color: #c084fc; font-size: 12px; cursor: pointer; padding: 6px 12px; border-radius: 6px; }
+.login-btn:hover { background: #4a3a6e; }
+.logged-in-badge { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 6px; }
+.logged-in-badge img { width: 28px; height: 28px; border-radius: 50%; }
+.logged-in-badge span { font-size: 11px; color: #888; }
+.logout-btn { background: none; border: none; color: #666; font-size: 10px; cursor: pointer; text-decoration: underline; }
+
+/* Modal */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100; display: flex; align-items: center; justify-content: center; }
+.modal { background: #1a1a2e; border-radius: 12px; padding: 24px; max-width: 400px; width: 90%; }
+.modal h3 { color: #c084fc; margin-bottom: 16px; text-align: center; }
+.modal input[type="email"], .modal input[type="text"] { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #3a3a5e; background: #0a0a1a; color: #e0e0e0; font-size: 16px; margin-bottom: 12px; }
+.modal input::placeholder { color: #555; }
+.modal-btn { width: 100%; padding: 12px; border-radius: 8px; border: none; background: #7b3fa0; color: #fff; font-size: 16px; cursor: pointer; font-weight: 600; }
+.modal-btn:hover { background: #9b5fc0; }
+.modal-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.modal-error { color: #f87171; font-size: 13px; text-align: center; margin-top: 8px; }
+.modal-info { color: #888; font-size: 12px; text-align: center; margin-top: 8px; }
+
+/* Wildcard editor */
+.wildcard-btn { display: block; margin: 16px auto; padding: 10px 20px; background: #7b3fa0; border: none; border-radius: 8px; color: #fff; font-size: 14px; cursor: pointer; font-weight: 600; }
+.wildcard-btn:hover { background: #9b5fc0; }
+.wildcard-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.wildcard-used { text-align: center; color: #666; font-size: 12px; padding: 8px; }
+
+.editor-search { width: 100%; padding: 10px 16px; border-radius: 8px; border: 1px solid #3a3a5e; background: #0a0a1a; color: #e0e0e0; font-size: 14px; margin: 8px 0; }
+.editor-filters { display: flex; gap: 6px; padding: 4px 0; flex-wrap: wrap; }
+.filter-chip { padding: 4px 10px; border-radius: 12px; border: 1px solid #3a3a5e; background: #0a0a1a; color: #888; font-size: 12px; cursor: pointer; }
+.filter-chip.active { background: #3a2a5e; color: #c084fc; border-color: #7b3fa0; }
+
+.editor-budget { text-align: center; padding: 12px; font-size: 16px; font-weight: 700; }
+.editor-budget.over { color: #f87171; }
+.editor-budget.ok { color: #4ade80; }
+
+.editor-player { display: flex; align-items: center; padding: 10px 16px; margin: 3px 0; background: #1a1a2e; border-radius: 8px; cursor: pointer; }
+.editor-player:hover { background: #2a2a3e; }
+.editor-player.selected { background: #2a1a4e; border: 1px solid #7b3fa0; }
+.editor-player.disabled { opacity: 0.3; pointer-events: none; }
+.editor-player .ep-name { flex: 1; font-size: 14px; }
+.editor-player .ep-price { font-size: 13px; color: #888; }
+.editor-player .ep-check { width: 20px; color: #c084fc; font-weight: 700; }
+
+.confirm-bar { position: sticky; bottom: 0; background: #1a1a2e; border-top: 2px solid #3a3a5e; padding: 12px; display: flex; gap: 8px; }
+.confirm-bar button { flex: 1; padding: 12px; border-radius: 8px; border: none; font-size: 14px; font-weight: 600; cursor: pointer; }
+.confirm-bar .cancel { background: #2a2a3e; color: #888; }
+.confirm-bar .confirm { background: #7b3fa0; color: #fff; }
+.confirm-bar .confirm:disabled { opacity: 0.5; cursor: not-allowed; }
 </style>
 </head>
 <body>
@@ -94,13 +143,27 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 </header>
 
 <div id="app"></div>
+<div id="modal-root"></div>
 
 <script>
-let squads, players, matches;
+const WORKER_URL = 'https://tampionship.tam-floris.workers.dev';
+const BUDGET_MAX = 800;
+
+let squads, players, matches, wildcardData = [];
 let playerPointsMap = {};
 let currentView = 'leaderboard';
 let currentUser = null;
 let currentPlayer = null;
+
+// Auth state
+function getLoggedInEmail() { return localStorage.getItem('tamp_email'); }
+function getLoggedInUser() {
+  const email = getLoggedInEmail();
+  if (!email) return null;
+  return squads?.find(u => u.email && u.email.toLowerCase() === email.toLowerCase());
+}
+function isLoggedIn() { return localStorage.getItem('tamp_auth') === 'ok' && getLoggedInEmail(); }
+function logout() { localStorage.removeItem('tamp_auth'); localStorage.removeItem('tamp_email'); render(); }
 
 async function loadData() {
   [squads, players, matches] = await Promise.all([
@@ -108,8 +171,55 @@ async function loadData() {
     fetch('tampionship_players.json').then(r => r.json()),
     fetch('knltb_matches.json').then(r => r.json()),
   ]);
+  // Load and apply wildcards
+  try {
+    wildcardData = await fetch(WORKER_URL + '/wildcards').then(r => r.json());
+    applyWildcards();
+  } catch(e) { console.warn('Could not load wildcards:', e); }
   processMatches();
   render();
+}
+
+function getNextSaturdayKey(timestamp) {
+  // Given a timestamp (Tue-Fri), return the weekend key of the NEXT Saturday
+  const d = new Date(timestamp);
+  const dow = d.getDay(); // 0=Sun..6=Sat
+  const daysUntilSat = (6 - dow + 7) % 7 || 7; // always next Sat, not today
+  const sat = new Date(d);
+  sat.setDate(d.getDate() + daysUntilSat);
+  return `${sat.getFullYear()}-${sat.getMonth()+1}-${sat.getDate()}`;
+}
+
+function applyWildcards() {
+  for (const wc of wildcardData) {
+    const user = squads.find(u => u.email && u.email.toLowerCase() === wc.email);
+    if (user) {
+      user.wildcardUsed = true;
+      user.wildcardDate = wc.timestamp;
+      user.oldSquad = wc.oldSquad || user.squad;
+      user.squad = wc.newSquad;
+      // Effective from the next Saturday after the wildcard was used
+      user.wildcardWeekendKey = getNextSaturdayKey(wc.timestamp);
+    }
+  }
+}
+
+function getPlayerPointsUpToWeekend(pName, beforeWeekendKey) {
+  // Get points for a player from weekends strictly before the given key
+  const pd = playerPointsMap[pName];
+  if (!pd) return 0;
+  return pd.matchDetails
+    .filter(md => md.counted && md.weekendKey && md.weekendKey < beforeWeekendKey)
+    .reduce((s, md) => s + md.matchTotal, 0);
+}
+
+function getPlayerPointsFromWeekend(pName, fromWeekendKey) {
+  // Get points for a player from weekends >= the given key
+  const pd = playerPointsMap[pName];
+  if (!pd) return 0;
+  return pd.matchDetails
+    .filter(md => md.counted && md.weekendKey && md.weekendKey >= fromWeekendKey)
+    .reduce((s, md) => s + md.matchTotal, 0);
 }
 
 function isPlayed(m) {
@@ -295,16 +405,46 @@ function calculateLeaderboard() {
   const lastWk = getLastWeekendKey();
   const filtered = squads.filter(u => !u.user.match(/\(\d+\)$/));
 
-  // Current standings
+  // Current standings — handle wildcard point splits
   const current = filtered.map(u => {
-    const pts = (u.squad || []).reduce((sum, pName) => sum + (playerPointsMap[pName]?.totalPoints || 0), 0);
-    const lastWkPts = (u.squad || []).reduce((sum, pName) => sum + getPlayerLastWeekendPts(pName, lastWk), 0);
+    let pts, lastWkPts;
+    if (u.wildcardUsed && u.wildcardWeekendKey) {
+      const wcWk = u.wildcardWeekendKey;
+      // Old squad: count points from before wildcard weekend
+      const oldPts = (u.oldSquad || []).reduce((sum, pName) =>
+        sum + getPlayerPointsUpToWeekend(pName, wcWk), 0);
+      // New squad: count points from wildcard weekend onwards
+      const newPts = (u.squad || []).reduce((sum, pName) =>
+        sum + getPlayerPointsFromWeekend(pName, wcWk), 0);
+      pts = oldPts + newPts;
+      // Last weekend delta uses new squad only
+      lastWkPts = (u.squad || []).reduce((sum, pName) => sum + getPlayerLastWeekendPts(pName, lastWk), 0);
+    } else {
+      pts = (u.squad || []).reduce((sum, pName) => sum + (playerPointsMap[pName]?.totalPoints || 0), 0);
+      lastWkPts = (u.squad || []).reduce((sum, pName) => sum + getPlayerLastWeekendPts(pName, lastWk), 0);
+    }
     return { ...u, totalPoints: pts, lastWeekendPts: lastWkPts };
   });
 
   // Previous standings (before last weekend)
   const previous = filtered.map(u => {
-    const pts = (u.squad || []).reduce((sum, pName) => sum + getPlayerPtsExcludingWeekend(pName, lastWk), 0);
+    let pts;
+    if (u.wildcardUsed && u.wildcardWeekendKey) {
+      const wcWk = u.wildcardWeekendKey;
+      const oldPts = (u.oldSquad || []).reduce((sum, pName) =>
+        sum + getPlayerPointsUpToWeekend(pName, wcWk), 0);
+      // For weekends between wildcard and last weekend
+      const newPtsBeforeLast = (u.squad || []).reduce((sum, pName) => {
+        const pd = playerPointsMap[pName];
+        if (!pd) return sum;
+        return sum + pd.matchDetails
+          .filter(md => md.counted && md.weekendKey >= wcWk && md.weekendKey !== lastWk)
+          .reduce((s, md) => s + md.matchTotal, 0);
+      }, 0);
+      pts = oldPts + newPtsBeforeLast;
+    } else {
+      pts = (u.squad || []).reduce((sum, pName) => sum + getPlayerPtsExcludingWeekend(pName, lastWk), 0);
+    }
     return { user: u.user, totalPoints: pts };
   }).sort((a, b) => b.totalPoints - a.totalPoints);
 
@@ -326,15 +466,28 @@ function render() {
   const app = document.getElementById('app');
   const header = document.getElementById('header');
 
+  const loggedIn = isLoggedIn();
+  const loggedUser = getLoggedInUser();
+  let authHtml;
+  if (loggedIn && loggedUser) {
+    const av = loggedUser.avatar ? `<img src="${loggedUser.avatar}" onerror="this.style.display='none'">` : '';
+    authHtml = `<div class="logged-in-badge">${av}<span>${loggedUser.user}</span><button class="logout-btn" onclick="logout()">uitloggen</button></div>`;
+  } else {
+    authHtml = `<button class="login-btn" onclick="showLoginModal()">Inloggen</button>`;
+  }
+
   if (currentView === 'leaderboard') {
-    header.innerHTML = '<h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div>';
+    header.innerHTML = `<h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div>${authHtml}`;
     renderLeaderboard(app);
   } else if (currentView === 'squad') {
-    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Squad</div>`;
+    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Squad</div>${authHtml}`;
     renderSquad(app);
   } else if (currentView === 'breakdown') {
-    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Breakdown</div>`;
+    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Breakdown</div>${authHtml}`;
     renderBreakdown(app);
+  } else if (currentView === 'wildcard') {
+    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Wildcard</div>${authHtml}`;
+    renderWildcardEditor(app);
   }
 }
 
@@ -391,6 +544,16 @@ function renderSquad(app) {
     </div>
     <div class="section-label">Squad</div>`;
 
+  // Calculate points correctly for wildcard users
+  if (user.wildcardUsed && user.wildcardWeekendKey) {
+    const wcWk = user.wildcardWeekendKey;
+    for (const p of squadWithPts) {
+      // New squad players: only count points from wildcard weekend onwards
+      p.points = getPlayerPointsFromWeekend(p.name, wcWk);
+    }
+  }
+  squadWithPts.sort((a, b) => b.points - a.points);
+
   for (const p of squadWithPts) {
     html += `
       <div class="player-row" onclick="showBreakdown('${p.name.replace(/'/g, "\\'")}')">
@@ -399,6 +562,47 @@ function renderSquad(app) {
         <div class="player-points">${p.points}</div>
       </div>`;
   }
+
+  // Show substituted-out players if wildcard was used
+  if (user.wildcardUsed && user.oldSquad) {
+    const removedPlayers = user.oldSquad.filter(name => !user.squad.includes(name));
+    if (removedPlayers.length > 0) {
+      const wcWk = user.wildcardWeekendKey;
+      const subbed = removedPlayers.map(name => {
+        const player = players.find(p => p.name === name);
+        const frozenPts = getPlayerPointsUpToWeekend(name, wcWk);
+        return { name, price: player?.price || 0, points: frozenPts };
+      }).sort((a, b) => b.points - a.points);
+
+      html += '<div class="section-label" style="margin-top:16px;color:#f87171">Gewisseld (punten bevroren)</div>';
+      for (const p of subbed) {
+        html += `
+          <div class="player-row" style="opacity:0.5" onclick="showBreakdown('${p.name.replace(/'/g, "\\'")}')">
+            <div class="player-name">${p.name}</div>
+            <div class="player-price">&euro;${p.price}</div>
+            <div class="player-points">${p.points}</div>
+          </div>`;
+      }
+    }
+  }
+
+  // Wildcard button — only for own squad
+  const loggedUser = getLoggedInUser();
+  if (loggedUser && loggedUser.user === currentUser) {
+    const alreadyUsed = wildcardData.some(wc => wc.email === loggedUser.email.toLowerCase());
+    if (alreadyUsed) {
+      html += '<div class="wildcard-used">Wildcard al gebruikt</div>';
+    } else {
+      const dow = new Date().getDay(); // 0=Sun, 1=Mon, 2=Tue, ..., 5=Fri, 6=Sat
+      const isWildcardWindow = dow >= 2 && dow <= 5; // Tue-Fri
+      if (isWildcardWindow) {
+        html += '<button class="wildcard-btn" onclick="showWildcardEditor()">Wildcard gebruiken</button>';
+      } else {
+        html += '<div class="wildcard-used">Wildcard beschikbaar van dinsdag t/m vrijdag</div>';
+      }
+    }
+  }
+
   app.innerHTML = html;
 }
 
@@ -496,8 +700,209 @@ function showBreakdown(playerName) {
   window.scrollTo(0, 0);
 }
 
+// === Login Modal ===
+function showLoginModal() {
+  const root = document.getElementById('modal-root');
+  root.innerHTML = `
+    <div class="modal-overlay" onclick="if(event.target===this)closeModal()">
+      <div class="modal">
+        <h3>Inloggen</h3>
+        <div id="loginStep1">
+          <input type="email" id="loginEmail" placeholder="E-mailadres" autocomplete="email">
+          <button class="modal-btn" onclick="sendCode()">Code versturen</button>
+        </div>
+        <div id="loginStep2" style="display:none">
+          <p style="color:#888;font-size:13px;margin-bottom:12px;text-align:center">Code verstuurd naar je e-mail</p>
+          <input type="text" id="loginCode" placeholder="6-cijferige code" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
+          <button class="modal-btn" onclick="verifyCode()">Verifiëren</button>
+        </div>
+        <div id="loginError" class="modal-error"></div>
+      </div>
+    </div>`;
+}
+
+function closeModal() {
+  document.getElementById('modal-root').innerHTML = '';
+}
+
+async function sendCode() {
+  const email = document.getElementById('loginEmail').value.toLowerCase().trim();
+  const error = document.getElementById('loginError');
+  if (!email) { error.textContent = 'Vul je e-mailadres in'; return; }
+  const knownEmails = squads.map(u => u.email?.toLowerCase()).filter(Boolean);
+  if (!knownEmails.includes(email)) { error.textContent = 'Dit e-mailadres is niet bekend'; return; }
+  error.textContent = '';
+  const btn = document.querySelector('#loginStep1 .modal-btn');
+  btn.disabled = true; btn.textContent = 'Versturen...';
+  try {
+    const res = await fetch(WORKER_URL + '/send-code', {
+      method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({email})
+    });
+    const data = await res.json();
+    if (data.ok) {
+      document.getElementById('loginStep1').style.display = 'none';
+      document.getElementById('loginStep2').style.display = '';
+    } else { error.textContent = data.error || 'Fout bij versturen'; btn.disabled = false; btn.textContent = 'Code versturen'; }
+  } catch(e) { error.textContent = 'Netwerkfout'; btn.disabled = false; btn.textContent = 'Code versturen'; }
+}
+
+async function verifyCode() {
+  const email = document.getElementById('loginEmail').value.toLowerCase().trim();
+  const code = document.getElementById('loginCode').value.trim();
+  const error = document.getElementById('loginError');
+  if (code.length !== 6) { error.textContent = 'Voer de 6-cijferige code in'; return; }
+  const btn = document.querySelector('#loginStep2 .modal-btn');
+  btn.disabled = true; btn.textContent = 'Verifiëren...';
+  try {
+    const res = await fetch(WORKER_URL + '/verify-code', {
+      method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({email, code})
+    });
+    const data = await res.json();
+    if (data.ok) {
+      localStorage.setItem('tamp_auth', 'ok');
+      localStorage.setItem('tamp_email', email);
+      closeModal();
+      render();
+    } else { error.textContent = data.error || 'Ongeldige code'; btn.disabled = false; btn.textContent = 'Verifiëren'; }
+  } catch(e) { error.textContent = 'Netwerkfout'; btn.disabled = false; btn.textContent = 'Verifiëren'; }
+}
+
+// === Wildcard Editor ===
+let wcSelected = [];
+let wcSearch = '';
+let wcPriceFilter = null;
+
+function showWildcardEditor() {
+  const user = getLoggedInUser();
+  if (!user) return;
+  wcSelected = [...(user.squad || [])];
+  wcSearch = '';
+  wcPriceFilter = null;
+  currentView = 'wildcard';
+  render();
+  window.scrollTo(0, 0);
+}
+
+function renderWildcardEditor(app) {
+  const totalCost = wcSelected.reduce((s, name) => {
+    const p = players.find(x => x.name === name);
+    return s + (p?.price || 0);
+  }, 0);
+  const overBudget = totalCost > BUDGET_MAX;
+  const canConfirm = wcSelected.length === 8 && !overBudget;
+
+  let html = `
+    <div class="squad-header">
+      <h3 style="color:#fff">Nieuwe squad samenstellen</h3>
+      <div class="editor-budget ${overBudget ? 'over' : 'ok'}">&euro;${totalCost} / &euro;${BUDGET_MAX}</div>
+      <div style="color:#888;font-size:12px">${wcSelected.length}/8 spelers geselecteerd</div>
+    </div>
+    <div class="section-label">Geselecteerd</div>`;
+
+  for (const name of wcSelected) {
+    const p = players.find(x => x.name === name);
+    html += `
+      <div class="editor-player selected" onclick="wcToggle('${name.replace(/'/g,"\\'")}')">
+        <div class="ep-check">✓</div>
+        <div class="ep-name">${name}</div>
+        <div class="ep-price">&euro;${p?.price || '?'}</div>
+      </div>`;
+  }
+
+  html += `
+    <div class="section-label">Beschikbare spelers</div>
+    <input class="editor-search" type="text" placeholder="Zoek speler..." value="${wcSearch}" oninput="wcSearch=this.value;renderWildcardEditor(document.getElementById('app'))">
+    <div class="editor-filters">
+      <span class="filter-chip ${wcPriceFilter===null?'active':''}" onclick="wcPriceFilter=null;renderWildcardEditor(document.getElementById('app'))">Alle</span>
+      <span class="filter-chip ${wcPriceFilter===75?'active':''}" onclick="wcPriceFilter=75;renderWildcardEditor(document.getElementById('app'))">&euro;75</span>
+      <span class="filter-chip ${wcPriceFilter===100?'active':''}" onclick="wcPriceFilter=100;renderWildcardEditor(document.getElementById('app'))">&euro;100</span>
+      <span class="filter-chip ${wcPriceFilter===125?'active':''}" onclick="wcPriceFilter=125;renderWildcardEditor(document.getElementById('app'))">&euro;125</span>
+      <span class="filter-chip ${wcPriceFilter===150?'active':''}" onclick="wcPriceFilter=150;renderWildcardEditor(document.getElementById('app'))">&euro;150</span>
+    </div>`;
+
+  const available = players
+    .filter(p => {
+      if (wcSelected.includes(p.name)) return false;
+      if (wcSearch && !p.name.toLowerCase().includes(wcSearch.toLowerCase())) return false;
+      if (wcPriceFilter !== null && p.price !== wcPriceFilter) return false;
+      return true;
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  for (const p of available) {
+    const full = wcSelected.length >= 8;
+    html += `
+      <div class="editor-player${full ? ' disabled' : ''}" onclick="wcToggle('${p.name.replace(/'/g,"\\'")}')">
+        <div class="ep-check"></div>
+        <div class="ep-name">${p.name}</div>
+        <div class="ep-price">&euro;${p.price}</div>
+      </div>`;
+  }
+
+  html += `
+    <div class="confirm-bar">
+      <button class="cancel" onclick="currentView='squad';render()">Annuleren</button>
+      <button class="confirm" ${canConfirm ? '' : 'disabled'} onclick="confirmWildcard()">Bevestigen</button>
+    </div>`;
+
+  app.innerHTML = html;
+}
+
+function wcToggle(name) {
+  const idx = wcSelected.indexOf(name);
+  if (idx >= 0) {
+    wcSelected.splice(idx, 1);
+  } else if (wcSelected.length < 8) {
+    wcSelected.push(name);
+  }
+  renderWildcardEditor(document.getElementById('app'));
+}
+
+async function confirmWildcard() {
+  const totalCost = wcSelected.reduce((s, name) => {
+    const p = players.find(x => x.name === name);
+    return s + (p?.price || 0);
+  }, 0);
+  if (wcSelected.length !== 8 || totalCost > BUDGET_MAX) return;
+
+  const email = getLoggedInEmail();
+  if (!confirm('Weet je zeker dat je je wildcard wilt gebruiken? Dit kan maar 1 keer!')) return;
+
+  try {
+    const user = getLoggedInUser();
+    const oldSquad = [...(user?.squad || [])];
+    const res = await fetch(WORKER_URL + '/use-wildcard', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ email, newSquad: wcSelected, oldSquad })
+    });
+    const data = await res.json();
+    if (data.ok) {
+      // Apply locally
+      const wcEntry = { email: email.toLowerCase(), oldSquad, newSquad: [...wcSelected], timestamp: new Date().toISOString() };
+      wildcardData.push(wcEntry);
+      if (user) {
+        user.oldSquad = oldSquad;
+        user.squad = [...wcSelected];
+        user.wildcardUsed = true;
+        user.wildcardDate = wcEntry.timestamp;
+        user.wildcardWeekendKey = getNextSaturdayKey(wcEntry.timestamp);
+      }
+      processMatches();
+      currentView = 'squad';
+      currentUser = user.user;
+      render();
+      window.scrollTo(0, 0);
+    } else {
+      alert(data.error || 'Fout bij opslaan');
+    }
+  } catch(e) { alert('Netwerkfout'); }
+}
+
+// === Navigation ===
 function goBack() {
-  if (currentView === 'breakdown') {
+  if (currentView === 'wildcard') {
+    currentView = 'squad';
+  } else if (currentView === 'breakdown') {
     currentView = 'squad';
   } else {
     currentView = 'leaderboard';
