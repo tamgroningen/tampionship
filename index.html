@@ -116,6 +116,15 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 .logged-in-badge span { font-size: 11px; color: #888; }
 .logout-btn { background: none; border: none; color: #666; font-size: 10px; cursor: pointer; text-decoration: underline; }
 
+/* Rules button */
+.rules-btn { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: 1px solid #3a3a5e; color: #888; font-size: 11px; cursor: pointer; padding: 4px 10px; border-radius: 6px; }
+.rules-btn:hover { color: #c084fc; border-color: #7b3fa0; }
+.rules-content { padding: 0 4px; }
+.rules-content h4 { color: #c084fc; margin: 12px 0 6px; font-size: 14px; }
+.rules-content table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.rules-content td { padding: 4px 8px; border-bottom: 1px solid #2a2a3e; }
+.rules-content td:last-child { text-align: right; color: #c084fc; font-weight: 600; }
+
 /* Modal */
 .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100; display: flex; align-items: center; justify-content: center; }
 .modal { background: #1a1a2e; border-radius: 12px; padding: 24px; max-width: 400px; width: 90%; }
@@ -520,8 +529,11 @@ function render() {
   // }
 
   if (currentView === 'leaderboard') {
-    header.innerHTML = `<button class="hamburger" onclick="toggleDrawer()">☰</button><h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div>${authHtml}`;
+    header.innerHTML = `<button class="hamburger" onclick="toggleDrawer()">☰</button><h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div><button class="rules-btn" onclick="currentView='rules';render()">Regels</button>${authHtml}`;
     renderLeaderboard(app);
+  } else if (currentView === 'rules') {
+    header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Regels</div>${authHtml}`;
+    renderRules(app);
   } else if (currentView === 'squad') {
     header.innerHTML = `<button class="back-btn" onclick="goBack()">←</button><h1>TAMpionship</h1><div class="subtitle">Squad</div>${authHtml}`;
     renderSquad(app);
@@ -573,6 +585,18 @@ function renderLeaderboard(app) {
   } else {
     html += '<div style="color:#555;font-size:12px">Nog geen data</div>';
   }
+  html += '</div>';
+
+  // MVP
+  const mvps = Object.entries(playerPointsMap)
+    .map(([name, pd]) => ({name, pts: pd.totalPoints}))
+    .filter(p => p.pts > 0)
+    .sort((a, b) => b.pts - a.pts)
+    .slice(0, 3);
+  html += '<div class="mini-board"><h4>MVP Klassement</h4>';
+  mvps.forEach((p, i) => {
+    html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${p.name}</span><span class="mini-value">${p.pts}</span></div>`;
+  });
   html += '</div>';
 
   // Top picks
@@ -804,6 +828,40 @@ function showBreakdown(playerName) {
   window.scrollTo(0, 0);
 }
 
+// === Rules view ===
+function renderRules(app) {
+  app.innerHTML = `
+    <div class="rules-content">
+      <h4>Punten per partij</h4>
+      <table>
+        <tr><td>Gewonnen in straight sets (2-0)</td><td>60</td></tr>
+        <tr><td>Gewonnen (2-1)</td><td>50</td></tr>
+        <tr><td>Verloren maar set gewonnen</td><td>10</td></tr>
+        <tr><td>Walkover winst</td><td>25</td></tr>
+        <tr><td>Verloren zonder set</td><td>0</td></tr>
+      </table>
+      <h4>Bonuspunten</h4>
+      <table>
+        <tr><td>Team wint de wedstrijd</td><td>+10</td></tr>
+        <tr><td>Upset: tegenstander 0-0.5 beter gerankt</td><td>+10</td></tr>
+        <tr><td>Upset: tegenstander 0.5+ beter gerankt</td><td>+20</td></tr>
+      </table>
+      <h4>Regels</h4>
+      <table>
+        <tr><td>Squad grootte</td><td>8 spelers</td></tr>
+        <tr><td>Budget</td><td>&euro;800</td></tr>
+        <tr><td>Meerdere teams in 1 weekend</td><td>Beste telt</td></tr>
+        <tr><td>Weekend</td><td>Za t/m ma</td></tr>
+      </table>
+      <h4>Ratings</h4>
+      <p style="font-size:13px;color:#888;line-height:1.5">
+        Bij een overwinning wordt de KNLTB-rating van beide spelers vergeleken.
+        Bij dubbels wordt het gemiddelde van beide spelers gebruikt.
+        Een lager getal = betere rating. Als je wint van een beter gerankte tegenstander krijg je extra punten.
+      </p>
+    </div>`;
+}
+
 // === Mobile drawer ===
 function toggleDrawer() {
   const existing = document.getElementById('mobileDrawer');
@@ -821,6 +879,16 @@ function toggleDrawer() {
   } else {
     html += '<div style="color:#555;font-size:12px">Nog geen data</div>';
   }
+  // MVP
+  const mvps = Object.entries(playerPointsMap)
+    .map(([name, pd]) => ({name, pts: pd.totalPoints}))
+    .filter(p => p.pts > 0)
+    .sort((a, b) => b.pts - a.pts)
+    .slice(0, 3);
+  html += '</div><div class="mini-board" style="margin-top:12px"><h4>MVP Klassement</h4>';
+  mvps.forEach((p, i) => {
+    html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${p.name}</span><span class="mini-value">${p.pts}</span></div>`;
+  });
   html += '</div><div class="mini-board" style="margin-top:12px"><h4>Top picks</h4>';
   topPicks.forEach((p, i) => {
     html += `<div class="mini-entry"><span class="mini-medal">${medals[i]}</span><span class="mini-name">${p.name}</span><span class="mini-value">${p.count}x</span></div>`;
@@ -1038,6 +1106,8 @@ function goBack() {
     currentView = 'squad';
   } else if (currentView === 'breakdown') {
     currentView = 'squad';
+  } else if (currentView === 'rules') {
+    currentView = 'leaderboard';
   } else {
     currentView = 'leaderboard';
     currentUser = null;
