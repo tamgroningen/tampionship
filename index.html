@@ -428,12 +428,15 @@ function processMatches() {
       byWeekend[key].push(md);
     }
 
-    // For each weekend with multiple matches, mark only the best as counted
+    // For each weekend with multiple matches, only count the first matchday
     for (const [wk, wkMatches] of Object.entries(byWeekend)) {
       if (wkMatches.length > 1) {
-        wkMatches.sort((a, b) => b.matchTotal - a.matchTotal);
+        wkMatches.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+        const firstDate = wkMatches[0].date;
         for (let i = 1; i < wkMatches.length; i++) {
-          wkMatches[i].counted = false;
+          if (wkMatches[i].date !== firstDate) {
+            wkMatches[i].counted = false;
+          }
         }
       }
     }
@@ -782,7 +785,7 @@ function renderBreakdown(app) {
     const dateStr = wkMatches[0]?.date || '';
     const hasMultiple = wkMatches.length > 1;
     if (hasMultiple) {
-      html += `<div class="weekend-label">Weekend ${dateStr}${hasMultiple ? ' — beste telt' : ''}</div>`;
+      html += `<div class="weekend-label">Weekend ${dateStr}${hasMultiple ? ' — eerste speeldag telt' : ''}</div>`;
     }
 
     for (const md of wkMatches) {
@@ -895,7 +898,7 @@ function renderRules(app) {
       <table>
         <tr><td>Squad grootte</td><td>8 spelers</td></tr>
         <tr><td>Budget</td><td>&euro;800</td></tr>
-        <tr><td>Meerdere teams in 1 weekend</td><td>Beste telt</td></tr>
+        <tr><td>Meerdere teams in 1 weekend</td><td>Eerste speeldag telt</td></tr>
         <tr><td>Weekend</td><td>Za t/m ma</td></tr>
       </table>
       <h4>Ratings</h4>
