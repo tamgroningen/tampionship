@@ -3865,15 +3865,23 @@
         "type": "HE1",
         "home": {
           "team": "VAN STARKENBORGH 6",
-          "players": [],
+          "players": [
+            "Bram Bregman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Sybren de Jong"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -3882,15 +3890,23 @@
         "type": "HE2",
         "home": {
           "team": "VAN STARKENBORGH 6",
-          "players": [],
+          "players": [
+            "Maarten van Zijl"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Koen Koppes"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -3899,15 +3915,23 @@
         "type": "HE3",
         "home": {
           "team": "VAN STARKENBORGH 6",
-          "players": [],
+          "players": [
+            "Michel Bron"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Koen van der Put"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -3916,15 +3940,23 @@
         "type": "HE4",
         "home": {
           "team": "VAN STARKENBORGH 6",
-          "players": [],
+          "players": [
+            "Gijs van Houte"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Elon Jagersma"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -3933,15 +3965,27 @@
         "type": "HD1",
         "home": {
           "team": "VAN STARKENBORGH 6",
-          "players": [],
+          "players": [
+            "Bram Bregman",
+            "Michel Bron"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Koen Koppes",
+            "Sybren de Jong"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -3950,15 +3994,27 @@
         "type": "HD2",
         "home": {
           "team": "VAN STARKENBORGH 6",
-          "players": [],
+          "players": [
+            "Gijs van Houte",
+            "Maarten van Zijl"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Elon Jagersma",
+            "Koen van der Put"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
