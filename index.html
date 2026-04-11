@@ -219,7 +219,9 @@ function getNextSaturdayKey(timestamp) {
   const daysUntilSat = (6 - dow + 7) % 7 || 7; // always next Sat, not today
   const sat = new Date(d);
   sat.setDate(d.getDate() + daysUntilSat);
-  return `${sat.getFullYear()}-${sat.getMonth()+1}-${sat.getDate()}`;
+  const mm = String(sat.getMonth()+1).padStart(2,'0');
+  const dd = String(sat.getDate()).padStart(2,'0');
+  return `${sat.getFullYear()}-${mm}-${dd}`;
 }
 
 function applyWildcards() {
@@ -279,7 +281,9 @@ function getWeekendKey(dateStr) {
   if (dow === 0) sat.setDate(d.getDate() - 1);      // Sun -> prev Sat
   else if (dow === 1) sat.setDate(d.getDate() - 2);  // Mon -> prev Sat
   // else it's already Sat (or another day, just use as-is)
-  return `${sat.getFullYear()}-${sat.getMonth()+1}-${sat.getDate()}`;
+  const mm = String(sat.getMonth()+1).padStart(2,'0');
+  const dd = String(sat.getDate()).padStart(2,'0');
+  return `${sat.getFullYear()}-${mm}-${dd}`;
 }
 
 function processMatches() {
