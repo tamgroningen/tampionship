@@ -7419,7 +7419,7 @@
           "won": true,
           "ratings": [
             2.6707,
-            3.6482
+            3.6434
           ]
         },
         "away": {
@@ -17034,7 +17034,7 @@
   {
     "home_team": "TAM 3",
     "away_team": "BEEKHUIZEN 2",
-    "team_score": "10:30",
+    "team_score": "4–4",
     "round": "Ronde 2",
     "league": "",
     "partijen": [
@@ -17042,137 +17042,297 @@
         "type": "DE1",
         "home": {
           "team": "TAM 3",
-          "players": [],
+          "players": [
+            "Eline Drent"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.9236
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Maren Colenbrander"
+          ],
+          "won": true,
+          "ratings": [
+            3.5224
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "4-6 4-6"
       },
       {
         "type": "DE2",
         "home": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jildou Anna Boersma"
+          ],
+          "won": true,
+          "ratings": [
+            4.3169
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
+          "players": [
+            "Elze Groenenboom"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.7018
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-4 6-3"
       },
       {
         "type": "HE1",
         "home": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Job Weening"
+          ],
+          "won": true,
+          "ratings": [
+            2.6805
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
+          "players": [
+            "Sven Kerkhoffs"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.8935
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "3-6 7-6 6-2"
       },
       {
         "type": "HE2",
         "home": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Friso Luijkx"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
+          "players": [
+            "Tijn Boelhouwer"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "7-5 0-6 6-4"
       },
       {
         "type": "DD1",
         "home": {
           "team": "TAM 3",
-          "players": [],
+          "players": [
+            "Celest Bergsma",
+            "Jildou Anna Boersma"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.6434,
+            3.5783
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Floor Lissone",
+            "Britt Donders"
+          ],
+          "won": true,
+          "ratings": [
+            2.4668,
+            3.5982
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "0-6 4-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "TAM 3",
-          "players": [],
+          "players": [
+            "Stan Koning",
+            "Friso Luijkx"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.1999,
+            3.9397
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sven Kerkhoffs",
+            "Jaylon Docter"
+          ],
+          "won": true,
+          "ratings": [
+            3.0465,
+            4.1834
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            7
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "6-7 4-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Celest Bergsma",
+            "Job Weening"
+          ],
+          "won": true,
+          "ratings": [
+            3.7089,
+            2.9969
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
+          "players": [
+            "Bram van de Kamp",
+            "Britt Donders"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.6324,
+            3.5327
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "set_scores": "6-3 7-5"
       },
       {
         "type": "GD2",
         "home": {
           "team": "TAM 3",
-          "players": [],
+          "players": [
+            "Stan Koning",
+            "Eline Drent"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.3436,
+            3.2149
+          ]
         },
         "away": {
           "team": "BEEKHUIZEN 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Floor Lissone",
+            "Jaylon Docter"
+          ],
+          "won": true,
+          "ratings": [
+            2.4013,
+            4.0397
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "3-6 4-6"
       }
     ],
     "tam_team": "",
