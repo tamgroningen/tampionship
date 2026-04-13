@@ -39,6 +39,7 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 /* Squad view */
 .squad-header { text-align: center; padding: 20px 16px; }
 .squad-header h2 { font-size: 22px; color: #fff; }
+.squad-header h2 .squad-header-rank { color: #c084fc; font-weight: 700; margin-right: 4px; }
 .squad-header .total { font-size: 28px; color: #c084fc; font-weight: 700; margin-top: 4px; }
 .squad-header .total span { font-size: 14px; color: #888; }
 
@@ -757,6 +758,11 @@ function renderSquad(app) {
   const avatarUrl = userObj?.avatar || '';
   const avatarImg = avatarUrl ? `<img class="avatar-large" src="${avatarUrl}" onerror="this.style.display='none'">` : '';
 
+  // Current rank (matches the leaderboard order, including wildcard logic)
+  const lb = calculateLeaderboard();
+  const rankIdx = lb.findIndex(e => e.user === currentUser);
+  const rankPrefix = rankIdx >= 0 ? `<span class="squad-header-rank">#${rankIdx + 1}</span> ` : '';
+
   // Rank timeline — one pill per weekend played, with delta vs previous weekend.
   const rankHist = getUserRankPerWeekend(currentUser);
   const MONTHS_NL_SHORT = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
@@ -787,7 +793,7 @@ function renderSquad(app) {
   let html = `
     <div class="squad-header">
       ${avatarImg}
-      <h2>${currentUser}</h2>
+      <h2>${rankPrefix}${currentUser}</h2>
       <div class="total">${totalPts} <span>punten</span></div>
     </div>
     ${timelineHtml}
