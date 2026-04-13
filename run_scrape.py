@@ -297,8 +297,13 @@ def build_rating_history(session, all_matches):
 
 
 def build_rating_lookup(session, all_matches):
-    """Build a rating lookup from all unique players in TAM matches."""
-    # Collect all unique player names from TAM sides
+    """Build a rating lookup for all TAM players.
+
+    Only TAM players are queried directly. Opponent ratings are captured as
+    a side effect: fetch_rating_matches returns both sides of each match, and
+    the opponent-storing branch below keys them by (match_type, round). So
+    opponents get full coverage without us needing to search for their UUIDs.
+    """
     all_player_names = set()
     for match in all_matches:
         for partij in match["partijen"]:
@@ -307,11 +312,8 @@ def build_rating_lookup(session, all_matches):
                 if side.get("team", "").startswith("TAM"):
                     for pname in side.get("players", []):
                         all_player_names.add(pname)
-                # Also collect opponent names
-                for pname in side.get("players", []):
-                    all_player_names.add(pname)
 
-    print(f"\nFetching ratings for {len(all_player_names)} unique players...")
+    print(f"\nFetching ratings for {len(all_player_names)} TAM players...")
 
     # player_name -> {(match_type, round) -> rating}
     rating_lookup = {}
