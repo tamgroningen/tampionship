@@ -838,12 +838,9 @@ function drawRatingChart(canvasId, playerName, matchDetails, mode) {
   const rRange = maxR - minR || 1;
   const n = points.length;
 
-  // Time-linear X: left edge = 52 weeks ago, right edge = today
-  const tMin = startTime;
-  const tMax = endTime;
-  const tRange = tMax - tMin;
-  const xt = t => pad.left + ((t - tMin) / tRange) * cW;
-  const xi = i => xt(points[i].date.getTime());
+  // Evenly spaced X by index (so dense match weeks don't overlap),
+  // but data is already clipped to the trailing 52 weeks.
+  const xi = i => pad.left + (n === 1 ? cW / 2 : (i / (n - 1)) * cW);
   const y = r => pad.top + ((r - minR) / rRange) * cH; // lower rating = top
 
   // Grid lines & Y labels
@@ -859,29 +856,21 @@ function drawRatingChart(canvasId, playerName, matchDetails, mode) {
     ctx.fillText(r.toFixed(1), pad.left - 6, yy + 4);
   }
 
-  // X labels — one tick per month boundary inside the window.
-  // Thin them out so labels don't overlap on narrow canvases.
+  // X labels — label the first point whose month differs from the previous one,
+  // so each label sits on a real data point at the month it represents.
   const MONTHS_NL = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
   ctx.textAlign = 'center';
   ctx.fillStyle = '#666';
-  const firstMonth = new Date(tMin);
-  firstMonth.setDate(1);
-  firstMonth.setHours(0,0,0,0);
-  if (firstMonth.getTime() < tMin) firstMonth.setMonth(firstMonth.getMonth() + 1);
-  const ticks = [];
-  for (let d = new Date(firstMonth); d.getTime() <= tMax; d.setMonth(d.getMonth() + 1)) {
-    ticks.push(new Date(d));
+  const monthStartIdx = [0];
+  for (let i = 1; i < n; i++) {
+    if (points[i].date.getMonth() !== points[i - 1].date.getMonth()) monthStartIdx.push(i);
   }
-  // Aim for ~6 labels max — stride through the ticks evenly.
-  const stride = Math.max(1, Math.ceil(ticks.length / 6));
-  for (let i = 0; i < ticks.length; i += stride) {
-    const d = ticks[i];
-    const label = MONTHS_NL[d.getMonth()];
-    const px = xt(d.getTime());
-    // subtle tick mark
-    ctx.strokeStyle = 'rgba(255,255,255,0.06)';
-    ctx.beginPath(); ctx.moveTo(px, pad.top); ctx.lineTo(px, H - pad.bottom); ctx.stroke();
-    ctx.fillText(label, px, H - 4);
+  // Thin out to avoid crowding on narrow canvases.
+  const stride = Math.max(1, Math.ceil(monthStartIdx.length / 6));
+  for (let k = 0; k < monthStartIdx.length; k += stride) {
+    const idx = monthStartIdx[k];
+    const label = MONTHS_NL[points[idx].date.getMonth()];
+    ctx.fillText(label, xi(idx), H - 4);
   }
 
   // Line
