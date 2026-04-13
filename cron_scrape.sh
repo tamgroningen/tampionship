@@ -15,8 +15,12 @@ if git diff --quiet knltb_matches.json player_ratings.json 2>/dev/null; then
 else
   git add knltb_matches.json player_ratings.json
   git commit -m "Update match data $(date '+%Y-%m-%d %H:%M')"
-  git push >> "$LOG" 2>&1
-  echo "Pushed to GitHub" >> "$LOG"
+  git pull --rebase >> "$LOG" 2>&1
+  if git push >> "$LOG" 2>&1; then
+    echo "Pushed to GitHub" >> "$LOG"
+  else
+    echo "Push failed" >> "$LOG"
+  fi
 fi
 
 echo "" >> "$LOG"
