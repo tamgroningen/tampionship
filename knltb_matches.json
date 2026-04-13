@@ -10211,7 +10211,7 @@
           ],
           "won": true,
           "ratings": [
-            5.6657,
+            5.7951,
             7.8081
           ]
         },
@@ -22243,7 +22243,7 @@
   {
     "home_team": "TAM 8",
     "away_team": "VAN STARKENBORGH 2",
-    "team_score": "15:00",
+    "team_score": "3–2",
     "round": "Ronde 2",
     "league": "",
     "partijen": [
@@ -22251,86 +22251,191 @@
         "type": "DE1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ayana Werners"
+          ],
+          "won": true,
+          "ratings": [
+            6.8306
+          ]
         },
         "away": {
           "team": "VAN STARKENBORGH 2",
-          "players": [],
+          "players": [
+            "Guusje van Onsenoord"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.3283
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-2 6-3"
       },
       {
         "type": "HE1",
         "home": {
           "team": "TAM 8",
-          "players": [],
+          "players": [
+            "Bote Spijkerman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.5339
+          ]
         },
         "away": {
           "team": "VAN STARKENBORGH 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sascha de Haan"
+          ],
+          "won": true,
+          "ratings": [
+            6.2557
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            7
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "6-7 2-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Laurens Elderhorst",
+            "Meike van Riet"
+          ],
+          "won": true,
+          "ratings": [
+            6.9634,
+            7.1359
+          ]
         },
         "away": {
           "team": "VAN STARKENBORGH 2",
-          "players": [],
+          "players": [
+            "Maarten Neeb",
+            "Tanja Sipman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.549,
+            6.4227
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            12,
+            10
+          ]
+        ],
+        "set_scores": "4-6 6-4 12-10"
       },
       {
         "type": "DD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ayana Werners",
+            "Meike van Riet"
+          ],
+          "won": true,
+          "ratings": [
+            7.5187,
+            6.8898
+          ]
         },
         "away": {
           "team": "VAN STARKENBORGH 2",
-          "players": [],
+          "players": [
+            "Guusje van Onsenoord",
+            "Tanja Sipman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.4146,
+            6.6688
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "set_scores": "6-3 6-1"
       },
       {
         "type": "HD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
+          "players": [
+            "Bote Spijkerman",
+            "Laurens Elderhorst"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.126,
+            6.7173
+          ]
         },
         "away": {
           "team": "VAN STARKENBORGH 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Maarten Neeb",
+            "Sascha de Haan"
+          ],
+          "won": true,
+          "ratings": [
+            5.7951,
+            6.1531
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            4,
+            10
+          ]
+        ],
+        "set_scores": "6-3 1-6 4-10"
       }
     ],
     "tam_team": "",
