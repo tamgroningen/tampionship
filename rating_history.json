@@ -12882,6 +12882,102 @@
       }
     ]
   },
+  "Sven van Dijk": {
+    "singles": [
+      {
+        "date": "6-4-2025",
+        "rating": 2.7469,
+        "won": true
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 2.7339,
+        "won": true
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 2.6448,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.5361,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 2.5043,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 2.4412,
+        "won": false
+      },
+      {
+        "date": "30-6-2025",
+        "rating": 2.5167,
+        "won": false
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 2.7378,
+        "won": false
+      },
+      {
+        "date": "9-7-2025",
+        "rating": 2.7734,
+        "won": false
+      },
+      {
+        "date": "10-7-2025",
+        "rating": 2.9175,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 3.0911,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.9849,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "6-4-2025",
+        "rating": 2.4288,
+        "won": false
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 2.7007,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.6791,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 2.652,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 2.7119,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.6439,
+        "won": true
+      }
+    ]
+  },
   "Sybren de Jong": {
     "singles": [
       {

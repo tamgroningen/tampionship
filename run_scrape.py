@@ -13,6 +13,14 @@ SEASON_ID = "5a8eec57-21ad-45d2-aba7-e2ee142cce81"
 PREV_SEASON_ID = "4dcf0a0d-611a-4df0-8e14-7338c40ecbc6"  # 24/25
 RATING_CODE = "55d9ce5f-ff55-4f1f-99dc-bc1469c41544"
 
+# Players who play for TAM but whose home club is elsewhere.
+# search_player_uuid prefers the TAM-club match, so for these players it would
+# otherwise fall back to the first unrelated result. Add name -> UUID here to
+# pin the correct player.
+PLAYER_UUID_OVERRIDES = {
+    "Sven van Dijk": "D6FE4FDA-BBF7-4328-A4D7-27F2B0203762",  # L.T.C. Aloe
+}
+
 # All 23 TAM teams from the club page
 TAM_TEAM_IDS = [
     6923, 7026, 5750, 6135, 6749,         # Heren Zaterdag
@@ -131,7 +139,13 @@ def parse_team_match(session, path):
 # Rating scraping
 # ------------------------------------------------------------------
 def search_player_uuid(session, name):
-    """Search for a player and return UUID, preferring TAM members."""
+    """Search for a player and return UUID, preferring TAM members.
+
+    For players with an explicit override (e.g. TAM players registered at
+    another home club), return the pinned UUID without searching.
+    """
+    if name in PLAYER_UUID_OVERRIDES:
+        return PLAYER_UUID_OVERRIDES[name]
     resp = session.get(f"{BASE}/find/player/DoSearch", params={"Page": 1, "SportID": 0, "Query": name},
                        headers={"X-Requested-With": "XMLHttpRequest"}, timeout=15)
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -145,7 +159,13 @@ def search_player_uuid(session, name):
         club = club_el.get_text(strip=True) if club_el else ""
         results.append({"uuid": uuid, "club": club})
     tam = next((r for r in results if "tam" in r["club"].lower()), None)
-    return (tam or results[0])["uuid"] if results else None
+    if tam:
+        return tam["uuid"]
+    # No TAM-club hit: refuse to guess. Returning a random first result silently
+    # pollutes rating data with the wrong person's history.
+    if results:
+        print(f"WARN: no TAM club match for {name!r}; add to PLAYER_UUID_OVERRIDES if needed", flush=True)
+    return None
 
 
 def fetch_rating_matches(session, player_uuid, ranktype):
@@ -251,6 +271,9 @@ def build_rating_history(session, all_matches):
                     player_history[key].extend(pts)
                     time.sleep(0.1)
             # Deduplicate and sort by date
+            def _date_key(p):
+                d, m, y = p["date"].split("-")
+                return (int(y), int(m), int(d))
             for key in ["singles", "doubles"]:
                 seen = set()
                 deduped = []
@@ -259,7 +282,7 @@ def build_rating_history(session, all_matches):
                     if k not in seen:
                         seen.add(k)
                         deduped.append(p)
-                deduped.sort(key=lambda p: p["date"].split("-")[::-1])
+                deduped.sort(key=_date_key)
                 player_history[key] = deduped
 
             total = len(player_history["singles"]) + len(player_history["doubles"])
