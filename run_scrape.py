@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 BASE = "https://mijnknltb.toernooi.nl"
 LEAGUE_ID = "4F146D7E-2C0C-45ED-BD0D-C1707F7C820F"
 SEASON_ID = "5a8eec57-21ad-45d2-aba7-e2ee142cce81"
+PREV_SEASON_ID = "4dcf0a0d-611a-4df0-8e14-7338c40ecbc6"  # 24/25
 RATING_CODE = "55d9ce5f-ff55-4f1f-99dc-bc1469c41544"
 
 # All 23 TAM teams from the club page
@@ -184,6 +185,94 @@ def fetch_rating_matches(session, player_uuid, ranktype):
     return matches
 
 
+def fetch_rating_history(session, player_uuid, player_name, ranktype, season_id):
+    """Fetch rating match list with dates for a player in a given season."""
+    url = f"{BASE}/player-profile/{player_uuid}/rating/{season_id}/RatingMatchList"
+    params = {"RatingCode": RATING_CODE, "ranktype": ranktype}
+    resp = session.get(url, params=params, headers={"X-Requested-With": "XMLHttpRequest"}, timeout=15)
+    if resp.status_code != 200:
+        return []
+    soup = BeautifulSoup(resp.text, "html.parser")
+    points = []
+    for item in soup.select('.match-group__item'):
+        # Parse date
+        date_elem = item.select_one(".match__footer .icon-clock + .nav-link__value")
+        if not date_elem:
+            continue
+        date_text = date_elem.get_text(strip=True)
+        parts = date_text.split(" ", 1)
+        date_str = parts[1] if len(parts) == 2 else parts[0]
+
+        # Parse player rating and win/loss
+        rows = item.select('.match__row')
+        for row in rows:
+            all_names = [p.get_text(strip=True) for p in row.select('.match__row-title-value-content')]
+            clean_names = [re.sub(r'\s*\([\d,.]+\)', '', n).strip() for n in all_names]
+            if player_name not in clean_names:
+                continue
+            idx = clean_names.index(player_name)
+            rm = re.search(r'\((\d+[,.]\d+)\)', all_names[idx])
+            if not rm:
+                continue
+            rating = float(rm.group(1).replace(',', '.'))
+            won = bool(row.select_one('.tag--success'))
+            points.append({"date": date_str, "rating": rating, "won": won})
+            break
+    return points
+
+
+def build_rating_history(session, all_matches):
+    """Build 52-week rating history for all TAM players."""
+    # Collect unique TAM player names
+    tam_players = set()
+    for match in all_matches:
+        for partij in match["partijen"]:
+            for side_key in ["home", "away"]:
+                side = partij.get(side_key, {})
+                if side.get("team", "").startswith("TAM"):
+                    for pname in side.get("players", []):
+                        tam_players.add(pname)
+
+    print(f"\nFetching rating history for {len(tam_players)} TAM players...")
+    history = {}
+
+    for i, name in enumerate(sorted(tam_players)):
+        print(f"  [{i+1}/{len(tam_players)}] {name}...", end=" ", flush=True)
+        try:
+            uuid = search_player_uuid(session, name)
+            if not uuid:
+                print("not found")
+                continue
+
+            player_history = {"singles": [], "doubles": []}
+            for ranktype, key in [(1, "singles"), (2, "doubles")]:
+                for sid in [SEASON_ID, PREV_SEASON_ID]:
+                    pts = fetch_rating_history(session, uuid, name, ranktype, sid)
+                    player_history[key].extend(pts)
+                    time.sleep(0.1)
+            # Deduplicate and sort by date
+            for key in ["singles", "doubles"]:
+                seen = set()
+                deduped = []
+                for p in player_history[key]:
+                    k = (p["date"], p["rating"])
+                    if k not in seen:
+                        seen.add(k)
+                        deduped.append(p)
+                deduped.sort(key=lambda p: p["date"].split("-")[::-1])
+                player_history[key] = deduped
+
+            total = len(player_history["singles"]) + len(player_history["doubles"])
+            if total > 0:
+                history[name] = player_history
+            print(f"{len(player_history['singles'])}S {len(player_history['doubles'])}D")
+        except Exception as e:
+            print(f"error: {e}")
+        time.sleep(0.15)
+
+    return history
+
+
 def build_rating_lookup(session, all_matches):
     """Build a rating lookup from all unique players in TAM matches."""
     # Collect all unique player names from TAM sides
@@ -305,6 +394,11 @@ def main():
     enrich_matches_with_ratings(all_matches, rating_lookup)
     print(f"Ratings enriched ({time.time()-t:.1f}s)")
 
+    # Step 5: Fetch 52-week rating history for TAM players
+    t = time.time()
+    rating_history = build_rating_history(session, all_matches)
+    print(f"Rating history fetched ({time.time()-t:.1f}s)")
+
     # Save
     out_path = os.path.join(script_dir, "knltb_matches.json")
     with open(out_path, "w") as f:
@@ -312,10 +406,14 @@ def main():
 
     # Also save rating lookup for reference
     rating_path = os.path.join(script_dir, "player_ratings.json")
-    # Convert tuple keys to strings for JSON
     serializable = {name: ratings for name, ratings in rating_lookup.items()}
     with open(rating_path, "w") as f:
         json.dump(serializable, f, indent=2, ensure_ascii=False)
+
+    # Save rating history
+    history_path = os.path.join(script_dir, "rating_history.json")
+    with open(history_path, "w") as f:
+        json.dump(rating_history, f, indent=2, ensure_ascii=False)
 
     total_partijen = sum(len(m["partijen"]) for m in all_matches)
     elapsed = time.time() - start_time

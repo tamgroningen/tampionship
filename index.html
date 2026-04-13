@@ -86,6 +86,14 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 
 .weekend-label { padding: 12px 16px 4px; font-size: 12px; color: #c084fc; text-transform: uppercase; letter-spacing: 1px; border-top: 1px solid #2a2a3e; margin-top: 12px; }
 
+.rating-chart-container { margin: 12px 0 16px; background: #1a1a2e; border-radius: 12px; padding: 16px 12px 12px; border: 1px solid #2a2a3e; }
+.rating-chart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.rating-chart-header h3 { font-size: 13px; color: #c084fc; letter-spacing: 1px; text-transform: uppercase; margin: 0; }
+.rating-tabs { display: flex; gap: 4px; }
+.rating-tab { background: #2a2a3e; border: 1px solid #3a3a5e; color: #888; font-size: 11px; padding: 4px 12px; border-radius: 6px; cursor: pointer; transition: all 0.2s; }
+.rating-tab.active { background: #3a2a5e; border-color: #7b3fa0; color: #c084fc; }
+.rating-chart-container canvas { width: 100%; height: 180px; display: block; }
+
 .section-label { padding: 12px 16px 4px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
 
 /* Mini leaderboards */
@@ -182,6 +190,7 @@ const WORKER_URL = 'https://tampionship.tam-floris.workers.dev';
 const BUDGET_MAX = 800;
 
 let squads, players, matches, wildcardData = [];
+let ratingHistory = {};
 let playerPointsMap = {};
 let currentView = 'leaderboard';
 let currentUser = null;
@@ -198,10 +207,11 @@ function isLoggedIn() { return localStorage.getItem('tamp_auth') === 'ok' && get
 function logout() { localStorage.removeItem('tamp_auth'); localStorage.removeItem('tamp_email'); render(); }
 
 async function loadData() {
-  [squads, players, matches] = await Promise.all([
+  [squads, players, matches, ratingHistory] = await Promise.all([
     fetch('tampionship_squads.json').then(r => r.json()),
     fetch('tampionship_players.json').then(r => r.json()),
     fetch('knltb_matches.json').then(r => r.json()),
+    fetch('rating_history.json').then(r => r.json()).catch(() => ({})),
   ]);
   // Load and apply wildcards
   try {
@@ -387,11 +397,14 @@ function processMatches() {
           if (!playerMatchData[pName]) {
             playerMatchData[pName] = { side, partijen: [], teamWinBonus: false };
           }
+          const myIndex = data.players.indexOf(pName);
+          const myRating = (data.ratings && myIndex >= 0) ? data.ratings[myIndex] : null;
           playerMatchData[pName].partijen.push({
             type: partij.type, sets: partij.sets, setScores: partij.set_scores,
             won: isWinner, points: pts, breakdown,
             reason: isWinner ? (breakdown.straightSets ? 'straight' : 'win') : (breakdown.setsWon > 0 ? 'partial' : 'loss'),
             myRatings: data.ratings || [],
+            myRating,
             oppRatings: oppSide.ratings || [],
             opponent: oppSide,
             partner: data.players.length > 1 ? data.players.filter(n => n !== pName) : [],
@@ -759,6 +772,129 @@ function renderSquad(app) {
   app.innerHTML = html;
 }
 
+function isSinglesType(type) {
+  return /^(HE|DE)\d/i.test(type);
+}
+function isDoublesType(type) {
+  return /^(HD|DD|GD)\d/i.test(type);
+}
+
+function drawRatingChart(canvasId, playerName, matchDetails, mode) {
+  // Try rating_history.json first (52-week history), fall back to match data
+  const histKey = mode === 'doubles' ? 'doubles' : 'singles';
+  const histData = ratingHistory[playerName]?.[histKey];
+  const points = [];
+
+  if (histData && histData.length > 0) {
+    for (const h of histData) {
+      const d = parseDate(h.date);
+      if (!d) continue;
+      points.push({ date: d, rating: h.rating, won: h.won, dateStr: h.date });
+    }
+  } else {
+    // Fallback: extract from match details
+    const filterFn = mode === 'doubles' ? isDoublesType : isSinglesType;
+    for (const md of matchDetails) {
+      const d = parseDate(md.date);
+      if (!d) continue;
+      for (const p of md.partijen) {
+        if (!filterFn(p.type)) continue;
+        const rating = p.myRating;
+        if (rating == null) continue;
+        points.push({ date: d, rating, won: p.won, dateStr: md.date });
+      }
+    }
+  }
+  if (points.length < 2) return;
+  points.sort((a, b) => a.date - b.date);
+
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+
+  const pad = { top: 16, right: 12, bottom: 28, left: 40 };
+  const cW = W - pad.left - pad.right;
+  const cH = H - pad.top - pad.bottom;
+
+  // Rating axis is inverted (lower = better)
+  const ratings = points.map(p => p.rating);
+  const minR = Math.floor(Math.min(...ratings) * 2) / 2;
+  const maxR = Math.ceil(Math.max(...ratings) * 2) / 2;
+  const rRange = maxR - minR || 1;
+  const n = points.length;
+
+  // Evenly spaced X by index (no time gaps)
+  const xi = i => pad.left + (i / (n - 1)) * cW;
+  const y = r => pad.top + ((r - minR) / rRange) * cH; // lower rating = top
+
+  // Grid lines & Y labels
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+  ctx.lineWidth = 1;
+  ctx.fillStyle = '#666';
+  ctx.font = '11px -apple-system, sans-serif';
+  ctx.textAlign = 'right';
+  const step = rRange <= 2 ? 0.5 : 1;
+  for (let r = minR; r <= maxR + 0.01; r += step) {
+    const yy = y(r);
+    ctx.beginPath(); ctx.moveTo(pad.left, yy); ctx.lineTo(W - pad.right, yy); ctx.stroke();
+    ctx.fillText(r.toFixed(1), pad.left - 6, yy + 4);
+  }
+
+  // X labels — evenly spaced, picking ~6 data points
+  ctx.textAlign = 'center';
+  const maxLabels = Math.min(6, n);
+  for (let j = 0; j < maxLabels; j++) {
+    const idx = Math.round(j * (n - 1) / (maxLabels - 1));
+    const parts = points[idx].dateStr.split('-');
+    ctx.fillText(`${parts[0]}/${parts[1]}`, xi(idx), H - 4);
+  }
+
+  // Line
+  ctx.beginPath();
+  ctx.strokeStyle = 'rgba(192, 132, 252, 0.9)';
+  ctx.lineWidth = 2.5;
+  ctx.lineJoin = 'round';
+  for (let i = 0; i < n; i++) {
+    const px = xi(i), py = y(points[i].rating);
+    i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+  }
+  ctx.stroke();
+
+  // Dots — green for win, red for loss
+  for (let i = 0; i < n; i++) {
+    const px = xi(i), py = y(points[i].rating);
+    ctx.beginPath();
+    ctx.arc(px, py, 4, 0, Math.PI * 2);
+    ctx.fillStyle = points[i].won ? '#4ade80' : '#f87171';
+    ctx.fill();
+    ctx.strokeStyle = '#1a1a2e';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+  }
+
+  // Best rating indicator
+  let bestIdx = 0;
+  for (let i = 1; i < n; i++) { if (points[i].rating < points[bestIdx].rating) bestIdx = i; }
+  const bx = xi(bestIdx), by = y(points[bestIdx].rating);
+  ctx.beginPath();
+  ctx.arc(bx, by, 6, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(192, 132, 252, 0.4)';
+  ctx.fill();
+  ctx.strokeStyle = '#c084fc';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = '#c084fc';
+  ctx.font = 'bold 10px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(points[bestIdx].rating.toFixed(2), bx, by - 10);
+}
+
 function renderBreakdown(app) {
   const pd = playerPointsMap[currentPlayer];
   if (!pd) {
@@ -771,6 +907,25 @@ function renderBreakdown(app) {
       <h2>${currentPlayer}</h2>
       <div class="total">${pd.totalPoints} punten</div>
     </div>`;
+
+  // Rating chart with singles/doubles tabs
+  const hist = ratingHistory[currentPlayer];
+  const hasSinglesRatings = (hist?.singles?.length >= 2) || pd.matchDetails.some(md => md.partijen?.some(p => isSinglesType(p.type) && p.myRating != null));
+  const hasDoublesRatings = (hist?.doubles?.length >= 2) || pd.matchDetails.some(md => md.partijen?.some(p => isDoublesType(p.type) && p.myRating != null));
+  const hasRatings = hasSinglesRatings || hasDoublesRatings;
+  const defaultTab = hasSinglesRatings ? 'singles' : 'doubles';
+  if (hasRatings) {
+    html += `<div class="rating-chart-container">
+      <div class="rating-chart-header">
+        <h3>Rating verloop (52 weken)</h3>
+        <div class="rating-tabs">
+          ${hasSinglesRatings ? `<button class="rating-tab${defaultTab === 'singles' ? ' active' : ''}" data-mode="singles">Enkel</button>` : ''}
+          ${hasDoublesRatings ? `<button class="rating-tab${defaultTab === 'doubles' ? ' active' : ''}" data-mode="doubles">Dubbel</button>` : ''}
+        </div>
+      </div>
+      <canvas id="ratingChart"></canvas>
+    </div>`;
+  }
 
   if (pd.matchDetails.length === 0) {
     html += '<div class="no-matches">Nog geen wedstrijden gespeeld</div>';
@@ -862,6 +1017,18 @@ function renderBreakdown(app) {
   }
 
   app.innerHTML = html;
+  if (hasRatings) {
+    const tabs = app.querySelectorAll('.rating-tab');
+    const drawChart = (mode) => drawRatingChart('ratingChart', currentPlayer, pd.matchDetails, mode);
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        drawChart(tab.dataset.mode);
+      });
+    });
+    requestAnimationFrame(() => drawChart(defaultTab));
+  }
 }
 
 function showSquad(userName) {
