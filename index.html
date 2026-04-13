@@ -266,6 +266,54 @@ function getPlayerPointsFromWeekend(pName, fromWeekendKey) {
     .reduce((s, md) => s + md.matchTotal, 0);
 }
 
+function getPlayerPointsThroughWeekend(pName, thruWeekendKey) {
+  // Points for a player from weekends <= the given key (inclusive)
+  const pd = playerPointsMap[pName];
+  if (!pd) return 0;
+  return pd.matchDetails
+    .filter(md => md.counted && md.weekendKey && md.weekendKey <= thruWeekendKey)
+    .reduce((s, md) => s + md.matchTotal, 0);
+}
+
+function getUserPointsThroughWeekend(user, wkInclusive) {
+  // Total squad points for a user through (and including) the given weekend.
+  // Mirrors the wildcard logic in calculateLeaderboard().
+  if (user.wildcardUsed && user.wildcardWeekendKey) {
+    const wcWk = user.wildcardWeekendKey;
+    const oldPts = (user.oldSquad || []).reduce((sum, pName) => {
+      const pd = playerPointsMap[pName];
+      if (!pd) return sum;
+      return sum + pd.matchDetails
+        .filter(md => md.counted && md.weekendKey && md.weekendKey < wcWk && md.weekendKey <= wkInclusive)
+        .reduce((s, md) => s + md.matchTotal, 0);
+    }, 0);
+    const newPts = (user.squad || []).reduce((sum, pName) => {
+      const pd = playerPointsMap[pName];
+      if (!pd) return sum;
+      return sum + pd.matchDetails
+        .filter(md => md.counted && md.weekendKey && md.weekendKey >= wcWk && md.weekendKey <= wkInclusive)
+        .reduce((s, md) => s + md.matchTotal, 0);
+    }, 0);
+    return oldPts + newPts;
+  }
+  return (user.squad || []).reduce((sum, pName) => sum + getPlayerPointsThroughWeekend(pName, wkInclusive), 0);
+}
+
+function calculateRankHistory() {
+  // [{weekendKey, ranks: {user -> rank}, points: {user -> pts}}] over all weekends asc
+  const weekends = getAllWeekendKeys();
+  const users = squads.filter(u => !u.user.match(/\(\d+\)$/));
+  const history = [];
+  for (const wk of weekends) {
+    const ptsList = users.map(u => ({ user: u.user, points: getUserPointsThroughWeekend(u, wk) }));
+    ptsList.sort((a, b) => b.points - a.points);
+    const ranks = {}, points = {};
+    ptsList.forEach((e, i) => { ranks[e.user] = i + 1; points[e.user] = e.points; });
+    history.push({ weekendKey: wk, ranks, points });
+  }
+  return history;
+}
+
 function isPlayed(m) {
   return /^\d+\s*[–-]\s*\d+$/.test(m.team_score);
 }
@@ -702,12 +750,24 @@ function renderSquad(app) {
   const avatarUrl = userObj?.avatar || '';
   const avatarImg = avatarUrl ? `<img class="avatar-large" src="${avatarUrl}" onerror="this.style.display='none'">` : '';
 
+  // Rank history chart — only meaningful once at least 2 weekends have been played
+  const weekendsPlayed = getAllWeekendKeys().length;
+  const rankChartHtml = weekendsPlayed >= 2
+    ? `<div class="rating-chart-container">
+         <div class="rating-chart-header">
+           <h3>Klassement verloop</h3>
+         </div>
+         <canvas id="rankChart"></canvas>
+       </div>`
+    : '';
+
   let html = `
     <div class="squad-header">
       ${avatarImg}
       <h2>${currentUser}</h2>
       <div class="total">${totalPts} <span>punten</span></div>
     </div>
+    ${rankChartHtml}
     <div class="section-label">Squad</div>`;
 
   // Calculate points correctly for wildcard users
@@ -770,6 +830,19 @@ function renderSquad(app) {
   }
 
   app.innerHTML = html;
+
+  if (rankChartHtml) {
+    // Canvas needs a layout pass before reading rect.width; schedule via rAF.
+    requestAnimationFrame(() => drawRankChart('rankChart', currentUser));
+    if (!drawRankChart._resizeBound) {
+      window.addEventListener('resize', () => {
+        if (currentView === 'squad' && document.getElementById('rankChart')) {
+          drawRankChart('rankChart', currentUser);
+        }
+      });
+      drawRankChart._resizeBound = true;
+    }
+  }
 }
 
 function isSinglesType(type) {
@@ -777,6 +850,119 @@ function isSinglesType(type) {
 }
 function isDoublesType(type) {
   return /^(HD|DD|GD)\d/i.test(type);
+}
+
+function drawRankChart(canvasId, userName) {
+  const history = calculateRankHistory();
+  if (history.length < 2) return;
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  const userCount = Object.keys(history[0].ranks).length;
+  const userRanks = history.map(h => h.ranks[userName]).filter(r => r != null);
+  if (userRanks.length < 2) return;
+
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+
+  const pad = { top: 16, right: 12, bottom: 28, left: 32 };
+  const cW = W - pad.left - pad.right;
+  const cH = H - pad.top - pad.bottom;
+
+  const n = history.length;
+  const xi = i => pad.left + (n === 1 ? cW / 2 : (i / (n - 1)) * cW);
+  // Rank 1 at top; invert.
+  const y = r => pad.top + ((r - 1) / Math.max(1, userCount - 1)) * cH;
+
+  // Horizontal grid lines & Y labels — pick ~4 rank ticks
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+  ctx.lineWidth = 1;
+  ctx.fillStyle = '#666';
+  ctx.font = '11px -apple-system, sans-serif';
+  ctx.textAlign = 'right';
+  const yTicks = [1];
+  if (userCount >= 10) yTicks.push(Math.round(userCount / 3), Math.round((2 * userCount) / 3));
+  else if (userCount >= 4) yTicks.push(Math.round(userCount / 2));
+  yTicks.push(userCount);
+  const uniq = [...new Set(yTicks)].sort((a, b) => a - b);
+  for (const r of uniq) {
+    const yy = y(r);
+    ctx.beginPath(); ctx.moveTo(pad.left, yy); ctx.lineTo(W - pad.right, yy); ctx.stroke();
+    ctx.fillText(String(r), pad.left - 6, yy + 4);
+  }
+
+  // X labels — date of each weekend key (YYYY-MM-DD), thinned.
+  ctx.textAlign = 'center';
+  ctx.fillStyle = '#666';
+  const MONTHS_NL = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+  const maxLabels = Math.min(5, n);
+  for (let j = 0; j < maxLabels; j++) {
+    const idx = Math.round(j * (n - 1) / (maxLabels - 1));
+    const [y4, m, d] = history[idx].weekendKey.split('-').map(Number);
+    ctx.fillText(`${d} ${MONTHS_NL[m - 1]}`, xi(idx), H - 4);
+  }
+
+  // Faint lines for every other user (context)
+  const otherUsers = Object.keys(history[0].ranks).filter(u => u !== userName);
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.lineWidth = 1;
+  for (const ou of otherUsers) {
+    ctx.beginPath();
+    let started = false;
+    for (let i = 0; i < n; i++) {
+      const r = history[i].ranks[ou];
+      if (r == null) continue;
+      const px = xi(i), py = y(r);
+      started ? ctx.lineTo(px, py) : ctx.moveTo(px, py);
+      started = true;
+    }
+    ctx.stroke();
+  }
+
+  // Highlighted line for current user
+  ctx.strokeStyle = 'rgba(192, 132, 252, 0.95)';
+  ctx.lineWidth = 2.5;
+  ctx.lineJoin = 'round';
+  ctx.beginPath();
+  let started = false;
+  for (let i = 0; i < n; i++) {
+    const r = history[i].ranks[userName];
+    if (r == null) continue;
+    const px = xi(i), py = y(r);
+    started ? ctx.lineTo(px, py) : ctx.moveTo(px, py);
+    started = true;
+  }
+  ctx.stroke();
+
+  // Dots on the user's line
+  for (let i = 0; i < n; i++) {
+    const r = history[i].ranks[userName];
+    if (r == null) continue;
+    const px = xi(i), py = y(r);
+    ctx.beginPath();
+    ctx.arc(px, py, 3.5, 0, Math.PI * 2);
+    ctx.fillStyle = '#c084fc';
+    ctx.fill();
+    ctx.strokeStyle = '#1a1a2e';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+  }
+
+  // Annotate current rank at the final point
+  const lastIdx = n - 1;
+  const lastR = history[lastIdx].ranks[userName];
+  if (lastR != null) {
+    const px = xi(lastIdx), py = y(lastR);
+    ctx.fillStyle = '#c084fc';
+    ctx.font = 'bold 10px -apple-system, sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText(`#${lastR}`, px - 6, py + 4);
+  }
 }
 
 function drawRatingChart(canvasId, playerName, matchDetails, mode) {
