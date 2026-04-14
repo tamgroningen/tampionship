@@ -5498,6 +5498,11 @@
         "date": "4-4-2026",
         "rating": 8.2199,
         "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 8.1994,
+        "won": false
       }
     ],
     "doubles": [
@@ -5545,6 +5550,11 @@
         "date": "4-4-2026",
         "rating": 8.1538,
         "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 8.1335,
+        "won": false
       }
     ]
   },
@@ -6812,6 +6822,26 @@
         "date": "12-4-2026",
         "rating": 7.0268,
         "won": true
+      }
+    ]
+  },
+  "Paul Hatenboer": {
+    "singles": [],
+    "doubles": [
+      {
+        "date": "28-12-2025",
+        "rating": 6.392,
+        "won": false
+      },
+      {
+        "date": "28-12-2025",
+        "rating": 6.4031,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 6.4296,
+        "won": false
       }
     ]
   },
@@ -9483,6 +9513,11 @@
         "date": "4-4-2026",
         "rating": 8.3435,
         "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 8.2797,
+        "won": false
       }
     ],
     "doubles": [
@@ -9525,6 +9560,11 @@
         "date": "4-4-2026",
         "rating": 7.9342,
         "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 7.9139,
+        "won": false
       }
     ]
   },
@@ -11561,6 +11601,11 @@
       {
         "date": "19-4-2025",
         "rating": 7.5209,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 7.774,
         "won": false
       }
     ],
