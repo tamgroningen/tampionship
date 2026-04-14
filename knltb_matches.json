@@ -1608,7 +1608,7 @@
   {
     "home_team": "TAM 2",
     "away_team": "NOMI 3",
-    "team_score": "–",
+    "team_score": "10:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -3314,7 +3314,7 @@
   {
     "home_team": "TAM 4",
     "away_team": "`T NYLAN 4",
-    "team_score": "15:00",
+    "team_score": "0–6",
     "round": "Ronde 2",
     "league": "",
     "partijen": [
@@ -3322,103 +3322,217 @@
         "type": "HE1",
         "home": {
           "team": "TAM 4",
-          "players": [],
+          "players": [
+            "Waut Brilman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.774
+          ]
         },
         "away": {
           "team": "`T NYLAN 4",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Mark Wiersma"
+          ],
+          "won": true,
+          "ratings": [
+            7.0921
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "3-6 2-6"
       },
       {
         "type": "HE2",
         "home": {
           "team": "TAM 4",
-          "players": [],
+          "players": [
+            "Robert Schambach"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "`T NYLAN 4",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Klaas Jan Miedema"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "3-6 0-6"
       },
       {
         "type": "HE3",
         "home": {
           "team": "TAM 4",
-          "players": [],
+          "players": [
+            "Mathijs Koopman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            8.1994
+          ]
         },
         "away": {
           "team": "`T NYLAN 4",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Alexander Batstra"
+          ],
+          "won": true,
+          "ratings": [
+            7.7976
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "2-6 0-6"
       },
       {
         "type": "HE4",
         "home": {
           "team": "TAM 4",
-          "players": [],
+          "players": [
+            "Stijn Brouwer"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            8.2797
+          ]
         },
         "away": {
           "team": "`T NYLAN 4",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Johnny Messak"
+          ],
+          "won": true,
+          "ratings": [
+            8.2793
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            5,
+            7
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "set_scores": "5-7 1-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "TAM 4",
-          "players": [],
+          "players": [
+            "Paul Hatenboer",
+            "Robert Schambach"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.4296,
+            7.4621
+          ]
         },
         "away": {
           "team": "`T NYLAN 4",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Alexander Batstra",
+            "Mark Wiersma"
+          ],
+          "won": true,
+          "ratings": [
+            6.1478,
+            6.1756
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            5,
+            7
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "5-7 3-6"
       },
       {
         "type": "HD2",
         "home": {
           "team": "TAM 4",
-          "players": [],
+          "players": [
+            "Stijn Brouwer",
+            "Mathijs Koopman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.9139,
+            8.1335
+          ]
         },
         "away": {
           "team": "`T NYLAN 4",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Klaas Jan Miedema",
+            "Johnny Messak"
+          ],
+          "won": true,
+          "ratings": [
+            6.5476,
+            8.155
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "set_scores": "0-6 6-3 8-10"
       }
     ],
     "tam_team": "",
@@ -3540,7 +3654,7 @@
   {
     "home_team": "TAM 4",
     "away_team": "CREAM CRACKERS 7",
-    "team_score": "–",
+    "team_score": "09:00",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -7604,7 +7718,7 @@
   {
     "home_team": "TAM 1",
     "away_team": "DDV 1",
-    "team_score": "–",
+    "team_score": "10:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -9448,7 +9562,7 @@
   {
     "home_team": "TAM 1",
     "away_team": "GSTC 1",
-    "team_score": "–",
+    "team_score": "13:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -10334,7 +10448,7 @@
   {
     "home_team": "TAM 2",
     "away_team": "VERACKET 4",
-    "team_score": "–",
+    "team_score": "16:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -12074,7 +12188,7 @@
   {
     "home_team": "TAM 4",
     "away_team": "SPR 2",
-    "team_score": "–",
+    "team_score": "12:00",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -14782,7 +14896,7 @@
   {
     "home_team": "TAM 1",
     "away_team": "ZANDVOORT 2",
-    "team_score": "–",
+    "team_score": "11:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -16131,7 +16245,7 @@
   {
     "home_team": "TAM 2",
     "away_team": "JOY JAAGPAD 1",
-    "team_score": "–",
+    "team_score": "13:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -17488,7 +17602,7 @@
   {
     "home_team": "TAM 3",
     "away_team": "PARK GRINTEBOS 1",
-    "team_score": "–",
+    "team_score": "13:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -18803,7 +18917,7 @@
   {
     "home_team": "TAM 4",
     "away_team": "VAN STARKENBORGH 1",
-    "team_score": "–",
+    "team_score": "13:00",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -22700,7 +22814,7 @@
   {
     "home_team": "TAM 8",
     "away_team": "UNESWIDO 1",
-    "team_score": "–",
+    "team_score": "16:30",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
