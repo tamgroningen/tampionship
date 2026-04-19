@@ -161,10 +161,12 @@ def search_player_uuid(session, name):
     tam = next((r for r in results if "tam" in r["club"].lower()), None)
     if tam:
         return tam["uuid"]
-    # No TAM-club hit: refuse to guess. Returning a random first result silently
-    # pollutes rating data with the wrong person's history.
+    # No TAM-club hit: if there's exactly one result it's unambiguous.
+    if len(results) == 1:
+        return results[0]["uuid"]
+    # Multiple results, none at TAM — too ambiguous to guess.
     if results:
-        print(f"WARN: no TAM club match for {name!r}; add to PLAYER_UUID_OVERRIDES if needed", flush=True)
+        print(f"WARN: no TAM club match for {name!r} ({len(results)} results); add to PLAYER_UUID_OVERRIDES if needed", flush=True)
     return None
 
 
