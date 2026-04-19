@@ -388,6 +388,11 @@
         "date": "11-4-2026",
         "rating": 9.0649,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.8412,
+        "won": false
       }
     ]
   },
@@ -820,6 +825,132 @@
       }
     ]
   },
+  "Bo Limpers": {
+    "singles": [
+      {
+        "date": "25-6-2025",
+        "rating": 7.4136,
+        "won": true
+      },
+      {
+        "date": "27-6-2025",
+        "rating": 7.2674,
+        "won": true
+      },
+      {
+        "date": "7-7-2025",
+        "rating": 7.2365,
+        "won": true
+      },
+      {
+        "date": "9-7-2025",
+        "rating": 7.2256,
+        "won": true
+      },
+      {
+        "date": "10-7-2025",
+        "rating": 7.2162,
+        "won": true
+      },
+      {
+        "date": "13-7-2025",
+        "rating": 7.1937,
+        "won": true
+      },
+      {
+        "date": "14-7-2025",
+        "rating": 7.1518,
+        "won": true
+      },
+      {
+        "date": "20-7-2025",
+        "rating": 7.1427,
+        "won": true
+      },
+      {
+        "date": "28-7-2025",
+        "rating": 7.1359,
+        "won": true
+      },
+      {
+        "date": "29-7-2025",
+        "rating": 7.0064,
+        "won": true
+      },
+      {
+        "date": "30-7-2025",
+        "rating": 6.8686,
+        "won": true
+      },
+      {
+        "date": "1-8-2025",
+        "rating": 6.7547,
+        "won": true
+      },
+      {
+        "date": "6-9-2025",
+        "rating": 6.6438,
+        "won": true
+      },
+      {
+        "date": "6-9-2025",
+        "rating": 6.6591,
+        "won": true
+      },
+      {
+        "date": "7-9-2025",
+        "rating": 6.7127,
+        "won": true
+      },
+      {
+        "date": "7-9-2025",
+        "rating": 6.5725,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.6618,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "8-1-2025",
+        "rating": 6.9587,
+        "won": false
+      },
+      {
+        "date": "10-1-2025",
+        "rating": 7.1827,
+        "won": true
+      },
+      {
+        "date": "24-6-2025",
+        "rating": 7.158,
+        "won": true
+      },
+      {
+        "date": "29-6-2025",
+        "rating": 7.0885,
+        "won": true
+      },
+      {
+        "date": "15-8-2025",
+        "rating": 6.9582,
+        "won": true
+      },
+      {
+        "date": "17-8-2025",
+        "rating": 6.9065,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.7843,
+        "won": false
+      }
+    ]
+  },
   "Bosse Haak": {
     "singles": [
       {
@@ -841,6 +972,11 @@
         "date": "8-7-2025",
         "rating": 8.634,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.7473,
+        "won": true
       }
     ],
     "doubles": [
@@ -963,6 +1099,11 @@
         "date": "4-4-2026",
         "rating": 8.0607,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.0928,
+        "won": true
       }
     ]
   },
@@ -1289,6 +1430,11 @@
         "date": "4-4-2026",
         "rating": 4.0003,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.9835,
+        "won": false
       }
     ],
     "doubles": [
@@ -1993,6 +2139,16 @@
         "date": "12-4-2026",
         "rating": 5.9998,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.8642,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.0469,
+        "won": true
       }
     ]
   },
@@ -2028,6 +2184,16 @@
       {
         "date": "11-4-2026",
         "rating": 8.5674,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.598,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.5919,
         "won": false
       }
     ]
@@ -2320,6 +2486,11 @@
       {
         "date": "12-4-2026",
         "rating": 5.1877,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.2839,
         "won": false
       }
     ]
@@ -2692,6 +2863,11 @@
         "date": "12-4-2026",
         "rating": 2.4623,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.5877,
+        "won": true
       }
     ],
     "doubles": [
@@ -2739,6 +2915,32 @@
         "date": "12-4-2026",
         "rating": 2.6659,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.6984,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.7679,
+        "won": true
+      }
+    ]
+  },
+  "Hidde Bennema": {
+    "singles": [
+      {
+        "date": "18-4-2026",
+        "rating": 7.6641,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "18-4-2026",
+        "rating": 8.0427,
+        "won": false
       }
     ]
   },
@@ -2747,6 +2949,11 @@
       {
         "date": "11-4-2026",
         "rating": 8.9999,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.8811,
         "won": true
       }
     ],
@@ -2774,6 +2981,11 @@
       {
         "date": "11-4-2026",
         "rating": 8.7102,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.6701,
         "won": true
       }
     ]
@@ -3237,6 +3449,37 @@
       }
     ]
   },
+  "Jasper Foekens": {
+    "singles": [
+      {
+        "date": "18-4-2026",
+        "rating": 8.9999,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "30-6-2025",
+        "rating": 8.9128,
+        "won": false
+      },
+      {
+        "date": "30-6-2025",
+        "rating": 8.9999,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 9.1048,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.9999,
+        "won": false
+      }
+    ]
+  },
   "Jasper Visker": {
     "singles": [
       {
@@ -3302,6 +3545,11 @@
       {
         "date": "12-4-2026",
         "rating": 3.3482,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.258,
         "won": true
       }
     ],
@@ -3394,6 +3642,11 @@
       {
         "date": "12-4-2026",
         "rating": 2.4956,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.4722,
         "won": true
       }
     ]
@@ -3962,6 +4215,72 @@
       }
     ]
   },
+  "Joep Scheerhoorn": {
+    "singles": [
+      {
+        "date": "10-5-2025",
+        "rating": 9.6506,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 9.666,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.9999,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "19-4-2025",
+        "rating": 9.3671,
+        "won": true
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 9.1952,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 9.1682,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 9.0043,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 9.2169,
+        "won": false
+      },
+      {
+        "date": "1-7-2025",
+        "rating": 9.2288,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 9.1782,
+        "won": false
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 9.2197,
+        "won": false
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 9.2999,
+        "won": true
+      }
+    ]
+  },
   "Jojanneke Nieboer": {
     "singles": [
       {
@@ -4095,6 +4414,11 @@
         "date": "4-4-2026",
         "rating": 7.5932,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.5551,
+        "won": false
       }
     ]
   },
@@ -4527,6 +4851,11 @@
         "date": "5-7-2025",
         "rating": 8.3152,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.3637,
+        "won": false
       }
     ],
     "doubles": [
@@ -4608,6 +4937,11 @@
         "date": "11-4-2026",
         "rating": 9.0136,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.9433,
+        "won": false
       }
     ],
     "doubles": [
@@ -4655,6 +4989,127 @@
         "date": "11-4-2026",
         "rating": 8.5823,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.5251,
+        "won": false
+      }
+    ]
+  },
+  "Koen van Maaren": {
+    "singles": [
+      {
+        "date": "12-4-2025",
+        "rating": 7.9212,
+        "won": false
+      },
+      {
+        "date": "3-6-2025",
+        "rating": 8.087,
+        "won": true
+      },
+      {
+        "date": "4-6-2025",
+        "rating": 7.9587,
+        "won": true
+      },
+      {
+        "date": "5-6-2025",
+        "rating": 7.8723,
+        "won": false
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 8.0279,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 7.8234,
+        "won": true
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 7.6254,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.782,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "5-4-2025",
+        "rating": 7.7804,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 7.8639,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 7.8723,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 7.8284,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 7.5793,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 7.6249,
+        "won": true
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 7.7469,
+        "won": true
+      },
+      {
+        "date": "4-6-2025",
+        "rating": 7.6863,
+        "won": true
+      },
+      {
+        "date": "5-6-2025",
+        "rating": 7.6554,
+        "won": false
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 7.7182,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 7.5488,
+        "won": false
+      },
+      {
+        "date": "26-8-2025",
+        "rating": 7.665,
+        "won": false
+      },
+      {
+        "date": "6-9-2025",
+        "rating": 7.8923,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.112,
+        "won": true
       }
     ]
   },
@@ -4673,6 +5128,11 @@
       {
         "date": "11-4-2026",
         "rating": 8.8624,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 9.086,
         "won": false
       }
     ],
@@ -4696,6 +5156,11 @@
         "date": "11-4-2026",
         "rating": 9.0405,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.9856,
+        "won": false
       }
     ]
   },
@@ -4977,6 +5442,11 @@
         "date": "19-4-2025",
         "rating": 5.208,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.3291,
+        "won": false
       }
     ],
     "doubles": [
@@ -5004,6 +5474,142 @@
         "date": "11-4-2026",
         "rating": 5.2122,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.3837,
+        "won": false
+      }
+    ]
+  },
+  "Lex van der Land": {
+    "singles": [
+      {
+        "date": "5-4-2025",
+        "rating": 4.0174,
+        "won": true
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 4.015,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 3.9217,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 4.0321,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 3.9667,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 3.8872,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 3.9399,
+        "won": false
+      },
+      {
+        "date": "29-7-2025",
+        "rating": 4.0212,
+        "won": false
+      },
+      {
+        "date": "12-8-2025",
+        "rating": 4.0501,
+        "won": true
+      },
+      {
+        "date": "13-8-2025",
+        "rating": 3.8736,
+        "won": false
+      },
+      {
+        "date": "15-8-2025",
+        "rating": 3.897,
+        "won": true
+      },
+      {
+        "date": "16-8-2025",
+        "rating": 3.8402,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "5-4-2025",
+        "rating": 3.5046,
+        "won": true
+      },
+      {
+        "date": "6-4-2025",
+        "rating": 3.4631,
+        "won": true
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 3.4554,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 3.3587,
+        "won": true
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 3.2682,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 3.2388,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 3.227,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 3.4211,
+        "won": true
+      },
+      {
+        "date": "17-7-2025",
+        "rating": 3.2437,
+        "won": false
+      },
+      {
+        "date": "20-7-2025",
+        "rating": 3.4782,
+        "won": false
+      },
+      {
+        "date": "27-12-2025",
+        "rating": 3.6929,
+        "won": true
+      },
+      {
+        "date": "29-12-2025",
+        "rating": 3.6045,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.6494,
+        "won": true
       }
     ]
   },
@@ -5048,6 +5654,11 @@
         "date": "11-4-2026",
         "rating": 5.8854,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.8774,
+        "won": false
       }
     ],
     "doubles": [
@@ -5124,6 +5735,11 @@
         "date": "4-4-2026",
         "rating": 7.2853,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.4388,
+        "won": false
       }
     ],
     "doubles": [
@@ -5135,6 +5751,27 @@
       {
         "date": "11-4-2026",
         "rating": 6.2742,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.1739,
+        "won": false
+      }
+    ]
+  },
+  "Maarten Buist": {
+    "singles": [
+      {
+        "date": "18-4-2026",
+        "rating": 9.0,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "18-4-2026",
+        "rating": 9.0,
         "won": false
       }
     ]
@@ -5332,6 +5969,16 @@
         "date": "11-4-2026",
         "rating": 6.7975,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.9396,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.8336,
+        "won": false
       }
     ]
   },
@@ -5353,6 +6000,16 @@
         "date": "11-4-2026",
         "rating": 5.6231,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.6047,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.4987,
+        "won": false
       }
     ]
   },
@@ -5599,6 +6256,11 @@
         "date": "4-4-2026",
         "rating": 8.0593,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.2924,
+        "won": true
       }
     ],
     "doubles": [
@@ -5636,6 +6298,11 @@
         "date": "4-4-2026",
         "rating": 7.7761,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.7326,
+        "won": false
       }
     ]
   },
@@ -5914,6 +6581,16 @@
         "date": "11-4-2026",
         "rating": 6.0,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.5949,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.3561,
+        "won": false
       }
     ]
   },
@@ -5960,6 +6637,11 @@
         "date": "11-4-2026",
         "rating": 7.6996,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.4997,
+        "won": false
       }
     ]
   },
@@ -6098,6 +6780,16 @@
         "date": "11-4-2026",
         "rating": 7.8693,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.4333,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.1945,
+        "won": false
       }
     ]
   },
@@ -6131,6 +6823,11 @@
       {
         "date": "11-4-2026",
         "rating": 6.0555,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.0451,
         "won": true
       }
     ],
@@ -6204,6 +6901,11 @@
         "date": "11-4-2026",
         "rating": 5.2223,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.0841,
+        "won": false
       }
     ]
   },
@@ -6463,6 +7165,11 @@
         "date": "12-4-2026",
         "rating": 2.2914,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.0858,
+        "won": true
       }
     ],
     "doubles": [
@@ -6685,6 +7392,11 @@
         "date": "12-4-2026",
         "rating": 2.9764,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.0345,
+        "won": true
       }
     ]
   },
@@ -6754,6 +7466,11 @@
         "date": "11-4-2026",
         "rating": 6.0182,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.1414,
+        "won": false
       }
     ],
     "doubles": [
@@ -6796,6 +7513,11 @@
         "date": "11-4-2026",
         "rating": 5.4727,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.295,
+        "won": false
       }
     ]
   },
@@ -6810,6 +7532,11 @@
         "date": "12-4-2026",
         "rating": 5.8865,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.8816,
+        "won": true
       }
     ],
     "doubles": [
@@ -6821,6 +7548,11 @@
       {
         "date": "12-4-2026",
         "rating": 7.0268,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.8228,
         "won": true
       }
     ]
@@ -6855,6 +7587,11 @@
       {
         "date": "31-5-2025",
         "rating": 6.8514,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.7698,
         "won": true
       }
     ],
@@ -6908,6 +7645,11 @@
         "date": "11-4-2026",
         "rating": 7.3613,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.4471,
+        "won": false
       }
     ]
   },
@@ -6952,6 +7694,11 @@
         "date": "4-4-2026",
         "rating": 6.6648,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.7318,
+        "won": true
       }
     ],
     "doubles": [
@@ -7043,6 +7790,11 @@
       {
         "date": "11-4-2026",
         "rating": 6.5487,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 6.6089,
         "won": false
       }
     ]
@@ -7214,6 +7966,11 @@
       {
         "date": "4-4-2026",
         "rating": 8.6449,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.6833,
         "won": false
       }
     ]
@@ -7549,6 +8306,16 @@
         "date": "11-4-2026",
         "rating": 7.7578,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.6005,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.6615,
+        "won": true
       }
     ]
   },
@@ -7564,6 +8331,11 @@
         "date": "4-4-2026",
         "rating": 7.6505,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.7849,
+        "won": true
       }
     ]
   },
@@ -7690,6 +8462,11 @@
         "date": "4-4-2026",
         "rating": 3.8363,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.7066,
+        "won": false
       }
     ],
     "doubles": [
@@ -7902,6 +8679,16 @@
       {
         "date": "11-4-2026",
         "rating": 9.0917,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 9.1206,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 9.1145,
         "won": false
       }
     ]
@@ -8321,6 +9108,16 @@
         "date": "4-4-2026",
         "rating": 8.1023,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.123,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.0642,
+        "won": false
       }
     ]
   },
@@ -8531,6 +9328,11 @@
         "date": "31-5-2025",
         "rating": 8.5988,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.4796,
+        "won": true
       }
     ],
     "doubles": [
@@ -8732,6 +9534,11 @@
         "date": "12-4-2026",
         "rating": 2.1345,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.1178,
+        "won": false
       }
     ],
     "doubles": [
@@ -8818,6 +9625,11 @@
       {
         "date": "11-4-2026",
         "rating": 2.1749,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.2591,
         "won": false
       }
     ]
@@ -9005,6 +9817,16 @@
         "date": "1-6-2025",
         "rating": 4.9258,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 4.8823,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 4.9856,
+        "won": true
       }
     ],
     "doubles": [
@@ -9081,6 +9903,16 @@
       {
         "date": "11-4-2026",
         "rating": 4.0091,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.8806,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.9228,
         "won": true
       }
     ]
@@ -9382,6 +10214,11 @@
         "date": "4-4-2026",
         "rating": 5.5719,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.4358,
+        "won": false
       }
     ],
     "doubles": [
@@ -9518,6 +10355,11 @@
         "date": "11-4-2026",
         "rating": 8.2797,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.4171,
+        "won": true
       }
     ],
     "doubles": [
@@ -9564,6 +10406,11 @@
       {
         "date": "11-4-2026",
         "rating": 7.9139,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.9704,
         "won": false
       }
     ]
@@ -9780,6 +10627,11 @@
         "date": "12-4-2026",
         "rating": 2.5307,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.4322,
+        "won": true
       }
     ],
     "doubles": [
@@ -9916,6 +10768,11 @@
       {
         "date": "12-4-2026",
         "rating": 2.5467,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.4297,
         "won": true
       }
     ]
@@ -10233,6 +11090,31 @@
       }
     ]
   },
+  "Thom Verkaaik": {
+    "singles": [],
+    "doubles": [
+      {
+        "date": "5-6-2025",
+        "rating": 8.9999,
+        "won": true
+      },
+      {
+        "date": "6-6-2025",
+        "rating": 8.8669,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.9815,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.9227,
+        "won": false
+      }
+    ]
+  },
   "Tibbe Froma": {
     "singles": [
       {
@@ -10365,6 +11247,11 @@
         "date": "29-6-2025",
         "rating": 8.4494,
         "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.5202,
+        "won": true
       }
     ],
     "doubles": [
@@ -10442,6 +11329,11 @@
         "date": "4-4-2026",
         "rating": 8.2393,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.1315,
+        "won": false
       }
     ]
   },
@@ -11138,6 +12030,11 @@
         "date": "11-4-2026",
         "rating": 4.0701,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.9615,
+        "won": false
       }
     ],
     "doubles": [
@@ -11325,6 +12222,11 @@
         "date": "11-4-2026",
         "rating": 3.7955,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.7112,
+        "won": true
       }
     ]
   },
@@ -11430,6 +12332,11 @@
         "date": "11-4-2026",
         "rating": 5.9593,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.8903,
+        "won": false
       }
     ],
     "doubles": [
@@ -11562,6 +12469,11 @@
         "date": "11-4-2026",
         "rating": 5.0276,
         "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 4.8499,
+        "won": false
       }
     ]
   },
