@@ -300,6 +300,257 @@
       }
     ]
   },
+  "Amber Maalderink": {
+    "singles": [
+      {
+        "date": "7-12-2024",
+        "rating": 1.9898,
+        "won": true
+      },
+      {
+        "date": "8-12-2024",
+        "rating": 1.953,
+        "won": false
+      },
+      {
+        "date": "6-4-2025",
+        "rating": 2.0202,
+        "won": false
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 2.0831,
+        "won": true
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 1.9943,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.1698,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 2.037,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 1.9404,
+        "won": true
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 1.906,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 1.8648,
+        "won": true
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 1.8574,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 1.8442,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 1.8093,
+        "won": true
+      },
+      {
+        "date": "10-7-2025",
+        "rating": 1.7171,
+        "won": true
+      },
+      {
+        "date": "11-7-2025",
+        "rating": 1.7069,
+        "won": true
+      },
+      {
+        "date": "12-7-2025",
+        "rating": 1.6712,
+        "won": true
+      },
+      {
+        "date": "13-7-2025",
+        "rating": 1.5949,
+        "won": false
+      },
+      {
+        "date": "7-8-2025",
+        "rating": 1.7851,
+        "won": true
+      },
+      {
+        "date": "8-8-2025",
+        "rating": 1.7845,
+        "won": false
+      },
+      {
+        "date": "19-10-2025",
+        "rating": 1.9329,
+        "won": true
+      },
+      {
+        "date": "25-10-2025",
+        "rating": 1.902,
+        "won": false
+      },
+      {
+        "date": "6-12-2025",
+        "rating": 2.0236,
+        "won": false
+      },
+      {
+        "date": "22-2-2026",
+        "rating": 2.1424,
+        "won": true
+      },
+      {
+        "date": "28-2-2026",
+        "rating": 2.1263,
+        "won": true
+      },
+      {
+        "date": "1-3-2026",
+        "rating": 1.9776,
+        "won": false
+      },
+      {
+        "date": "1-3-2026",
+        "rating": 2.0614,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 2.0133,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 1.9255,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 1.9172,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "6-4-2025",
+        "rating": 2.1522,
+        "won": false
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 2.2331,
+        "won": true
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 2.1077,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.069,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.1538,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 2.3321,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 2.2164,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 2.1718,
+        "won": false
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 2.5914,
+        "won": false
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 2.3732,
+        "won": false
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 2.687,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 2.6152,
+        "won": false
+      },
+      {
+        "date": "11-7-2025",
+        "rating": 2.6782,
+        "won": true
+      },
+      {
+        "date": "12-7-2025",
+        "rating": 2.6499,
+        "won": false
+      },
+      {
+        "date": "8-8-2025",
+        "rating": 2.9105,
+        "won": false
+      },
+      {
+        "date": "11-10-2025",
+        "rating": 2.8094,
+        "won": true
+      },
+      {
+        "date": "11-10-2025",
+        "rating": 2.9304,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 2.6946,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.669,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.7112,
+        "won": true
+      }
+    ]
+  },
   "Amelie Hoendermis": {
     "singles": [
       {
@@ -1361,6 +1612,142 @@
         "date": "11-4-2026",
         "rating": 7.5699,
         "won": true
+      }
+    ]
+  },
+  "Cas Hagedoorn": {
+    "singles": [
+      {
+        "date": "5-4-2025",
+        "rating": 6.9983,
+        "won": true
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 6.8773,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 6.8597,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 6.8273,
+        "won": true
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 6.7076,
+        "won": true
+      },
+      {
+        "date": "23-6-2025",
+        "rating": 6.6552,
+        "won": true
+      },
+      {
+        "date": "26-6-2025",
+        "rating": 6.4895,
+        "won": false
+      },
+      {
+        "date": "28-6-2025",
+        "rating": 6.7104,
+        "won": false
+      },
+      {
+        "date": "28-6-2025",
+        "rating": 6.6089,
+        "won": false
+      },
+      {
+        "date": "22-12-2025",
+        "rating": 6.7747,
+        "won": true
+      },
+      {
+        "date": "24-12-2025",
+        "rating": 6.6155,
+        "won": false
+      },
+      {
+        "date": "30-12-2025",
+        "rating": 6.6356,
+        "won": false
+      },
+      {
+        "date": "31-12-2025",
+        "rating": 6.6158,
+        "won": true
+      },
+      {
+        "date": "31-12-2025",
+        "rating": 6.6505,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 6.4122,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 6.3308,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "5-4-2025",
+        "rating": 7.7382,
+        "won": true
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 7.4625,
+        "won": true
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 7.6768,
+        "won": true
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 7.427,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 7.3963,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 7.2209,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 7.234,
+        "won": true
+      },
+      {
+        "date": "22-12-2025",
+        "rating": 7.2079,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 7.2123,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 7.0238,
+        "won": false
       }
     ]
   },
@@ -2713,6 +3100,252 @@
         "date": "12-4-2026",
         "rating": 3.9852,
         "won": true
+      }
+    ]
+  },
+  "Friso Luijkx": {
+    "singles": [
+      {
+        "date": "6-4-2025",
+        "rating": 3.9859,
+        "won": true
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 3.8317,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 3.7728,
+        "won": false
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 3.8747,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 3.9943,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 4.0636,
+        "won": true
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 4.0256,
+        "won": false
+      },
+      {
+        "date": "17-6-2025",
+        "rating": 4.0731,
+        "won": false
+      },
+      {
+        "date": "21-6-2025",
+        "rating": 4.0917,
+        "won": true
+      },
+      {
+        "date": "30-6-2025",
+        "rating": 3.8486,
+        "won": false
+      },
+      {
+        "date": "8-7-2025",
+        "rating": 3.917,
+        "won": false
+      },
+      {
+        "date": "22-7-2025",
+        "rating": 4.0957,
+        "won": true
+      },
+      {
+        "date": "22-7-2025",
+        "rating": 4.1047,
+        "won": true
+      },
+      {
+        "date": "23-7-2025",
+        "rating": 3.8826,
+        "won": false
+      },
+      {
+        "date": "24-7-2025",
+        "rating": 3.7588,
+        "won": true
+      },
+      {
+        "date": "24-7-2025",
+        "rating": 3.8912,
+        "won": true
+      },
+      {
+        "date": "25-7-2025",
+        "rating": 3.6792,
+        "won": false
+      },
+      {
+        "date": "29-7-2025",
+        "rating": 3.7842,
+        "won": true
+      },
+      {
+        "date": "1-8-2025",
+        "rating": 3.7657,
+        "won": false
+      },
+      {
+        "date": "7-8-2025",
+        "rating": 3.9131,
+        "won": true
+      },
+      {
+        "date": "9-8-2025",
+        "rating": 3.6987,
+        "won": false
+      },
+      {
+        "date": "27-8-2025",
+        "rating": 3.7221,
+        "won": false
+      },
+      {
+        "date": "20-9-2025",
+        "rating": 3.7281,
+        "won": true
+      },
+      {
+        "date": "27-9-2025",
+        "rating": 3.7249,
+        "won": true
+      },
+      {
+        "date": "11-10-2025",
+        "rating": 3.6439,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 3.5753,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 3.5246,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "6-4-2025",
+        "rating": 3.9371,
+        "won": true
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 3.8748,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 3.939,
+        "won": false
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 3.9681,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 3.7441,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 3.9976,
+        "won": true
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 3.7554,
+        "won": true
+      },
+      {
+        "date": "24-7-2025",
+        "rating": 3.5545,
+        "won": false
+      },
+      {
+        "date": "25-7-2025",
+        "rating": 3.7372,
+        "won": false
+      },
+      {
+        "date": "26-7-2025",
+        "rating": 3.8663,
+        "won": false
+      },
+      {
+        "date": "30-7-2025",
+        "rating": 3.9473,
+        "won": true
+      },
+      {
+        "date": "31-7-2025",
+        "rating": 3.8036,
+        "won": false
+      },
+      {
+        "date": "2-8-2025",
+        "rating": 3.997,
+        "won": true
+      },
+      {
+        "date": "3-8-2025",
+        "rating": 3.9405,
+        "won": true
+      },
+      {
+        "date": "26-8-2025",
+        "rating": 3.7567,
+        "won": false
+      },
+      {
+        "date": "27-8-2025",
+        "rating": 3.9687,
+        "won": false
+      },
+      {
+        "date": "20-9-2025",
+        "rating": 4.1505,
+        "won": true
+      },
+      {
+        "date": "11-10-2025",
+        "rating": 4.0986,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 3.9841,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 4.0806,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 3.9397,
+        "won": false
       }
     ]
   },
@@ -5613,6 +6246,182 @@
       }
     ]
   },
+  "Linde Gietema": {
+    "singles": [
+      {
+        "date": "5-4-2025",
+        "rating": 5.6063,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 5.706,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 5.7077,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 5.7767,
+        "won": false
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 5.7782,
+        "won": false
+      },
+      {
+        "date": "29-5-2025",
+        "rating": 5.8735,
+        "won": true
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 5.8132,
+        "won": true
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 5.7257,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 5.5248,
+        "won": false
+      },
+      {
+        "date": "30-8-2025",
+        "rating": 5.7216,
+        "won": true
+      },
+      {
+        "date": "31-8-2025",
+        "rating": 5.5522,
+        "won": false
+      },
+      {
+        "date": "14-9-2025",
+        "rating": 5.5536,
+        "won": false
+      },
+      {
+        "date": "21-9-2025",
+        "rating": 5.6995,
+        "won": false
+      },
+      {
+        "date": "28-9-2025",
+        "rating": 5.7709,
+        "won": true
+      },
+      {
+        "date": "12-10-2025",
+        "rating": 5.7319,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 5.893,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 5.9176,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "12-4-2025",
+        "rating": 4.5048,
+        "won": true
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 4.3886,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 4.2186,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 4.1433,
+        "won": false
+      },
+      {
+        "date": "16-7-2025",
+        "rating": 4.2072,
+        "won": true
+      },
+      {
+        "date": "17-7-2025",
+        "rating": 4.1859,
+        "won": true
+      },
+      {
+        "date": "20-7-2025",
+        "rating": 4.1648,
+        "won": false
+      },
+      {
+        "date": "30-8-2025",
+        "rating": 4.3223,
+        "won": true
+      },
+      {
+        "date": "31-8-2025",
+        "rating": 4.3061,
+        "won": true
+      },
+      {
+        "date": "14-9-2025",
+        "rating": 4.1828,
+        "won": true
+      },
+      {
+        "date": "21-9-2025",
+        "rating": 4.1596,
+        "won": true
+      },
+      {
+        "date": "28-9-2025",
+        "rating": 4.0298,
+        "won": true
+      },
+      {
+        "date": "5-10-2025",
+        "rating": 4.0551,
+        "won": true
+      },
+      {
+        "date": "5-10-2025",
+        "rating": 3.7962,
+        "won": false
+      },
+      {
+        "date": "12-10-2025",
+        "rating": 3.8284,
+        "won": true
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 4.0382,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 4.1208,
+        "won": true
+      }
+    ]
+  },
   "Loes van Tol": {
     "singles": [
       {
@@ -6060,6 +6869,167 @@
       {
         "date": "11-4-2026",
         "rating": 7.933,
+        "won": true
+      }
+    ]
+  },
+  "Mart Nijenhuis": {
+    "singles": [
+      {
+        "date": "5-4-2025",
+        "rating": 5.1633,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 5.1762,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 5.0838,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 5.1278,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 5.1767,
+        "won": false
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 5.3577,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 5.4817,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 5.519,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 5.6043,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "5-4-2025",
+        "rating": 5.6129,
+        "won": true
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 5.515,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 5.3109,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 5.1747,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 5.0539,
+        "won": true
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 4.8516,
+        "won": true
+      },
+      {
+        "date": "1-7-2025",
+        "rating": 4.6783,
+        "won": true
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 4.5817,
+        "won": false
+      },
+      {
+        "date": "29-7-2025",
+        "rating": 4.8159,
+        "won": true
+      },
+      {
+        "date": "30-7-2025",
+        "rating": 4.6879,
+        "won": false
+      },
+      {
+        "date": "30-7-2025",
+        "rating": 4.7936,
+        "won": true
+      },
+      {
+        "date": "31-7-2025",
+        "rating": 4.9438,
+        "won": false
+      },
+      {
+        "date": "31-7-2025",
+        "rating": 4.7831,
+        "won": false
+      },
+      {
+        "date": "2-8-2025",
+        "rating": 5.0027,
+        "won": false
+      },
+      {
+        "date": "26-8-2025",
+        "rating": 5.0456,
+        "won": true
+      },
+      {
+        "date": "31-8-2025",
+        "rating": 4.9322,
+        "won": false
+      },
+      {
+        "date": "5-9-2025",
+        "rating": 5.1061,
+        "won": true
+      },
+      {
+        "date": "6-9-2025",
+        "rating": 4.8723,
+        "won": false
+      },
+      {
+        "date": "6-9-2025",
+        "rating": 5.0006,
+        "won": true
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 5.0135,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 4.7793,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 4.8742,
         "won": true
       }
     ]
@@ -6641,6 +7611,252 @@
       {
         "date": "18-4-2026",
         "rating": 7.4997,
+        "won": false
+      }
+    ]
+  },
+  "Niels Roemeling": {
+    "singles": [
+      {
+        "date": "6-4-2025",
+        "rating": 1.724,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 1.7527,
+        "won": true
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 1.7076,
+        "won": false
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 1.7905,
+        "won": true
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 1.7753,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 1.8937,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 1.8724,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 1.7567,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 1.7369,
+        "won": false
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 1.8201,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 1.8804,
+        "won": true
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 1.7411,
+        "won": true
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 1.571,
+        "won": false
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 1.7213,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 1.6956,
+        "won": true
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 1.6355,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 1.5257,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 1.3355,
+        "won": false
+      },
+      {
+        "date": "15-7-2025",
+        "rating": 1.44,
+        "won": true
+      },
+      {
+        "date": "18-7-2025",
+        "rating": 1.3641,
+        "won": true
+      },
+      {
+        "date": "19-7-2025",
+        "rating": 1.3459,
+        "won": false
+      },
+      {
+        "date": "30-7-2025",
+        "rating": 1.5175,
+        "won": true
+      },
+      {
+        "date": "31-7-2025",
+        "rating": 1.4788,
+        "won": true
+      },
+      {
+        "date": "1-8-2025",
+        "rating": 1.4552,
+        "won": false
+      },
+      {
+        "date": "6-8-2025",
+        "rating": 1.5423,
+        "won": false
+      },
+      {
+        "date": "27-8-2025",
+        "rating": 1.6416,
+        "won": true
+      },
+      {
+        "date": "28-8-2025",
+        "rating": 1.6356,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 1.8042,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 1.8703,
+        "won": false
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 1.7195,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "6-4-2025",
+        "rating": 2.3665,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 2.4486,
+        "won": true
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 2.3361,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 2.1778,
+        "won": false
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 2.311,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 2.3742,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.3086,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 2.2016,
+        "won": false
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 2.2434,
+        "won": false
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 2.3464,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 2.3595,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 2.3926,
+        "won": true
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 2.1871,
+        "won": false
+      },
+      {
+        "date": "17-7-2025",
+        "rating": 2.3169,
+        "won": false
+      },
+      {
+        "date": "19-7-2025",
+        "rating": 2.513,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 2.7655,
+        "won": false
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.7333,
+        "won": false
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.6336,
         "won": false
       }
     ]
@@ -7799,6 +9015,27 @@
       }
     ]
   },
+  "Pien Groenewold": {
+    "singles": [
+      {
+        "date": "12-4-2026",
+        "rating": 7.2206,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "31-5-2025",
+        "rating": 6.4841,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 6.4613,
+        "won": false
+      }
+    ]
+  },
   "Pim Michels": {
     "singles": [
       {
@@ -8162,6 +9399,197 @@
       }
     ]
   },
+  "Ralph Boekema": {
+    "singles": [
+      {
+        "date": "13-4-2025",
+        "rating": 3.8454,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 3.6249,
+        "won": false
+      },
+      {
+        "date": "29-5-2025",
+        "rating": 3.6475,
+        "won": true
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 3.4522,
+        "won": true
+      },
+      {
+        "date": "30-6-2025",
+        "rating": 3.2908,
+        "won": true
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 2.9435,
+        "won": true
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 3.0697,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 2.7691,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 2.8944,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 2.8601,
+        "won": false
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 2.8693,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 2.7468,
+        "won": false
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 2.7399,
+        "won": false
+      },
+      {
+        "date": "27-8-2025",
+        "rating": 2.881,
+        "won": true
+      },
+      {
+        "date": "28-8-2025",
+        "rating": 2.8653,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 2.8676,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 2.8328,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.7383,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "28-12-2024",
+        "rating": 3.8482,
+        "won": true
+      },
+      {
+        "date": "29-12-2024",
+        "rating": 3.743,
+        "won": false
+      },
+      {
+        "date": "6-4-2025",
+        "rating": 3.8984,
+        "won": true
+      },
+      {
+        "date": "6-4-2025",
+        "rating": 3.8361,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 3.448,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 3.683,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 3.5128,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 3.488,
+        "won": false
+      },
+      {
+        "date": "29-5-2025",
+        "rating": 3.6247,
+        "won": false
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 3.6593,
+        "won": true
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 3.5168,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 3.3969,
+        "won": true
+      },
+      {
+        "date": "25-8-2025",
+        "rating": 3.3082,
+        "won": false
+      },
+      {
+        "date": "26-8-2025",
+        "rating": 3.4966,
+        "won": true
+      },
+      {
+        "date": "28-12-2025",
+        "rating": 3.2846,
+        "won": true
+      },
+      {
+        "date": "29-12-2025",
+        "rating": 3.2557,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 3.3129,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 3.2796,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.1841,
+        "won": true
+      }
+    ]
+  },
   "Raoul van Loevezijn": {
     "singles": [
       {
@@ -8361,6 +9789,127 @@
       {
         "date": "11-4-2026",
         "rating": 8.3476,
+        "won": true
+      }
+    ]
+  },
+  "Robert Schambach": {
+    "singles": [
+      {
+        "date": "5-4-2025",
+        "rating": 8.5686,
+        "won": true
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 8.4202,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 8.3587,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 8.463,
+        "won": true
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 8.372,
+        "won": true
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 8.332,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 8.2692,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 8.3171,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "5-4-2025",
+        "rating": 7.8092,
+        "won": true
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 7.6297,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 7.612,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 7.6736,
+        "won": true
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 7.5987,
+        "won": true
+      },
+      {
+        "date": "15-6-2025",
+        "rating": 7.5768,
+        "won": true
+      },
+      {
+        "date": "20-6-2025",
+        "rating": 7.5413,
+        "won": true
+      },
+      {
+        "date": "21-6-2025",
+        "rating": 7.4807,
+        "won": false
+      },
+      {
+        "date": "29-6-2025",
+        "rating": 7.5436,
+        "won": true
+      },
+      {
+        "date": "30-6-2025",
+        "rating": 7.283,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 7.1483,
+        "won": false
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 7.2624,
+        "won": false
+      },
+      {
+        "date": "25-8-2025",
+        "rating": 7.28,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 7.4621,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 7.5092,
         "won": true
       }
     ]
@@ -11090,6 +12639,207 @@
       }
     ]
   },
+  "Tesse Haan": {
+    "singles": [
+      {
+        "date": "3-7-2025",
+        "rating": 3.0458,
+        "won": false
+      },
+      {
+        "date": "7-7-2025",
+        "rating": 3.0974,
+        "won": true
+      },
+      {
+        "date": "10-7-2025",
+        "rating": 3.0895,
+        "won": false
+      },
+      {
+        "date": "12-7-2025",
+        "rating": 3.1348,
+        "won": false
+      },
+      {
+        "date": "31-7-2025",
+        "rating": 3.3287,
+        "won": true
+      },
+      {
+        "date": "1-8-2025",
+        "rating": 3.26,
+        "won": false
+      },
+      {
+        "date": "6-9-2025",
+        "rating": 3.3159,
+        "won": true
+      },
+      {
+        "date": "7-9-2025",
+        "rating": 3.2104,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 3.0753,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.0411,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 3.0625,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "6-4-2025",
+        "rating": 1.8643,
+        "won": false
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 2.0829,
+        "won": true
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 1.9112,
+        "won": false
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 1.9961,
+        "won": false
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 1.9246,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 1.9745,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.0593,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 1.9832,
+        "won": false
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 1.8675,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 2.2876,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 2.0862,
+        "won": false
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 2.5389,
+        "won": false
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 2.3207,
+        "won": false
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 2.5969,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 2.6687,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 2.5719,
+        "won": false
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 2.4363,
+        "won": false
+      },
+      {
+        "date": "11-7-2025",
+        "rating": 2.6349,
+        "won": false
+      },
+      {
+        "date": "29-8-2025",
+        "rating": 2.9057,
+        "won": true
+      },
+      {
+        "date": "30-8-2025",
+        "rating": 2.8573,
+        "won": false
+      },
+      {
+        "date": "7-9-2025",
+        "rating": 3.0703,
+        "won": true
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 2.8784,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 2.8129,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 2.866,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.7959,
+        "won": false
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.9962,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.7586,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.8281,
+        "won": true
+      }
+    ]
+  },
   "Thom Verkaaik": {
     "singles": [],
     "doubles": [
@@ -11720,6 +13470,21 @@
         "date": "12-4-2026",
         "rating": 4.0785,
         "won": true
+      }
+    ]
+  },
+  "Tijn Vunderink": {
+    "singles": [],
+    "doubles": [
+      {
+        "date": "4-4-2026",
+        "rating": 10.0,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 9.9999,
+        "won": false
       }
     ]
   },
@@ -12474,6 +14239,277 @@
         "date": "18-4-2026",
         "rating": 4.8499,
         "won": false
+      }
+    ]
+  },
+  "Vincent Schadee": {
+    "singles": [
+      {
+        "date": "5-4-2025",
+        "rating": 3.1429,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 3.2591,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 3.0413,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 3.1834,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 3.1063,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 3.0916,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 3.1231,
+        "won": true
+      },
+      {
+        "date": "18-6-2025",
+        "rating": 2.9602,
+        "won": false
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 2.983,
+        "won": true
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 2.8631,
+        "won": false
+      },
+      {
+        "date": "24-12-2025",
+        "rating": 2.8831,
+        "won": true
+      },
+      {
+        "date": "27-12-2025",
+        "rating": 2.8353,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 2.9711,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 2.9878,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.9815,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.8221,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "5-4-2025",
+        "rating": 1.9115,
+        "won": true
+      },
+      {
+        "date": "6-4-2025",
+        "rating": 1.9607,
+        "won": false
+      },
+      {
+        "date": "6-4-2025",
+        "rating": 1.8753,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 2.0416,
+        "won": true
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 2.0747,
+        "won": true
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 1.9088,
+        "won": false
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 1.9493,
+        "won": true
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 1.9888,
+        "won": false
+      },
+      {
+        "date": "21-4-2025",
+        "rating": 1.9402,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 2.0349,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 1.9162,
+        "won": false
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 2.1266,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 2.0636,
+        "won": false
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 1.9403,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 2.1054,
+        "won": true
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 1.9026,
+        "won": false
+      },
+      {
+        "date": "25-5-2025",
+        "rating": 1.78,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 2.0288,
+        "won": true
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 1.9077,
+        "won": false
+      },
+      {
+        "date": "1-6-2025",
+        "rating": 1.8233,
+        "won": false
+      },
+      {
+        "date": "21-6-2025",
+        "rating": 1.9018,
+        "won": true
+      },
+      {
+        "date": "21-6-2025",
+        "rating": 2.0033,
+        "won": true
+      },
+      {
+        "date": "22-6-2025",
+        "rating": 1.8363,
+        "won": false
+      },
+      {
+        "date": "4-7-2025",
+        "rating": 1.9553,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 1.8116,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 1.9261,
+        "won": true
+      },
+      {
+        "date": "10-7-2025",
+        "rating": 1.5548,
+        "won": false
+      },
+      {
+        "date": "1-8-2025",
+        "rating": 1.8147,
+        "won": false
+      },
+      {
+        "date": "3-8-2025",
+        "rating": 2.0379,
+        "won": true
+      },
+      {
+        "date": "5-2-2026",
+        "rating": 1.9279,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 2.2013,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 2.0598,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 2.2245,
+        "won": true
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 2.2284,
+        "won": false
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.1761,
+        "won": false
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 2.0764,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 2.2706,
+        "won": true
       }
     ]
   },
