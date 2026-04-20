@@ -1609,7 +1609,7 @@
   {
     "home_team": "TSO 1",
     "away_team": "TAM 2",
-    "team_score": "13:30",
+    "team_score": "1–5",
     "round": "Ronde 3",
     "league": "",
     "partijen": [
@@ -1617,86 +1617,187 @@
         "type": "HE1",
         "home": {
           "team": "TSO 1",
-          "players": [],
+          "players": [
+            "Arjan Dijkema"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.4524
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Tigo Nieland"
+          ],
+          "won": true,
+          "ratings": [
+            3.3449
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "set_scores": "7-5 1-6 0-3"
       },
       {
         "type": "HE2",
         "home": {
           "team": "TSO 1",
-          "players": [],
+          "players": [
+            "Watze Boonstra"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.6816
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jorrit Tromp"
+          ],
+          "won": true,
+          "ratings": [
+            4.0255
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "6-4 1-6 3-6"
       },
       {
         "type": "HE3",
         "home": {
           "team": "TSO 1",
-          "players": [],
+          "players": [
+            "Lars van Veen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.7213
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jesse IJntema"
+          ],
+          "won": true,
+          "ratings": [
+            4.8014
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "set_scores": "5-7 6-7"
       },
       {
         "type": "HE4",
         "home": {
           "team": "TSO 1",
-          "players": [],
+          "players": [
+            "Erich Jongeling"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.3867
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Lars Boschman"
+          ],
+          "won": true,
+          "ratings": [
+            4.2387
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "set_scores": "2-6 1-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "TSO 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Watze Boonstra",
+            "Lars van Veen"
+          ],
+          "won": true,
+          "ratings": [
+            4.1861,
+            5.1967
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Jesse IJntema",
+            "Jorrit Tromp"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.623,
+            4.4003
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        "set_scores": "7-6 4-6 10-7"
       },
       {
         "type": "HD2",
@@ -1709,7 +1810,7 @@
         "away": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "sets": [],
@@ -7323,7 +7424,7 @@
           "won": true,
           "ratings": [
             3.2514,
-            3.7335
+            3.623
           ]
         },
         "away": {
@@ -19228,12 +19329,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram Van de Kamp",
+            "Bram van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },
@@ -21983,137 +22084,301 @@
         "type": "DE1",
         "home": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Emke Veldscholte"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
+          "players": [
+            "Bente Schijf"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "6-1 6-4"
       },
       {
         "type": "DE2",
         "home": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Sophie Bunskoek"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Rebecca van der Velde"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            0
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "6-0 4-6 4-6"
       },
       {
         "type": "HE1",
         "home": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Jan Bate van der Dussen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jan Kruithof"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "6-1 4-6 0-6"
       },
       {
         "type": "HE2",
         "home": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Marco Kohlbrugge"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
+          "players": [
+            "Julius Dietrich"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "3-6 7-5 6-3"
       },
       {
         "type": "DD1",
         "home": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Emke Veldscholte",
+            "Sophie Bunskoek"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Rebecca van der Velde",
+            "Nienke Van houten"
+          ],
+          "won": true,
+          "ratings": [
+            null,
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "1-6 2-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Jan Bate van der Dussen",
+            "Marco Kohlbrugge"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
+          "players": [
+            "Julius Dietrich",
+            "Laurens Dietrich"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "set_scores": "6-4 5-4"
       },
       {
         "type": "GD1",
         "home": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Emke Veldscholte",
+            "Marco Kohlbrugge"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jan Kruithof",
+            "Bente Schijf"
+          ],
+          "won": true,
+          "ratings": [
+            null,
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "1-6 4-6"
       },
       {
         "type": "GD2",
         "home": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Jan Bate van der Dussen",
+            "Sophie Bunskoek"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "GSTC 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Nienke Van houten",
+            "Laurens Dietrich"
+          ],
+          "won": true,
+          "ratings": [
+            null,
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "2-6 2-6"
       }
     ],
     "tam_team": "",
