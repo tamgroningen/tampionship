@@ -18332,7 +18332,7 @@
   {
     "home_team": "TIE-BREAKERS 1",
     "away_team": "TAM 2",
-    "team_score": "–",
+    "team_score": "11:00",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -19329,12 +19329,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram van de Kamp",
+            "Bram Van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },
