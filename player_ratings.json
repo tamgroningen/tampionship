@@ -79,7 +79,9 @@
   },
   "Marco Kohlbrugge": {
     "HD1|Ronde 1": 4.681,
+    "GD1|Ronde 3": 4.4579,
     "GD1|Ronde 1": 4.5936,
+    "HD1|Ronde 3": 4.6383,
     "GD2|Ronde 2": 4.6631,
     "HD1|Ronde 2": 4.6918
   },
@@ -683,7 +685,10 @@
   },
   "Emke Veldscholte": {
     "DE1|Ronde 1": 5.5205,
+    "DE1|Ronde 3": 5.6468,
     "DE1|Ronde 2": 5.5601,
+    "GD1|Ronde 3": 4.5529,
+    "DD1|Ronde 3": 4.4237,
     "GD1|Ronde 2": 4.2789,
     "DD1|Ronde 2": 4.3961,
     "GD1|Ronde 1": 4.2979
@@ -705,8 +710,11 @@
   "Jan Bate van der Dussen": {
     "GD2|Ronde 1": 5.5045,
     "GD1|Ronde 2": 5.5937,
+    "HE1|Ronde 3": 4.748,
     "HE1|Ronde 2": 4.7806,
-    "HE1|Ronde 1": 4.995
+    "HE1|Ronde 1": 4.995,
+    "GD2|Ronde 3": 5.5581,
+    "HD1|Ronde 3": 5.7385
   },
   "Arianne Zwart": {
     "GD2|Ronde 1": 4.9556,
@@ -836,12 +844,36 @@
   "Roan Boersma": {
     "Ronde van 32|Ronde van 32": 6.5265
   },
+  "Bente Schijf": {
+    "DE1|Ronde 3": 5.7593,
+    "GD1|Ronde 3": 4.2728
+  },
   "Babette Peper": {
     "DE1|Ronde 2": 5.1352,
     "GD1|Ronde 2": 4.331,
     "DD1|Ronde 2": 4.2138,
     "DD1|Ronde 1": 4.5247,
     "GD1|Ronde 1": 4.352
+  },
+  "Jan Kruithof": {
+    "GD1|Ronde 3": 5.143,
+    "HE1|Ronde 3": 4.7567
+  },
+  "Sophie Bunskoek": {
+    "DD1|Ronde 3": 5.5103,
+    "DD1|Ronde 2": 5.6523,
+    "GD2|Ronde 3": 5.6395,
+    "DE2|Ronde 3": 6.9421,
+    "DE2|Ronde 2": 6.845,
+    "GD2|Ronde 2": 5.5351
+  },
+  "Rebecca van der Velde": {
+    "DD1|Ronde 3": 5.9336,
+    "DE2|Ronde 3": 7.2073
+  },
+  "Nienke Van houten": {
+    "DD1|Ronde 3": 3.88,
+    "GD2|Ronde 3": 3.7508
   },
   "Margot Leusink": {
     "DD1|Ronde 2": 6.1306,
@@ -850,11 +882,6 @@
     "DE2|Ronde 1": 6.3911,
     "DE2|Ronde 2": 6.5131,
     "GD2|Ronde 2": 6.2478
-  },
-  "Sophie Bunskoek": {
-    "DD1|Ronde 2": 5.6523,
-    "DE2|Ronde 2": 6.845,
-    "GD2|Ronde 2": 5.5351
   },
   "Erik Bakker": {
     "HE2|Ronde 3": 6.5855,
@@ -1116,6 +1143,13 @@
     "HD1|Ronde 3": 2.463,
     "HD2|Ronde 3": 2.4722,
     "HD1|Ronde 1": 2.5491
+  },
+  "Laurens Dietrich": {
+    "GD2|Ronde 3": 5.4962,
+    "HD1|Ronde 3": 5.3158
+  },
+  "Julius Dietrich": {
+    "HD1|Ronde 3": 4.4186
   },
   "Jasper Foekens": {
     "HE3|Ronde 3": 8.9999,

@@ -22076,7 +22076,7 @@
   {
     "home_team": "TAM 5",
     "away_team": "GSTC 1",
-    "team_score": "12:00",
+    "team_score": "3–5",
     "round": "Ronde 3",
     "league": "",
     "partijen": [
@@ -22089,7 +22089,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.6468
           ]
         },
         "away": {
@@ -22099,7 +22099,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.7593
           ]
         },
         "sets": [
@@ -22123,7 +22123,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            6.9421
           ]
         },
         "away": {
@@ -22133,7 +22133,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            7.2073
           ]
         },
         "sets": [
@@ -22161,7 +22161,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            4.748
           ]
         },
         "away": {
@@ -22171,7 +22171,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            4.7567
           ]
         },
         "sets": [
@@ -22238,8 +22238,8 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            4.4237,
+            5.5103
           ]
         },
         "away": {
@@ -22250,8 +22250,8 @@
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            5.9336,
+            3.88
           ]
         },
         "sets": [
@@ -22274,10 +22274,10 @@
             "Jan Bate van der Dussen",
             "Marco Kohlbrugge"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
-            null,
-            null
+            5.7385,
+            4.6383
           ]
         },
         "away": {
@@ -22288,8 +22288,8 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            4.4186,
+            5.3158
           ]
         },
         "sets": [
@@ -22298,11 +22298,11 @@
             4
           ],
           [
-            5,
-            4
+            7,
+            6
           ]
         ],
-        "set_scores": "6-4 5-4"
+        "set_scores": "6-4 7-6"
       },
       {
         "type": "GD1",
@@ -22314,8 +22314,8 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            4.5529,
+            4.4579
           ]
         },
         "away": {
@@ -22326,8 +22326,8 @@
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            5.143,
+            4.2728
           ]
         },
         "sets": [
@@ -22352,8 +22352,8 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            5.5581,
+            5.6395
           ]
         },
         "away": {
@@ -22364,8 +22364,8 @@
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            3.7508,
+            5.4962
           ]
         },
         "sets": [
