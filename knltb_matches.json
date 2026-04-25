@@ -8326,7 +8326,7 @@
           "won": true,
           "ratings": [
             2.6707,
-            3.6482
+            3.6434
           ]
         },
         "away": {
@@ -18824,17 +18824,17 @@
           ],
           "won": false,
           "ratings": [
-            null
+            3.902
           ]
         },
         "away": {
           "team": "TAM 3",
           "players": [
-            "Jildou Anna Boersma"
+            "Jildou Boersma"
           ],
           "won": true,
           "ratings": [
-            null
+            4.5251
           ]
         },
         "sets": [
@@ -19057,12 +19057,12 @@
           "team": "TAM 3",
           "players": [
             "Friso Luijkx",
-            "Jildou Anna Boersma"
+            "Jildou Boersma"
           ],
           "won": true,
           "ratings": [
             3.9841,
-            null
+            3.6227
           ]
         },
         "sets": [
@@ -19131,11 +19131,11 @@
         "home": {
           "team": "TAM 3",
           "players": [
-            "Jildou Anna Boersma"
+            "Jildou Boersma"
           ],
           "won": true,
           "ratings": [
-            null
+            4.3169
           ]
         },
         "away": {
@@ -19145,7 +19145,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.7018
           ]
         },
         "sets": [
@@ -19242,12 +19242,12 @@
           "team": "TAM 3",
           "players": [
             "Celest Bergsma",
-            "Jildou Anna Boersma"
+            "Jildou Boersma"
           ],
           "won": false,
           "ratings": [
-            3.6482,
-            null
+            3.6434,
+            3.5783
           ]
         },
         "away": {
@@ -19329,12 +19329,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram Van de Kamp",
+            "Bram van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },
@@ -19446,17 +19446,17 @@
           ],
           "won": true,
           "ratings": [
-            null
+            4.0711
           ]
         },
         "away": {
           "team": "TAM 3",
           "players": [
-            "Jildou Anna Boersma"
+            "Jildou Boersma"
           ],
           "won": false,
           "ratings": [
-            null
+            4.2965
           ]
         },
         "sets": [
@@ -19561,12 +19561,12 @@
           "team": "TAM 3",
           "players": [
             "Eline Drent",
-            "Jildou Anna Boersma"
+            "Jildou Boersma"
           ],
           "won": true,
           "ratings": [
             3.3443,
-            null
+            3.6438
           ]
         },
         "sets": [
@@ -19678,12 +19678,12 @@
         "away": {
           "team": "TAM 3",
           "players": [
-            "Jildou Anna Boersma",
+            "Jildou Boersma",
             "Friso Luijkx"
           ],
           "won": true,
           "ratings": [
-            null,
+            3.5333,
             4.0834
           ]
         },

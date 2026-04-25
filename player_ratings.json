@@ -44,7 +44,7 @@
     "DE3|Ronde 3": 3.9835,
     "DE3|Ronde 1": 4.0003,
     "GD1|Ronde 2": 3.7089,
-    "DD1|Ronde 2": 3.6482
+    "DD1|Ronde 2": 3.6434
   },
   "Lars van Veen": {
     "HD1|Ronde 3": 5.1967,
@@ -626,7 +626,10 @@
     "DD1|Ronde 2": 3.5783,
     "DD1|Ronde 3": 3.6438,
     "GD2|Ronde 3": 3.5333,
-    "GD2|Ronde 1": 3.6227
+    "GD2|Ronde 1": 3.6227,
+    "DE2|Ronde 3": 4.2965,
+    "DE2|Ronde 2": 4.3169,
+    "DE2|Ronde 1": 4.5251
   },
   "Floor Lissone": {
     "DD1|Ronde 2": 2.4668,
@@ -750,7 +753,8 @@
     "HD1|Ronde 3": 2.9996
   },
   "Lisanne Dasselaar": {
-    "GD1|Ronde 3": 2.8707
+    "GD1|Ronde 3": 2.8707,
+    "DE2|Ronde 3": 4.0711
   },
   "Renske Cruijsen": {
     "DD1|Ronde 3": 3.7944
@@ -1027,7 +1031,8 @@
     "Ronde van 16|Ronde van 16": 3.7423
   },
   "Marit Ariaans": {
-    "GD2|Ronde 1": 4.6058
+    "GD2|Ronde 1": 4.6058,
+    "DE2|Ronde 1": 3.902
   },
   "Guus Grandiek": {
     "HE1|Ronde 2": 8.9999,
@@ -1379,6 +1384,9 @@
   },
   "Tim Keizer": {
     "Ronde 1|Ronde 1": 3.6419
+  },
+  "Elze Groenenboom": {
+    "DE2|Ronde 2": 5.7018
   },
   "Lucas van der Weiden": {
     "HD1|Ronde 3": 3.8717,

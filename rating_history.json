@@ -4846,6 +4846,82 @@
       }
     ]
   },
+  "Jildou Boersma": {
+    "singles": [
+      {
+        "date": "6-4-2026",
+        "rating": 4.5251,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 4.3169,
+        "won": true
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 4.2965,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "1-7-2025",
+        "rating": 3.9777,
+        "won": false
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 4.0575,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 4.0509,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 3.9198,
+        "won": true
+      },
+      {
+        "date": "30-8-2025",
+        "rating": 3.7157,
+        "won": true
+      },
+      {
+        "date": "30-8-2025",
+        "rating": 3.7427,
+        "won": true
+      },
+      {
+        "date": "31-8-2025",
+        "rating": 3.6862,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 3.6227,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 3.5783,
+        "won": false
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 3.5333,
+        "won": true
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 3.6438,
+        "won": true
+      }
+    ]
+  },
   "Job Weening": {
     "singles": [
       {
