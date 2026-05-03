@@ -482,6 +482,8 @@
     "HD1|Ronde 2": 7.7474,
     "HD1|Ronde 3": 7.6005,
     "GD1|Ronde 3": 7.6615,
+    "Ronde 2|Ronde 2": 8.5126,
+    "Ronde 1|Ronde 1": 8.3944,
     "HE1|Ronde 1": 8.2342,
     "HD1|Ronde 1": 7.6613
   },
@@ -2246,6 +2248,12 @@
   },
   "Olivier Veling": {
     "Kwartfinale|": 3.9411
+  },
+  "Youri Hofman": {
+    "Ronde 2|Ronde 2": 8.51
+  },
+  "Rick van Beijeren": {
+    "Ronde 1|Ronde 1": 8.2392
   },
   "Hans Mouwen": {
     "HE1|Ronde 1": 8.4172,
