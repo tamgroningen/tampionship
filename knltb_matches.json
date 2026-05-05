@@ -19329,12 +19329,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram Van de Kamp",
+            "Bram van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },
