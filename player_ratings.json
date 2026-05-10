@@ -1350,10 +1350,12 @@
   "Sil Hoekstra": {
     "HD1|Ronde 3": 2.2591,
     "HD1|Ronde 1": 2.295,
+    "HE1|Ronde 4": 2.1402,
     "HE1|Ronde 3": 2.1178,
     "HE2|Ronde 2": 2.1345,
     "HE1|Ronde 2": 1.8939,
     "HE1|Ronde 1": 1.8321,
+    "HD1|Ronde 4": 2.2323,
     "HD1|Ronde 2": 2.1749
   },
   "Mart de Lijster": {
@@ -2665,6 +2667,9 @@
     "HD2|Ronde 1": 4.2035,
     "HE1|Ronde 1": 2.8941
   },
+  "Stijn Hofman": {
+    "HE1|Ronde 4": 1.4937
+  },
   "Mattheo Knoop": {
     "HE1|Ronde 3": 1.2656,
     "HD1|Ronde 3": 0.6794
@@ -2676,15 +2681,22 @@
   "Bas Bouwman": {
     "HE1|Ronde 1": 1.5465
   },
+  "Tomas Tallart Fabre": {
+    "HD1|Ronde 4": 2.2383
+  },
+  "Daniel Fennis": {
+    "HD1|Ronde 4": 0.9392
+  },
+  "Tijn Bokma": {
+    "HD1|Ronde 4": 2.2528,
+    "HD1|Ronde 2": 2.1686
+  },
   "Casper Room": {
     "HD1|Ronde 3": 3.286,
     "HE4|Ronde 3": 4.0865
   },
   "Rens Kamphuis": {
     "HD1|Ronde 2": 2.1116
-  },
-  "Tijn Bokma": {
-    "HD1|Ronde 2": 2.1686
   },
   "Lars Ankerman": {
     "Ronde van 32|Ronde van 32": 3.0932,

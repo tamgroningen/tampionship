@@ -9967,11 +9967,11 @@
         "home": {
           "team": "DE DRIE POSTEN 1",
           "players": [
-            "Johanneke Terpstra"
+            "Johanneke Terpstra - Visser"
           ],
           "won": false,
           "ratings": [
-            null
+            7.8116
           ]
         },
         "away": {
@@ -10073,12 +10073,12 @@
         "home": {
           "team": "DE DRIE POSTEN 1",
           "players": [
-            "Johanneke Terpstra",
+            "Johanneke Terpstra - Visser",
             "Saskia Zuiderhof"
           ],
           "won": true,
           "ratings": [
-            null,
+            5.645,
             5.5307
           ]
         },
@@ -22076,11 +22076,11 @@
         "home": {
           "team": "DLTC-DRACHTEN 2",
           "players": [
-            "Hasmik Poghosowa"
+            "Hasmik Van Veen - Poghosowa"
           ],
           "won": false,
           "ratings": [
-            null
+            5.8772
           ]
         },
         "away": {
@@ -22216,12 +22216,12 @@
         "home": {
           "team": "DLTC-DRACHTEN 2",
           "players": [
-            "Hasmik Poghosowa",
+            "Hasmik Van Veen - Poghosowa",
             "Annemijn Schoonhoven"
           ],
           "won": false,
           "ratings": [
-            null,
+            5.7888,
             5.3264
           ]
         },
