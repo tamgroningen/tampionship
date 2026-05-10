@@ -3204,7 +3204,7 @@
   {
     "home_team": "CREAM CRACKERS 5",
     "away_team": "TAM 3",
-    "team_score": "09:00",
+    "team_score": "1–5",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -3212,103 +3212,217 @@
         "type": "HE1",
         "home": {
           "team": "CREAM CRACKERS 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jelle Meerstra"
+          ],
+          "won": true,
+          "ratings": [
+            5.1722
+          ]
         },
         "away": {
           "team": "TAM 3",
-          "players": [],
+          "players": [
+            "Mart Nijenhuis"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.6569
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-1 6-3"
       },
       {
         "type": "HE2",
         "home": {
           "team": "CREAM CRACKERS 5",
-          "players": [],
+          "players": [
+            "Kees Oonk"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.767
+          ]
         },
         "away": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sten Boschman"
+          ],
+          "won": true,
+          "ratings": [
+            5.5771
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "6-3 2-6 3-6"
       },
       {
         "type": "HE3",
         "home": {
           "team": "CREAM CRACKERS 5",
-          "players": [],
+          "players": [
+            "Yannick van Sleen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.331
+          ]
         },
         "away": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Victor Miedema"
+          ],
+          "won": true,
+          "ratings": [
+            5.9615
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            7
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "6-7 3-6"
       },
       {
         "type": "HE4",
         "home": {
           "team": "CREAM CRACKERS 5",
-          "players": [],
+          "players": [
+            "Johannes Stelwagen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.1604
+          ]
         },
         "away": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ole van Daalen"
+          ],
+          "won": true,
+          "ratings": [
+            6.2244
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "4-6 2-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "CREAM CRACKERS 5",
-          "players": [],
+          "players": [
+            "Kees Oonk",
+            "Jelle Meerstra"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.4131,
+            4.8192
+          ]
         },
         "away": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Mart Nijenhuis",
+            "Sten Boschman"
+          ],
+          "won": true,
+          "ratings": [
+            4.7445,
+            5.3431
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "4-6 4-6"
       },
       {
         "type": "HD2",
         "home": {
           "team": "CREAM CRACKERS 5",
-          "players": [],
+          "players": [
+            "Johannes Stelwagen",
+            "Yannick van Sleen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.134,
+            6.4231
+          ]
         },
         "away": {
           "team": "TAM 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Victor Miedema",
+            "Ole van Daalen"
+          ],
+          "won": true,
+          "ratings": [
+            5.0497,
+            5.4948
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "4-6 2-6"
       }
     ],
     "tam_team": "",
@@ -6839,7 +6953,7 @@
   {
     "home_team": "AMSTERDAMSE BOS 1",
     "away_team": "TAM 1",
-    "team_score": "11:00",
+    "team_score": "2–4",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -6847,103 +6961,217 @@
         "type": "HE1",
         "home": {
           "team": "AMSTERDAMSE BOS 1",
-          "players": [],
+          "players": [
+            "Julian Sarkinovic"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.4527
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sil Hoekstra"
+          ],
+          "won": true,
+          "ratings": [
+            2.1402
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "1-6 2-6"
       },
       {
         "type": "HE2",
         "home": {
           "team": "AMSTERDAMSE BOS 1",
-          "players": [],
+          "players": [
+            "Sander de Grave"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.269
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jasper Visker"
+          ],
+          "won": true,
+          "ratings": [
+            3.0215
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "2-6 3-6"
       },
       {
         "type": "HE3",
         "home": {
           "team": "AMSTERDAMSE BOS 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Olivier Groot"
+          ],
+          "won": true,
+          "ratings": [
+            3.0794
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Seb Dijkema"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.6978
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            5
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "7-5 6-2"
       },
       {
         "type": "HE4",
         "home": {
           "team": "AMSTERDAMSE BOS 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Gilles Vullings lenssen"
+          ],
+          "won": true,
+          "ratings": [
+            3.858
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Sven van Dijk"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.9263
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "set_scores": "6-4 7-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "AMSTERDAMSE BOS 1",
-          "players": [],
+          "players": [
+            "Julian Sarkinovic",
+            "Jip Lohle"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.5701,
+            3.6379
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jasper Visker",
+            "Seb Dijkema"
+          ],
+          "won": true,
+          "ratings": [
+            2.4174,
+            2.9576
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "set_scores": "2-6 1-6"
       },
       {
         "type": "HD2",
         "home": {
           "team": "AMSTERDAMSE BOS 1",
-          "players": [],
+          "players": [
+            "Sander de Grave",
+            "Gilles Vullings lenssen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.7811,
+            4.569
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sil Hoekstra",
+            "Sven van Dijk"
+          ],
+          "won": true,
+          "ratings": [
+            2.0155,
+            2.6085
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            11,
+            13
+          ]
+        ],
+        "set_scores": "6-4 0-6 11-13"
       }
     ],
     "tam_team": "",
@@ -15492,7 +15720,7 @@
   {
     "home_team": "GRONINGER LTB 7",
     "away_team": "TAM 5",
-    "team_score": "14:00",
+    "team_score": "0–5",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -15500,86 +15728,183 @@
         "type": "DE1",
         "home": {
           "team": "GRONINGER LTB 7",
-          "players": [],
+          "players": [
+            "Melissa Jansen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            9.3283
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sarah Dezijn"
+          ],
+          "won": true,
+          "ratings": [
+            8.589
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "set_scores": "0-6 6-7"
       },
       {
         "type": "HE1",
         "home": {
           "team": "GRONINGER LTB 7",
-          "players": [],
+          "players": [
+            "Jeffrey Twickler"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            9.0757
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ties van Tuil"
+          ],
+          "won": true,
+          "ratings": [
+            8.3365
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "set_scores": "1-6 1-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "GRONINGER LTB 7",
-          "players": [],
+          "players": [
+            "Lars Jansen",
+            "Annika de Jong"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            9.3206,
+            9.7231
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sander van de Water",
+            "Jojanneke Nieboer"
+          ],
+          "won": true,
+          "ratings": [
+            8.8726,
+            7.6475
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "3-6 0-6"
       },
       {
         "type": "DD1",
         "home": {
           "team": "GRONINGER LTB 7",
-          "players": [],
+          "players": [
+            "Melissa Jansen",
+            "Annika de Jong"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            9.227,
+            9.7432
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sarah Dezijn",
+            "Jojanneke Nieboer"
+          ],
+          "won": true,
+          "ratings": [
+            8.2154,
+            7.6274
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "0-6 0-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "GRONINGER LTB 7",
-          "players": [],
+          "players": [
+            "Lars Jansen",
+            "Jeffrey Twickler"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            9.3407,
+            9.19
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ties van Tuil",
+            "Sander van de Water"
+          ],
+          "won": true,
+          "ratings": [
+            8.2145,
+            8.8525
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "0-6 0-6"
       }
     ],
     "tam_team": "",
@@ -23580,7 +23905,7 @@
   {
     "home_team": "RACKET & FIT CENTER BORNE 3",
     "away_team": "TAM 5",
-    "team_score": "11:00",
+    "team_score": "4–4",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -23588,137 +23913,293 @@
         "type": "DE1",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
+          "players": [
+            "Fleur Duthler"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.4358
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Emke Veldscholte"
+          ],
+          "won": true,
+          "ratings": [
+            5.5234
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "6-0 6-7 4-6"
       },
       {
         "type": "DE2",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sara Mousa"
+          ],
+          "won": true,
+          "ratings": [
+            5.2567
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Sophie Bunskoek"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.1122
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "set_scores": "6-1 6-0"
       },
       {
         "type": "HE1",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
+          "players": [
+            "Max van Unen"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.1256
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jan Bate van der Dussen"
+          ],
+          "won": true,
+          "ratings": [
+            4.8866
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "set_scores": "3-6 1-6"
       },
       {
         "type": "HE2",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
+          "players": [
+            "Jip Drijfhout"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.0374
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sven Laurens"
+          ],
+          "won": true,
+          "ratings": [
+            5.403
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "2-6 3-6"
       },
       {
         "type": "DD1",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Sara Mousa",
+            "Lotte Sterken"
+          ],
+          "won": true,
+          "ratings": [
+            5.3932,
+            5.7242
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Emke Veldscholte",
+            "Sophie Bunskoek"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.718,
+            5.6734
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "set_scores": "6-2 6-1"
       },
       {
         "type": "HD1",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
+          "players": [
+            "Max van Unen",
+            "Jip Drijfhout"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.6161,
+            5.6198
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Marco Kohlbrugge",
+            "Sven Laurens"
+          ],
+          "won": true,
+          "ratings": [
+            4.623,
+            4.9816
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "0-6 2-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Connor Kerkdijk",
+            "Sara Mousa"
+          ],
+          "won": true,
+          "ratings": [
+            2.2238,
+            5.2076
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Marco Kohlbrugge",
+            "Emke Veldscholte"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.5784,
+            4.9036
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "set_scores": "6-2 7-6"
       },
       {
         "type": "GD2",
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Max van Unen",
+            "Lotte Sterken"
+          ],
+          "won": true,
+          "ratings": [
+            5.6607,
+            5.5386
+          ]
         },
         "away": {
           "team": "TAM 5",
-          "players": [],
+          "players": [
+            "Jan Bate van der Dussen",
+            "Sophie Bunskoek"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.592,
+            5.859
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "6-1 6-4"
       }
     ],
     "tam_team": "",
@@ -25826,7 +26307,7 @@
   {
     "home_team": "SPRENKELAAR 1",
     "away_team": "TAM 7",
-    "team_score": "12:30",
+    "team_score": "4–1",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -25834,86 +26315,195 @@
         "type": "DE1",
         "home": {
           "team": "SPRENKELAAR 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Indira Hoogen Stoevenbelt"
+          ],
+          "won": true,
+          "ratings": [
+            6.1752
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
+          "players": [
+            "Pien Groenewold"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.2598
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-1 6-7 6-3"
       },
       {
         "type": "HE1",
         "home": {
           "team": "SPRENKELAAR 1",
-          "players": [],
+          "players": [
+            "Cas Hanekamp"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.946
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Pascal Sturre"
+          ],
+          "won": true,
+          "ratings": [
+            5.7869
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "1-6 4-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "SPRENKELAAR 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Maurice Smit",
+            "Esmee ten Arve"
+          ],
+          "won": true,
+          "ratings": [
+            4.8894,
+            6.1471
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
+          "players": [
+            "Marnix Bosch",
+            "Rachel Klieverik"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.6075,
+            6.1457
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            10,
+            8
+          ]
+        ],
+        "set_scores": "6-3 4-6 10-8"
       },
       {
         "type": "DD1",
         "home": {
           "team": "SPRENKELAAR 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Esmee ten Arve",
+            "Indira Hoogen Stoevenbelt"
+          ],
+          "won": true,
+          "ratings": [
+            6.0571,
+            5.7871
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
+          "players": [
+            "Pien Groenewold",
+            "Rachel Klieverik"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.5651,
+            6.2357
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "set_scores": "6-2 7-5"
       },
       {
         "type": "HD1",
         "home": {
           "team": "SPRENKELAAR 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Maurice Smit",
+            "Cas Hanekamp"
+          ],
+          "won": true,
+          "ratings": [
+            4.7994,
+            6.3084
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
+          "players": [
+            "Marnix Bosch",
+            "Pascal Sturre"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.6975,
+            6.6552
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            11,
+            9
+          ]
+        ],
+        "set_scores": "0-6 6-3 11-9"
       }
     ],
     "tam_team": "",
@@ -26801,7 +27391,7 @@
   {
     "home_team": "TAM 8",
     "away_team": "UNESWIDO 1",
-    "team_score": "16:30",
+    "team_score": "4–1",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -26809,86 +27399,187 @@
         "type": "DE1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ayana Werners"
+          ],
+          "won": true,
+          "ratings": [
+            6.7516
+          ]
         },
         "away": {
           "team": "UNESWIDO 1",
-          "players": [],
+          "players": [
+            "Lizeth van den Aker"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.9767
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "set_scores": "6-2 6-0"
       },
       {
         "type": "HE1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Bote Spijkerman"
+          ],
+          "won": true,
+          "ratings": [
+            6.6372
+          ]
         },
         "away": {
           "team": "UNESWIDO 1",
-          "players": [],
+          "players": [
+            "Ruben Brader"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.8007
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "6-1 6-2"
       },
       {
         "type": "GD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
+          "players": [
+            "Laurens Elderhorst",
+            "Berber Zwart"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.6848,
+            6.7221
+          ]
         },
         "away": {
           "team": "UNESWIDO 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Melvin Rob",
+            "Jette Bessembinders"
+          ],
+          "won": true,
+          "ratings": [
+            6.4686,
+            7.0937
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            10
+          ]
+        ],
+        "set_scores": "4-6 6-2 6-10"
       },
       {
         "type": "DD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ayana Werners",
+            "Berber Zwart"
+          ],
+          "won": true,
+          "ratings": [
+            7.3061,
+            6.8703
+          ]
         },
         "away": {
           "team": "UNESWIDO 1",
-          "players": [],
+          "players": [
+            "Jette Bessembinders",
+            "Lizeth van den Aker"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.9455,
+            8.4197
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "set_scores": "6-3 6-0"
       },
       {
         "type": "HD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Bote Spijkerman",
+            "Laurens Elderhorst"
+          ],
+          "won": true,
+          "ratings": [
+            6.2055,
+            6.833
+          ]
         },
         "away": {
           "team": "UNESWIDO 1",
-          "players": [],
+          "players": [
+            "Ruben Brader",
+            "Melvin Rob"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.1931,
+            6.3204
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "6-1 6-4"
       }
     ],
     "tam_team": "",
