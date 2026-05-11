@@ -88,7 +88,7 @@
     "DD1|Ronde 2": 5.1877,
     "GD2|Ronde 1": 5.2708,
     "DE2|Ronde 3": 7.5108,
-    "DD1|Ronde 4": 5.5352,
+    "DD1|Ronde 4": 5.5418,
     "DD1|Ronde 3": 5.3005,
     "DD1|Ronde 1": 5.0981
   },
@@ -1138,7 +1138,7 @@
   "Nienke Van houten": {
     "DD1|Ronde 3": 3.88,
     "GD2|Ronde 4": 3.6912,
-    "DD1|Ronde 4": 3.7169,
+    "DD1|Ronde 4": 3.6932,
     "DE1|Ronde 4": 4.6687,
     "GD2|Ronde 3": 3.7508
   },
@@ -1174,7 +1174,6 @@
   },
   "Sophie Leus": {
     "GD1|Ronde 3": 6.1321,
-    "DD1|Ronde 4": 6.243,
     "DE1|Ronde 3": 6.242
   },
   "Jody Brouwer": {
@@ -1218,6 +1217,10 @@
   "Hugo Driessen": {
     "GD1|Ronde 2": 9.2081,
     "HD1|Ronde 2": 9.2326
+  },
+  "Sophie Veekamp": {
+    "DD1|Ronde 4": 6.7464,
+    "DE2|Ronde 4": 6.7588
   },
   "Anouk de Vos": {
     "DD1|Ronde 3": 5.2991,
@@ -2946,9 +2949,6 @@
   },
   "Hannah Meijer": {
     "DD1|Ronde 4": 4.7874
-  },
-  "Sophie Veekamp": {
-    "DE2|Ronde 4": 6.7588
   },
   "Lars Ankerman": {
     "Ronde van 32|Ronde van 32": 3.0932,
