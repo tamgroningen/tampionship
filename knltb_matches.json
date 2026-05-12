@@ -10195,11 +10195,11 @@
         "home": {
           "team": "DE DRIE POSTEN 1",
           "players": [
-            "Johanneke Terpstra - Visser"
+            "Johanneke Terpstra"
           ],
           "won": false,
           "ratings": [
-            null
+            7.8116
           ]
         },
         "away": {
@@ -10301,12 +10301,12 @@
         "home": {
           "team": "DE DRIE POSTEN 1",
           "players": [
-            "Johanneke Terpstra - Visser",
+            "Johanneke Terpstra",
             "Saskia Zuiderhof"
           ],
           "won": true,
           "ratings": [
-            null,
+            5.645,
             5.5307
           ]
         },
