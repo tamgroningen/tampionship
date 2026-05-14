@@ -11807,102 +11807,6 @@
     "date": "9-5-2026"
   },
   {
-    "home_team": "DE KALKWIJCK 1",
-    "away_team": "TAM 1",
-    "team_score": "13:00",
-    "round": "Ronde 5",
-    "league": "",
-    "partijen": [
-      {
-        "type": "DE1",
-        "home": {
-          "team": "DE KALKWIJCK 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HE1",
-        "home": {
-          "team": "DE KALKWIJCK 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "GD1",
-        "home": {
-          "team": "DE KALKWIJCK 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "DD1",
-        "home": {
-          "team": "DE KALKWIJCK 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HD1",
-        "home": {
-          "team": "DE KALKWIJCK 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      }
-    ],
-    "tam_team": "",
-    "date": "16-5-2026"
-  },
-  {
     "home_team": "TAM 1",
     "away_team": "CREAM CRACKERS 6",
     "team_score": "15:00",
@@ -12093,6 +11997,102 @@
     ],
     "tam_team": "",
     "date": "30-5-2026"
+  },
+  {
+    "home_team": "DE KALKWIJCK 1",
+    "away_team": "TAM 1",
+    "team_score": "13:00",
+    "round": "Ronde 5",
+    "league": "",
+    "partijen": [
+      {
+        "type": "DE1",
+        "home": {
+          "team": "DE KALKWIJCK 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "HE1",
+        "home": {
+          "team": "DE KALKWIJCK 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "GD1",
+        "home": {
+          "team": "DE KALKWIJCK 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DD1",
+        "home": {
+          "team": "DE KALKWIJCK 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "HD1",
+        "home": {
+          "team": "DE KALKWIJCK 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      }
+    ],
+    "tam_team": "",
+    "date": "6-6-2026"
   },
   {
     "home_team": "SPR 1",
