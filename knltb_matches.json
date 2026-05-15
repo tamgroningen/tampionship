@@ -6745,7 +6745,7 @@
           ],
           "won": false,
           "ratings": [
-            3.413
+            null
           ]
         },
         "sets": [
@@ -6888,7 +6888,7 @@
           ],
           "won": false,
           "ratings": [
-            2.6572,
+            null,
             3.6903
           ]
         },
@@ -8192,7 +8192,7 @@
   {
     "home_team": "ALMERE 1",
     "away_team": "TAM 2",
-    "team_score": "15:30",
+    "team_score": "11:00",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -8300,7 +8300,7 @@
       }
     ],
     "tam_team": "",
-    "date": "10-5-2026"
+    "date": "14-5-2026"
   },
   {
     "home_team": "TAM 2",
@@ -15126,7 +15126,7 @@
   {
     "home_team": "TAM 4",
     "away_team": "CREAM CRACKERS 14",
-    "team_score": "13:30",
+    "team_score": "09:00",
     "round": "Ronde 6",
     "league": "",
     "partijen": [
@@ -21150,7 +21150,7 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram van de Kamp",
+            "Bram Van de Kamp",
             "Britt Donders"
           ],
           "won": false,
