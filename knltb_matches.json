@@ -2168,7 +2168,7 @@
   {
     "home_team": "TAM 2",
     "away_team": "`T NYLAN 1",
-    "team_score": "09:00",
+    "team_score": "6–0",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -2177,7 +2177,7 @@
         "home": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -2194,7 +2194,7 @@
         "home": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -2211,7 +2211,7 @@
         "home": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -2228,7 +2228,7 @@
         "home": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -2245,7 +2245,7 @@
         "home": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -2262,7 +2262,7 @@
         "home": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -6741,11 +6741,11 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster"
+            "Mart De Lijster"
           ],
           "won": false,
           "ratings": [
-            null
+            3.413
           ]
         },
         "sets": [
@@ -6883,12 +6883,12 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster",
+            "Mart De Lijster",
             "David Hermans"
           ],
           "won": false,
           "ratings": [
-            null,
+            2.6572,
             3.6903
           ]
         },
