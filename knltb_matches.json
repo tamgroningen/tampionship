@@ -8639,7 +8639,7 @@
   {
     "home_team": "ALMERE 1",
     "away_team": "TAM 2",
-    "team_score": "11:00",
+    "team_score": "4–2",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -8647,103 +8647,217 @@
         "type": "HE1",
         "home": {
           "team": "ALMERE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Raf Lever"
+          ],
+          "won": true,
+          "ratings": [
+            2.5417
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Raoul van Loevezijn"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.9961
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-0 6-3"
       },
       {
         "type": "HE2",
         "home": {
           "team": "ALMERE 1",
-          "players": [],
+          "players": [
+            "Rowin van de Werke"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.9204
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Floris Bokx"
+          ],
+          "won": true,
+          "ratings": [
+            4.0926
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "5-7 6-4 4-6"
       },
       {
         "type": "HE3",
         "home": {
           "team": "ALMERE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Mitchell Pappot"
+          ],
+          "won": true,
+          "ratings": [
+            4.5783
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Jesse IJntema"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.7581
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            5
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "7-5 6-2"
       },
       {
         "type": "HE4",
         "home": {
           "team": "ALMERE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Eli Lever"
+          ],
+          "won": true,
+          "ratings": [
+            5.2869
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Niels de Ruiter"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.0706
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "6-3 6-4"
       },
       {
         "type": "HD1",
         "home": {
           "team": "ALMERE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Raf Lever",
+            "Rowin van de Werke"
+          ],
+          "won": true,
+          "ratings": [
+            3.8222,
+            4.7855
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Floris Bokx",
+            "Jesse IJntema"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.9529,
+            3.8367
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "6-2 6-2"
       },
       {
         "type": "HD2",
         "home": {
           "team": "ALMERE 1",
-          "players": [],
+          "players": [
+            "Eli Lever",
+            "Jens Pleijsier"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.9832,
+            6.4449
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Raoul van Loevezijn",
+            "Niels de Ruiter"
+          ],
+          "won": true,
+          "ratings": [
+            3.5621,
+            4.268
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "3-6 2-6"
       }
     ],
     "tam_team": "",
@@ -18064,7 +18178,7 @@
   {
     "home_team": "TAM 6",
     "away_team": "GRONINGER LTB 12",
-    "team_score": "09:00",
+    "team_score": "3–2",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -18072,86 +18186,187 @@
         "type": "DE1",
         "home": {
           "team": "TAM 6",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Fardau Kloosterman"
+          ],
+          "won": true,
+          "ratings": [
+            8.8752
+          ]
         },
         "away": {
           "team": "GRONINGER LTB 12",
-          "players": [],
+          "players": [
+            "Maaike Duivestein"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            9.1239
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "6-3 6-2"
       },
       {
         "type": "HE1",
         "home": {
           "team": "TAM 6",
-          "players": [],
+          "players": [
+            "Pim Michels"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            9.216
+          ]
         },
         "away": {
           "team": "GRONINGER LTB 12",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Khah Yong Ling"
+          ],
+          "won": true,
+          "ratings": [
+            9.2112
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "7-5 2-6 4-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "TAM 6",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ryan Kooi",
+            "Amelie Hoendermis"
+          ],
+          "won": true,
+          "ratings": [
+            8.9609,
+            8.8457
+          ]
         },
         "away": {
           "team": "GRONINGER LTB 12",
-          "players": [],
+          "players": [
+            "David Schuitmaker",
+            "Marlinde Vetkamp"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            8.7461,
+            8.3251
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "set_scores": "6-2 7-6"
       },
       {
         "type": "DD1",
         "home": {
           "team": "TAM 6",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Amelie Hoendermis",
+            "Fardau Kloosterman"
+          ],
+          "won": true,
+          "ratings": [
+            8.6595,
+            8.6512
+          ]
         },
         "away": {
           "team": "GRONINGER LTB 12",
-          "players": [],
+          "players": [
+            "Maaike Duivestein",
+            "Marlinde Vetkamp"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            8.5663,
+            8.5113
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "6-3 6-2"
       },
       {
         "type": "HD1",
         "home": {
           "team": "TAM 6",
-          "players": [],
+          "players": [
+            "Ryan Kooi",
+            "Joep Scheerhoorn"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            8.7747,
+            8.8248
+          ]
         },
         "away": {
           "team": "GRONINGER LTB 12",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Khah Yong Ling",
+            "David Schuitmaker"
+          ],
+          "won": true,
+          "ratings": [
+            8.435,
+            8.9323
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "3-6 2-6"
       }
     ],
     "tam_team": "",
