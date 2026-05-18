@@ -7192,7 +7192,7 @@
           ],
           "won": false,
           "ratings": [
-            3.413
+            null
           ]
         },
         "sets": [
@@ -7335,7 +7335,7 @@
           ],
           "won": false,
           "ratings": [
-            2.6572,
+            null,
             3.6903
           ]
         },
@@ -8940,119 +8940,6 @@
     "date": "14-5-2026"
   },
   {
-    "home_team": "TAM 2",
-    "away_team": "RACKET & FIT CENTER BORNE 1",
-    "team_score": "13:30",
-    "round": "Ronde 5",
-    "league": "",
-    "partijen": [
-      {
-        "type": "HE1",
-        "home": {
-          "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HE2",
-        "home": {
-          "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HE3",
-        "home": {
-          "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HE4",
-        "home": {
-          "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HD1",
-        "home": {
-          "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HD2",
-        "home": {
-          "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      }
-    ],
-    "tam_team": "",
-    "date": "17-5-2026"
-  },
-  {
     "home_team": "VERACKET 1",
     "away_team": "TAM 2",
     "team_score": "09:00",
@@ -9277,6 +9164,191 @@
     ],
     "tam_team": "",
     "date": "31-5-2026"
+  },
+  {
+    "home_team": "TAM 2",
+    "away_team": "RACKET & FIT CENTER BORNE 1",
+    "team_score": "11:00",
+    "round": "Ronde 5",
+    "league": "",
+    "partijen": [
+      {
+        "type": "HE1",
+        "home": {
+          "team": "TAM 2",
+          "players": [
+            "Raoul van Loevezijn"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
+        },
+        "away": {
+          "team": "RACKET & FIT CENTER BORNE 1",
+          "players": [
+            "Julius Mondria"
+          ],
+          "won": false,
+          "ratings": [
+            null
+          ]
+        },
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "3-6 6-3 6-4"
+      },
+      {
+        "type": "HE2",
+        "home": {
+          "team": "TAM 2",
+          "players": [
+            "Darren Smit"
+          ],
+          "won": false,
+          "ratings": [
+            null
+          ]
+        },
+        "away": {
+          "team": "RACKET & FIT CENTER BORNE 1",
+          "players": [
+            "Conner Kerkdijk"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
+        },
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "1-6 2-6"
+      },
+      {
+        "type": "HE3",
+        "home": {
+          "team": "TAM 2",
+          "players": [
+            "Floris Bokx"
+          ],
+          "won": false,
+          "ratings": [
+            null
+          ]
+        },
+        "away": {
+          "team": "RACKET & FIT CENTER BORNE 1",
+          "players": [
+            "Sem Briels"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
+        },
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "4-6 3-6"
+      },
+      {
+        "type": "HE4",
+        "home": {
+          "team": "TAM 2",
+          "players": [
+            "Niels de Ruiter"
+          ],
+          "won": false,
+          "ratings": [
+            null
+          ]
+        },
+        "away": {
+          "team": "RACKET & FIT CENTER BORNE 1",
+          "players": [
+            "Gabriël Balena"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
+        },
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "0-6 0-6"
+      },
+      {
+        "type": "HD1",
+        "home": {
+          "team": "TAM 2",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "RACKET & FIT CENTER BORNE 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "HD2",
+        "home": {
+          "team": "TAM 2",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "RACKET & FIT CENTER BORNE 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      }
+    ],
+    "tam_team": "",
+    "date": "7-6-2026"
   },
   {
     "home_team": "CREAM CRACKERS 1",
@@ -22853,7 +22925,7 @@
           ],
           "won": false,
           "ratings": [
-            3.6324,
+            null,
             3.5327
           ]
         },
@@ -26725,12 +26797,12 @@
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
           "players": [
-            "Connor Kerkdijk",
+            "Conner Kerkdijk",
             "Sara Mousa"
           ],
           "won": true,
           "ratings": [
-            null,
+            2.2238,
             5.2076
           ]
         },
@@ -27918,12 +27990,12 @@
         "away": {
           "team": "RACKET & FIT CENTER BORNE 3",
           "players": [
-            "Connor Kerkdijk",
+            "Conner Kerkdijk",
             "Jip Drijfhout"
           ],
           "won": true,
           "ratings": [
-            null,
+            2.283,
             5.4141
           ]
         },
@@ -30528,35 +30600,73 @@
         "type": "DE1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Berber Zwart"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "VERACKET 2",
-          "players": [],
+          "players": [
+            "Cathelijne Boer"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-4 6-3"
       },
       {
         "type": "HE1",
         "home": {
           "team": "TAM 8",
-          "players": [],
+          "players": [
+            "Laurens Elderhorst"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "VERACKET 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Thijs Mulder"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "3-6 6-3 3-6"
       },
       {
         "type": "GD1",
