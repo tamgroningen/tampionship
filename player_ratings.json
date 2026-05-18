@@ -176,10 +176,9 @@
   "Marente Sijbesma": {
     "Kwalificatie ronde van 16|": 1.8734
   },
-  "Julius Bult": {
-    "GD1|Ronde 5": 1.8549,
-    "HE1|Ronde 5": 0.9779,
-    "HD1|Ronde 5": 2.0597
+  "Thom Koppelle": {
+    "GD1|Ronde 5": 2.9014,
+    "HD1|Ronde 5": 3.1062
   },
   "Joany Pontjodikromo": {
     "GD1|Ronde 5": 2.4434,
@@ -2875,6 +2874,10 @@
     "DD1|Ronde 2": 6.4574,
     "GD1|Ronde 2": 6.2019
   },
+  "Julius Bult": {
+    "HE1|Ronde 5": 0.9779,
+    "HD1|Ronde 5": 2.0597
+  },
   "Niels Roemeling": {
     "HE1|Ronde 5": 2.2697,
     "HE3|Ronde 5": 2.1274,
@@ -2912,9 +2915,6 @@
   },
   "Teun Mantel": {
     "HE1|Ronde 1": 2.2484
-  },
-  "Thom Koppelle": {
-    "HD1|Ronde 5": 3.1062
   },
   "Safien Boulonois": {
     "GD2|Ronde 4": 1.3673,
