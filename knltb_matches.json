@@ -7188,11 +7188,11 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart De Lijster"
+            "Mart de Lijster"
           ],
           "won": false,
           "ratings": [
-            null
+            3.413
           ]
         },
         "sets": [
@@ -7330,12 +7330,12 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart De Lijster",
+            "Mart de Lijster",
             "David Hermans"
           ],
           "won": false,
           "ratings": [
-            null,
+            2.6572,
             3.6903
           ]
         },
@@ -22920,12 +22920,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram Van de Kamp",
+            "Bram van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },
@@ -29497,6 +29497,102 @@
     "date": "10-5-2026"
   },
   {
+    "home_team": "TAM 7",
+    "away_team": "NOMI 1",
+    "team_score": "13:30",
+    "round": "Ronde 6",
+    "league": "",
+    "partijen": [
+      {
+        "type": "DE1",
+        "home": {
+          "team": "TAM 7",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "NOMI 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "HE1",
+        "home": {
+          "team": "TAM 7",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "NOMI 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "GD1",
+        "home": {
+          "team": "TAM 7",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "NOMI 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DD1",
+        "home": {
+          "team": "TAM 7",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "NOMI 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "HD1",
+        "home": {
+          "team": "TAM 7",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "NOMI 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      }
+    ],
+    "tam_team": "",
+    "date": "25-5-2026"
+  },
+  {
     "home_team": "VERACKET 1",
     "away_team": "TAM 7",
     "team_score": "15:00",
@@ -29607,103 +29703,7 @@
       }
     ],
     "tam_team": "",
-    "date": "17-5-2026"
-  },
-  {
-    "home_team": "TAM 7",
-    "away_team": "NOMI 1",
-    "team_score": "13:30",
-    "round": "Ronde 6",
-    "league": "",
-    "partijen": [
-      {
-        "type": "DE1",
-        "home": {
-          "team": "TAM 7",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "NOMI 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HE1",
-        "home": {
-          "team": "TAM 7",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "NOMI 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "GD1",
-        "home": {
-          "team": "TAM 7",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "NOMI 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "DD1",
-        "home": {
-          "team": "TAM 7",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "NOMI 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      },
-      {
-        "type": "HD1",
-        "home": {
-          "team": "TAM 7",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "away": {
-          "team": "NOMI 1",
-          "players": [],
-          "won": false,
-          "ratings": []
-        },
-        "sets": [],
-        "set_scores": ""
-      }
-    ],
-    "tam_team": "",
-    "date": "25-5-2026"
+    "date": "27-5-2026"
   },
   {
     "home_team": "DE PELIKAAN ZWOLLE 1",
