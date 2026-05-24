@@ -238,6 +238,7 @@
     "DD2|Ronde 1": 4.0331,
     "DE4|Ronde 4": 4.8823,
     "DE4|Ronde 3": 4.9856,
+    "DD2|Ronde 6": 3.7432,
     "DD2|Ronde 5": 3.8441,
     "DD2|Ronde 2": 4.0091
   },
@@ -1122,8 +1123,10 @@
   },
   "Laura Akkerman": {
     "DD1|Ronde 5": 3.6441,
+    "DD1|Ronde 6": 3.3902,
     "DD1|Ronde 1": 3.7187,
     "GD1|Ronde 5": 3.4453,
+    "DE4|Ronde 6": 3.8274,
     "DE2|Ronde 5": 3.8369,
     "DD2|Ronde 4": 3.6465
   },
@@ -1360,23 +1363,29 @@
     "DE1|Ronde 2": 5.1406,
     "DD1|Ronde 4": 4.8193
   },
-  "Denise Oorlog": {
-    "DE1|Ronde 5": 5.0729,
-    "DD1|Ronde 5": 4.2953
+  "Thecla Gieles": {
+    "DE2|Ronde 6": 4.7155,
+    "DD2|Ronde 6": 3.9652
   },
   "Eline Drent": {
+    "DE2|Ronde 6": 4.1487,
     "DE1|Ronde 5": 3.9028,
     "DE4|Ronde 5": 3.9214,
     "DE1|Ronde 3": 4.0129,
     "DE1|Ronde 2": 3.9236,
     "DE4|Ronde 2": 3.9629,
     "DE1|Ronde 1": 3.7888,
+    "DD1|Ronde 6": 3.3073,
     "DD1|Ronde 5": 3.368,
     "GD1|Ronde 3": 3.2338,
     "DD1|Ronde 3": 3.3443,
     "GD2|Ronde 2": 3.2149,
     "GD1|Ronde 1": 3.2744,
     "DD1|Ronde 1": 3.3466
+  },
+  "Denise Oorlog": {
+    "DE1|Ronde 5": 5.0729,
+    "DD1|Ronde 5": 4.2953
   },
   "Celeste Bijleveld": {
     "DE4|Ronde 5": 5.361,
@@ -1397,6 +1406,13 @@
     "DE1|Ronde 1": 4.0876,
     "GD1|Ronde 1": 4.2102,
     "DD1|Ronde 1": 4.138
+  },
+  "Irene Brouwer": {
+    "DD1|Ronde 6": 4.2207
+  },
+  "Emma van Bodegraven": {
+    "DD1|Ronde 6": 4.4862,
+    "DE4|Ronde 6": 5.3751
   },
   "Neeltsje Lagendijk-Kleinhuis": {
     "DD1|Ronde 5": 3.8069,
@@ -1959,12 +1975,14 @@
   "Sil Hoekstra": {
     "HD1|Ronde 3": 2.2591,
     "HD1|Ronde 1": 2.295,
+    "HE1|Ronde 6": 2.1958,
     "HE1|Ronde 5": 2.1793,
     "HE1|Ronde 4": 2.1402,
     "HE1|Ronde 3": 2.1178,
     "HE2|Ronde 2": 2.1345,
     "HE1|Ronde 2": 1.8939,
     "HE1|Ronde 1": 1.8321,
+    "HD1|Ronde 6": 2.1854,
     "HD1|Ronde 5": 2.0092,
     "HD2|Ronde 4": 2.0155,
     "HD1|Ronde 4": 2.2323,
@@ -2548,6 +2566,7 @@
   },
   "Diede Hoekstra": {
     "DD2|Ronde 4": 3.567,
+    "DD2|Ronde 6": 3.4637,
     "DD2|Ronde 5": 3.5646,
     "DD2|Ronde 2": 3.6533
   },
@@ -3620,6 +3639,12 @@
     "HE1|Ronde 1": 2.8941,
     "HD1|Ronde 6": 4.0553
   },
+  "Boas Deden": {
+    "HE1|Ronde 6": 2.006,
+    "HD1|Ronde 6": 1.4519,
+    "HE1|Ronde 1": 1.1958,
+    "HD1|Ronde 1": 1.1738
+  },
   "Jarno Jans": {
     "HE1|Ronde 5": 0.6708,
     "HD1|Ronde 4": 0.4809
@@ -3638,6 +3663,14 @@
   "Bas Bouwman": {
     "HE1|Ronde 1": 1.5465
   },
+  "Jacco Hanewald": {
+    "HD1|Ronde 6": 1.9968
+  },
+  "Casper Room": {
+    "HD1|Ronde 6": 3.3048,
+    "HD1|Ronde 3": 3.286,
+    "HE4|Ronde 3": 4.0865
+  },
   "Tijn Bokma": {
     "HD1|Ronde 5": 2.036,
     "HD1|Ronde 4": 2.2528,
@@ -3654,15 +3687,14 @@
   "Daniel Fennis": {
     "HD1|Ronde 4": 0.9392
   },
-  "Casper Room": {
-    "HD1|Ronde 3": 3.286,
-    "HE4|Ronde 3": 4.0865
-  },
   "Rens Kamphuis": {
     "HD1|Ronde 2": 2.1116
   },
   "Hannah Meijer": {
     "DD1|Ronde 4": 4.7874
+  },
+  "Elena Caspers": {
+    "DD2|Ronde 6": 4.9772
   },
   "Lars Ankerman": {
     "Ronde van 32|Ronde van 32": 3.0932,
@@ -3801,10 +3833,6 @@
   },
   "Jeffrey van Limpt": {
     "HE4|Ronde 2": 2.7596
-  },
-  "Boas Deden": {
-    "HE1|Ronde 1": 1.1958,
-    "HD1|Ronde 1": 1.1738
   },
   "Roelof Ameshoff": {
     "Halve finale|": 2.8218

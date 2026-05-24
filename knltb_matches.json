@@ -10932,7 +10932,7 @@
   {
     "home_team": "TIE-BREAKERS 1",
     "away_team": "TAM 1",
-    "team_score": "12:30",
+    "team_score": "0–6",
     "round": "Ronde 6",
     "league": "",
     "partijen": [
@@ -10947,7 +10947,7 @@
         "away": {
           "team": "TAM 1",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "sets": [],
@@ -10957,86 +10957,183 @@
         "type": "DE2",
         "home": {
           "team": "TIE-BREAKERS 1",
-          "players": [],
+          "players": [
+            "Thecla Gieles"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.7155
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Eline Drent"
+          ],
+          "won": true,
+          "ratings": [
+            4.1487
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "set_scores": "4-6 2-6"
       },
       {
         "type": "DE3",
         "home": {
           "team": "TIE-BREAKERS 1",
-          "players": [],
+          "players": [
+            "Irene Brouwer"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Diede Hoekstra"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "6-3 4-6 0-6"
       },
       {
         "type": "DE4",
         "home": {
           "team": "TIE-BREAKERS 1",
-          "players": [],
+          "players": [
+            "Emma van Bodegraven"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.3751
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Laura Akkerman"
+          ],
+          "won": true,
+          "ratings": [
+            3.8274
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "2-6 3-6"
       },
       {
         "type": "DD1",
         "home": {
           "team": "TIE-BREAKERS 1",
-          "players": [],
+          "players": [
+            "Irene Brouwer",
+            "Emma van Bodegraven"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.2207,
+            4.4862
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Laura Akkerman",
+            "Eline Drent"
+          ],
+          "won": true,
+          "ratings": [
+            3.3902,
+            3.3073
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "2-6 3-6"
       },
       {
         "type": "DD2",
         "home": {
           "team": "TIE-BREAKERS 1",
-          "players": [],
+          "players": [
+            "Thecla Gieles",
+            "Elena Caspers"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.9652,
+            4.9772
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Diede Hoekstra",
+            "Sophie van Tol"
+          ],
+          "won": true,
+          "ratings": [
+            3.4637,
+            3.7432
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "4-6 3-6"
       }
     ],
     "tam_team": "TAM 1",
