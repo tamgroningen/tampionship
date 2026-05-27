@@ -32116,7 +32116,7 @@
   {
     "home_team": "VERACKET 1",
     "away_team": "TAM 7",
-    "team_score": "15:00",
+    "team_score": "3–2",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -32124,18 +32124,35 @@
         "type": "DE1",
         "home": {
           "team": "VERACKET 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ilvy von Krempelhuber"
+          ],
+          "won": true,
+          "ratings": [
+            9.3007
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
+          "players": [
+            "Alies Knoppers"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            8.3648
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-4 6-3"
       },
       {
         "type": "HE1",
@@ -32146,7 +32163,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            7.3834
           ]
         },
         "away": {
@@ -32154,9 +32171,9 @@
           "players": [
             "Pascal Sturre"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
-            null
+            5.8519
           ]
         },
         "sets": [
@@ -32165,62 +32182,137 @@
             6
           ],
           [
-            4,
-            1
+            6,
+            4
+          ],
+          [
+            0,
+            6
           ]
         ],
-        "set_scores": "3-6 4-1"
+        "set_scores": "3-6 6-4 0-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "VERACKET 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Anniek Bultje",
+            "Koop Lammertsma"
+          ],
+          "won": true,
+          "ratings": [
+            5.7984,
+            6.1027
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
+          "players": [
+            "Mart Nijenhuis",
+            "Rachel Klieverik"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            4.6394,
+            6.2525
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        "set_scores": "6-4 3-6 10-3"
       },
       {
         "type": "DD1",
         "home": {
           "team": "VERACKET 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Anniek Bultje",
+            "Ilvy von Krempelhuber"
+          ],
+          "won": true,
+          "ratings": [
+            5.5965,
+            9.0341
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
+          "players": [
+            "Rachel Klieverik",
+            "Pien Groenewold"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.4544,
+            6.6411
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "set_scores": "6-2 7-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "VERACKET 1",
-          "players": [],
+          "players": [
+            "Jesse Jansen",
+            "Koop Lammertsma"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.9384,
+            5.9008
+          ]
         },
         "away": {
           "team": "TAM 7",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Pascal Sturre",
+            "Mart Nijenhuis"
+          ],
+          "won": true,
+          "ratings": [
+            6.4593,
+            4.6784
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "set_scores": "6-3 0-6 8-10"
       }
     ],
     "tam_team": "",

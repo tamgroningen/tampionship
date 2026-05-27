@@ -325,6 +325,82 @@
       }
     ]
   },
+  "Alies Knoppers": {
+    "singles": [
+      {
+        "date": "5-4-2025",
+        "rating": 8.5259,
+        "won": true
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 8.2643,
+        "won": true
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 8.1896,
+        "won": false
+      },
+      {
+        "date": "14-7-2025",
+        "rating": 8.1988,
+        "won": false
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 8.3648,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "19-4-2025",
+        "rating": 7.9003,
+        "won": false
+      },
+      {
+        "date": "27-4-2025",
+        "rating": 7.9245,
+        "won": true
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 7.6953,
+        "won": true
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 7.6532,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 7.5823,
+        "won": false
+      },
+      {
+        "date": "31-5-2025",
+        "rating": 7.6591,
+        "won": false
+      },
+      {
+        "date": "30-6-2025",
+        "rating": 7.6612,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 7.6015,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 7.4321,
+        "won": false
+      }
+    ]
+  },
   "Amber Maalderink": {
     "singles": [
       {
@@ -8593,6 +8669,16 @@
         "date": "16-5-2026",
         "rating": 4.6784,
         "won": true
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 4.8413,
+        "won": true
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 4.6394,
+        "won": false
       }
     ]
   },
@@ -10681,6 +10767,11 @@
         "date": "25-5-2026",
         "rating": 5.7573,
         "won": false
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 5.8519,
+        "won": true
       }
     ],
     "doubles": [
@@ -10717,6 +10808,11 @@
       {
         "date": "25-5-2026",
         "rating": 6.7163,
+        "won": true
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 6.4593,
         "won": true
       }
     ]
@@ -11036,6 +11132,11 @@
       {
         "date": "10-5-2026",
         "rating": 6.5651,
+        "won": false
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 6.6411,
         "won": false
       }
     ]
@@ -11470,6 +11571,16 @@
         "date": "25-5-2026",
         "rating": 6.3117,
         "won": true
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 6.4544,
+        "won": false
+      },
+      {
+        "date": "27-5-2026",
+        "rating": 6.2525,
+        "won": false
       }
     ]
   },

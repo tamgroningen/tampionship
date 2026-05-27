@@ -151,6 +151,13 @@
     "HD1|Ronde 4": 4.623,
     "HD1|Ronde 2": 4.6918
   },
+  "Ilvy von Krempelhuber": {
+    "DE1|Ronde 5": 9.3007,
+    "DD1|Ronde 5": 9.0341
+  },
+  "Alies Knoppers": {
+    "DE1|Ronde 5": 8.3648
+  },
   "Amber Maalderink": {
     "DE2|Ronde 6": 1.9829,
     "DE2|Ronde 5": 1.8527,
@@ -1180,9 +1187,11 @@
   "Pascal Sturre": {
     "HD1|Ronde 3": 6.8228,
     "HD1|Ronde 4": 6.6552,
+    "HD1|Ronde 5": 6.4593,
     "HD1|Ronde 6": 6.7163,
     "HD1|Ronde 2": 7.0268,
     "HD1|Ronde 1": 7.0,
+    "HE1|Ronde 5": 5.8519,
     "HE1|Ronde 6": 5.7573,
     "HE1|Ronde 4": 5.7869,
     "HE1|Ronde 3": 5.8816,
@@ -3084,7 +3093,9 @@
   },
   "Rachel Klieverik": {
     "GD1|Ronde 4": 6.1457,
+    "GD1|Ronde 5": 6.2525,
     "DD1|Ronde 3": 6.0511,
+    "DD1|Ronde 5": 6.4544,
     "DD1|Ronde 4": 6.2357,
     "DE1|Ronde 6": 6.4931,
     "DE1|Ronde 3": 6.4331,
@@ -3164,6 +3175,7 @@
     "HE2|Ronde 2": 5.6043,
     "HE2|Ronde 1": 5.519,
     "HD1|Ronde 5": 4.6784,
+    "GD1|Ronde 5": 4.6394,
     "HD1|Ronde 4": 4.7445,
     "HD1|Ronde 3": 4.8742,
     "HD2|Ronde 2": 4.7793,
@@ -3176,6 +3188,18 @@
   "Martijn van der Meulen": {
     "HE2|Ronde 1": 5.0808,
     "HD1|Ronde 1": 4.4644
+  },
+  "Jesse Jansen": {
+    "HD1|Ronde 5": 6.9384,
+    "HE1|Ronde 5": 7.3834
+  },
+  "Koop Lammertsma": {
+    "HD1|Ronde 5": 5.9008,
+    "GD1|Ronde 5": 6.1027
+  },
+  "Anniek Bultje": {
+    "GD1|Ronde 5": 5.7984,
+    "DD1|Ronde 5": 5.5965
   },
   "Jelco Caro": {
     "HD1|Ronde 5": 4.4687,
@@ -3570,6 +3594,7 @@
     "DD1|Ronde 2": 6.4613,
     "DE1|Ronde 4": 7.2598,
     "DE1|Ronde 2": 7.2206,
+    "DD1|Ronde 5": 6.6411,
     "DD1|Ronde 4": 6.5651
   },
   "Kristien Beuvink": {
