@@ -7640,7 +7640,7 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster"
+            "Mart De Lijster"
           ],
           "won": false,
           "ratings": [
@@ -7782,7 +7782,7 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster",
+            "Mart De Lijster",
             "David Hermans"
           ],
           "won": false,
@@ -24737,12 +24737,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram van de Kamp",
+            "Bram Van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },
