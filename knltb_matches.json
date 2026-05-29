@@ -7640,11 +7640,11 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart De Lijster"
+            "Mart de Lijster"
           ],
           "won": false,
           "ratings": [
-            null
+            3.413
           ]
         },
         "sets": [
@@ -7782,12 +7782,12 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart De Lijster",
+            "Mart de Lijster",
             "David Hermans"
           ],
           "won": false,
           "ratings": [
-            null,
+            2.6572,
             3.6903
           ]
         },
