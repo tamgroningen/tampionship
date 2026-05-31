@@ -317,6 +317,7 @@
     "GD1|Ronde 1": 1.1191,
     "HE1|Ronde 6": 1.666,
     "HD1|Ronde 6": 1.0038,
+    "HD1|Ronde 7": 0.9703,
     "HD1|Ronde 2": 0.9918
   },
   "Sarah Olff": {
@@ -2385,6 +2386,7 @@
     "HD1|Ronde 6": 2.1854,
     "HD1|Ronde 3": 2.2591,
     "HD1|Ronde 1": 2.295,
+    "HD1|Ronde 7": 2.2502,
     "HE2|Ronde 6": 2.3097,
     "HE1|Ronde 6": 2.1958,
     "HE1|Ronde 5": 2.1793,
@@ -3559,6 +3561,7 @@
     "HE2|Ronde 5": 1.996,
     "HE1|Ronde 4": 1.8857,
     "HE2|Ronde 1": 1.7814,
+    "HD1|Ronde 7": 1.6792,
     "HD1|Ronde 6": 1.7266,
     "HD2|Ronde 5": 1.8098,
     "HD1|Ronde 4": 1.8905,
@@ -3582,6 +3585,11 @@
     "HE2|Ronde 1": 1.5112,
     "HD1|Ronde 1": 1.1784,
     "HD1|Ronde 5": 1.3469
+  },
+  "Marc Janse": {
+    "HD1|Ronde 7": 2.3447,
+    "HE2|Ronde 2": 1.8524,
+    "HD1|Ronde 2": 2.3057
   },
   "Alexander van Rosendael": {
     "HD1|Ronde 6": 3.3381,
@@ -3681,10 +3689,6 @@
   "Sander Jans": {
     "HE1|Ronde 4": 0.9396,
     "HD1|Ronde 5": 1.1359
-  },
-  "Marc Janse": {
-    "HE2|Ronde 2": 1.8524,
-    "HD1|Ronde 2": 2.3057
   },
   "Roderik Bratianu": {
     "HE1|Ronde 2": 1.8257,
