@@ -200,6 +200,11 @@
         "date": "25-5-2026",
         "rating": 5.1124,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.0954,
+        "won": true
       }
     ],
     "doubles": [
@@ -322,6 +327,16 @@
         "date": "25-5-2026",
         "rating": 5.635,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.6059,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.6916,
+        "won": true
       }
     ]
   },
@@ -1178,6 +1193,16 @@
         "date": "10-5-2026",
         "rating": 7.3061,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 7.3529,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 7.2422,
+        "won": false
       }
     ]
   },
@@ -1246,6 +1271,11 @@
       {
         "date": "17-5-2026",
         "rating": 7.2634,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 7.3832,
         "won": false
       }
     ],
@@ -1388,6 +1418,11 @@
       {
         "date": "25-5-2026",
         "rating": 6.8064,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.7645,
         "won": true
       }
     ]
@@ -1775,6 +1810,11 @@
         "date": "25-5-2026",
         "rating": 6.7409,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.7307,
+        "won": true
       }
     ],
     "doubles": [
@@ -1906,6 +1946,11 @@
       {
         "date": "25-5-2026",
         "rating": 6.0457,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.0325,
         "won": true
       }
     ]
@@ -2182,6 +2227,11 @@
       {
         "date": "30-5-2026",
         "rating": 6.1597,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.0002,
         "won": true
       }
     ],
@@ -2632,6 +2682,11 @@
         "date": "25-5-2026",
         "rating": 4.4831,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.3782,
+        "won": false
       }
     ],
     "doubles": [
@@ -2684,6 +2739,11 @@
         "date": "25-5-2026",
         "rating": 3.684,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.7911,
+        "won": true
       }
     ]
   },
@@ -2804,6 +2864,11 @@
         "date": "25-5-2026",
         "rating": 4.0766,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.0816,
+        "won": false
       }
     ],
     "doubles": [
@@ -2885,6 +2950,11 @@
       {
         "date": "25-5-2026",
         "rating": 3.2751,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.2608,
         "won": true
       }
     ]
@@ -3324,6 +3394,16 @@
         "date": "25-5-2026",
         "rating": 5.8632,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.6635,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.8996,
+        "won": true
       }
     ]
   },
@@ -3737,6 +3817,16 @@
         "date": "24-5-2026",
         "rating": 5.6974,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.008,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.8851,
+        "won": false
       }
     ]
   },
@@ -3886,6 +3976,11 @@
         "date": "25-5-2026",
         "rating": 3.9135,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.8605,
+        "won": false
       }
     ],
     "doubles": [
@@ -3992,6 +4087,11 @@
       {
         "date": "25-5-2026",
         "rating": 4.1279,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.0856,
         "won": true
       }
     ]
@@ -4707,6 +4807,11 @@
         "date": "25-5-2026",
         "rating": 6.1994,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.2979,
+        "won": false
       }
     ],
     "doubles": [
@@ -4843,6 +4948,16 @@
       {
         "date": "25-5-2026",
         "rating": 5.4572,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.6938,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.5709,
         "won": false
       }
     ]
@@ -5307,6 +5422,11 @@
         "date": "25-5-2026",
         "rating": 2.9145,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 2.9383,
+        "won": true
       }
     ],
     "doubles": [
@@ -5419,6 +5539,11 @@
         "date": "25-5-2026",
         "rating": 2.3798,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 2.4133,
+        "won": true
       }
     ]
   },
@@ -5881,6 +6006,11 @@
         "date": "25-5-2026",
         "rating": 3.9396,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.1632,
+        "won": true
       }
     ]
   },
@@ -5977,6 +6107,11 @@
         "date": "25-5-2026",
         "rating": 3.4005,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.4631,
+        "won": true
       }
     ]
   },
@@ -6168,6 +6303,11 @@
         "date": "25-5-2026",
         "rating": 3.0973,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.0544,
+        "won": false
       }
     ]
   },
@@ -6474,6 +6614,11 @@
         "date": "6-4-2026",
         "rating": 4.3026,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.517,
+        "won": false
       }
     ],
     "doubles": [
@@ -6551,6 +6696,11 @@
         "date": "10-5-2026",
         "rating": 4.2488,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.4986,
+        "won": true
       }
     ]
   },
@@ -6847,6 +6997,16 @@
         "date": "19-4-2026",
         "rating": 6.0838,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.1273,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.0166,
+        "won": false
       }
     ]
   },
@@ -6866,6 +7026,16 @@
         "date": "18-4-2026",
         "rating": 4.0255,
         "won": true
+      },
+      {
+        "date": "30-5-2026",
+        "rating": 3.9617,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.9579,
+        "won": true
       }
     ],
     "doubles": [
@@ -6878,6 +7048,16 @@
         "date": "18-4-2026",
         "rating": 4.4003,
         "won": false
+      },
+      {
+        "date": "30-5-2026",
+        "rating": 4.614,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.5645,
+        "won": true
       }
     ]
   },
@@ -7461,6 +7641,11 @@
       {
         "date": "23-5-2026",
         "rating": 3.8274,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.812,
         "won": true
       }
     ],
@@ -8688,6 +8873,16 @@
         "date": "30-5-2026",
         "rating": 5.6945,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.5876,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.5835,
+        "won": false
       }
     ]
   },
@@ -8959,7 +9154,13 @@
     ]
   },
   "Mart Stroosma": {
-    "singles": [],
+    "singles": [
+      {
+        "date": "31-5-2026",
+        "rating": 7.2168,
+        "won": false
+      }
+    ],
     "doubles": [
       {
         "date": "6-4-2025",
@@ -9009,6 +9210,11 @@
       {
         "date": "25-5-2026",
         "rating": 6.7919,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.5683,
         "won": false
       }
     ]
@@ -9285,6 +9491,11 @@
       {
         "date": "23-5-2026",
         "rating": 4.2703,
+        "won": true
+      },
+      {
+        "date": "30-5-2026",
+        "rating": 4.255,
         "won": true
       }
     ],
@@ -10077,6 +10288,11 @@
         "date": "25-5-2026",
         "rating": 5.2349,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.2951,
+        "won": true
       }
     ],
     "doubles": [
@@ -10123,6 +10339,11 @@
       {
         "date": "14-5-2026",
         "rating": 4.268,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 4.2608,
         "won": true
       }
     ]
@@ -11464,6 +11685,16 @@
         "date": "27-5-2026",
         "rating": 6.6411,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.8718,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.8677,
+        "won": false
       }
     ]
   },
@@ -12222,6 +12453,16 @@
         "date": "25-5-2026",
         "rating": 3.0797,
         "won": true
+      },
+      {
+        "date": "30-5-2026",
+        "rating": 3.0146,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.0404,
+        "won": true
       }
     ],
     "doubles": [
@@ -12293,6 +12534,11 @@
       {
         "date": "25-5-2026",
         "rating": 3.5549,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.5126,
         "won": true
       }
     ]
@@ -12627,6 +12873,11 @@
         "date": "1-6-2025",
         "rating": 6.5059,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.4895,
+        "won": false
       }
     ],
     "doubles": [
@@ -12668,6 +12919,11 @@
       {
         "date": "25-5-2026",
         "rating": 6.0648,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.039,
         "won": false
       }
     ]
@@ -13663,6 +13919,11 @@
         "date": "25-5-2026",
         "rating": 2.8813,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 2.9265,
+        "won": true
       }
     ],
     "doubles": [
@@ -13765,6 +14026,11 @@
         "date": "25-5-2026",
         "rating": 2.92,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.1241,
+        "won": true
       }
     ]
   },
@@ -14050,6 +14316,11 @@
         "date": "25-5-2026",
         "rating": 2.3097,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 2.3611,
+        "won": true
       }
     ],
     "doubles": [
@@ -14177,6 +14448,11 @@
         "date": "30-5-2026",
         "rating": 2.2502,
         "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 2.3465,
+        "won": true
       }
     ]
   },
@@ -14358,6 +14634,16 @@
         "date": "6-4-2026",
         "rating": 5.4593,
         "won": true
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 5.5184,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 5.3843,
+        "won": false
       }
     ],
     "doubles": [
@@ -14447,6 +14733,11 @@
         "won": true
       },
       {
+        "date": "17-5-2026",
+        "rating": 4.1197,
+        "won": true
+      },
+      {
         "date": "25-5-2026",
         "rating": 3.7364,
         "won": false
@@ -14455,6 +14746,11 @@
         "date": "25-5-2026",
         "rating": 3.789,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.8806,
+        "won": false
       }
     ]
   },
@@ -14958,6 +15254,11 @@
         "date": "25-5-2026",
         "rating": 3.35,
         "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.3927,
+        "won": false
       }
     ]
   },
@@ -16957,6 +17258,16 @@
         "date": "25-5-2026",
         "rating": 3.1316,
         "won": true
+      },
+      {
+        "date": "30-5-2026",
+        "rating": 3.0922,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.1092,
+        "won": true
       }
     ],
     "doubles": [
@@ -17108,6 +17419,16 @@
       {
         "date": "25-5-2026",
         "rating": 3.8104,
+        "won": true
+      },
+      {
+        "date": "30-5-2026",
+        "rating": 3.5363,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.6391,
         "won": true
       }
     ]
@@ -17295,6 +17616,11 @@
         "date": "10-5-2026",
         "rating": 5.1,
         "won": false
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 5.5213,
+        "won": true
       },
       {
         "date": "25-5-2026",
