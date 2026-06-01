@@ -25493,7 +25493,7 @@
   {
     "home_team": "FESTINA 2",
     "away_team": "TAM 2",
-    "team_score": "12:30",
+    "team_score": "5–3",
     "round": "Ronde 7",
     "league": "",
     "partijen": [
@@ -25501,52 +25501,103 @@
         "type": "DE1",
         "home": {
           "team": "FESTINA 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Kiki Rijk"
+          ],
+          "won": true,
+          "ratings": [
+            2.2141
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Hanna Lindeboom"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.6319
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "6-3 6-2"
       },
       {
         "type": "DE2",
         "home": {
           "team": "FESTINA 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Marlot Meddens"
+          ],
+          "won": true,
+          "ratings": [
+            2.3479
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Anna Boonstra"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.6477
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "set_scores": "6-1 6-1"
       },
       {
         "type": "HE1",
         "home": {
           "team": "FESTINA 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Bastian Post"
+          ],
+          "won": true,
+          "ratings": [
+            2.447
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Jasper Vogt"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.6935
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-4 6-3"
       },
       {
         "type": "HE2",
@@ -25559,7 +25610,7 @@
         "away": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "sets": [],
@@ -25569,35 +25620,81 @@
         "type": "DD1",
         "home": {
           "team": "FESTINA 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Marlot Meddens",
+            "Kiki Rijk"
+          ],
+          "won": true,
+          "ratings": [
+            2.3918,
+            1.3742
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
+          "players": [
+            "Suze Brock",
+            "Hanna Lindeboom"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.8896,
+            2.551
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "6-2 6-4"
       },
       {
         "type": "HD1",
         "home": {
           "team": "FESTINA 2",
-          "players": [],
+          "players": [
+            "Ryan Koffeman",
+            "Rutger-Jan Lange"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.7229,
+            3.152
+          ]
         },
         "away": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Jasper Vogt",
+            "Sven IJntema"
+          ],
+          "won": true,
+          "ratings": [
+            1.8691,
+            2.2674
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "set_scores": "7-5 4-6 9-11"
       },
       {
         "type": "GD1",
@@ -25610,7 +25707,7 @@
         "away": {
           "team": "TAM 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "sets": [],
@@ -25621,7 +25718,7 @@
         "home": {
           "team": "FESTINA 2",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
