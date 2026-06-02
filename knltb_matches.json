@@ -7455,7 +7455,7 @@
   {
     "home_team": "TAM 5",
     "away_team": "TSO 2",
-    "team_score": "09:00",
+    "team_score": "6–0",
     "round": "Ronde 7",
     "league": "",
     "partijen": [
@@ -7464,7 +7464,7 @@
         "home": {
           "team": "TAM 5",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -7481,7 +7481,7 @@
         "home": {
           "team": "TAM 5",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -7498,7 +7498,7 @@
         "home": {
           "team": "TAM 5",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -7515,7 +7515,7 @@
         "home": {
           "team": "TAM 5",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -7532,7 +7532,7 @@
         "home": {
           "team": "TAM 5",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -7549,7 +7549,7 @@
         "home": {
           "team": "TAM 5",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -8041,7 +8041,7 @@
           ],
           "won": false,
           "ratings": [
-            3.413
+            null
           ]
         },
         "sets": [
@@ -8184,7 +8184,7 @@
           ],
           "won": false,
           "ratings": [
-            2.6572,
+            null,
             3.6903
           ]
         },
@@ -26298,7 +26298,7 @@
           ],
           "won": false,
           "ratings": [
-            3.6324,
+            null,
             3.5327
           ]
         },
