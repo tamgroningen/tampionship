@@ -8037,11 +8037,11 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster"
+            "Mart De Lijster"
           ],
           "won": false,
           "ratings": [
-            null
+            3.413
           ]
         },
         "sets": [
@@ -8179,12 +8179,12 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster",
+            "Mart De Lijster",
             "David Hermans"
           ],
           "won": false,
           "ratings": [
-            null,
+            2.6572,
             3.6903
           ]
         },
@@ -8942,7 +8942,7 @@
   {
     "home_team": "TAM 1",
     "away_team": "TIE-BREAKERS 1",
-    "team_score": "10:30",
+    "team_score": "4–2",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -8965,7 +8965,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            2.3183
           ]
         },
         "sets": [
@@ -8993,7 +8993,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            2.433
           ]
         },
         "away": {
@@ -9003,7 +9003,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            2.4559
           ]
         },
         "sets": [
@@ -9027,7 +9027,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            2.8968
           ]
         },
         "away": {
@@ -9037,7 +9037,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            2.9568
           ]
         },
         "sets": [
@@ -9065,7 +9065,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            2.7329
           ]
         },
         "away": {
@@ -9075,7 +9075,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            2.4307
           ]
         },
         "sets": [
@@ -9095,7 +9095,7 @@
         "home": {
           "team": "TAM 1",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -9118,7 +9118,7 @@
         "away": {
           "team": "TIE-BREAKERS 1",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "sets": [],
@@ -26293,12 +26293,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram van de Kamp",
+            "Bram Van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },

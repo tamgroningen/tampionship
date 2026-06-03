@@ -2470,11 +2470,15 @@
     "HD1|Ronde 2": 8.2332
   },
   "Jacco Arends": {
+    "HE2|Ronde 5": 2.433,
     "HE1|Ronde 6": 2.3737,
     "HE1|Ronde 2": 2.1716,
     "HE2|Ronde 1": 2.2006,
     "HD2|Ronde 6": 2.1767,
     "HD1|Ronde 2": 2.2001
+  },
+  "Lucas Bos": {
+    "HE2|Ronde 5": 2.4559
   },
   "Ruben van Dongen": {
     "HE1|Ronde 2": 2.7304,
@@ -2495,6 +2499,7 @@
     "HD2|Ronde 6": 2.92,
     "HD1|Ronde 7": 3.1241,
     "HD1|Ronde 4": 2.9576,
+    "HE4|Ronde 5": 2.7329,
     "HE3|Ronde 7": 2.9265,
     "HE4|Ronde 6": 2.8813,
     "HE3|Ronde 4": 2.6978,
@@ -2513,6 +2518,7 @@
   },
   "Jasper Visker": {
     "HD1|Ronde 2": 2.4956,
+    "HE3|Ronde 5": 2.8968,
     "HE2|Ronde 7": 2.9383,
     "HE3|Ronde 6": 2.9145,
     "HE2|Ronde 4": 3.0215,
@@ -2555,6 +2561,9 @@
     "HD2|Ronde 3": 8.3198,
     "HE1|Ronde 3": 8.388
   },
+  "Lucas van Flymen": {
+    "HE3|Ronde 5": 2.9568
+  },
   "Raymond Bus": {
     "HE2|Ronde 7": 3.8861,
     "HD2|Ronde 7": 4.6341
@@ -2596,10 +2605,10 @@
     "HD1|Ronde 1": 2.295,
     "HD2|Ronde 7": 2.3465,
     "HD1|Ronde 7": 2.2502,
+    "HE1|Ronde 5": 2.1793,
     "HE1|Ronde 7": 2.3611,
     "HE2|Ronde 6": 2.3097,
     "HE1|Ronde 6": 2.1958,
-    "HE1|Ronde 5": 2.1793,
     "HE1|Ronde 4": 2.1402,
     "HE1|Ronde 3": 2.1178,
     "HE2|Ronde 2": 2.1345,
@@ -4443,6 +4452,9 @@
     "GD1|Ronde 3": 8.1205,
     "HD1|Ronde 3": 8.0617
   },
+  "Skott van der Vliet": {
+    "HE4|Ronde 5": 2.4307
+  },
   "Olger van Gent": {
     "HE3|Ronde 7": 2.4515
   },
@@ -4478,6 +4490,9 @@
   },
   "Nikki Lesscher": {
     "DE1|Ronde 7": 8.7503
+  },
+  "Sandro Neefjes": {
+    "HE1|Ronde 5": 2.3183
   },
   "Boas Deden": {
     "HE1|Ronde 6": 2.006,
