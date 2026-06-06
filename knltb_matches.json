@@ -14732,7 +14732,7 @@
   {
     "home_team": "DE KALKWIJCK 1",
     "away_team": "TAM 1",
-    "team_score": "13:00",
+    "team_score": "2–3",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -14740,86 +14740,183 @@
         "type": "DE1",
         "home": {
           "team": "DE KALKWIJCK 1",
-          "players": [],
+          "players": [
+            "Inge Rosevink"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.3906
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Nienke Rijnbeek"
+          ],
+          "won": true,
+          "ratings": [
+            5.8107
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "4-6 4-6"
       },
       {
         "type": "HE1",
         "home": {
           "team": "DE KALKWIJCK 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Wouter Heller"
+          ],
+          "won": true,
+          "ratings": [
+            7.1391
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Chiel Schuinder"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.0738
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            6
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "set_scores": "7-6 6-1"
       },
       {
         "type": "GD1",
         "home": {
           "team": "DE KALKWIJCK 1",
-          "players": [],
+          "players": [
+            "Peter Dekker",
+            "Renske Nieborg"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            7.8574,
+            5.7876
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Pien Dil",
+            "Lucas Kleijn"
+          ],
+          "won": true,
+          "ratings": [
+            6.0964,
+            6.3071
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "set_scores": "0-6 6-7"
       },
       {
         "type": "DD1",
         "home": {
           "team": "DE KALKWIJCK 1",
-          "players": [],
+          "players": [
+            "Renske Nieborg",
+            "Rianne Scholtens"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.7449,
+            7.5384
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Pien Dil",
+            "Nienke Rijnbeek"
+          ],
+          "won": true,
+          "ratings": [
+            6.131,
+            5.3937
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "1-6 0-6"
       },
       {
         "type": "HD1",
         "home": {
           "team": "DE KALKWIJCK 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Peter Dekker",
+            "Wouter Heller"
+          ],
+          "won": true,
+          "ratings": [
+            8.1335,
+            7.1942
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Chiel Schuinder",
+            "Lucas Kleijn"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            5.6806,
+            6.031
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "set_scores": "6-4 6-3"
       }
     ],
     "tam_team": "",
