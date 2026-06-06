@@ -249,7 +249,6 @@
     "Ronde van 16|Ronde van 16": 2.1424,
     "Kwalificatie ronde van 16|": 2.0236,
     "GD1|Ronde 7": 2.3753,
-    "DD1|Ronde 7": 2.293,
     "GD1|Ronde 6": 2.3548,
     "GD1|Ronde 5": 2.4418,
     "GD1|Ronde 4": 2.6558,
@@ -347,35 +346,7 @@
   },
   "Indy de Vroome": {
     "GD1|Ronde 7": 1.2489,
-    "DD1|Ronde 7": 1.3312
-  },
-  "Safien Boulonois": {
-    "DD1|Ronde 7": 1.3835,
-    "GD2|Ronde 7": 1.4658,
-    "GD2|Ronde 4": 1.3673,
-    "DE1|Ronde 7": 1.1473,
-    "DE1|Ronde 6": 1.1708,
-    "DE1|Ronde 5": 1.1968,
-    "DE1|Ronde 4": 1.3464,
-    "DE1|Ronde 3": 1.38,
-    "DE1|Ronde 2": 1.4101,
-    "DE1|Ronde 1": 1.5715,
-    "Halve finale|": 1.3183,
-    "Kwartfinale|": 1.3975,
-    "Ronde van 16|Ronde van 16": 1.2647,
-    "Kwalificatie kwartfinale|": 1.1381,
-    "Kwalificatie ronde van 16|": 1.1597,
-    "DD1|Ronde 6": 1.5051,
-    "DD1|Ronde 5": 1.2882,
-    "DD1|Ronde 4": 1.2395,
-    "DD1|Ronde 3": 1.4661,
-    "GD1|Ronde 2": 1.4138,
-    "DD1|Ronde 2": 1.6141,
-    "DD1|Ronde 1": 1.6672
-  },
-  "Lian Tran": {
-    "DD1|Ronde 7": 1.4996,
-    "DE1|Ronde 7": 1.206
+    "DD1|Ronde 7": 1.2971
   },
   "Youri Veltman": {
     "GD1|Ronde 6": 2.6261,
@@ -2407,6 +2378,7 @@
     "GD2|Ronde 5": 2.6014,
     "GD2|Ronde 3": 2.476,
     "GD2|Ronde 2": 2.7959,
+    "DD1|Ronde 7": 2.4767,
     "DD1|Ronde 6": 2.5441,
     "DD1|Ronde 5": 2.3845,
     "DD1|Ronde 4": 2.2567,
@@ -4011,6 +3983,30 @@
   "Teun Mantel": {
     "HE1|Ronde 1": 2.2484
   },
+  "Safien Boulonois": {
+    "GD2|Ronde 7": 1.4658,
+    "GD2|Ronde 4": 1.3673,
+    "DE1|Ronde 7": 1.1473,
+    "DE1|Ronde 6": 1.1708,
+    "DE1|Ronde 5": 1.1968,
+    "DE1|Ronde 4": 1.3464,
+    "DE1|Ronde 3": 1.38,
+    "DE1|Ronde 2": 1.4101,
+    "DE1|Ronde 1": 1.5715,
+    "Halve finale|": 1.3183,
+    "Kwartfinale|": 1.3975,
+    "Ronde van 16|Ronde van 16": 1.2647,
+    "Kwalificatie kwartfinale|": 1.1381,
+    "Kwalificatie ronde van 16|": 1.1597,
+    "DD1|Ronde 7": 1.492,
+    "DD1|Ronde 6": 1.5051,
+    "DD1|Ronde 5": 1.2882,
+    "DD1|Ronde 4": 1.2395,
+    "DD1|Ronde 3": 1.4661,
+    "GD1|Ronde 2": 1.4138,
+    "DD1|Ronde 2": 1.6141,
+    "DD1|Ronde 1": 1.6672
+  },
   "Jinte de Boer": {
     "GD2|Ronde 4": 1.8023,
     "DE1|Ronde 4": 1.2498,
@@ -4390,6 +4386,10 @@
   },
   "Arthur van Smoorenburg": {
     "GD1|Ronde 1": 8.3314
+  },
+  "Lian Tran": {
+    "DE1|Ronde 7": 1.206,
+    "DD1|Ronde 7": 1.4996
   },
   "Fleur Eggink": {
     "DE1|Ronde 3": 2.4604
