@@ -10464,7 +10464,7 @@
   {
     "home_team": "TAM 2",
     "away_team": "RACKET & FIT CENTER BORNE 1",
-    "team_score": "11:00",
+    "team_score": "3–3",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -10477,7 +10477,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            3.0139
           ]
         },
         "away": {
@@ -10487,7 +10487,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            3.5476
           ]
         },
         "sets": [
@@ -10549,7 +10549,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            4.016
           ]
         },
         "away": {
@@ -10559,7 +10559,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            3.1632
           ]
         },
         "sets": [
@@ -10583,7 +10583,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.2257
           ]
         },
         "away": {
@@ -10593,7 +10593,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            3.4543
           ]
         },
         "sets": [
@@ -10612,35 +10612,77 @@
         "type": "HD1",
         "home": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Raoul van Loevezijn",
+            "Jesse IJntema"
+          ],
+          "won": true,
+          "ratings": [
+            3.4721,
+            4.0894
+          ]
         },
         "away": {
           "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
+          "players": [
+            "Gabriël Balena",
+            "Julius Mondria"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.146,
+            5.636
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "6-2 6-2"
       },
       {
         "type": "HD2",
         "home": {
           "team": "TAM 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Darren Smit",
+            "Niek Veldkamp"
+          ],
+          "won": true,
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "RACKET & FIT CENTER BORNE 1",
-          "players": [],
+          "players": [
+            "Doeke van Kooten",
+            "Sem Briels"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "set_scores": "6-4 6-4"
       }
     ],
     "tam_team": "",
