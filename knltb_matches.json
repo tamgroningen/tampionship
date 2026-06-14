@@ -12315,7 +12315,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.6423
           ]
         },
         "away": {
@@ -12325,7 +12325,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            4.9044
           ]
         },
         "sets": [
@@ -12512,7 +12512,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.5429
           ]
         },
         "away": {
@@ -12522,7 +12522,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.5401
           ]
         },
         "sets": [
@@ -12735,7 +12735,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.403
           ]
         },
         "away": {
@@ -12745,7 +12745,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.6984
           ]
         },
         "sets": [
@@ -12996,7 +12996,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.1171
           ]
         },
         "away": {
@@ -13006,7 +13006,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.5767
           ]
         },
         "sets": [
@@ -13189,7 +13189,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.6597
           ]
         },
         "away": {
@@ -13199,7 +13199,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.8032
           ]
         },
         "sets": [
@@ -13378,7 +13378,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.5206
           ]
         },
         "away": {
@@ -13388,7 +13388,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.5401
           ]
         },
         "sets": [
@@ -31794,7 +31794,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            5.4241
           ]
         },
         "away": {
@@ -31804,7 +31804,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.2512
           ]
         },
         "sets": [
@@ -32715,7 +32715,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.5401
           ]
         },
         "away": {
@@ -32725,7 +32725,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            4.526
           ]
         },
         "sets": [
@@ -35494,7 +35494,7 @@
   {
     "home_team": "TAM 8",
     "away_team": "VERACKET 2",
-    "team_score": "13:30",
+    "team_score": "3–2",
     "round": "Ronde 5",
     "league": "",
     "partijen": [
@@ -35507,7 +35507,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            7.7832
           ]
         },
         "away": {
@@ -35517,7 +35517,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            8.4171
           ]
         },
         "sets": [
@@ -35541,7 +35541,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            7.7494
           ]
         },
         "away": {
@@ -35551,7 +35551,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            7.2261
           ]
         },
         "sets": [
@@ -35564,35 +35564,60 @@
             3
           ],
           [
-            3,
+            1,
             6
           ]
         ],
-        "set_scores": "3-6 6-3 3-6"
+        "set_scores": "3-6 6-3 1-6"
       },
       {
         "type": "GD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Bote Spijkerman",
+            "Marianne Niessen"
+          ],
+          "won": true,
+          "ratings": [
+            5.9084,
+            6.7309
+          ]
         },
         "away": {
           "team": "VERACKET 2",
-          "players": [],
+          "players": [
+            "Colin Balk",
+            "Jade Straman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.6417,
+            7.2536
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            10,
+            6
+          ]
+        ],
+        "set_scores": "6-3 2-6 10-6"
       },
       {
         "type": "DD1",
         "home": {
           "team": "TAM 8",
           "players": [],
-          "won": false,
+          "won": true,
           "ratings": []
         },
         "away": {
@@ -35608,18 +35633,39 @@
         "type": "HD1",
         "home": {
           "team": "TAM 8",
-          "players": [],
+          "players": [
+            "Laurens Elderhorst",
+            "Bote Spijkerman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            6.6348,
+            5.8478
+          ]
         },
         "away": {
           "team": "VERACKET 2",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Colin Balk",
+            "Thijs Mulder"
+          ],
+          "won": true,
+          "ratings": [
+            6.7023,
+            7.8693
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "2-6 4-6"
       }
     ],
     "tam_team": "",

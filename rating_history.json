@@ -1190,6 +1190,187 @@
       }
     ]
   },
+  "Anouk de Vos": {
+    "singles": [
+      {
+        "date": "12-4-2025",
+        "rating": 5.6225,
+        "won": true
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 5.5286,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 5.6411,
+        "won": true
+      },
+      {
+        "date": "24-5-2025",
+        "rating": 5.5491,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 5.6423,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 5.4241,
+        "won": false
+      },
+      {
+        "date": "11-4-2026",
+        "rating": 5.5401,
+        "won": true
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.403,
+        "won": false
+      },
+      {
+        "date": "9-5-2026",
+        "rating": 5.5767,
+        "won": false
+      },
+      {
+        "date": "16-5-2026",
+        "rating": 5.6597,
+        "won": true
+      },
+      {
+        "date": "23-5-2026",
+        "rating": 5.5401,
+        "won": false
+      },
+      {
+        "date": "25-5-2026",
+        "rating": 5.6752,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "5-4-2025",
+        "rating": 4.2735,
+        "won": false
+      },
+      {
+        "date": "12-4-2025",
+        "rating": 4.3465,
+        "won": false
+      },
+      {
+        "date": "19-4-2025",
+        "rating": 4.3854,
+        "won": false
+      },
+      {
+        "date": "10-5-2025",
+        "rating": 4.4151,
+        "won": false
+      },
+      {
+        "date": "17-5-2025",
+        "rating": 4.4984,
+        "won": false
+      },
+      {
+        "date": "3-7-2025",
+        "rating": 4.5253,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 4.4506,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 4.2301,
+        "won": false
+      },
+      {
+        "date": "7-7-2025",
+        "rating": 4.2805,
+        "won": false
+      },
+      {
+        "date": "12-7-2025",
+        "rating": 4.5235,
+        "won": false
+      },
+      {
+        "date": "13-7-2025",
+        "rating": 4.5962,
+        "won": false
+      },
+      {
+        "date": "7-8-2025",
+        "rating": 4.6532,
+        "won": false
+      },
+      {
+        "date": "9-8-2025",
+        "rating": 4.6903,
+        "won": false
+      },
+      {
+        "date": "25-8-2025",
+        "rating": 4.7817,
+        "won": true
+      },
+      {
+        "date": "26-8-2025",
+        "rating": 4.619,
+        "won": false
+      },
+      {
+        "date": "27-8-2025",
+        "rating": 4.7621,
+        "won": false
+      },
+      {
+        "date": "27-8-2025",
+        "rating": 4.6674,
+        "won": false
+      },
+      {
+        "date": "4-4-2026",
+        "rating": 4.9611,
+        "won": false
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 5.1264,
+        "won": false
+      },
+      {
+        "date": "18-4-2026",
+        "rating": 5.2991,
+        "won": false
+      },
+      {
+        "date": "9-5-2026",
+        "rating": 5.3157,
+        "won": false
+      },
+      {
+        "date": "16-5-2026",
+        "rating": 5.3885,
+        "won": true
+      },
+      {
+        "date": "23-5-2026",
+        "rating": 5.1597,
+        "won": false
+      }
+    ]
+  },
   "Ayana Werners": {
     "singles": [
       {
@@ -1306,6 +1487,11 @@
       {
         "date": "19-4-2026",
         "rating": 7.2747,
+        "won": true
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 7.7832,
         "won": true
       },
       {
@@ -1986,6 +2172,16 @@
       {
         "date": "16-5-2026",
         "rating": 6.1002,
+        "won": true
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 5.8478,
+        "won": false
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 5.9084,
         "won": true
       },
       {
@@ -4163,6 +4359,16 @@
         "date": "31-5-2026",
         "rating": 4.0856,
         "won": true
+      },
+      {
+        "date": "11-6-2026",
+        "rating": 4.0118,
+        "won": false
+      },
+      {
+        "date": "12-6-2026",
+        "rating": 4.0646,
+        "won": false
       }
     ]
   },
@@ -5279,6 +5485,41 @@
       {
         "date": "25-5-2026",
         "rating": 4.7786,
+        "won": true
+      },
+      {
+        "date": "9-6-2026",
+        "rating": 4.8885,
+        "won": false
+      },
+      {
+        "date": "10-6-2026",
+        "rating": 4.9691,
+        "won": true
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 4.5475,
+        "won": true
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 4.639,
+        "won": true
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 4.8052,
+        "won": true
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 4.8864,
+        "won": true
+      },
+      {
+        "date": "14-6-2026",
+        "rating": 4.4487,
         "won": true
       }
     ],
@@ -7893,7 +8134,13 @@
     ]
   },
   "Laurens Elderhorst": {
-    "singles": [],
+    "singles": [
+      {
+        "date": "17-5-2026",
+        "rating": 7.7494,
+        "won": false
+      }
+    ],
     "doubles": [
       {
         "date": "6-4-2026",
@@ -7928,6 +8175,11 @@
       {
         "date": "10-5-2026",
         "rating": 6.6848,
+        "won": false
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 6.6348,
         "won": false
       },
       {
@@ -8371,6 +8623,11 @@
       {
         "date": "23-5-2026",
         "rating": 4.0554,
+        "won": false
+      },
+      {
+        "date": "14-6-2026",
+        "rating": 4.1259,
         "won": false
       }
     ]
@@ -8936,6 +9193,11 @@
       {
         "date": "9-5-2026",
         "rating": 6.9976,
+        "won": true
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 6.7309,
         "won": true
       },
       {
@@ -10487,6 +10749,16 @@
       {
         "date": "7-6-2026",
         "rating": 5.2257,
+        "won": false
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 5.2581,
+        "won": true
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 5.2362,
         "won": false
       }
     ],
