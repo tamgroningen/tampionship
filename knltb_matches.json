@@ -12232,6 +12232,119 @@
     "date": "30-5-2026"
   },
   {
+    "home_team": "SMASH BOZ 1",
+    "away_team": "TAM 1",
+    "team_score": "10:00",
+    "round": "Ronde 1",
+    "league": "",
+    "partijen": [
+      {
+        "type": "DE1",
+        "home": {
+          "team": "SMASH BOZ 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DE2",
+        "home": {
+          "team": "SMASH BOZ 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DE3",
+        "home": {
+          "team": "SMASH BOZ 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DE4",
+        "home": {
+          "team": "SMASH BOZ 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DD1",
+        "home": {
+          "team": "SMASH BOZ 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DD2",
+        "home": {
+          "team": "SMASH BOZ 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      }
+    ],
+    "tam_team": "TAM 1",
+    "date": "20-6-2026"
+  },
+  {
     "home_team": "TAM 2",
     "away_team": "LEEUWARDEN 1",
     "team_score": "1–5",
@@ -26809,7 +26922,7 @@
   {
     "home_team": "TAM 3",
     "away_team": "PARK GRINTEBOS 1",
-    "team_score": "13:30",
+    "team_score": "4–4",
     "round": "Ronde 4",
     "league": "",
     "partijen": [
@@ -26822,7 +26935,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            4.1521
           ]
         },
         "away": {
@@ -26832,7 +26945,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            3.1838
           ]
         },
         "sets": [
@@ -26856,7 +26969,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            4.5235
           ]
         },
         "away": {
@@ -26866,7 +26979,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            3.3179
           ]
         },
         "sets": [
@@ -26894,7 +27007,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            2.5122
           ]
         },
         "away": {
@@ -26904,7 +27017,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            2.5539
           ]
         },
         "sets": [
@@ -26928,7 +27041,7 @@
           ],
           "won": false,
           "ratings": [
-            null
+            3.2771
           ]
         },
         "away": {
@@ -26938,7 +27051,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            3.9725
           ]
         },
         "sets": [
@@ -26963,8 +27076,8 @@
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            3.3008,
+            3.2324
           ]
         },
         "away": {
@@ -26975,8 +27088,8 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            2.5502,
+            2.9591
           ]
         },
         "sets": [
@@ -27001,8 +27114,8 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            3.2153,
+            3.5536
           ]
         },
         "away": {
@@ -27013,8 +27126,8 @@
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            1.7386,
+            3.3981
           ]
         },
         "sets": [
@@ -27043,8 +27156,8 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            3.5982,
+            3.0981
           ]
         },
         "away": {
@@ -27055,8 +27168,8 @@
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            2.7529,
+            3.3535
           ]
         },
         "sets": [
@@ -27075,39 +27188,18 @@
         "type": "GD2",
         "home": {
           "team": "TAM 3",
-          "players": [
-            "Friso Luijkx",
-            "Jildou Boersma"
-          ],
-          "won": false,
-          "ratings": [
-            null,
-            null
-          ]
+          "players": [],
+          "won": true,
+          "ratings": []
         },
         "away": {
           "team": "PARK GRINTEBOS 1",
-          "players": [
-            "Luuk Gelissen",
-            "Senne Drupsteen"
-          ],
+          "players": [],
           "won": false,
-          "ratings": [
-            null,
-            null
-          ]
+          "ratings": []
         },
-        "sets": [
-          [
-            6,
-            2
-          ],
-          [
-            2,
-            1
-          ]
-        ],
-        "set_scores": "6-2 2-1"
+        "sets": [],
+        "set_scores": ""
       }
     ],
     "tam_team": "",
