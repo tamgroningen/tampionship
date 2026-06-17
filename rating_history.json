@@ -18263,6 +18263,31 @@
         "date": "25-5-2026",
         "rating": 5.3576,
         "won": false
+      },
+      {
+        "date": "12-6-2026",
+        "rating": 5.4227,
+        "won": false
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 5.5566,
+        "won": true
+      },
+      {
+        "date": "13-6-2026",
+        "rating": 5.4321,
+        "won": false
+      },
+      {
+        "date": "14-6-2026",
+        "rating": 5.4934,
+        "won": false
+      },
+      {
+        "date": "14-6-2026",
+        "rating": 5.5294,
+        "won": true
       }
     ]
   },

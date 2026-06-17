@@ -113,7 +113,12 @@
     "GD1|Ronde 6": 5.4142,
     "GD2|Ronde 1": 5.0874,
     "HD1|Ronde 4": 5.1,
-    "HE1|Ronde 3": 5.5586
+    "HE1|Ronde 3": 5.5586,
+    "HD|Ronde 9": 5.4934,
+    "HD|Ronde 8": 5.5294,
+    "HD|Ronde 6": 5.5566,
+    "HD|Ronde 4": 5.4321,
+    "HD|Ronde 2": 5.4227
   },
   "Luuk Spanjer": {
     "HD1|Ronde 5": 5.3457,
@@ -4892,6 +4897,47 @@
   },
   "Gerard Hut": {
     "Ronde 3|Ronde 3": 6.1115
+  },
+  "Joep Kools": {
+    "HD|Ronde 9": 7.6928
+  },
+  "Robert Moors": {
+    "HD|Ronde 9": 5.0805
+  },
+  "Jules Lenis": {
+    "HD|Ronde 9": 8.055,
+    "HD|Ronde 2": 7.9534
+  },
+  "Erik van Loenen": {
+    "HD|Ronde 8": 7.3677
+  },
+  "Gert Werts": {
+    "HD|Ronde 8": 9.0228
+  },
+  "Pepijn Soree": {
+    "HD|Ronde 8": 8.9785,
+    "HD|Ronde 4": 8.853
+  },
+  "Luuk Dolman": {
+    "HD|Ronde 6": 6.4346
+  },
+  "Hessel Sprengers": {
+    "HD|Ronde 6": 7.4562
+  },
+  "Michael Knijnenburg": {
+    "HD|Ronde 6": 6.1364
+  },
+  "Dennis Moors": {
+    "HD|Ronde 4": 6.9087
+  },
+  "Gerard Rijkers": {
+    "HD|Ronde 4": 7.1882
+  },
+  "Michiel den Haan": {
+    "HD|Ronde 2": 3.9514
+  },
+  "Martijn van Hoof": {
+    "HD|Ronde 2": 6.0982
   },
   "Ton Hilhorst": {
     "HE4|Ronde 3": 3.677
