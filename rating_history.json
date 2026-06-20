@@ -622,6 +622,11 @@
         "date": "31-5-2026",
         "rating": 1.8572,
         "won": false
+      },
+      {
+        "date": "20-6-2026",
+        "rating": 1.965,
+        "won": true
       }
     ],
     "doubles": [
@@ -3130,6 +3135,11 @@
         "date": "31-5-2026",
         "rating": 4.0816,
         "won": false
+      },
+      {
+        "date": "20-6-2026",
+        "rating": 4.1923,
+        "won": true
       }
     ],
     "doubles": [
@@ -4855,6 +4865,11 @@
         "date": "31-5-2026",
         "rating": 2.6319,
         "won": false
+      },
+      {
+        "date": "20-6-2026",
+        "rating": 2.7194,
+        "won": true
       }
     ],
     "doubles": [
@@ -16217,6 +16232,11 @@
         "date": "17-5-2026",
         "rating": 3.5635,
         "won": false
+      },
+      {
+        "date": "20-6-2026",
+        "rating": 3.7542,
+        "won": true
       }
     ],
     "doubles": [

@@ -252,7 +252,11 @@
   "Alies Knoppers": {
     "DE1|Ronde 5": 8.3648
   },
+  "Femke Luijks": {
+    "DE1|": 3.6385
+  },
   "Amber Maalderink": {
+    "DE1|": 1.965,
     "DE2|Ronde 7": 1.8572,
     "DE1|Ronde 7": 1.9591,
     "DE2|Ronde 6": 1.9829,
@@ -662,6 +666,7 @@
     "GD2|Ronde 3": 2.994,
     "GD2|Ronde 2": 3.0816,
     "GD2|Ronde 1": 3.1273,
+    "DE3|": 3.7542,
     "DE2|Ronde 5": 3.5635,
     "DE2|Ronde 4": 3.8157,
     "DE2|Ronde 2": 3.7051,
@@ -713,6 +718,7 @@
     "DD1|Ronde 4": 2.6702,
     "DD1|Ronde 2": 2.6707,
     "DD1|Ronde 1": 2.7782,
+    "DE2|": 2.7194,
     "DE1|Ronde 7": 2.6319,
     "DE2|Ronde 7": 2.6686,
     "DE1|Ronde 6": 2.723,
@@ -1984,7 +1990,11 @@
     "DD1|Ronde 6": 4.8066,
     "DD1|Ronde 4": 4.8193
   },
+  "Ilja de Wolf": {
+    "DE4|": 4.5156
+  },
   "Eline Drent": {
+    "DE4|": 4.1923,
     "DE1|Ronde 4": 4.1521,
     "DE1|Ronde 7": 4.0816,
     "DE1|Ronde 6": 4.0766,
@@ -2570,6 +2580,9 @@
   "Marco Moerman": {
     "HE1|Ronde 2": 8.0,
     "HD1|Ronde 2": 8.3558
+  },
+  "Monique de Klerk - van Hasselt": {
+    "DE2|": 4.443
   },
   "Kiki Rijk": {
     "DE1|Ronde 7": 2.2141,
@@ -4833,6 +4846,9 @@
   },
   "Robert van der Velde": {
     "HE4|Ronde 4": 7.7732
+  },
+  "Natasja Filius": {
+    "DE3|": 4.5946
   },
   "Mirjam Gietema": {
     "DE2|Ronde 1": 5.2555,

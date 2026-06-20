@@ -12234,7 +12234,7 @@
   {
     "home_team": "SMASH BOZ 1",
     "away_team": "TAM 1",
-    "team_score": "10:00",
+    "team_score": "0–6",
     "round": "Ronde 1",
     "league": "",
     "partijen": [
@@ -12255,13 +12255,22 @@
           "players": [
             "Amber Maalderink"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
             null
           ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "1-6 0-6"
       },
       {
         "type": "DE2",
@@ -12280,13 +12289,22 @@
           "players": [
             "Hanna Lindeboom"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
             null
           ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "set_scores": "0-6 0-6"
       },
       {
         "type": "DE3",
@@ -12305,13 +12323,26 @@
           "players": [
             "Suze Brock"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
             null
           ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            2
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "set_scores": "6-2 2-6 1-6"
       },
       {
         "type": "DE4",
@@ -12330,13 +12361,26 @@
           "players": [
             "Eline Drent"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
             null
           ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            7,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "set_scores": "7-6 2-6 3-6"
       },
       {
         "type": "DD1",
@@ -12358,7 +12402,7 @@
             "Tesse Haan",
             "Laura Akkerman"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
             2.8784,
             3.7187
@@ -12387,7 +12431,7 @@
             "Diede Hoekstra",
             "Sophie van Tol"
           ],
-          "won": false,
+          "won": true,
           "ratings": [
             null,
             4.0331
@@ -12399,6 +12443,119 @@
     ],
     "tam_team": "TAM 1",
     "date": "20-6-2026"
+  },
+  {
+    "home_team": "ZEE EN DUIN 1",
+    "away_team": "TAM 1",
+    "team_score": "11:00",
+    "round": "Ronde 2",
+    "league": "",
+    "partijen": [
+      {
+        "type": "DE1",
+        "home": {
+          "team": "ZEE EN DUIN 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DE2",
+        "home": {
+          "team": "ZEE EN DUIN 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DE3",
+        "home": {
+          "team": "ZEE EN DUIN 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DE4",
+        "home": {
+          "team": "ZEE EN DUIN 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DD1",
+        "home": {
+          "team": "ZEE EN DUIN 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      },
+      {
+        "type": "DD2",
+        "home": {
+          "team": "ZEE EN DUIN 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "away": {
+          "team": "TAM 1",
+          "players": [],
+          "won": false,
+          "ratings": []
+        },
+        "sets": [],
+        "set_scores": ""
+      }
+    ],
+    "tam_team": "TAM 1",
+    "date": "21-6-2026"
   },
   {
     "home_team": "TAM 2",
