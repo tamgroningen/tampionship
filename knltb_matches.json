@@ -12242,15 +12242,23 @@
         "type": "DE1",
         "home": {
           "team": "SMASH BOZ 1",
-          "players": [],
+          "players": [
+            "Femke Luijks"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Amber Maalderink"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -12259,15 +12267,23 @@
         "type": "DE2",
         "home": {
           "team": "SMASH BOZ 1",
-          "players": [],
+          "players": [
+            "Monique de Klerk - van Hasselt"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Hanna Lindeboom"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -12276,15 +12292,23 @@
         "type": "DE3",
         "home": {
           "team": "SMASH BOZ 1",
-          "players": [],
+          "players": [
+            "Natasja Filius"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Suze Brock"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -12293,15 +12317,23 @@
         "type": "DE4",
         "home": {
           "team": "SMASH BOZ 1",
-          "players": [],
+          "players": [
+            "Ilja de Wolf"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Eline Drent"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -12310,15 +12342,27 @@
         "type": "DD1",
         "home": {
           "team": "SMASH BOZ 1",
-          "players": [],
+          "players": [
+            "Femke Luijks",
+            "Natasja Filius"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Tesse Haan",
+            "Laura Akkerman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.8784,
+            3.7187
+          ]
         },
         "sets": [],
         "set_scores": ""
@@ -12327,15 +12371,27 @@
         "type": "DD2",
         "home": {
           "team": "SMASH BOZ 1",
-          "players": [],
+          "players": [
+            "Floortje Bartels",
+            "Ilja de Wolf"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Diede Hoekstra",
+            "Sophie van Tol"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null,
+            4.0331
+          ]
         },
         "sets": [],
         "set_scores": ""
