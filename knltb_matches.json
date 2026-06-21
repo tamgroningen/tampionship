@@ -12447,7 +12447,7 @@
   {
     "home_team": "ZEE EN DUIN 1",
     "away_team": "TAM 1",
-    "team_score": "11:00",
+    "team_score": "5–1",
     "round": "Ronde 2",
     "league": "",
     "partijen": [
@@ -12455,103 +12455,225 @@
         "type": "DE1",
         "home": {
           "team": "ZEE EN DUIN 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Anouk Sterk"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Amber Maalderink"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            1.9255
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "set_scores": "6-3 4-6 6-1"
       },
       {
         "type": "DE2",
         "home": {
           "team": "ZEE EN DUIN 1",
-          "players": [],
+          "players": [
+            "Barbara van der Gugten"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Hanna Lindeboom"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            1,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "set_scores": "1-6 4-6"
       },
       {
         "type": "DE3",
         "home": {
           "team": "ZEE EN DUIN 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Ruby Pennings"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Suze Brock"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.7155
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "set_scores": "6-4 7-5"
       },
       {
         "type": "DE4",
         "home": {
           "team": "ZEE EN DUIN 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Leonie Guijt"
+          ],
+          "won": true,
+          "ratings": [
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Celest Bergsma"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "set_scores": "6-3 6-2"
       },
       {
         "type": "DD1",
         "home": {
           "team": "ZEE EN DUIN 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Anouk Sterk",
+            "Ruby Pennings"
+          ],
+          "won": true,
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Tesse Haan",
+            "Laura Akkerman"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            2.9962,
+            null
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            9
+          ]
+        ],
+        "set_scores": "3-6 7-6 11-9"
       },
       {
         "type": "DD2",
         "home": {
           "team": "ZEE EN DUIN 1",
-          "players": [],
-          "won": false,
-          "ratings": []
+          "players": [
+            "Leonie Guijt",
+            "Ingrid Kruit"
+          ],
+          "won": true,
+          "ratings": [
+            null,
+            null
+          ]
         },
         "away": {
           "team": "TAM 1",
-          "players": [],
+          "players": [
+            "Diede Hoekstra",
+            "Sophie van Tol"
+          ],
           "won": false,
-          "ratings": []
+          "ratings": [
+            3.6533,
+            4.0091
+          ]
         },
-        "sets": [],
-        "set_scores": ""
+        "sets": [
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            10,
+            8
+          ]
+        ],
+        "set_scores": "4-6 6-2 10-8"
       }
     ],
     "tam_team": "TAM 1",
