@@ -13521,6 +13521,21 @@
         "date": "23-5-2026",
         "rating": 7.3378,
         "won": false
+      },
+      {
+        "date": "14-6-2026",
+        "rating": 7.4267,
+        "won": false
+      },
+      {
+        "date": "20-6-2026",
+        "rating": 7.6426,
+        "won": true
+      },
+      {
+        "date": "21-6-2026",
+        "rating": 7.5755,
+        "won": true
       }
     ]
   },

@@ -3604,7 +3604,10 @@
     "HE2|Ronde 4": 8.4072,
     "HE2|Ronde 3": 8.3171,
     "HE2|Ronde 2": 8.2692,
-    "HE2|Ronde 1": 8.332
+    "HE2|Ronde 1": 8.332,
+    "Ronde 3|Ronde 3": 7.5755,
+    "Ronde 1|Ronde 1": 7.6426,
+    "Ronde 2|Ronde 2": 7.4267
   },
   "Joppe Hoff": {
     "HD2|Ronde 6": 7.6643
@@ -4273,7 +4276,8 @@
     "DD1|Ronde 2": 7.4769
   },
   "Kim Noteltiers": {
-    "DE1|Ronde 7": 6.5768
+    "DE1|Ronde 7": 6.5768,
+    "Ronde 3|Ronde 3": 6.9664
   },
   "Nathalie Semplonius": {
     "DE1|Ronde 2": 8.0768
@@ -4494,7 +4498,7 @@
     "HE1|Ronde 2": 2.12,
     "HD1|Ronde 2": 1.9506
   },
-  "Jeroen Oude Boerrigter": {
+  "Jeroen Oude boerrigter": {
     "HE3|Ronde 1": 2.5809
   },
   "Twan Peters": {
@@ -4737,6 +4741,26 @@
   },
   "Redmer Stiensma": {
     "HE2|Ronde 4": 7.3634
+  },
+  "Wietse Baas": {
+    "Ronde 3|Ronde 3": 8.2326
+  },
+  "Gonny van der Veen": {
+    "Ronde 3|Ronde 3": 6.5938,
+    "Ronde 1|Ronde 1": 6.6609,
+    "Ronde 2|Ronde 2": 6.445
+  },
+  "Sofia Veenstra": {
+    "Ronde 1|Ronde 1": 7.2553
+  },
+  "Wart Bathoorn": {
+    "Ronde 1|Ronde 1": 8.1721
+  },
+  "Heleen Boven": {
+    "Ronde 2|Ronde 2": 7.3557
+  },
+  "Robert Hummel": {
+    "Ronde 2|Ronde 2": 7.8042
   },
   "Daan Romp": {
     "HE2|Ronde 7": 2.4657
