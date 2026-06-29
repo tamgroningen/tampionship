@@ -2474,7 +2474,8 @@
   },
   "Tijl Forger": {
     "Ronde 1|Ronde 1": 3.677,
-    "Ronde 2|Ronde 2": 3.6242
+    "Ronde 2|Ronde 2": 3.6242,
+    "Kwartfinale|": 3.7043
   },
   "Rick Oostveen": {
     "Ronde 2|Ronde 2": 3.4184
@@ -4385,6 +4386,10 @@
   "Safien Boulonois": {
     "GD2|Ronde 7": 1.4658,
     "GD2|Ronde 4": 1.3673,
+    "Finale|": 1.2301,
+    "Halve finale|": 1.3183,
+    "Kwartfinale|": 1.3975,
+    "Ronde van 16|Ronde van 16": 1.2647,
     "DE1|Ronde 7": 1.1473,
     "DE1|Ronde 6": 1.1708,
     "DE1|Ronde 5": 1.1968,
@@ -4392,9 +4397,6 @@
     "DE1|Ronde 3": 1.38,
     "DE1|Ronde 2": 1.4101,
     "DE1|Ronde 1": 1.5715,
-    "Halve finale|": 1.3183,
-    "Kwartfinale|": 1.3975,
-    "Ronde van 16|Ronde van 16": 1.2647,
     "Kwalificatie kwartfinale|": 1.1381,
     "Kwalificatie ronde van 16|": 1.1597,
     "DD1|Ronde 7": 1.492,
@@ -4819,6 +4821,18 @@
   "Arthur van Smoorenburg": {
     "GD1|Ronde 1": 8.3314
   },
+  "Chloë The": {
+    "Finale|": 2.2639
+  },
+  "Danja Nieboer": {
+    "Halve finale|": 2.2709
+  },
+  "Isabella Oosterom": {
+    "Kwartfinale|": 2.6226
+  },
+  "Susanne Rehorst": {
+    "Ronde van 16|Ronde van 16": 4.0487
+  },
   "Lian Tran": {
     "DE1|Ronde 7": 1.206,
     "DD1|Ronde 7": 1.4996
@@ -4984,6 +4998,12 @@
   "Lars Ankerman": {
     "Ronde van 32|Ronde van 32": 3.0932,
     "Halve finale|": 2.5767
+  },
+  "Gabriel Van Ruitenbeek": {
+    "Kwartfinale|": 2.703
+  },
+  "Ben van Donselaar": {
+    "Kwartfinale|": 3.1761
   },
   "Job Koning": {
     "Kwartfinale|": 4.9152
