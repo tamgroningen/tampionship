@@ -9354,6 +9354,16 @@
         "date": "30-5-2026",
         "rating": 6.8322,
         "won": true
+      },
+      {
+        "date": "1-7-2026",
+        "rating": 6.6703,
+        "won": false
+      },
+      {
+        "date": "3-7-2026",
+        "rating": 6.7313,
+        "won": false
       }
     ]
   },

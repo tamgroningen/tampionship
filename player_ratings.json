@@ -1453,6 +1453,8 @@
     "GD1|Ronde 5": 6.7309,
     "GD1|Ronde 1": 6.6917,
     "DE1|Ronde 6": 7.8607,
+    "Ronde 2|Ronde 2": 6.9393,
+    "Ronde 1|Ronde 1": 7.1491,
     "DD1|Ronde 7": 6.8322,
     "DD1|Ronde 6": 6.7822,
     "DD1|Ronde 4": 6.9976,
@@ -1460,9 +1462,7 @@
     "GD1|Ronde 3": 6.8336,
     "DD1|Ronde 2": 6.7975,
     "DD1|Ronde 1": 6.7551,
-    "Ronde 1|Ronde 1": 7.1491,
-    "Ronde 3|Ronde 3": 7.0029,
-    "Ronde 2|Ronde 2": 6.9393
+    "Ronde 3|Ronde 3": 7.0029
   },
   "Jade Straman": {
     "GD1|Ronde 5": 7.2536
@@ -1802,7 +1802,7 @@
     "Kwartfinale|": 2.9523,
     "Ronde van 16|Ronde van 16": 3.1275
   },
-  "Bram van de Kamp": {
+  "Bram Van de Kamp": {
     "GD1|Ronde 2": 3.6324,
     "HD2|Ronde 3": 3.7387
   },
@@ -3012,7 +3012,7 @@
   "Jip Lohle": {
     "HD1|Ronde 4": 3.6379
   },
-  "Mart de Lijster": {
+  "Mart De Lijster": {
     "HD1|Ronde 3": 2.6572,
     "HE1|Ronde 3": 3.413
   },
@@ -3821,6 +3821,22 @@
   "Chantal van Leijsen": {
     "DE1|Ronde 6": 6.3845,
     "DD1|Ronde 6": 5.618
+  },
+  "Fokje Groenveld": {
+    "Ronde 2|Ronde 2": 7.4911,
+    "Ronde 1|Ronde 1": 7.4301
+  },
+  "Hanna van der Heide": {
+    "Ronde 2|Ronde 2": 6.0853
+  },
+  "Carola Dahmen": {
+    "Ronde 2|Ronde 2": 7.0931
+  },
+  "Berber van der Zee": {
+    "Ronde 1|Ronde 1": 6.466
+  },
+  "Marit van der Wal": {
+    "Ronde 1|Ronde 1": 6.3871
   },
   "Lotte Lemstra": {
     "DD1|Ronde 7": 6.9864
