@@ -339,6 +339,7 @@
     "DE1|Ronde 2": 1.9255,
     "DE2|Ronde 1": 2.0133,
     "Kwalificatie ronde van 16|": 2.0236,
+    "Ronde 3|Ronde 3": 2.5229,
     "Ronde 1|Ronde 1": 2.4336,
     "GD1|Ronde 7": 2.3753,
     "GD1|Ronde 6": 2.3548,
@@ -459,6 +460,37 @@
   },
   "Marente Sijbesma": {
     "Kwalificatie ronde van 16|": 1.8734
+  },
+  "Juliën de Vries": {
+    "Ronde 3|Ronde 3": 3.2187,
+    "GD1|Ronde 3": 3.1027,
+    "HD1|Ronde 3": 2.9996
+  },
+  "Romy Traas": {
+    "Ronde 3|Ronde 3": 3.4544
+  },
+  "Olaf van Beveren": {
+    "Ronde 3|Ronde 3": 2.7524,
+    "Ronde 1|Ronde 1": 2.7634,
+    "GD1|Ronde 2": 2.9764,
+    "GD1|Ronde 3": 2.8699,
+    "HE1|Ronde 4": 1.9902,
+    "HE1|Ronde 3": 2.0858,
+    "HE1|Ronde 2": 2.1588,
+    "HE1|Ronde 1": 2.2002,
+    "HE3|Ronde 1": 2.3037,
+    "Ronde 2|Ronde 2": 2.5749,
+    "HD2|Ronde 3": 3.0345,
+    "HD1|Ronde 2": 2.9576,
+    "HD1|Ronde 1": 2.7342,
+    "HD2|Ronde 1": 2.6347,
+    "Finale|": 2.7515
+  },
+  "Marjolein van Borselen": {
+    "Ronde 1|Ronde 1": 2.8598
+  },
+  "Jeroen Boeijen": {
+    "Ronde 1|Ronde 1": 2.6235
   },
   "Pleun Vermeer": {
     "Halve finale|": 2.8414,
@@ -948,22 +980,6 @@
     "DD1|Ronde 3": 3.2143,
     "GD2|Ronde 3": 3.1515
   },
-  "Olaf van Beveren": {
-    "GD1|Ronde 2": 2.9764,
-    "GD1|Ronde 3": 2.8699,
-    "HE1|Ronde 4": 1.9902,
-    "HE1|Ronde 3": 2.0858,
-    "HE1|Ronde 2": 2.1588,
-    "HE1|Ronde 1": 2.2002,
-    "HE3|Ronde 1": 2.3037,
-    "HD2|Ronde 3": 3.0345,
-    "HD1|Ronde 2": 2.9576,
-    "HD1|Ronde 1": 2.7342,
-    "HD2|Ronde 1": 2.6347,
-    "Finale|": 2.7515,
-    "Ronde 3|Ronde 3": 2.7524,
-    "Ronde 1|Ronde 1": 2.7634
-  },
   "Charlotte Pikkaart": {
     "GD1|Ronde 2": 2.1871,
     "DD1|Ronde 2": 2.2891
@@ -1211,14 +1227,15 @@
     "DD1|Ronde 7": 6.7645,
     "DD1|Ronde 4": 6.8703,
     "DD1|Ronde 3": 6.7301,
-    "Ronde 2|Ronde 2": 7.7414,
+    "Ronde 2|Ronde 2": 6.8764,
     "Ronde 1|Ronde 1": 6.7861,
-    "Ronde 3|Ronde 3": 6.5882,
+    "Ronde 3|Ronde 3": 6.8961,
     "DE1|Ronde 5": 7.7832,
     "Kwartfinale|": 7.5453,
     "DE1|Ronde 7": 7.3832,
     "DE2|Ronde 5": 7.2634,
     "DE1|Ronde 3": 7.2747,
+    "Finale|": 6.441,
     "DD1|Ronde 6": 6.7267,
     "GD1|Ronde 6": 6.8064,
     "GD1|Ronde 4": 6.7221,
@@ -1322,9 +1339,16 @@
   "Hannah Haveman": {
     "DE1|Ronde 3": 8.9999
   },
+  "Sem Romijn": {
+    "Finale|": 5.2411
+  },
+  "Patricia Geers": {
+    "Finale|": 6.9698
+  },
   "Lucas Kleijn": {
-    "Ronde 1|Ronde 1": 6.4437,
+    "Finale|": 6.2925,
     "Ronde 3|Ronde 3": 6.2458,
+    "Ronde 1|Ronde 1": 6.4437,
     "HD1|Ronde 5": 6.031,
     "HD1|Ronde 4": 6.2761,
     "Ronde van 32|Ronde van 32": 7.4807,
@@ -1336,6 +1360,48 @@
     "HD1|Ronde 3": 6.1739,
     "HD1|Ronde 2": 6.2983,
     "GD1|Ronde 2": 6.2742
+  },
+  "Ellen Koops": {
+    "Ronde 3|Ronde 3": 5.9622,
+    "Ronde 2|Ronde 2": 5.788
+  },
+  "Bernardo Timmerman": {
+    "Ronde 3|Ronde 3": 7.0556
+  },
+  "Alexander van Dijk": {
+    "Ronde 1|Ronde 1": 6.3853
+  },
+  "Sanne de Jong": {
+    "Ronde 1|Ronde 1": 6.8873
+  },
+  "Astrid Niezing": {
+    "Ronde 2|Ronde 2": 6.8639
+  },
+  "Marianne Niessen": {
+    "Ronde 2|Ronde 2": 6.9393,
+    "Ronde 1|Ronde 1": 7.1491,
+    "Ronde 3|Ronde 3": 7.0029,
+    "GD1|Ronde 5": 6.7309,
+    "GD1|Ronde 1": 6.6917,
+    "DE1|Ronde 6": 7.8607,
+    "Ronde 5|Ronde 5": 6.34,
+    "Finale|": 6.7417,
+    "DD1|Ronde 7": 6.8322,
+    "DD1|Ronde 6": 6.7822,
+    "DD1|Ronde 4": 6.9976,
+    "DD1|Ronde 3": 6.9396,
+    "GD1|Ronde 3": 6.8336,
+    "DD1|Ronde 2": 6.7975,
+    "DD1|Ronde 1": 6.7551
+  },
+  "Willemke Postma": {
+    "Ronde 1|Ronde 1": 6.8395
+  },
+  "Nienke Overweg": {
+    "Ronde 3|Ronde 3": 6.0839
+  },
+  "Carlijn Bontjer": {
+    "Ronde 3|Ronde 3": 6.5569
   },
   "Erik Bakker": {
     "Ronde 1|Ronde 1": 5.5499,
@@ -1724,9 +1790,6 @@
   "Arjan de Melker": {
     "Ronde 5|Ronde 5": 8.9999
   },
-  "Bernardo Timmerman": {
-    "Ronde 3|Ronde 3": 7.1494
-  },
   "Eelco Luning": {
     "Ronde 3|Ronde 3": 6.1041
   },
@@ -1757,9 +1820,6 @@
   "Ernst Jan de Boer": {
     "Ronde 1|Ronde 1": 5.3784
   },
-  "Alexander van Dijk": {
-    "Ronde 1|Ronde 1": 6.2594
-  },
   "Henri Spijkerman": {
     "Ronde 1|Ronde 1": 5.9166,
     "Ronde 2|Ronde 2": 5.9888,
@@ -1774,23 +1834,6 @@
   "Thijs Mulder": {
     "HD1|Ronde 5": 7.8693,
     "HE1|Ronde 5": 7.2261
-  },
-  "Marianne Niessen": {
-    "GD1|Ronde 5": 6.7309,
-    "GD1|Ronde 1": 6.6917,
-    "Ronde 2|Ronde 2": 6.9393,
-    "Ronde 1|Ronde 1": 7.1491,
-    "DE1|Ronde 6": 7.8607,
-    "Ronde 5|Ronde 5": 6.34,
-    "Ronde 3|Ronde 3": 7.0029,
-    "Finale|": 6.7417,
-    "DD1|Ronde 7": 6.8322,
-    "DD1|Ronde 6": 6.7822,
-    "DD1|Ronde 4": 6.9976,
-    "DD1|Ronde 3": 6.9396,
-    "GD1|Ronde 3": 6.8336,
-    "DD1|Ronde 2": 6.7975,
-    "DD1|Ronde 1": 6.7551
   },
   "Ronald Leeraar": {
     "HD1|Ronde 5": 5.8952
@@ -2201,8 +2244,8 @@
     "HD1|Ronde 7": 3.3927,
     "HD1|Ronde 3": 3.473,
     "GD1|Ronde 4": 3.5982,
-    "Halve finale|": 3.0278,
     "Kwartfinale|": 3.1055,
+    "Halve finale|": 3.0278,
     "HE2|Ronde 5": 3.7296,
     "HE2|Ronde 3": 3.8016,
     "HE1|Ronde 1": 3.645,
@@ -2660,10 +2703,6 @@
   "Neeltsje Lagendijk-Kleinhuis": {
     "DD1|Ronde 5": 3.8069,
     "GD1|Ronde 5": 3.8676
-  },
-  "Juliën de Vries": {
-    "GD1|Ronde 3": 3.1027,
-    "HD1|Ronde 3": 2.9996
   },
   "Lisanne Dasselaar": {
     "GD1|Ronde 3": 2.8707,
@@ -3255,6 +3294,8 @@
   },
   "Tijn Boelhouwer": {
     "HE2|Ronde 2": 3.7797,
+    "Ronde 2|Ronde 2": 2.7263,
+    "Ronde 1|Ronde 1": 2.8518,
     "HD2|Ronde 1": 3.5837
   },
   "Romano Abdo": {
@@ -3377,7 +3418,7 @@
     "DE1|Ronde 3": 3.2839,
     "DD1|Ronde 3": 2.8897
   },
-  "Emma Sanchez Vega": {
+  "Emma Sanchez vega": {
     "DE1|Ronde 1": 3.2517,
     "GD2|Ronde 1": 3.6793
   },
@@ -4696,6 +4737,15 @@
   "Mink Visscher": {
     "Ronde 2|Ronde 2": 9.0329
   },
+  "Kyra de Vries": {
+    "Ronde 1|Ronde 1": 6.6748
+  },
+  "Imre Vlot": {
+    "Ronde 2|Ronde 2": 7.0137
+  },
+  "Esmee Molenbuur": {
+    "Ronde 3|Ronde 3": 6.8403
+  },
   "Julia van Baarle": {
     "Ronde 2|Ronde 2": 7.2866
   },
@@ -5475,6 +5525,15 @@
   "Jeroen Oude Boerrigter": {
     "HE3|Ronde 1": 2.5809
   },
+  "Amir Khodaie": {
+    "Ronde 2|Ronde 2": 2.6499
+  },
+  "Egbert Kets": {
+    "Ronde 2|Ronde 2": 2.9746
+  },
+  "Koen Rieff": {
+    "Ronde 1|Ronde 1": 2.9601
+  },
   "Twan Peters": {
     "HD2|Ronde 3": 3.2479
   },
@@ -6002,6 +6061,9 @@
   },
   "Elena Caspers": {
     "DD2|Ronde 6": 4.9772
+  },
+  "Jesse Fürrer": {
+    "Kwartfinale|": 3.8192
   },
   "Lars Ankerman": {
     "Ronde van 32|Ronde van 32": 3.0932,
