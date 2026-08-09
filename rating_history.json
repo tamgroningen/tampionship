@@ -712,6 +712,11 @@
         "date": "31-7-2026",
         "rating": 1.9369,
         "won": false
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 2.102,
+        "won": false
       }
     ],
     "doubles": [
@@ -1376,6 +1381,11 @@
         "date": "25-5-2026",
         "rating": 5.6752,
         "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 5.4303,
+        "won": false
       }
     ],
     "doubles": [
@@ -1503,6 +1513,16 @@
         "date": "4-7-2026",
         "rating": 5.4161,
         "won": true
+      },
+      {
+        "date": "3-8-2026",
+        "rating": 5.3825,
+        "won": true
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 5.3315,
+        "won": false
       }
     ]
   },
@@ -2879,6 +2899,26 @@
         "date": "12-7-2026",
         "rating": 5.9688,
         "won": true
+      },
+      {
+        "date": "3-8-2026",
+        "rating": 5.7099,
+        "won": true
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 5.6528,
+        "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 5.6289,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 5.561,
+        "won": true
       }
     ],
     "doubles": [
@@ -4220,6 +4260,16 @@
         "date": "5-7-2026",
         "rating": 5.4399,
         "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 5.3201,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 5.1403,
+        "won": true
       }
     ]
   },
@@ -4663,6 +4713,26 @@
         "date": "5-7-2026",
         "rating": 6.0072,
         "won": false
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 6.1219,
+        "won": false
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 5.9974,
+        "won": false
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 6.1772,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 6.1905,
+        "won": true
       }
     ]
   },
@@ -4842,6 +4912,21 @@
         "date": "11-7-2026",
         "rating": 4.1062,
         "won": false
+      },
+      {
+        "date": "4-8-2026",
+        "rating": 4.3099,
+        "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 4.2324,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 4.1781,
+        "won": true
       }
     ],
     "doubles": [
@@ -5590,6 +5675,21 @@
         "date": "2-8-2026",
         "rating": 2.3488,
         "won": true
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 2.3412,
+        "won": false
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 2.3495,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 2.3299,
+        "won": false
       }
     ],
     "doubles": [
@@ -5702,6 +5802,21 @@
         "date": "2-8-2026",
         "rating": 2.539,
         "won": true
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 2.4812,
+        "won": true
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 2.3176,
+        "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 2.154,
+        "won": false
       }
     ]
   },
@@ -5897,6 +6012,11 @@
       {
         "date": "14-7-2026",
         "rating": 6.3707,
+        "won": false
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 6.4706,
         "won": false
       }
     ],
@@ -7582,6 +7702,16 @@
         "date": "30-7-2026",
         "rating": 2.226,
         "won": false
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 2.236,
+        "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 2.2155,
+        "won": false
       }
     ],
     "doubles": [
@@ -7698,6 +7828,21 @@
       {
         "date": "1-8-2026",
         "rating": 3.3521,
+        "won": true
+      },
+      {
+        "date": "3-8-2026",
+        "rating": 3.2474,
+        "won": true
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 3.1188,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 2.943,
         "won": true
       }
     ]
@@ -8340,6 +8485,46 @@
       {
         "date": "28-7-2026",
         "rating": 7.1934,
+        "won": false
+      },
+      {
+        "date": "2-8-2026",
+        "rating": 7.4067,
+        "won": true
+      },
+      {
+        "date": "4-8-2026",
+        "rating": 7.2974,
+        "won": true
+      },
+      {
+        "date": "5-8-2026",
+        "rating": 7.229,
+        "won": true
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 7.1071,
+        "won": true
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 6.9323,
+        "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 6.6803,
+        "won": false
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 6.7944,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 6.7142,
         "won": false
       }
     ],
@@ -14782,6 +14967,21 @@
         "date": "4-7-2026",
         "rating": 3.5183,
         "won": true
+      },
+      {
+        "date": "3-8-2026",
+        "rating": 3.2754,
+        "won": true
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 3.1468,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 2.971,
+        "won": true
       }
     ]
   },
@@ -15968,6 +16168,16 @@
         "date": "2-8-2026",
         "rating": 0.9091,
         "won": true
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 0.8271,
+        "won": true
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 0.7391,
+        "won": false
       }
     ],
     "doubles": [
@@ -16099,6 +16309,16 @@
       {
         "date": "2-8-2026",
         "rating": 1.5454,
+        "won": false
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 1.6032,
+        "won": true
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 1.4099,
         "won": false
       }
     ]
@@ -19438,6 +19658,16 @@
         "date": "10-7-2026",
         "rating": 2.6558,
         "won": false
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 2.7616,
+        "won": true
+      },
+      {
+        "date": "7-8-2026",
+        "rating": 2.5683,
+        "won": false
       }
     ]
   },
@@ -20189,6 +20419,21 @@
       {
         "date": "31-7-2026",
         "rating": 3.293,
+        "won": false
+      },
+      {
+        "date": "5-8-2026",
+        "rating": 3.3822,
+        "won": false
+      },
+      {
+        "date": "5-8-2026",
+        "rating": 3.3369,
+        "won": false
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 3.5702,
         "won": false
       }
     ],
@@ -21897,6 +22142,11 @@
       {
         "date": "5-7-2026",
         "rating": 1.9579,
+        "won": false
+      },
+      {
+        "date": "5-8-2026",
+        "rating": 1.9944,
         "won": false
       }
     ]
