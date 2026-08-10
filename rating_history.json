@@ -13154,6 +13154,11 @@
         "date": "9-5-2026",
         "rating": 1.9902,
         "won": false
+      },
+      {
+        "date": "4-8-2026",
+        "rating": 2.1881,
+        "won": false
       }
     ],
     "doubles": [
@@ -13415,6 +13420,21 @@
       {
         "date": "30-7-2026",
         "rating": 2.4596,
+        "won": true
+      },
+      {
+        "date": "6-8-2026",
+        "rating": 2.3943,
+        "won": true
+      },
+      {
+        "date": "8-8-2026",
+        "rating": 2.375,
+        "won": true
+      },
+      {
+        "date": "9-8-2026",
+        "rating": 2.3627,
         "won": true
       }
     ]

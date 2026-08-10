@@ -526,19 +526,20 @@
     "Ronde 1|Ronde 1": 2.7634,
     "GD1|Ronde 2": 2.9764,
     "GD1|Ronde 3": 2.8699,
+    "Ronde van 16|Ronde van 16": 2.4596,
     "HE1|Ronde 4": 1.9902,
     "HE1|Ronde 3": 2.0858,
     "HE1|Ronde 2": 2.1588,
     "HE1|Ronde 1": 2.2002,
     "HE3|Ronde 1": 2.3037,
+    "Finale|": 2.7515,
+    "Halve finale|": 2.375,
     "Kwartfinale|": 2.3888,
-    "Ronde van 16|Ronde van 16": 2.4596,
     "Ronde 2|Ronde 2": 2.5749,
     "HD2|Ronde 3": 3.0345,
     "HD1|Ronde 2": 2.9576,
     "HD1|Ronde 1": 2.7342,
-    "HD2|Ronde 1": 2.6347,
-    "Finale|": 2.7515
+    "HD2|Ronde 1": 2.6347
   },
   "Marjolein van Borselen": {
     "Ronde 1|Ronde 1": 2.8598
@@ -3504,6 +3505,9 @@
   },
   "Tijn Boelhouwer": {
     "HE2|Ronde 2": 3.7797,
+    "Finale|": 2.5964,
+    "Halve finale|": 2.6087,
+    "Kwartfinale|": 2.628,
     "Ronde 2|Ronde 2": 2.7263,
     "Ronde 1|Ronde 1": 2.8518,
     "HD2|Ronde 1": 3.5837
@@ -4102,6 +4106,7 @@
   },
   "Mart De Lijster": {
     "HD1|Ronde 3": 2.6572,
+    "Ronde van 16|Ronde van 16": 2.262,
     "HE1|Ronde 3": 3.413
   },
   "Lennard Duursema": {
@@ -5808,6 +5813,24 @@
   },
   "Jeroen Oude Boerrigter": {
     "HE3|Ronde 1": 2.5809
+  },
+  "Jasper Smit": {
+    "Finale|": 2.6985
+  },
+  "Peter Klaasse": {
+    "Finale|": 4.2172
+  },
+  "Rik Helmons": {
+    "Halve finale|": 4.1101
+  },
+  "Bart Helmons": {
+    "Halve finale|": 3.9136
+  },
+  "Jelle van de Wouw": {
+    "Kwartfinale|": 4.0272
+  },
+  "Thomas Felius": {
+    "Kwartfinale|": 3.561
   },
   "Reinier Pijls": {
     "Ronde van 16|Ronde van 16": 2.7322,
