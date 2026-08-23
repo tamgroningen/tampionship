@@ -5949,6 +5949,16 @@
         "date": "30-6-2026",
         "rating": 8.3497,
         "won": false
+      },
+      {
+        "date": "21-8-2026",
+        "rating": 8.4688,
+        "won": false
+      },
+      {
+        "date": "22-8-2026",
+        "rating": 8.48,
+        "won": true
       }
     ]
   },
