@@ -102,14 +102,14 @@
   "Mart Nijenhuis": {
     "Ronde 2|Ronde 2": 5.1811,
     "HD1|Ronde 7": 4.7931,
-    "Ronde 3|Ronde 3": 4.7148,
-    "Ronde 1|Ronde 1": 4.7931,
     "HE2|Ronde 7": 5.7373,
     "HE1|Ronde 4": 5.6569,
     "HE2|Ronde 2": 5.6043,
     "HE2|Ronde 1": 5.519,
+    "Ronde 3|Ronde 3": 4.7148,
     "Halve finale|": 4.8932,
     "Kwartfinale|": 4.938,
+    "Ronde 1|Ronde 1": 4.7931,
     "HD1|Ronde 5": 4.6784,
     "GD1|Ronde 5": 4.6394,
     "HD1|Ronde 4": 4.7445,
@@ -122,10 +122,7 @@
     "Ronde 1|Ronde 1": 4.7575,
     "Ronde 3|Ronde 3": 4.4495,
     "HD1|Ronde 2": 4.2421,
-    "HD1|Ronde 1": 4.2895,
-    "HE4|Ronde 3": 4.2387,
-    "HE2|Ronde 2": 4.3675,
-    "HE3|Ronde 1": 4.5292
+    "HD1|Ronde 1": 4.2895
   },
   "Bjorn de Roos": {
     "Ronde 1|Ronde 1": 4.8465,
@@ -235,7 +232,7 @@
     "DD1|Ronde 4": 3.5775,
     "Ronde van 16|Ronde van 16": 4.3532,
     "Ronde 3|Ronde 3": 3.4646,
-    "Ronde 1|Ronde 1": 3.5939,
+    "Ronde 1|Ronde 1": 4.4109,
     "Ronde 2|Ronde 2": 4.3599,
     "DE4|": 4.3413,
     "DE3|Ronde 4": 4.118,
@@ -4333,8 +4330,7 @@
     "HD1|Ronde 1": 3.191
   },
   "Gerard Jaszczuk": {
-    "HD1|Ronde 1": 4.048,
-    "HE3|Ronde 1": 4.3345
+    "HD1|Ronde 1": 4.048
   },
   "Jilles van der Kuil": {
     "HD1|Ronde 1": 5.2699,
@@ -4871,25 +4867,6 @@
     "HD2|Ronde 1": 8.6953,
     "HE3|Ronde 1": 8.7119
   },
-  "Erich Jongeling": {
-    "HE4|Ronde 3": 6.3867
-  },
-  "Pim Davelaar": {
-    "HE2|Ronde 2": 4.4369,
-    "HD2|Ronde 2": 4.9845
-  },
-  "Sander Oost": {
-    "Ronde 3|Ronde 3": 3.9619,
-    "Ronde van 16|Ronde van 16": 4.0749,
-    "HD2|Ronde 2": 3.8783,
-    "Halve finale|": 4.5918
-  },
-  "Daniël Vosmeer": {
-    "Ronde 3|Ronde 3": 4.5156,
-    "Ronde van 16|Ronde van 16": 3.9669,
-    "HE4|Ronde 6": 4.538,
-    "HD2|Ronde 4": 4.3775
-  },
   "Ruby Pennings": {
     "DD1|": 3.2115,
     "DE3|": 2.805
@@ -4940,6 +4917,18 @@
   },
   "Maarten Rodenhuis": {
     "HD2|Ronde 7": 2.8374
+  },
+  "Sander Oost": {
+    "Ronde van 16|Ronde van 16": 4.0749,
+    "Ronde 3|Ronde 3": 3.9619,
+    "HD2|Ronde 2": 3.8783,
+    "Halve finale|": 4.5918
+  },
+  "Daniël Vosmeer": {
+    "Ronde van 16|Ronde van 16": 3.9669,
+    "Ronde 3|Ronde 3": 4.5156,
+    "HE4|Ronde 6": 4.538,
+    "HD2|Ronde 4": 4.3775
   },
   "Fleur Adema": {
     "DE2|Ronde 4": 3.9138
@@ -5611,6 +5600,9 @@
   "Pepijn Clement Ruiter": {
     "HE4|Ronde 4": 6.9621,
     "HD2|Ronde 4": 6.2957
+  },
+  "Pim Davelaar": {
+    "HD2|Ronde 2": 4.9845
   },
   "Max Adriaanse": {
     "HE2|Ronde 7": 2.1934,
