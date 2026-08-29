@@ -1077,7 +1077,8 @@
     "DE1|Ronde 6": 5.5206,
     "DE2|Ronde 3": 5.6984,
     "DD1|Ronde 6": 4.513,
-    "DD2|Ronde 3": 4.5558
+    "DD2|Ronde 3": 4.5558,
+    "DD1|": 4.3856
   },
   "Saskia Zuiderhof": {
     "DE2|Ronde 5": 5.8032,
@@ -1209,11 +1210,13 @@
   "Linde Gietema": {
     "DD1|Ronde 4": 3.9826,
     "DD1|Ronde 6": 4.0554,
+    "DE2|": 5.7572,
     "DE3|Ronde 6": 5.7734,
     "DE1|Ronde 5": 5.6909,
     "DE2|Ronde 4": 5.6804,
     "DE1|Ronde 2": 5.9176,
     "DE1|Ronde 1": 5.893,
+    "DD1|": 4.2395,
     "Ronde 1|Ronde 1": 4.1259,
     "DD1|Ronde 2": 4.1208,
     "DD1|Ronde 1": 4.0382
@@ -2821,7 +2824,8 @@
   },
   "Neeltsje Lagendijk-Kleinhuis": {
     "DD1|Ronde 5": 3.8069,
-    "GD1|Ronde 5": 3.8676
+    "GD1|Ronde 5": 3.8676,
+    "DD1|": 4.5143
   },
   "Lisanne Dasselaar": {
     "GD1|Ronde 3": 2.8707,
@@ -2951,6 +2955,8 @@
     "Ronde 2|Ronde 2": 4.7659,
     "GD2|Ronde 5": 4.4065,
     "DE2|Ronde 5": 5.6621,
+    "DE2|": 5.4521,
+    "DD1|": 5.0363,
     "GD1|Ronde 2": 4.0977
   },
   "Brecht Goren": {
