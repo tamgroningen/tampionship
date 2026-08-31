@@ -10465,6 +10465,16 @@
         "date": "25-7-2026",
         "rating": 7.5217,
         "won": false
+      },
+      {
+        "date": "24-8-2026",
+        "rating": 7.5701,
+        "won": true
+      },
+      {
+        "date": "26-8-2026",
+        "rating": 7.5084,
+        "won": false
       }
     ],
     "doubles": [
@@ -10731,6 +10741,26 @@
       {
         "date": "21-8-2026",
         "rating": 6.1397,
+        "won": false
+      },
+      {
+        "date": "24-8-2026",
+        "rating": 6.1739,
+        "won": false
+      },
+      {
+        "date": "25-8-2026",
+        "rating": 6.2212,
+        "won": true
+      },
+      {
+        "date": "27-8-2026",
+        "rating": 6.0561,
+        "won": false
+      },
+      {
+        "date": "30-8-2026",
+        "rating": 6.1548,
         "won": false
       }
     ]

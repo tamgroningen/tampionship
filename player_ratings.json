@@ -1092,6 +1092,7 @@
     "DE2|Ronde 2": 5.5429,
     "DD2|Ronde 5": 5.138,
     "DD2|Ronde 2": 5.5307,
+    "Ronde 2|Ronde 2": 4.8431,
     "Ronde 1|Ronde 1": 4.8773
   },
   "Lisette Moonen": {
@@ -1471,6 +1472,7 @@
     "GD1|Ronde 5": 6.7309,
     "GD1|Ronde 1": 6.6917,
     "DE1|Ronde 6": 7.8607,
+    "Ronde 4|Ronde 4": 6.2212,
     "Ronde 5|Ronde 5": 6.34,
     "Finale|": 6.7417,
     "DD1|Ronde 7": 6.8322,
@@ -2839,7 +2841,8 @@
   },
   "Tianne Zuidema": {
     "DD1|Ronde 6": 5.4254,
-    "GD2|Ronde 6": 5.4397
+    "GD2|Ronde 6": 5.4397,
+    "Ronde 1|Ronde 1": 5.2488
   },
   "Irene Brouwer": {
     "DD1|Ronde 6": 4.2207
@@ -4580,6 +4583,8 @@
   "Jallina Popma": {
     "Ronde 2|Ronde 2": 6.678,
     "Ronde 1|Ronde 1": 6.1217,
+    "Ronde 3|Ronde 3": 6.0945,
+    "Ronde 4|Ronde 4": 6.2596,
     "DD1|Ronde 6": 6.6213
   },
   "Renate van der Woude": {
@@ -5122,6 +5127,12 @@
   "Mink Visscher": {
     "Ronde 2|Ronde 2": 9.0329
   },
+  "Myrthe Jansma": {
+    "Ronde 3|Ronde 3": 8.1134
+  },
+  "Céleste Wortel": {
+    "Ronde 1|Ronde 1": 8.2499
+  },
   "Kyra de Vries": {
     "Ronde 1|Ronde 1": 6.6748
   },
@@ -5141,18 +5152,29 @@
     "DE1|Ronde 6": 6.3845,
     "DD1|Ronde 6": 5.618
   },
-  "Fokje Groenveld": {
-    "Ronde 3|Ronde 3": 7.4293,
-    "Ronde 2|Ronde 2": 7.4911,
-    "Ronde 1|Ronde 1": 7.4301
+  "Ilse Damstra": {
+    "Ronde 1|Ronde 1": 5.1729
+  },
+  "Mila Luderer": {
+    "Ronde 3|Ronde 3": 5.3164
+  },
+  "Annabel Roman": {
+    "Ronde 3|Ronde 3": 6.2568
+  },
+  "Khemanich Thongpim": {
+    "Ronde 4|Ronde 4": 6.7619,
+    "Ronde 3|Ronde 3": 6.6823
   },
   "Elise van der Meer": {
+    "Ronde 4|Ronde 4": 5.314,
     "Ronde 3|Ronde 3": 5.2344,
     "Ronde 1|Ronde 1": 5.3628,
     "Finale|": 5.2297
   },
-  "Khemanich Thongpim": {
-    "Ronde 3|Ronde 3": 6.6823
+  "Fokje Groenveld": {
+    "Ronde 3|Ronde 3": 7.4293,
+    "Ronde 2|Ronde 2": 7.4911,
+    "Ronde 1|Ronde 1": 7.4301
   },
   "Jeanine Sloterdijk": {
     "Ronde 2|Ronde 2": 6.7033
