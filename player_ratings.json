@@ -71,10 +71,9 @@
     "Finale|": 4.9724,
     "HD1|Ronde 4": 5.4337,
     "Ronde 1|Ronde 1": 5.0144,
-    "HE1|Ronde 6": 4.8436,
-    "HD1|Ronde 6": 5.1761,
     "Ronde 3|Ronde 3": 5.3363,
-    "Kwartfinale|": 4.7577
+    "Kwartfinale|": 4.7577,
+    "HD1|Ronde 6": 5.1761
   },
   "Sam Chin": {
     "HE1|Ronde 2": 6.0022,
@@ -3146,12 +3145,12 @@
     "HD2|Ronde 4": 5.0497,
     "HD2|Ronde 3": 4.8499,
     "HD1|Ronde 2": 5.0276,
-    "HD1|Ronde 6": 4.9925,
     "HE3|Ronde 5": 5.9406,
     "HE3|Ronde 4": 5.9615,
     "HE3|Ronde 3": 5.8903,
     "HE3|Ronde 2": 5.9593,
     "HE4|Ronde 1": 5.9655,
+    "HD1|Ronde 6": 4.9925,
     "HD2|Ronde 5": 5.037,
     "HD2|Ronde 1": 5.0508
   },
@@ -3864,11 +3863,10 @@
   },
   "Paul Hatenboer": {
     "GD2|Ronde 6": 6.5335,
-    "HE1|Ronde 6": 6.5538,
-    "HD1|Ronde 6": 6.4767,
     "HD1|Ronde 2": 6.4296,
     "Ronde van 16|Ronde van 16": 6.392,
-    "Ronde van 32|Ronde van 32": 6.4031
+    "Ronde van 32|Ronde van 32": 6.4031,
+    "HD1|Ronde 6": 6.4767
   },
   "Robert te Wierik": {
     "Ronde van 32|Ronde van 32": 8.9718
@@ -4935,7 +4933,6 @@
     "HD2|Ronde 3": 7.5092,
     "Ronde van 16|Ronde van 16": 7.5035,
     "HD2|Ronde 4": 7.3336,
-    "HD1|Ronde 2": 7.4621,
     "HE2|Ronde 7": 8.5093,
     "HE2|Ronde 6": 8.4755,
     "HE2|Ronde 5": 8.4429,
@@ -4945,7 +4942,8 @@
     "HE2|Ronde 1": 8.332,
     "Ronde 2|Ronde 2": 7.4267,
     "Ronde 3|Ronde 3": 7.5755,
-    "Ronde 1|Ronde 1": 7.6426
+    "Ronde 1|Ronde 1": 7.6426,
+    "HD1|Ronde 2": 7.4621
   },
   "Joppe Hoff": {
     "HD2|Ronde 6": 7.6643
@@ -5448,8 +5446,6 @@
   "Tibbe Froma": {
     "HD1|Ronde 5": 7.2917,
     "HD1|Ronde 1": 7.5236,
-    "Ronde van 16|Ronde van 16": 7.486,
-    "Ronde van 32|Ronde van 32": 7.4971,
     "GD1|Ronde 4": 7.3271,
     "Finale|": 6.2592,
     "Halve finale|": 6.4798,
@@ -5458,7 +5454,9 @@
     "Ronde 3|Ronde 3": 7.1162,
     "HD1|Ronde 7": 7.1338,
     "HD1|Ronde 4": 7.2563,
+    "Ronde van 32|Ronde van 32": 7.4971,
     "Ronde van 64|Ronde van 64": 7.1137,
+    "Ronde van 16|Ronde van 16": 7.486,
     "HE1|Ronde 5": 7.1581,
     "HE1|Ronde 1": 7.3365,
     "Ronde 1|Ronde 1": 7.1535
@@ -6095,22 +6093,6 @@
   "Michiel Klein Hulse": {
     "HE1|Ronde 3": 7.7898
   },
-  "Mark Wiersma": {
-    "HD1|Ronde 2": 6.1756,
-    "HE1|Ronde 2": 7.0921
-  },
-  "Djelano Sanders": {
-    "Ronde van 16|Ronde van 16": 6.2506
-  },
-  "Patrick Sanders": {
-    "Ronde van 16|Ronde van 16": 5.7956
-  },
-  "Thijs de Bruijn": {
-    "Ronde van 32|Ronde van 32": 9.5999
-  },
-  "Klaas Kwakkel": {
-    "Ronde van 32|Ronde van 32": 7.4459
-  },
   "Aniek Blommestein": {
     "DE1|Ronde 5": 9.0542,
     "DD1|Ronde 5": 7.9693
@@ -6376,6 +6358,10 @@
   },
   "Robert Hummel": {
     "Ronde 2|Ronde 2": 7.8042
+  },
+  "Mark Wiersma": {
+    "HD1|Ronde 2": 6.1756,
+    "HE1|Ronde 2": 7.0921
   },
   "gysoh Ferrer Alvarez": {
     "Finale|": 3.0937
@@ -6764,6 +6750,18 @@
   },
   "Pim Rive": {
     "Ronde 3|Ronde 3": 6.6223
+  },
+  "Djelano Sanders": {
+    "Ronde van 16|Ronde van 16": 6.2506
+  },
+  "Patrick Sanders": {
+    "Ronde van 16|Ronde van 16": 5.7956
+  },
+  "Thijs de Bruijn": {
+    "Ronde van 32|Ronde van 32": 9.5999
+  },
+  "Klaas Kwakkel": {
+    "Ronde van 32|Ronde van 32": 7.4459
   },
   "Jurgen Torn": {
     "Ronde van 32|Ronde van 32": 8.5329
