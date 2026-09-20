@@ -628,6 +628,7 @@
     "HD1|Ronde 2": 2.0764,
     "GD1|Ronde 2": 2.1761,
     "Kwartfinale|": 1.9279,
+    "HE2|Ronde 2": 2.9815,
     "HE2|Ronde 1": 2.6267,
     "Ronde van 16|Ronde van 16": 1.9944,
     "HE3|Ronde 6": 2.5436,
@@ -636,7 +637,6 @@
     "HE2|Ronde 3": 2.7972,
     "HE4|Ronde 3": 2.8221,
     "HE4|Ronde 2": 2.9878,
-    "HE2|Ronde 2": 2.9815,
     "HE1|Ronde 1": 2.9711,
     "HD2|Ronde 1": 2.1271,
     "Finale|": 1.9579
@@ -5872,6 +5872,7 @@
   },
   "Jorden Vogel": {
     "HD2|Ronde 4": 2.7117,
+    "HD1|Ronde 2": 2.7299,
     "Ronde van 16|Ronde van 16": 2.5972,
     "HD1|Ronde 1": 2.7326
   },
@@ -6903,6 +6904,9 @@
   "Daan van der Meulen": {
     "HD2|Ronde 1": 5.3928
   },
+  "Dex Tigges": {
+    "HE2|Ronde 2": 3.0822
+  },
   "Willem van As": {
     "HE2|Ronde 1": 1.3
   },
@@ -6917,6 +6921,12 @@
   },
   "Roelof Ameshoff": {
     "Halve finale|": 2.8218
+  },
+  "Giovanni Hamming": {
+    "HD1|Ronde 2": 4.1467
+  },
+  "Janne van Wilgen": {
+    "HD1|Ronde 2": 4.9723
   },
   "Robbert Bruijs": {
     "HD2|Ronde 1": 3.6542
