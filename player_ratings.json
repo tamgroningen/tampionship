@@ -3147,11 +3147,12 @@
     "HD2|Ronde 4": 5.0497,
     "HD2|Ronde 3": 4.8499,
     "HD1|Ronde 2": 5.0276,
+    "HE3|Ronde 2": 5.9593,
     "HE3|Ronde 5": 5.9406,
     "HE3|Ronde 4": 5.9615,
     "HE3|Ronde 3": 5.8903,
-    "HE3|Ronde 2": 5.9593,
     "HE4|Ronde 1": 5.9655,
+    "HD2|Ronde 2": 5.4483,
     "HD1|Ronde 6": 4.9925,
     "HD2|Ronde 5": 5.037,
     "HD2|Ronde 1": 5.0508
@@ -4129,7 +4130,7 @@
   },
   "Jochem Westerink": {
     "Kwartfinale|": 3.6476,
-    "HD1|Ronde 2": 3.5099,
+    "HD1|Ronde 2": 4.1197,
     "Ronde 2|Ronde 2": 4.015,
     "Ronde 1|Ronde 1": 3.6575,
     "Ronde van 32|Ronde van 32": 4.3394,
@@ -4265,7 +4266,7 @@
     "HD1|Ronde 2": 2.4819,
     "GD2|Ronde 1": 2.5276
   },
-  "Tom Van der Bijl": {
+  "Tom van der Bijl": {
     "HE2|Ronde 6": 2.9833,
     "Finale|": 1.7249,
     "Ronde 3|Ronde 3": 2.4895,
@@ -4368,7 +4369,7 @@
   },
   "Martin Miedema": {
     "HE4|Ronde 2": 6.7254,
-    "HD2|Ronde 2": 5.8702,
+    "HD2|Ronde 2": 6.294,
     "Ronde 3|Ronde 3": 6.2258,
     "Ronde 2|Ronde 2": 6.0842
   },
@@ -4996,22 +4997,30 @@
     "DE3|Ronde 2": 7.8116,
     "Ronde 2|Ronde 2": 5.865
   },
-  "Job Groot": {
-    "Ronde 1|Ronde 1": 3.6141,
-    "Ronde van 16|Ronde van 16": 3.6669
+  "Brendan Bosschieter": {
+    "HE1|Ronde 2": 4.3882,
+    "HD1|Ronde 2": 4.4065,
+    "Ronde van 32|Ronde van 32": 4.1818,
+    "Ronde 3|Ronde 3": 4.5281
   },
   "Lex van der Land": {
+    "HE1|Ronde 2": 4.4285,
     "Ronde 1|Ronde 1": 4.3734,
     "Ronde 3|Ronde 3": 4.3569,
     "Ronde van 16|Ronde van 16": 3.6929,
     "HE4|Ronde 7": 4.2577,
     "HE4|Ronde 6": 4.164,
     "HE3|Ronde 4": 4.0008,
+    "HD1|Ronde 2": 3.6934,
     "HD2|Ronde 7": 3.5703,
     "HD2|Ronde 6": 3.4906,
     "HD2|Ronde 5": 3.4648,
     "HD2|Ronde 3": 3.6494,
     "Halve finale|": 3.6045
+  },
+  "Job Groot": {
+    "Ronde 1|Ronde 1": 3.6141,
+    "Ronde van 16|Ronde van 16": 3.6669
   },
   "Emiel de Graaf": {
     "HE4|Ronde 7": 3.3729
@@ -5019,6 +5028,9 @@
   "Jorne Wachters": {
     "HE3|Ronde 4": 4.2083,
     "HD2|Ronde 4": 3.6558
+  },
+  "Léon Winkeler": {
+    "HD1|Ronde 2": 4.3411
   },
   "Rik Bosma": {
     "HD2|Ronde 7": 3.3446
@@ -5898,10 +5910,6 @@
   },
   "Bram Valkenburg": {
     "Halve finale|": 5.3414
-  },
-  "Brendan Bosschieter": {
-    "Ronde van 32|Ronde van 32": 4.1818,
-    "Ronde 3|Ronde 3": 4.5281
   },
   "Misja Kedra": {
     "Ronde van 16|Ronde van 16": 5.8828
@@ -6882,12 +6890,19 @@
     "Ronde 3|Ronde 3": 8.0869,
     "Ronde 1|Ronde 1": 7.8766
   },
+  "Mink Eenkhoorn": {
+    "HE3|Ronde 2": 5.3442,
+    "HD2|Ronde 2": 5.6499
+  },
   "Dennis van der Honing": {
     "HE3|Ronde 5": 5.0459
   },
   "Thomas Janssens": {
     "HE4|Ronde 1": 8.0358,
     "HD2|Ronde 1": 7.6673
+  },
+  "Quirijn Oord": {
+    "HD2|Ronde 2": 6.2173
   },
   "Tom Unger": {
     "Ronde 3|Ronde 3": 4.8841
