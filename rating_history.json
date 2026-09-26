@@ -5303,6 +5303,11 @@
         "date": "12-9-2026",
         "rating": 3.5462,
         "won": false
+      },
+      {
+        "date": "26-9-2026",
+        "rating": 3.6457,
+        "won": false
       }
     ],
     "doubles": [
@@ -5449,6 +5454,11 @@
       {
         "date": "12-9-2026",
         "rating": 4.2125,
+        "won": false
+      },
+      {
+        "date": "26-9-2026",
+        "rating": 4.2299,
         "won": false
       }
     ]
@@ -9609,6 +9619,11 @@
         "date": "19-9-2026",
         "rating": 4.4285,
         "won": false
+      },
+      {
+        "date": "26-9-2026",
+        "rating": 4.5609,
+        "won": true
       }
     ],
     "doubles": [
@@ -9695,6 +9710,11 @@
       {
         "date": "19-9-2026",
         "rating": 3.6934,
+        "won": true
+      },
+      {
+        "date": "26-9-2026",
+        "rating": 3.6162,
         "won": true
       }
     ]

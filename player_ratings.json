@@ -3469,11 +3469,11 @@
     "HD2|Ronde 1": 5.9569,
     "HE4|Ronde 1": 6.6769
   },
-  "Tom Viswat": {
-    "HE3|Ronde 1": 3.2348,
-    "HD2|Ronde 1": 2.5096
+  "Roel Pluk": {
+    "HE3|Ronde 3": 2.4625
   },
   "Friso Luijkx": {
+    "HE3|Ronde 3": 3.6457,
     "HE3|Ronde 1": 3.5462,
     "Kwartfinale|": 4.4341,
     "Ronde van 16|Ronde van 16": 4.242,
@@ -3486,6 +3486,7 @@
     "HE1|Ronde 3": 3.4185,
     "HE2|Ronde 2": 3.5246,
     "HE2|Ronde 1": 3.5753,
+    "HD2|Ronde 3": 4.2299,
     "HD2|Ronde 1": 4.2125,
     "Finale|": 4.2985,
     "Halve finale|": 4.3634,
@@ -3495,6 +3496,10 @@
     "HD1|Ronde 2": 3.9397,
     "GD2|Ronde 1": 3.9841,
     "HD1|Ronde 1": 4.0806
+  },
+  "Tom Viswat": {
+    "HE3|Ronde 1": 3.2348,
+    "HD2|Ronde 1": 2.5096
   },
   "Stefan Deinum": {
     "Kwartfinale|": 3.1154,
@@ -3569,6 +3574,15 @@
     "Ronde 2|Ronde 2": 2.7263,
     "Ronde 1|Ronde 1": 2.8518,
     "HD2|Ronde 1": 3.5837
+  },
+  "Mark Pluk": {
+    "HD2|Ronde 3": 1.9721
+  },
+  "Nûlleke Pluk": {
+    "HD2|Ronde 3": 3.5664
+  },
+  "Bram Mulder": {
+    "HD2|Ronde 3": 3.9763
   },
   "Jorn Viswat": {
     "HD2|Ronde 1": 2.8306
@@ -4133,6 +4147,7 @@
     "HD1|Ronde 2": 4.1197,
     "Ronde 2|Ronde 2": 4.015,
     "Ronde 1|Ronde 1": 3.6575,
+    "HD1|Ronde 3": 4.0425,
     "Ronde van 32|Ronde van 32": 4.3394,
     "HE1|Ronde 2": 3.8108,
     "Ronde 3|Ronde 3": 3.9765,
@@ -4997,13 +5012,8 @@
     "DE3|Ronde 2": 7.8116,
     "Ronde 2|Ronde 2": 5.865
   },
-  "Brendan Bosschieter": {
-    "HE1|Ronde 2": 4.3882,
-    "HD1|Ronde 2": 4.4065,
-    "Ronde van 32|Ronde van 32": 4.1818,
-    "Ronde 3|Ronde 3": 4.5281
-  },
   "Lex van der Land": {
+    "HE2|Ronde 3": 4.5609,
     "HE1|Ronde 2": 4.4285,
     "Ronde 1|Ronde 1": 4.3734,
     "Ronde 3|Ronde 3": 4.3569,
@@ -5011,12 +5021,23 @@
     "HE4|Ronde 7": 4.2577,
     "HE4|Ronde 6": 4.164,
     "HE3|Ronde 4": 4.0008,
+    "HD1|Ronde 3": 3.6162,
     "HD1|Ronde 2": 3.6934,
     "HD2|Ronde 7": 3.5703,
     "HD2|Ronde 6": 3.4906,
     "HD2|Ronde 5": 3.4648,
     "HD2|Ronde 3": 3.6494,
     "Halve finale|": 3.6045
+  },
+  "Tom Unger": {
+    "HE2|Ronde 3": 5.6972,
+    "Ronde 3|Ronde 3": 4.8841
+  },
+  "Brendan Bosschieter": {
+    "HE1|Ronde 2": 4.3882,
+    "HD1|Ronde 2": 4.4065,
+    "Ronde van 32|Ronde van 32": 4.1818,
+    "Ronde 3|Ronde 3": 4.5281
   },
   "Job Groot": {
     "Ronde 1|Ronde 1": 3.6141,
@@ -5028,6 +5049,12 @@
   "Jorne Wachters": {
     "HE3|Ronde 4": 4.2083,
     "HD2|Ronde 4": 3.6558
+  },
+  "Mats Unger": {
+    "HD1|Ronde 3": 5.659
+  },
+  "Jordy van Nieuwenhuijze": {
+    "HD1|Ronde 3": 5.6002
   },
   "Léon Winkeler": {
     "HD1|Ronde 2": 4.3411
@@ -6903,9 +6930,6 @@
   },
   "Quirijn Oord": {
     "HD2|Ronde 2": 6.2173
-  },
-  "Tom Unger": {
-    "Ronde 3|Ronde 3": 4.8841
   },
   "Robbert de Keijzer": {
     "Ronde 3|Ronde 3": 5.6191
