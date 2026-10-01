@@ -11459,7 +11459,7 @@
           ],
           "won": true,
           "ratings": [
-            4.9207
+            null
           ]
         },
         "sets": [
@@ -11530,7 +11530,7 @@
           ],
           "won": false,
           "ratings": [
-            5.5752,
+            null,
             4.287
           ]
         },
@@ -23355,7 +23355,7 @@
           ],
           "won": false,
           "ratings": [
-            2.4348
+            null
           ]
         },
         "away": {
@@ -23492,7 +23492,7 @@
           ],
           "won": true,
           "ratings": [
-            2.3225,
+            null,
             2.6603
           ]
         },
