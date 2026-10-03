@@ -3221,6 +3221,8 @@
     "Halve finale|": 5.0016,
     "HE4|Ronde 2": 4.0105,
     "HD2|Ronde 2": 4.2709,
+    "HE1|Ronde 4": 5.1208,
+    "HD1|Ronde 4": 4.1312,
     "Ronde 3|Ronde 3": 3.9905,
     "Ronde 2|Ronde 2": 4.0295,
     "HD1|Ronde 3": 4.3623,
@@ -5013,6 +5015,7 @@
     "Ronde 2|Ronde 2": 5.865
   },
   "Lex van der Land": {
+    "HE1|Ronde 4": 4.5302,
     "HE2|Ronde 3": 4.5609,
     "HE1|Ronde 2": 4.4285,
     "Ronde 1|Ronde 1": 4.3734,
@@ -5021,6 +5024,7 @@
     "HE4|Ronde 7": 4.2577,
     "HE4|Ronde 6": 4.164,
     "HE3|Ronde 4": 4.0008,
+    "HD1|Ronde 4": 3.609,
     "HD1|Ronde 3": 3.6162,
     "HD1|Ronde 2": 3.6934,
     "HD2|Ronde 7": 3.5703,
@@ -5049,6 +5053,12 @@
   "Jorne Wachters": {
     "HE3|Ronde 4": 4.2083,
     "HD2|Ronde 4": 3.6558
+  },
+  "Jurjen Boelema": {
+    "HD1|Ronde 4": 5.6673
+  },
+  "Frank van der Land": {
+    "HD1|Ronde 4": 3.7837
   },
   "Mats Unger": {
     "HD1|Ronde 3": 5.659
