@@ -354,10 +354,10 @@
   "Safien Boulonois": {
     "Finale|": 1.5454,
     "Ronde 1|Ronde 1": 1.5567,
-    "Halve finale|": 1.4099,
+    "Halve finale|": 1.5613,
     "GD2|Ronde 7": 1.4658,
     "GD2|Ronde 4": 1.3673,
-    "Kwartfinale|": 1.6032,
+    "Kwartfinale|": 1.3969,
     "Ronde van 16|Ronde van 16": 1.2647,
     "DE1|Ronde 7": 1.1473,
     "DE1|Ronde 6": 1.1708,
@@ -533,14 +533,11 @@
     "Halve finale|": 2.1763
   },
   "Mariëlle Kruis": {
-    "Kwartfinale|": 3.7307,
-    "GD1|": 3.8723,
-    "DD1|": 3.7804
+    "Kwartfinale|": 3.7307
   },
   "Annemijn Venema": {
     "Kwartfinale|": 2.9352,
-    "Ronde van 16|Ronde van 16": 3.1392,
-    "DD1|": 2.9849
+    "Ronde van 16|Ronde van 16": 3.1392
   },
   "Tom Doldersum": {
     "Halve finale|": 3.5183,
@@ -2329,7 +2326,7 @@
   "Fleur Eggink": {
     "Ronde van 16|Ronde van 16": 2.3335,
     "Finale|": 2.3966,
-    "Halve finale|": 1.6646,
+    "Halve finale|": 1.8331,
     "Kwartfinale|": 2.3268,
     "DE1|Ronde 3": 2.4604
   },
@@ -2431,8 +2428,7 @@
     "DD2|Ronde 4": 3.6465
   },
   "Michelle Mesman-Broersen": {
-    "DD1|Ronde 5": 3.4666,
-    "DE3|Ronde 5": 3.5795
+    "DD1|Ronde 5": 3.4666
   },
   "Job Weening": {
     "GD1|Ronde 2": 2.9969,
@@ -3688,8 +3684,7 @@
     "Ronde 3|Ronde 3": 4.3023
   },
   "Iris Welles": {
-    "Ronde 1|Ronde 1": 4.3362,
-    "DE2|Ronde 2": 4.7308
+    "Ronde 1|Ronde 1": 4.3362
   },
   "Mariam Azouz": {
     "Kwartfinale|": 3.2326
@@ -3737,8 +3732,7 @@
   },
   "Gabriela van Ooststroom": {
     "Finale|": 2.1358,
-    "Kwartfinale|": 2.5116,
-    "Halve finale|": 2.3472
+    "Kwartfinale|": 2.5116
   },
   "Sarah De boer": {
     "Finale|": 1.8826
@@ -3780,30 +3774,24 @@
     "HE1|Ronde 3": 1.1829
   },
   "Simone Vries": {
-    "DD1|Ronde 3": 3.9221,
-    "DE2|Ronde 3": 4.4405
+    "DD1|Ronde 3": 3.9221
   },
   "Tesse Haan": {
-    "DD1|Ronde 3": 2.7586,
+    "DD1|Ronde 3": 2.7026,
     "DD1|": 2.5414,
     "GD2|Ronde 1": 2.8129,
     "GD2|Ronde 6": 2.4225,
     "GD2|Ronde 5": 2.6014,
     "GD2|Ronde 3": 2.476,
     "GD2|Ronde 2": 2.7959,
-    "Halve finale|": 2.6558,
+    "Halve finale|": 2.5683,
     "Kwartfinale|": 2.7616,
     "DD1|Ronde 7": 2.4767,
     "DD1|Ronde 6": 2.5441,
     "DD1|Ronde 5": 2.3845,
     "DD1|Ronde 4": 2.2567,
     "DD1|Ronde 2": 2.9962,
-    "DD1|Ronde 1": 2.8784,
-    "DE3|Ronde 7": 2.9482,
-    "DE3|Ronde 5": 3.0212,
-    "DE2|Ronde 3": 3.0411,
-    "DE2|Ronde 2": 3.0753,
-    "GD1|": 2.5826
+    "DD1|Ronde 1": 2.8784
   },
   "Ruth Van der Walle": {
     "DD2|Ronde 1": 4.4642,
@@ -4245,7 +4233,7 @@
   "Jip Lohle": {
     "HD1|Ronde 4": 3.6379
   },
-  "Mart De Lijster": {
+  "Mart de Lijster": {
     "HD1|Ronde 3": 2.6572,
     "Ronde van 16|Ronde van 16": 2.262,
     "HE1|Ronde 3": 3.413,
@@ -4743,8 +4731,7 @@
   "Daan Romp": {
     "Ronde van 32|Ronde van 32": 2.923,
     "Finale|": 2.3699,
-    "HE2|Ronde 7": 2.4657,
-    "GD1|": 2.0857
+    "HE2|Ronde 7": 2.4657
   },
   "Edwin Duursema": {
     "Ronde van 16|Ronde van 16": 4.3594
@@ -6513,8 +6500,7 @@
     "Halve finale|": 3.7123
   },
   "Daniëlle Koetje": {
-    "Kwartfinale|": 1.6705,
-    "Halve finale|": 1.5061
+    "Kwartfinale|": 1.6705
   },
   "Sabine van der Sar": {
     "DD1|Ronde 6": 1.8172
@@ -6752,15 +6738,6 @@
   "Evgeny Lukin": {
     "HD1|Ronde 7": 9.0211,
     "HE1|Ronde 7": 9.0068
-  },
-  "Tamara Reedijk-Mol": {
-    "DE3|Ronde 7": 3.2253
-  },
-  "Bram Hijlkema": {
-    "GD1|": 3.6566
-  },
-  "Mare Kremer": {
-    "DD1|": 3.4054
   },
   "Marc de Wit": {
     "Ronde van 32|Ronde van 32": 7.3422
