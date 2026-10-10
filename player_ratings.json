@@ -330,11 +330,12 @@
     "DE1|Ronde 2": 1.9255,
     "DE2|Ronde 1": 2.0133,
     "Kwalificatie ronde van 16|": 2.0236,
+    "GD1|Ronde 5": 2.4418,
+    "DD1|Ronde 5": 2.4687,
     "Ronde 3|Ronde 3": 2.5229,
     "Ronde 1|Ronde 1": 2.4336,
     "GD1|Ronde 7": 2.3753,
     "GD1|Ronde 6": 2.3548,
-    "GD1|Ronde 5": 2.4418,
     "GD1|Ronde 4": 2.6558,
     "DD1|Ronde 4": 2.6628,
     "GD1|Ronde 3": 2.6325,
@@ -490,6 +491,22 @@
   },
   "Marente Sijbesma": {
     "Kwalificatie ronde van 16|": 1.8734
+  },
+  "Bas Karsch": {
+    "GD1|Ronde 5": 5.7966
+  },
+  "Anke Loeffen": {
+    "GD1|Ronde 5": 4.3697,
+    "DD1|Ronde 5": 4.3648
+  },
+  "Alwin Maalderink": {
+    "GD1|Ronde 5": 3.9007
+  },
+  "Kim van der Zwan": {
+    "DD1|Ronde 5": 6.5754
+  },
+  "Joyce Kreeftenberg": {
+    "DD1|Ronde 5": 4.4781
   },
   "Juliën de Vries": {
     "Ronde 3|Ronde 3": 3.2187,
