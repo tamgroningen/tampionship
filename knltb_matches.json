@@ -28465,7 +28465,7 @@
           ],
           "won": true,
           "ratings": [
-            4.995
+            null
           ]
         },
         "away": {
@@ -28631,7 +28631,7 @@
           ],
           "won": false,
           "ratings": [
-            5.5045,
+            null,
             5.2682
           ]
         },
@@ -30536,7 +30536,7 @@
           ],
           "won": true,
           "ratings": [
-            4.7806
+            null
           ]
         },
         "sets": [
@@ -30688,7 +30688,7 @@
           "won": false,
           "ratings": [
             4.2789,
-            5.5937
+            null
           ]
         },
         "sets": [
@@ -30833,7 +30833,7 @@
           ],
           "won": false,
           "ratings": [
-            4.748
+            null
           ]
         },
         "away": {
@@ -30948,7 +30948,7 @@
           ],
           "won": true,
           "ratings": [
-            5.7385,
+            null,
             4.6383
           ]
         },
@@ -31024,7 +31024,7 @@
           ],
           "won": false,
           "ratings": [
-            5.5581,
+            null,
             null
           ]
         },
@@ -31154,7 +31154,7 @@
           ],
           "won": true,
           "ratings": [
-            4.8866
+            null
           ]
         },
         "sets": [
@@ -31339,7 +31339,7 @@
           ],
           "won": false,
           "ratings": [
-            5.592,
+            null,
             null
           ]
         },
@@ -31764,7 +31764,7 @@
           ],
           "won": true,
           "ratings": [
-            4.7786
+            null
           ]
         },
         "sets": [
@@ -31929,7 +31929,7 @@
           "won": true,
           "ratings": [
             4.7784,
-            5.7122
+            null
           ]
         },
         "sets": [
