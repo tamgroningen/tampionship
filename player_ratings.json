@@ -3161,14 +3161,14 @@
     "HD2|Ronde 4": 5.0497,
     "HD2|Ronde 3": 4.8499,
     "HD1|Ronde 2": 5.0276,
-    "HE3|Ronde 2": 5.9593,
     "HE3|Ronde 5": 5.9406,
+    "HE3|Ronde 2": 5.9593,
     "HE3|Ronde 4": 5.9615,
     "HE3|Ronde 3": 5.8903,
     "HE4|Ronde 1": 5.9655,
+    "HD2|Ronde 5": 5.037,
     "HD2|Ronde 2": 5.4483,
     "HD1|Ronde 6": 4.9925,
-    "HD2|Ronde 5": 5.037,
     "HD2|Ronde 1": 5.0508
   },
   "Nora Kwast": {
@@ -4395,6 +4395,7 @@
   "Martin Miedema": {
     "HE4|Ronde 2": 6.7254,
     "HD2|Ronde 2": 6.294,
+    "HD2|Ronde 5": 6.2214,
     "Ronde 3|Ronde 3": 6.2258,
     "Ronde 2|Ronde 2": 6.0842
   },
@@ -6925,6 +6926,10 @@
     "Ronde 3|Ronde 3": 8.0869,
     "Ronde 1|Ronde 1": 7.8766
   },
+  "Bas Altena": {
+    "HE3|Ronde 5": 6.3477,
+    "HD2|Ronde 5": 5.4632
+  },
   "Mink Eenkhoorn": {
     "HE3|Ronde 2": 5.3442,
     "HD2|Ronde 2": 5.6499
@@ -6935,6 +6940,9 @@
   "Thomas Janssens": {
     "HE4|Ronde 1": 8.0358,
     "HD2|Ronde 1": 7.6673
+  },
+  "Stijn van der Steen": {
+    "HD2|Ronde 5": 4.8317
   },
   "Quirijn Oord": {
     "HD2|Ronde 2": 6.2173
