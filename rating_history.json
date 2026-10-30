@@ -7595,6 +7595,142 @@
       }
     ]
   },
+  "Jildou Anna Boersma": {
+    "singles": [
+      {
+        "date": "6-4-2026",
+        "rating": 4.5251,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 4.3169,
+        "won": true
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 4.2965,
+        "won": false
+      },
+      {
+        "date": "10-5-2026",
+        "rating": 4.5235,
+        "won": true
+      },
+      {
+        "date": "25-5-2026",
+        "rating": 4.4061,
+        "won": false
+      },
+      {
+        "date": "30-7-2026",
+        "rating": 4.276,
+        "won": false
+      },
+      {
+        "date": "2-8-2026",
+        "rating": 4.4088,
+        "won": false
+      }
+    ],
+    "doubles": [
+      {
+        "date": "1-7-2025",
+        "rating": 3.9777,
+        "won": false
+      },
+      {
+        "date": "2-7-2025",
+        "rating": 4.0575,
+        "won": true
+      },
+      {
+        "date": "5-7-2025",
+        "rating": 4.0509,
+        "won": true
+      },
+      {
+        "date": "6-7-2025",
+        "rating": 3.9198,
+        "won": true
+      },
+      {
+        "date": "30-8-2025",
+        "rating": 3.7157,
+        "won": true
+      },
+      {
+        "date": "30-8-2025",
+        "rating": 3.7427,
+        "won": true
+      },
+      {
+        "date": "31-8-2025",
+        "rating": 3.6862,
+        "won": true
+      },
+      {
+        "date": "6-4-2026",
+        "rating": 3.6227,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 3.5783,
+        "won": false
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 3.5333,
+        "won": true
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 3.6438,
+        "won": true
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 3.4204,
+        "won": true
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 3.4811,
+        "won": true
+      },
+      {
+        "date": "25-5-2026",
+        "rating": 3.4005,
+        "won": false
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 3.4631,
+        "won": true
+      },
+      {
+        "date": "30-6-2026",
+        "rating": 3.4347,
+        "won": false
+      },
+      {
+        "date": "1-7-2026",
+        "rating": 3.6675,
+        "won": false
+      },
+      {
+        "date": "2-7-2026",
+        "rating": 3.8585,
+        "won": true
+      },
+      {
+        "date": "4-7-2026",
+        "rating": 3.7292,
+        "won": false
+      }
+    ]
+  },
   "Job Weening": {
     "singles": [
       {
@@ -17446,6 +17582,112 @@
       {
         "date": "29-8-2026",
         "rating": 2.0662,
+        "won": false
+      }
+    ]
+  },
+  "Sophie Ebbinge": {
+    "singles": [
+      {
+        "date": "6-4-2025",
+        "rating": 6.8925,
+        "won": true
+      },
+      {
+        "date": "13-4-2025",
+        "rating": 6.8867,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 6.8816,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 6.8635,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 6.845,
+        "won": false
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 6.9421,
+        "won": false
+      },
+      {
+        "date": "10-5-2026",
+        "rating": 7.1122,
+        "won": false
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 7.1212,
+        "won": true
+      }
+    ],
+    "doubles": [
+      {
+        "date": "6-4-2025",
+        "rating": 5.6905,
+        "won": true
+      },
+      {
+        "date": "11-5-2025",
+        "rating": 5.6854,
+        "won": true
+      },
+      {
+        "date": "18-5-2025",
+        "rating": 5.6788,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 5.5351,
+        "won": true
+      },
+      {
+        "date": "12-4-2026",
+        "rating": 5.6523,
+        "won": true
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 5.6395,
+        "won": false
+      },
+      {
+        "date": "19-4-2026",
+        "rating": 5.5103,
+        "won": false
+      },
+      {
+        "date": "10-5-2026",
+        "rating": 5.859,
+        "won": false
+      },
+      {
+        "date": "10-5-2026",
+        "rating": 5.6734,
+        "won": false
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 5.8443,
+        "won": false
+      },
+      {
+        "date": "17-5-2026",
+        "rating": 5.9792,
+        "won": true
+      },
+      {
+        "date": "31-5-2026",
+        "rating": 6.0856,
         "won": false
       }
     ]

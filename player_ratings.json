@@ -49,7 +49,8 @@
     "HD1|Ronde 5": 6.3114,
     "HE2|Ronde 1": 6.8873,
     "HD1|Ronde 1": 5.9497,
-    "GD2|Ronde 1": 6.1382
+    "GD2|Ronde 1": 6.1382,
+    "GD2|Ronde 2": 6.25
   },
   "Jip Drijfhout": {
     "HE2|Ronde 7": 5.5518,
@@ -277,7 +278,8 @@
     "HD1|Ronde 5": 4.6094,
     "HD1|Ronde 3": 4.6383,
     "Kwartfinale|": 4.8369,
-    "Ronde 1|Ronde 1": 4.6445
+    "Ronde 1|Ronde 1": 4.6445,
+    "GD2|Ronde 2": 4.6631
   },
   "Rosalie Bouwman": {
     "Halve finale|": 7.2975,
@@ -1098,6 +1100,7 @@
     "DE1|Ronde 6": 4.526,
     "GD1|Ronde 6": 4.6293,
     "DD1|Ronde 6": 4.8251,
+    "DD1|Ronde 7": 4.5929,
     "DD1|Ronde 4": 4.7874
   },
   "Jente Bulthuis": {
@@ -1270,6 +1273,8 @@
     "DD1|Ronde 2": 6.1306,
     "GD2|Ronde 1": 6.0475,
     "DE2|Ronde 1": 6.3911,
+    "DE2|Ronde 2": 6.5131,
+    "GD2|Ronde 2": 6.2478,
     "DE2|Ronde 5": 6.5095,
     "DD1|Ronde 5": 6.5559
   },
@@ -1441,7 +1446,12 @@
     "DD1|Ronde 3": 5.5103,
     "DD1|Ronde 2": 5.6523,
     "GD2|Ronde 4": 5.859,
-    "GD2|Ronde 3": 5.6395
+    "GD2|Ronde 3": 5.6395,
+    "DE2|Ronde 4": 7.1122,
+    "DE2|Ronde 3": 6.9421,
+    "DE2|Ronde 2": 6.845,
+    "DD1|Ronde 7": 6.0856,
+    "GD2|Ronde 2": 5.5351
   },
   "Hannah Haveman": {
     "DE1|Ronde 3": 8.9999
@@ -2259,7 +2269,7 @@
     "GD2|Ronde 5": 5.5286,
     "GD1|Ronde 4": 5.5963,
     "DE1|Ronde 5": 5.8107,
-    "DD1|Ronde 5": 5.4682,
+    "DD1|Ronde 5": 5.3937,
     "GD1|Ronde 6": 5.5331,
     "Ronde 1|Ronde 1": 5.4255,
     "DD1|Ronde 6": 5.2873,
@@ -2986,6 +2996,7 @@
     "DD1|Ronde 6": 6.8698,
     "GD1|Ronde 4": 6.862,
     "Finale|": 5.5673,
+    "DD1|Ronde 7": 6.7561,
     "DD1|Ronde 4": 6.8493
   },
   "Céline Clarissa van der Weijden": {
@@ -3039,12 +3050,14 @@
     "DD1|Ronde 4": 5.3932,
     "GD1|Ronde 3": 5.5041,
     "DE2|Ronde 3": 5.2612,
+    "DE2|Ronde 4": 5.2567,
     "DE2|Ronde 7": 5.357,
     "DD1|Ronde 7": 5.209
   },
   "Rebecca van der Velde": {
     "DD1|Ronde 3": 5.9336,
     "DD1|Ronde 4": 5.8044,
+    "DE2|Ronde 3": 7.2073,
     "DD1|Ronde 6": 5.9288,
     "DE2|Ronde 4": 7.0372
   },
@@ -3076,7 +3089,8 @@
   "Pauline van Tilburg": {
     "Ronde 2|Ronde 2": 4.903,
     "Finale|": 4.5508,
-    "GD2|Ronde 6": 4.7784
+    "GD2|Ronde 6": 4.7784,
+    "DD1|Ronde 7": 4.7294
   },
   "Anniek Bultje": {
     "Ronde 1|Ronde 1": 5.3523,

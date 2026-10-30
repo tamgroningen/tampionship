@@ -1206,11 +1206,11 @@
         "away": {
           "team": "CREAM CRACKERS 2",
           "players": [
-            "Tom Van der Bijl"
+            "Tom van der Van der Bijl"
           ],
           "won": true,
           "ratings": [
-            null
+            2.9833
           ]
         },
         "sets": [
@@ -1356,12 +1356,12 @@
         "away": {
           "team": "CREAM CRACKERS 2",
           "players": [
-            "Tom Van der Bijl",
+            "Tom van der Van der Bijl",
             "Tim Keizer"
           ],
           "won": true,
           "ratings": [
-            null,
+            2.6464,
             3.4355
           ]
         },
@@ -8037,11 +8037,11 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster"
+            "Mart De Lijster"
           ],
           "won": false,
           "ratings": [
-            null
+            3.413
           ]
         },
         "sets": [
@@ -8179,12 +8179,12 @@
         "away": {
           "team": "BEEKHUIZEN 1",
           "players": [
-            "Mart de Lijster",
+            "Mart De Lijster",
             "David Hermans"
           ],
           "won": false,
           "ratings": [
-            null,
+            2.6572,
             3.6903
           ]
         },
@@ -10521,7 +10521,7 @@
         "away": {
           "team": "RACKET & FIT CENTER BORNE 1",
           "players": [
-            "Conner Kerkdijk"
+            "Connor Kerkdijk"
           ],
           "won": true,
           "ratings": [
@@ -10589,11 +10589,11 @@
         "away": {
           "team": "RACKET & FIT CENTER BORNE 1",
           "players": [
-            "Gabriël Balena"
+            "Gabriel Balena"
           ],
           "won": true,
           "ratings": [
-            null
+            3.4543
           ]
         },
         "sets": [
@@ -10625,12 +10625,12 @@
         "away": {
           "team": "RACKET & FIT CENTER BORNE 1",
           "players": [
-            "Gabriël Balena",
+            "Gabriel Balena",
             "Julius Mondria"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.146,
             5.636
           ]
         },
@@ -11455,11 +11455,11 @@
         "away": {
           "team": "DDV 1",
           "players": [
-            "Noortje de Bruijn"
+            "Noortje De Bruijn"
           ],
           "won": true,
           "ratings": [
-            null
+            4.9207
           ]
         },
         "sets": [
@@ -11525,12 +11525,12 @@
         "away": {
           "team": "DDV 1",
           "players": [
-            "Noortje de Bruijn",
+            "Noortje De Bruijn",
             "Kelly J Damstra"
           ],
           "won": false,
           "ratings": [
-            null,
+            5.5752,
             4.287
           ]
         },
@@ -15355,7 +15355,7 @@
           "won": true,
           "ratings": [
             6.131,
-            5.4682
+            5.3937
           ]
         },
         "sets": [
@@ -15903,12 +15903,12 @@
           "team": "VOEVKE 1",
           "players": [
             "Bart Jongstra",
-            "Henny Weerink - Kruijsbergen"
+            "Henny Weerink-kruijsbergen"
           ],
           "won": true,
           "ratings": [
             8.897,
-            null
+            7.5292
           ]
         },
         "away": {
@@ -15941,12 +15941,12 @@
           "team": "VOEVKE 1",
           "players": [
             "Erica Georgius",
-            "Henny Weerink - Kruijsbergen"
+            "Henny Weerink-kruijsbergen"
           ],
           "won": true,
           "ratings": [
             7.3998,
-            null
+            7.2904
           ]
         },
         "away": {
@@ -23351,11 +23351,11 @@
         "home": {
           "team": "BAARN 2",
           "players": [
-            "Bo Van Beveren"
+            "Bo Van Van Beveren"
           ],
           "won": false,
           "ratings": [
-            null
+            2.4348
           ]
         },
         "away": {
@@ -23487,12 +23487,12 @@
         "home": {
           "team": "BAARN 2",
           "players": [
-            "Bo Van Beveren",
+            "Bo Van Van Beveren",
             "Joany Pontjodikromo"
           ],
           "won": true,
           "ratings": [
-            null,
+            2.3225,
             2.6603
           ]
         },
@@ -23736,11 +23736,11 @@
         "away": {
           "team": "VICTORIA 1",
           "players": [
-            "Rob van den Berg"
+            "Rob v/d Berg"
           ],
           "won": true,
           "ratings": [
-            null
+            2.3368
           ]
         },
         "sets": [
@@ -23844,12 +23844,12 @@
         "away": {
           "team": "VICTORIA 1",
           "players": [
-            "Rob van den Berg",
+            "Rob v/d Berg",
             "Alexander van Rosendael"
           ],
           "won": false,
           "ratings": [
-            null,
+            1.9452,
             3.3381
           ]
         },
@@ -26381,11 +26381,11 @@
         "away": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": true,
           "ratings": [
-            null
+            4.5251
           ]
         },
         "sets": [
@@ -26608,12 +26608,12 @@
           "team": "TAM 3",
           "players": [
             "Friso Luijkx",
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": true,
           "ratings": [
             3.9841,
-            null
+            3.6227
           ]
         },
         "sets": [
@@ -26682,11 +26682,11 @@
         "home": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": true,
           "ratings": [
-            null
+            4.3169
           ]
         },
         "away": {
@@ -26793,12 +26793,12 @@
           "team": "TAM 3",
           "players": [
             "Celest Bergsma",
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": false,
           "ratings": [
             3.6434,
-            null
+            3.5783
           ]
         },
         "away": {
@@ -26880,12 +26880,12 @@
         "away": {
           "team": "BEEKHUIZEN 2",
           "players": [
-            "Bram van de Kamp",
+            "Bram Van de Kamp",
             "Britt Donders"
           ],
           "won": false,
           "ratings": [
-            null,
+            3.6324,
             3.5327
           ]
         },
@@ -27003,11 +27003,11 @@
         "away": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": false,
           "ratings": [
-            null
+            4.2965
           ]
         },
         "sets": [
@@ -27112,12 +27112,12 @@
           "team": "TAM 3",
           "players": [
             "Eline Drent",
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": true,
           "ratings": [
             3.3443,
-            null
+            3.6438
           ]
         },
         "sets": [
@@ -27229,12 +27229,12 @@
         "away": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma",
+            "Jildou Anna Boersma",
             "Friso Luijkx"
           ],
           "won": true,
           "ratings": [
-            null,
+            3.5333,
             4.0834
           ]
         },
@@ -27300,11 +27300,11 @@
         "home": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": true,
           "ratings": [
-            null
+            4.5235
           ]
         },
         "away": {
@@ -27704,12 +27704,12 @@
         "away": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma",
+            "Jildou Anna Boersma",
             "Eline Drent"
           ],
           "won": true,
           "ratings": [
-            null,
+            3.4811,
             3.368
           ]
         },
@@ -27823,12 +27823,12 @@
           "team": "TAM 3",
           "players": [
             "Stan Koning",
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": true,
           "ratings": [
             3.3699,
-            null
+            3.4204
           ]
         },
         "sets": [
@@ -27897,11 +27897,11 @@
         "home": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": false,
           "ratings": [
-            null
+            4.4061
           ]
         },
         "away": {
@@ -28076,12 +28076,12 @@
           "team": "TAM 3",
           "players": [
             "Stan Koning",
-            "Jildou Boersma"
+            "Jildou Anna Boersma"
           ],
           "won": false,
           "ratings": [
             3.3301,
-            null
+            3.4005
           ]
         },
         "away": {
@@ -28264,12 +28264,12 @@
         "home": {
           "team": "TAM 3",
           "players": [
-            "Jildou Boersma",
+            "Jildou Anna Boersma",
             "Eline Drent"
           ],
           "won": true,
           "ratings": [
-            null,
+            3.4631,
             3.2608
           ]
         },
@@ -28495,11 +28495,11 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": false,
           "ratings": [
-            null
+            5.2846
           ]
         },
         "away": {
@@ -28546,12 +28546,12 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens",
+            "Sven laurens",
             "Marco Kohlbrugge"
           ],
           "won": true,
           "ratings": [
-            null,
+            5.0977,
             4.681
           ]
         },
@@ -29844,11 +29844,11 @@
         "home": {
           "team": "GSTC 1",
           "players": [
-            "Nienke Van houten"
+            "Nienke van Houten"
           ],
           "won": false,
           "ratings": [
-            null
+            4.7477
           ]
         },
         "away": {
@@ -30057,12 +30057,12 @@
           "team": "GSTC 1",
           "players": [
             "Jan Kruithof",
-            "Nienke Van houten"
+            "Nienke van Houten"
           ],
           "won": true,
           "ratings": [
             5.0219,
-            null
+            3.6295
           ]
         },
         "away": {
@@ -30492,17 +30492,17 @@
           ],
           "won": true,
           "ratings": [
-            null
+            6.5131
           ]
         },
         "away": {
           "team": "TAM 5",
           "players": [
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
-            null
+            6.845
           ]
         },
         "sets": [
@@ -30603,12 +30603,12 @@
           "team": "TAM 5",
           "players": [
             "Emke Veldscholte",
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": true,
           "ratings": [
             4.3961,
-            null
+            5.6523
           ]
         },
         "sets": [
@@ -30645,7 +30645,7 @@
           "team": "TAM 5",
           "players": [
             "Marco Kohlbrugge",
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": true,
           "ratings": [
@@ -30713,20 +30713,20 @@
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            6.25,
+            6.2478
           ]
         },
         "away": {
           "team": "TAM 5",
           "players": [
             "Marco Kohlbrugge",
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            4.6631,
+            5.5351
           ]
         },
         "sets": [
@@ -30791,11 +30791,11 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
-            null
+            6.9421
           ]
         },
         "away": {
@@ -30805,7 +30805,7 @@
           ],
           "won": true,
           "ratings": [
-            null
+            7.2073
           ]
         },
         "sets": [
@@ -30906,24 +30906,24 @@
           "team": "TAM 5",
           "players": [
             "Emke Veldscholte",
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
             4.4237,
-            null
+            5.5103
           ]
         },
         "away": {
           "team": "GSTC 1",
           "players": [
             "Rebecca van der Velde",
-            "Nienke Van houten"
+            "Nienke van Houten"
           ],
           "won": true,
           "ratings": [
             5.9336,
-            null
+            3.88
           ]
         },
         "sets": [
@@ -31020,23 +31020,23 @@
           "team": "TAM 5",
           "players": [
             "Jan Bate van der Dussen",
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
             5.5581,
-            null
+            5.6395
           ]
         },
         "away": {
           "team": "GSTC 1",
           "players": [
-            "Nienke Van houten",
+            "Nienke van Houten",
             "Laurens Dietrich"
           ],
           "won": true,
           "ratings": [
-            null,
+            3.7508,
             5.4962
           ]
         },
@@ -31110,17 +31110,17 @@
           ],
           "won": true,
           "ratings": [
-            null
+            5.2567
           ]
         },
         "away": {
           "team": "TAM 5",
           "players": [
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
-            null
+            7.1122
           ]
         },
         "sets": [
@@ -31184,7 +31184,7 @@
         "away": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": true,
           "ratings": [
@@ -31221,12 +31221,12 @@
           "team": "TAM 5",
           "players": [
             "Emke Veldscholte",
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
             4.718,
-            null
+            5.6734
           ]
         },
         "sets": [
@@ -31259,7 +31259,7 @@
           "team": "TAM 5",
           "players": [
             "Marco Kohlbrugge",
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": true,
           "ratings": [
@@ -31284,12 +31284,12 @@
         "home": {
           "team": "RACKET & FIT CENTER BORNE 3",
           "players": [
-            "Conner Kerkdijk",
+            "Connor Kerkdijk",
             "Sara Mousa"
           ],
           "won": true,
           "ratings": [
-            null,
+            2.2238,
             5.2076
           ]
         },
@@ -31335,12 +31335,12 @@
           "team": "TAM 5",
           "players": [
             "Jan Bate van der Dussen",
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
             5.592,
-            null
+            5.859
           ]
         },
         "sets": [
@@ -31409,11 +31409,11 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": true,
           "ratings": [
-            null
+            7.1212
           ]
         },
         "away": {
@@ -31443,11 +31443,11 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": true,
           "ratings": [
-            null
+            5.2213
           ]
         },
         "away": {
@@ -31515,12 +31515,12 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sophie Bunskoek",
+            "Sophie Ebbinge",
             "Emke Veldscholte"
           ],
           "won": true,
           "ratings": [
-            null,
+            5.9792,
             4.9346
           ]
         },
@@ -31533,7 +31533,7 @@
           "won": false,
           "ratings": [
             5.5575,
-            5.4682
+            5.3937
           ]
         },
         "sets": [
@@ -31553,12 +31553,12 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens",
+            "Sven laurens",
             "Marco Kohlbrugge"
           ],
           "won": true,
           "ratings": [
-            null,
+            4.937,
             4.6094
           ]
         },
@@ -31591,12 +31591,12 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens",
+            "Sven laurens",
             "Emke Veldscholte"
           ],
           "won": true,
           "ratings": [
-            null,
+            4.8938,
             4.7997
           ]
         },
@@ -31630,12 +31630,12 @@
           "team": "TAM 5",
           "players": [
             "Marco Kohlbrugge",
-            "Sophie Bunskoek"
+            "Sophie Ebbinge"
           ],
           "won": false,
           "ratings": [
             4.5662,
-            null
+            5.8443
           ]
         },
         "away": {
@@ -31794,7 +31794,7 @@
         "away": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": true,
           "ratings": [
@@ -31848,7 +31848,7 @@
           "team": "TAM 5",
           "players": [
             "Marco Kohlbrugge",
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": false,
           "ratings": [
@@ -32028,7 +32028,7 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens"
+            "Sven laurens"
           ],
           "won": true,
           "ratings": [
@@ -32096,13 +32096,13 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sophie Bunskoek",
+            "Sophie Ebbinge",
             "Pauline van Tilburg"
           ],
           "won": false,
           "ratings": [
-            null,
-            null
+            6.0856,
+            4.7294
           ]
         },
         "away": {
@@ -32113,8 +32113,8 @@
           ],
           "won": true,
           "ratings": [
-            null,
-            null
+            6.7561,
+            4.5929
           ]
         },
         "sets": [
@@ -32134,7 +32134,7 @@
         "home": {
           "team": "TAM 5",
           "players": [
-            "Sven Laurens",
+            "Sven laurens",
             "Marco Kohlbrugge"
           ],
           "won": true,
@@ -32718,12 +32718,12 @@
         "away": {
           "team": "RACKET & FIT CENTER BORNE 3",
           "players": [
-            "Conner Kerkdijk",
+            "Connor Kerkdijk",
             "Jip Drijfhout"
           ],
           "won": true,
           "ratings": [
-            null,
+            2.283,
             5.4141
           ]
         },
@@ -32835,11 +32835,11 @@
         "home": {
           "team": "GSTC 1",
           "players": [
-            "Nienke Van houten"
+            "Nienke van Houten"
           ],
           "won": true,
           "ratings": [
-            null
+            4.6687
           ]
         },
         "away": {
@@ -32975,12 +32975,12 @@
         "home": {
           "team": "GSTC 1",
           "players": [
-            "Nienke Van houten",
+            "Nienke van Houten",
             "Rebecca van der Velde"
           ],
           "won": true,
           "ratings": [
-            null,
+            3.6932,
             5.8044
           ]
         },
@@ -33090,12 +33090,12 @@
           "team": "GSTC 1",
           "players": [
             "Laurens Dietrich",
-            "Nienke Van houten"
+            "Nienke van Houten"
           ],
           "won": true,
           "ratings": [
             5.3621,
-            null
+            3.6912
           ]
         },
         "away": {
