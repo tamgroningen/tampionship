@@ -1547,6 +1547,11 @@ function szTeken() {
     <div class="sz-fout" id="sz-fout"></div>`;
 }
 
+// Terug van het inloggen in het andere venster: opnieuw kijken of je nu bent ingelogd
+window.addEventListener('focus', () => {
+  if (currentView === 'seizoen' && !(szStaat.ik && szStaat.ik.ingelogd)) renderSeizoen(document.getElementById('app'));
+});
+
 const szFout = (t) => { const f = document.getElementById('sz-fout'); if (f) f.textContent = t; };
 async function szAanmelden() {
   if (!document.getElementById('sz-akk').checked) return szFout('Vink eerst het akkoord voor de inleg aan.');
