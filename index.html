@@ -1531,7 +1531,7 @@ function szTeken() {
   }
   box.className = 'sz-kaart';
   if (dicht) { box.innerHTML = '<p>De inschrijving voor dit seizoen is gesloten.</p>'; return; }
-  const akkoord = `<label class="sz-akkoord"><input type="checkbox" id="sz-akk"> Ik ga akkoord met een inleg van &euro; 5, af te schrijven via de TAM-incasso. De hele inleg gaat naar de prijzenpot.</label>`;
+  const akkoord = `<label class="sz-akkoord"><input type="checkbox" id="sz-akk"> Ik ga akkoord dat TAM de inleg van &euro; 5 van mijn rekening incasseert.</label>`;
   const bekend = (ik && ik.ingelogd) ? { naam: ik.naam, mail: ik.mail, via: 'tam.nl' } : (a && a.wie ? { naam: a.wie.naam, mail: a.wie.mail, via: 'mail' } : null);
   if (bekend) {
     box.innerHTML = `<h2 style="font-size:17px">Meld je aan</h2>
