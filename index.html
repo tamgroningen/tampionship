@@ -1502,7 +1502,7 @@ async function renderSeizoen(app) {
       API === '/api' ? szApi('ik').catch(() => null) : Promise.resolve(null),
     ]);
     szStaat.info = info; szStaat.ik = ik;
-    szStaat.aanm = (ik && ik.ingelogd) || szTok() ? await szApi('aanmelding').catch(() => null) : null;
+    szStaat.aanm = (ik && ik.ingelogd) ? await szApi('aanmelding').catch(() => null) : null;
   } catch (e) { /* toon wat we hebben */ }
   szTeken();
 }
@@ -1532,51 +1532,22 @@ function szTeken() {
   box.className = 'sz-kaart';
   if (dicht) { box.innerHTML = '<p>De inschrijving voor dit seizoen is gesloten.</p>'; return; }
   const akkoord = `<label class="sz-akkoord"><input type="checkbox" id="sz-akk"> Ik ga akkoord dat TAM de inleg van &euro; 5 van mijn rekening incasseert.</label>`;
-  const bekend = (ik && ik.ingelogd) ? { naam: ik.naam, mail: ik.mail, via: 'tam.nl' } : (a && a.wie ? { naam: a.wie.naam, mail: a.wie.mail, via: 'mail' } : null);
-  if (bekend) {
+  // Aanmelden kan alleen met de tam.nl-login (dan weten we zeker wie het is), niet met een mailcode.
+  if (ik && ik.ingelogd) {
     box.innerHTML = `<h2 style="font-size:17px">Meld je aan</h2>
-      <p>Je bent ingelogd${bekend.via === 'tam.nl' ? ' op tam.nl' : ''} als <b>${szEsc(bekend.naam || bekend.mail)}</b>${bekend.naam ? ` (${szEsc(bekend.mail)})` : ''}.</p>
-      ${bekend.naam ? '' : '<input type="text" id="sz-naam" placeholder="Je naam" autocomplete="name">'}
+      <p>Je bent ingelogd op tam.nl als <b>${szEsc(ik.naam || ik.mail)}</b>${ik.naam ? ` (${szEsc(ik.mail)})` : ''}.</p>
       ${akkoord}
       <button class="sz-knop" onclick="szAanmelden()">Aanmelden voor TAMpionship ${NIEUW_JAAR}</button>
       <div class="sz-fout" id="sz-fout"></div>`;
     return;
   }
-  if (szStaat.stap === 'code') {
-    box.innerHTML = `<h2 style="font-size:17px">Vul je code in</h2>
-      <p>We hebben een code gestuurd naar <b>${szEsc(szStaat.mail)}</b>.</p>
-      <input type="text" id="sz-code" placeholder="6-cijferige code" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
-      <button class="sz-knop" onclick="szCode()">Inloggen</button>
-      <button class="sz-stil" onclick="szStaat.stap='start';szTeken()">Ander mailadres</button>
-      <div class="sz-fout" id="sz-fout"></div>`;
-    return;
-  }
   box.innerHTML = `<h2 style="font-size:17px">Meld je aan</h2>
-    ${API === '/api' ? `<p>Ben je ingelogd op tam.nl, dan meld je je hier met één klik aan.</p>
-    <a class="sz-knop" href="${szEsc(ik?.inlog || 'https://tam.nl/inloggen')}">Inloggen op tam.nl</a>
-    <p style="font-size:12px;color:#888">Log in en kom daarna terug naar deze pagina.</p>
-    <p style="margin-top:16px">Of log in met je mailadres:</p>` : '<p>Log in met je mailadres:</p>'}
-    <input type="email" id="sz-mail" placeholder="jouw-email@adres.nl" autocomplete="email">
-    <button class="sz-knop" style="background:#3a2a5e" onclick="szStuur()">Stuur code</button>
+    <p>Aanmelden doe je met je TAM-account. Log in op tam.nl en klik daar op <b>Naar TAMpionship</b>: dan kom je hier terug en meld je je met één klik aan.</p>
+    <a class="sz-knop" href="https://tam.nl/tennis/tampionship">Inloggen op tam.nl</a>
     <div class="sz-fout" id="sz-fout"></div>`;
 }
 
 const szFout = (t) => { const f = document.getElementById('sz-fout'); if (f) f.textContent = t; };
-async function szStuur() {
-  const mail = (document.getElementById('sz-mail').value || '').trim().toLowerCase();
-  if (!mail.includes('@')) return szFout('Vul je mailadres in.');
-  try { await szApi('send-code', { method: 'POST', body: JSON.stringify({ email: mail }) }); szStaat.mail = mail; szStaat.stap = 'code'; szTeken(); }
-  catch (e) { szFout('Versturen lukte niet. Probeer het later opnieuw.'); }
-}
-async function szCode() {
-  const code = (document.getElementById('sz-code').value || '').trim();
-  try {
-    const d = await szApi('verify-code', { method: 'POST', body: JSON.stringify({ email: szStaat.mail, code }) });
-    if (!d.ok || !d.token) throw new Error();
-    try { localStorage.setItem('tamp_token', d.token); localStorage.setItem('tamp_email', szStaat.mail); } catch (e) {}
-    szStaat.aanm = await szApi('aanmelding').catch(() => null); szStaat.stap = 'start'; szTeken();
-  } catch (e) { szFout('Die code klopt niet.'); }
-}
 async function szAanmelden() {
   if (!document.getElementById('sz-akk').checked) return szFout('Vink eerst het akkoord voor de inleg aan.');
   const naamEl = document.getElementById('sz-naam');
