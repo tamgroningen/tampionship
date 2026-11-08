@@ -6,3 +6,9 @@ cron_scrape.sh
 __pycache__/
 .wrangler/
 worker/
+
+# lokaal: plan, analyses en back-ups (repo is publiek)
+PLAN-SEIZOEN-2027.md
+seizoen/
+*.bak-*
+best_matchday_sim.js

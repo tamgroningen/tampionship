@@ -138,6 +138,26 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
 /* Rules button */
 .rules-btn { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: 1px solid #3a3a5e; color: #888; font-size: 11px; cursor: pointer; padding: 4px 10px; border-radius: 6px; }
 .rules-btn:hover { color: #c084fc; border-color: #7b3fa0; }
+#tabs { display: flex; gap: 6px; padding: 10px 12px 0; max-width: 700px; margin: 0 auto; }
+#tabs:empty { display: none; }
+#tabs button { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #3a2a5e; background: #12122a; color: #9a8ab0; font-size: 14px; font-weight: 600; cursor: pointer; }
+#tabs button.aan { background: #7b3fa0; border-color: #7b3fa0; color: #fff; }
+.sz { max-width: 700px; margin: 0 auto; padding: 12px; }
+.sz-kaart { background: #1a1a2e; border-radius: 12px; padding: 18px; margin-bottom: 12px; }
+.sz-kaart h2 { color: #c084fc; font-size: 20px; margin-bottom: 8px; }
+.sz-kaart p { font-size: 14px; line-height: 1.55; color: #cfc6e0; margin: 6px 0; }
+.sz-status { display: inline-block; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #2a1f45; color: #c9b8e8; margin-top: 6px; }
+.sz-teller { font-size: 13px; color: #9a8ab0; margin-top: 10px; }
+.sz-knop { display: inline-block; margin-top: 12px; padding: 12px 18px; border-radius: 10px; border: none; background: #7b3fa0; color: #fff; font-size: 15px; font-weight: 700; cursor: pointer; text-decoration: none; }
+.sz-knop:hover { background: #9b5fc0; }
+.sz-knop:disabled { opacity: .5; cursor: not-allowed; }
+.sz-stil { background: none; border: none; color: #9a8ab0; font-size: 13px; text-decoration: underline; cursor: pointer; margin-top: 10px; padding: 0; }
+.sz-akkoord { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #cfc6e0; margin-top: 12px; line-height: 1.45; }
+.sz-akkoord input { margin-top: 3px; }
+.sz input[type=email], .sz input[type=text] { width: 100%; padding: 11px 12px; border-radius: 8px; border: 1px solid #3a2a5e; background: #0f0f22; color: #e0e0e0; font-size: 15px; margin-top: 10px; }
+.sz-fout { color: #f87171; font-size: 13px; margin-top: 8px; min-height: 16px; }
+.sz-ok { border-left: 3px solid #4ade80; }
+.sz-lijst { font-size: 14px; color: #cfc6e0; line-height: 1.7; padding-left: 18px; }
 .rules-content { padding: 0 4px; }
 .rules-content h4 { color: #c084fc; margin: 12px 0 6px; font-size: 14px; }
 .rules-content table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -193,6 +213,7 @@ header .subtitle { font-size: 12px; color: #888; margin-top: 4px; }
   <div class="subtitle">KNLTB voorjaar Tennis 2026</div>
 </header>
 
+<nav id="tabs"></nav>
 <div id="app"></div>
 <div id="modal-root"></div>
 
@@ -203,7 +224,13 @@ const BUDGET_MAX = 800;
 let squads, players, matches, wildcardData = [];
 let ratingHistory = {};
 let playerPointsMap = {};
-let currentView = 'leaderboard';
+let currentView = 'seizoen';
+let homeTab = 'seizoen'; // 'seizoen' (nieuw seizoen + aanmelden) of 'leaderboard' (uitslagen vorig jaar)
+// Via tampionship.tam.nl loopt /api via het doorgeefluik (herkent de tam.nl-login); elders rechtstreeks naar de worker.
+let API = location.hostname.endsWith('github.io') ? WORKER_URL : '/api';
+// Draait de site (nog) zonder doorgeefluik, dan bestaat /api niet: val terug op de worker (alleen mailcode-login).
+const apiKlaar = API === WORKER_URL ? Promise.resolve() : fetch('/api/ik').then((r) => { if (!r.ok || !(r.headers.get('content-type') || '').includes('json')) API = WORKER_URL; }).catch(() => { API = WORKER_URL; });
+const VORIG_JAAR = 2026, NIEUW_JAAR = 2027;
 let currentUser = null;
 let currentPlayer = null;
 
@@ -637,7 +664,14 @@ function render() {
   //   authHtml = `<button class="login-btn" onclick="showLoginModal()">Inloggen</button>`;
   // }
 
-  if (currentView === 'leaderboard') {
+  const home = currentView === 'seizoen' || currentView === 'leaderboard';
+  document.getElementById('tabs').innerHTML = home
+    ? `<button class="${currentView === 'seizoen' ? 'aan' : ''}" onclick="kiesTab('seizoen')">Seizoen ${NIEUW_JAAR}</button><button class="${currentView === 'leaderboard' ? 'aan' : ''}" onclick="kiesTab('leaderboard')">Uitslagen ${VORIG_JAAR}</button>`
+    : '';
+  if (currentView === 'seizoen') {
+    header.innerHTML = `<button class="hamburger" onclick="toggleDrawer()">☰</button><h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis ${NIEUW_JAAR}</div><button class="rules-btn" onclick="currentView='rules';render()">Regels</button>`;
+    renderSeizoen(app);
+  } else if (currentView === 'leaderboard') {
     header.innerHTML = `<button class="hamburger" onclick="toggleDrawer()">☰</button><h1>TAMpionship</h1><div class="subtitle">KNLTB voorjaar Tennis 2026</div><button class="rules-btn" onclick="currentView='rules';render()">Regels</button>${authHtml}`;
     renderLeaderboard(app);
   } else if (currentView === 'rules') {
@@ -1427,13 +1461,146 @@ async function confirmWildcard() {
 }
 
 // === Navigation ===
+function kiesTab(tab) { homeTab = tab; currentView = tab; render(); window.scrollTo(0, 0); }
+
+// === Seizoen (nieuw jaar): uitleg + aanmelden ===
+const szTok = () => { try { return localStorage.getItem('tamp_token') || ''; } catch (e) { return ''; } };
+async function szApi(pad, opts = {}) {
+  const h = { 'Content-Type': 'application/json', ...(opts.headers || {}) };
+  if (szTok()) h.Authorization = 'Bearer ' + szTok();
+  const r = await fetch(API + '/' + pad, { credentials: 'same-origin', ...opts, headers: h });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw Object.assign(new Error(d.error || ('fout ' + r.status)), { status: r.status });
+  return d;
+}
+const szEsc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+let szStaat = { info: null, ik: null, aanm: null, stap: 'start' };
+
+async function renderSeizoen(app) {
+  app.innerHTML = `<div class="sz">
+    <div class="sz-kaart">
+      <h2>TAMpionship ${NIEUW_JAAR}</h2>
+      <p>Het fantasy-spel van de voorjaarscompetitie. Je kiest een team van <b>8 TAM-spelers</b> binnen een budget van <b>800</b> en scoort punten met hun echte uitslagen. Spelers kosten 75, 100, 125 of 150.</p>
+      <p>De inleg is <b>&euro; 5</b>, en die gaat helemaal naar de prijzenpot.</p>
+      <div id="sz-status"></div>
+    </div>
+    <div class="sz-kaart" id="sz-aanmeld"><p>Even laden…</p></div>
+    <div class="sz-kaart">
+      <h2 style="font-size:16px">Hoe gaat het verder?</h2>
+      <ol class="sz-lijst">
+        <li>Meld je nu alvast aan.</li>
+        <li>Kort voor de eerste competitieronde zet de commissie de spelers en prijzen klaar.</li>
+        <li>Dan kies je je team van 8. Daarna telt elke speelronde mee.</li>
+      </ol>
+      <button class="sz-stil" onclick="kiesTab('leaderboard')">Bekijk de uitslagen van ${VORIG_JAAR} &rarr;</button>
+    </div>
+  </div>`;
+  await apiKlaar;
+  try {
+    const [info, ik] = await Promise.all([
+      szApi('seizoen-info').catch(() => null),
+      API === '/api' ? szApi('ik').catch(() => null) : Promise.resolve(null),
+    ]);
+    szStaat.info = info; szStaat.ik = ik;
+    szStaat.aanm = (ik && ik.ingelogd) || szTok() ? await szApi('aanmelding').catch(() => null) : null;
+  } catch (e) { /* toon wat we hebben */ }
+  szTeken();
+}
+
+function szTeken() {
+  const st = document.getElementById('sz-status'), box = document.getElementById('sz-aanmeld');
+  if (!st || !box) return;
+  const info = szStaat.info, ik = szStaat.ik, a = szStaat.aanm;
+  const tekst = {
+    concept: 'Aanmelden kan al. Team kiezen opent kort voor de eerste competitieronde.',
+    prijzen_vast: 'Aanmelden kan al. Team kiezen opent binnenkort.',
+    inschrijving_open: 'De inschrijving is open.',
+    inschrijving_dicht: 'De inschrijving is gesloten.',
+  }[info?.status] || 'Aanmelden kan al. Team kiezen opent kort voor de eerste competitieronde.';
+  st.innerHTML = `<span class="sz-status">${tekst}</span>` +
+    (info && info.aanmeldingen ? `<div class="sz-teller">${info.aanmeldingen} ${info.aanmeldingen === 1 ? 'TAMmer heeft' : 'TAMmers hebben'} zich al aangemeld</div>` : '');
+  const dicht = info?.status === 'inschrijving_dicht';
+
+  if (a && a.aangemeld) {
+    box.className = 'sz-kaart sz-ok';
+    box.innerHTML = `<h2 style="font-size:17px">Je bent aangemeld &#10003;</h2>
+      <p>Als <b>${szEsc(a.aanmelding.naam)}</b> (${szEsc(a.aanmelding.mail)}). We laten je weten wanneer je je team kunt kiezen.</p>
+      ${dicht ? '' : '<button class="sz-stil" onclick="szAfmelden()">Toch niet meedoen? Afmelden</button>'}
+      <div class="sz-fout" id="sz-fout"></div>`;
+    return;
+  }
+  box.className = 'sz-kaart';
+  if (dicht) { box.innerHTML = '<p>De inschrijving voor dit seizoen is gesloten.</p>'; return; }
+  const akkoord = `<label class="sz-akkoord"><input type="checkbox" id="sz-akk"> Ik ga akkoord met een inleg van &euro; 5, af te schrijven via de TAM-incasso. De hele inleg gaat naar de prijzenpot.</label>`;
+  const bekend = (ik && ik.ingelogd) ? { naam: ik.naam, mail: ik.mail, via: 'tam.nl' } : (a && a.wie ? { naam: a.wie.naam, mail: a.wie.mail, via: 'mail' } : null);
+  if (bekend) {
+    box.innerHTML = `<h2 style="font-size:17px">Meld je aan</h2>
+      <p>Je bent ingelogd${bekend.via === 'tam.nl' ? ' op tam.nl' : ''} als <b>${szEsc(bekend.naam || bekend.mail)}</b>${bekend.naam ? ` (${szEsc(bekend.mail)})` : ''}.</p>
+      ${bekend.naam ? '' : '<input type="text" id="sz-naam" placeholder="Je naam" autocomplete="name">'}
+      ${akkoord}
+      <button class="sz-knop" onclick="szAanmelden()">Aanmelden voor TAMpionship ${NIEUW_JAAR}</button>
+      <div class="sz-fout" id="sz-fout"></div>`;
+    return;
+  }
+  if (szStaat.stap === 'code') {
+    box.innerHTML = `<h2 style="font-size:17px">Vul je code in</h2>
+      <p>We hebben een code gestuurd naar <b>${szEsc(szStaat.mail)}</b>.</p>
+      <input type="text" id="sz-code" placeholder="6-cijferige code" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
+      <button class="sz-knop" onclick="szCode()">Inloggen</button>
+      <button class="sz-stil" onclick="szStaat.stap='start';szTeken()">Ander mailadres</button>
+      <div class="sz-fout" id="sz-fout"></div>`;
+    return;
+  }
+  box.innerHTML = `<h2 style="font-size:17px">Meld je aan</h2>
+    ${API === '/api' ? `<p>Ben je ingelogd op tam.nl, dan meld je je hier met één klik aan.</p>
+    <a class="sz-knop" href="${szEsc(ik?.inlog || 'https://tam.nl/inloggen')}">Inloggen op tam.nl</a>
+    <p style="font-size:12px;color:#888">Log in en kom daarna terug naar deze pagina.</p>
+    <p style="margin-top:16px">Of log in met je mailadres:</p>` : '<p>Log in met je mailadres:</p>'}
+    <input type="email" id="sz-mail" placeholder="jouw-email@adres.nl" autocomplete="email">
+    <button class="sz-knop" style="background:#3a2a5e" onclick="szStuur()">Stuur code</button>
+    <div class="sz-fout" id="sz-fout"></div>`;
+}
+
+const szFout = (t) => { const f = document.getElementById('sz-fout'); if (f) f.textContent = t; };
+async function szStuur() {
+  const mail = (document.getElementById('sz-mail').value || '').trim().toLowerCase();
+  if (!mail.includes('@')) return szFout('Vul je mailadres in.');
+  try { await szApi('send-code', { method: 'POST', body: JSON.stringify({ email: mail }) }); szStaat.mail = mail; szStaat.stap = 'code'; szTeken(); }
+  catch (e) { szFout('Versturen lukte niet. Probeer het later opnieuw.'); }
+}
+async function szCode() {
+  const code = (document.getElementById('sz-code').value || '').trim();
+  try {
+    const d = await szApi('verify-code', { method: 'POST', body: JSON.stringify({ email: szStaat.mail, code }) });
+    if (!d.ok || !d.token) throw new Error();
+    try { localStorage.setItem('tamp_token', d.token); localStorage.setItem('tamp_email', szStaat.mail); } catch (e) {}
+    szStaat.aanm = await szApi('aanmelding').catch(() => null); szStaat.stap = 'start'; szTeken();
+  } catch (e) { szFout('Die code klopt niet.'); }
+}
+async function szAanmelden() {
+  if (!document.getElementById('sz-akk').checked) return szFout('Vink eerst het akkoord voor de inleg aan.');
+  const naamEl = document.getElementById('sz-naam');
+  try {
+    await szApi('aanmelding', { method: 'POST', body: JSON.stringify({ akkoord: true, naam: naamEl ? naamEl.value : '' }) });
+    [szStaat.aanm, szStaat.info] = await Promise.all([szApi('aanmelding'), szApi('seizoen-info').catch(() => szStaat.info)]);
+    szTeken();
+  } catch (e) { szFout(e.message); }
+}
+async function szAfmelden() {
+  try {
+    await szApi('aanmelding', { method: 'DELETE' });
+    [szStaat.aanm, szStaat.info] = await Promise.all([szApi('aanmelding'), szApi('seizoen-info').catch(() => szStaat.info)]);
+    szTeken();
+  } catch (e) { szFout(e.message); }
+}
+
 function goBack() {
   if (currentView === 'wildcard') {
     currentView = 'squad';
   } else if (currentView === 'breakdown') {
     currentView = 'squad';
   } else if (currentView === 'rules') {
-    currentView = 'leaderboard';
+    currentView = homeTab;
   } else {
     currentView = 'leaderboard';
     currentUser = null;

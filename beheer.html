@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>TAMpionship beheer</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a1a; color: #e0e0e0; min-height: 100vh; }
+header { background: linear-gradient(135deg, #2d1b4e, #1a0a2e); padding: 14px 16px; border-bottom: 2px solid #7b3fa0; position: sticky; top: 0; z-index: 10; }
+header h1 { font-size: 18px; color: #c084fc; }
+header .sub { font-size: 12px; color: #9a8ab0; margin-top: 2px; }
+main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.kaart { background: #1a1a2e; border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+.login { max-width: 360px; margin: 60px auto; text-align: center; }
+.login p { color: #9a8ab0; font-size: 14px; margin: 8px 0 14px; }
+input[type=email], input[type=text], input[type=search], select {
+  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #3a2a5e; background: #11111f; color: #e0e0e0; font-size: 15px; }
+button { padding: 10px 16px; border-radius: 8px; border: none; background: #7b3fa0; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; }
+button:hover { background: #9b5fc0; }
+button.stil { background: #2a2a3e; color: #c9b8e8; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.fout { color: #f87171; font-size: 13px; margin-top: 8px; min-height: 18px; }
+.rij { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.rij > * { flex: 1 1 160px; }
+.stat { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.stat span { background: #11111f; border: 1px solid #2a2a3e; border-radius: 999px; padding: 4px 10px; font-size: 12px; color: #c9b8e8; }
+.status { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.status button { flex: 1 1 140px; background: #11111f; border: 1px solid #3a2a5e; color: #c9b8e8; font-weight: 500; }
+.status button.aan { background: #7b3fa0; color: #fff; border-color: #7b3fa0; }
+.uitleg { font-size: 12px; color: #9a8ab0; margin-top: 8px; line-height: 1.5; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #9a8ab0; padding: 8px 6px; border-bottom: 1px solid #2a2a3e; position: sticky; top: 62px; background: #1a1a2e; }
+td { padding: 7px 6px; border-bottom: 1px solid #22223a; vertical-align: middle; }
+tr.uit td:not(:first-child) { opacity: .4; }
+td.naam { font-weight: 600; }
+td.teams { font-size: 12px; color: #9a8ab0; }
+td.kl { font-size: 12px; color: #9a8ab0; }
+td.kl b { color: #e0e0e0; font-weight: 600; font-variant-numeric: tabular-nums; }
+td.naam { cursor: pointer; }
+td.naam::after { content: ' ▸'; color: #6b5a8a; font-size: 11px; }
+tr.open td.naam::after { content: ' ▾'; }
+tr.detail td { background: #14142a; padding: 10px 12px 14px; }
+.som { display: grid; grid-template-columns: auto auto 1fr; gap: 4px 14px; font-size: 13px; font-variant-numeric: tabular-nums; max-width: 640px; }
+.som .w { text-align: right; }
+.som .tot { border-top: 1px solid #3a2a5e; padding-top: 4px; font-weight: 700; color: #c084fc; }
+.som .u { color: #9a8ab0; }
+td.vg { font-size: 13px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.vg .pp { display: inline-block; min-width: 34px; padding: 2px 6px; border-radius: 6px; background: #11111f; border: 1px solid #2a2a3e; text-align: center; margin-right: 6px; }
+td.vg .pp.hoger { border-color: #4ade80; color: #4ade80; }
+td.vg .pp.lager { border-color: #f87171; color: #f87171; }
+td.rt { font-variant-numeric: tabular-nums; font-size: 13px; white-space: nowrap; }
+.prijzen { display: inline-flex; border: 1px solid #3a2a5e; border-radius: 8px; overflow: hidden; }
+.prijzen button { background: #11111f; color: #9a8ab0; border-radius: 0; padding: 6px 9px; font-size: 13px; font-weight: 600; }
+.prijzen button.aan { background: #7b3fa0; color: #fff; }
+.prijzen button.voorstel:not(.aan) { color: #c084fc; box-shadow: inset 0 -2px 0 #c084fc; }
+.prijzen button:disabled { cursor: default; opacity: 1; }
+.gewijzigd { color: #fbbf24; font-size: 12px; }
+.balk { position: sticky; bottom: 0; background: #0a0a1a; padding: 10px 0; display: flex; gap: 10px; align-items: center; justify-content: flex-end; border-top: 1px solid #2a2a3e; }
+.balk .info { flex: 1; font-size: 13px; color: #9a8ab0; }
+.verborgen { display: none !important; }
+@media (max-width: 700px) {
+  td.teams, th.teams, td.rt, th.rt, td.kl, th.kl { display: none; }
+  th { top: 58px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>TAMpionship beheer</h1>
+  <div class="sub" id="sub">Voor de TAMpionship-commissie</div>
+</header>
+<main>
+  <!-- Inloggen -->
+  <div id="login" class="kaart login">
+    <div id="stap1">
+      <p>Log in met je e-mailadres. Alleen leden van de TAMpionship-commissie kunnen hier prijzen zetten.</p>
+      <input type="email" id="mail" placeholder="E-mailadres" autocomplete="email">
+      <div style="margin-top:10px"><button id="stuur">Stuur code</button></div>
+    </div>
+    <div id="stap2" class="verborgen">
+      <p>Vul de code in die je per mail kreeg.</p>
+      <input type="text" id="code" placeholder="6-cijferige code" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
+      <div style="margin-top:10px"><button id="check">Inloggen</button></div>
+    </div>
+    <div class="fout" id="loginfout"></div>
+  </div>
+
+  <!-- Beheer -->
+  <div id="beheer" class="verborgen">
+    <div class="kaart">
+      <div class="rij">
+        <div><strong id="seizoennaam">Geen seizoen geladen</strong><div class="uitleg" id="bijgewerkt"></div></div>
+        <div style="flex:0 0 auto" class="rij">
+          <label class="stil" style="flex:0 0 auto"><input type="file" id="bestand" accept=".json" class="verborgen"><button class="stil" id="importknop">Spelers importeren</button></label>
+          <button class="stil" id="uitlog" style="flex:0 0 auto">Uitloggen</button>
+        </div>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="uitleg" id="statusuitleg"></div>
+      <div class="stat" id="stat"></div>
+    </div>
+
+    <div class="kaart">
+      <div class="rij" style="margin-bottom:10px">
+        <input type="search" id="zoek" placeholder="Zoek op naam">
+        <select id="team"><option value="">Alle teams</option></select>
+        <select id="filter">
+          <option value="">Iedereen</option>
+          <option value="aan">Alleen meedoend</option>
+          <option value="uit">Alleen uitgezet</option>
+          <option value="anders">Prijs wijkt af van voorstel</option>
+          <option value="geen">Zonder rating</option>
+          <option value="vorig">Voorstel wijkt af van prijs vorig seizoen</option>
+        </select>
+        <select id="sorteer">
+          <option value="sterkte">Sorteer op sterkte (formule)</option>
+          <option value="punten">Sorteer op punten vorig seizoen</option>
+          <option value="naam">Sorteer op naam</option>
+        </select>
+      </div>
+      <div class="uitleg" style="margin:-4px 0 8px">Rating = laatste KNLTB-rating vóór het seizoen (lager is beter). Het onderstreepte bedrag is het voorstel; de commissie bepaalt.</div>
+      <table>
+        <thead><tr><th>Mee</th><th>Speler</th><th class="teams">Team</th><th class="rt">Enkel / dubbel</th><th class="kl">Klasse (gem.)</th><th class="rt">Sterkte</th><th class="vg">Vorig seizoen</th><th>Prijs</th></tr></thead>
+        <tbody id="lijst"></tbody>
+      </table>
+    </div>
+
+    <div class="kaart" id="aanmeldkaart">
+      <div class="rij"><div><strong>Aanmeldingen</strong> <span class="uitleg" id="aanmeldtel"></span></div>
+        <div style="flex:0 0 auto"><button class="stil" id="kopieer">Kopieer lijst (naam, mail, inleg)</button></div></div>
+      <div class="uitleg" id="aanmeldlijst" style="margin-top:8px;line-height:1.7"></div>
+    </div>
+
+    <div class="balk">
+      <div class="info" id="balkinfo"></div>
+      <button class="stil" id="terug" disabled>Wijzigingen weggooien</button>
+      <button id="opslaan" disabled>Opslaan</button>
+    </div>
+  </div>
+</main>
+
+<script>
+// Worker-adres; lokaal testen met ?api=http://localhost:8787
+const API = new URLSearchParams(location.search).get('api') || 'https://tampionship.tam-floris.workers.dev';
+const PRIJZEN = [75, 100, 125, 150];
+const BUDGET = 800;
+const STATUS = [
+  ['concept', 'Concept', 'Prijzen zetten en spelers aan- of uitzetten. Nog niet zichtbaar voor deelnemers.'],
+  ['prijzen_vast', 'Prijzen vast', 'Prijzen en selectie staan vast. Daarna kan de inschrijving open.'],
+  ['inschrijving_open', 'Inschrijving open', 'Deelnemers kunnen hun team van 8 kiezen binnen het budget.'],
+  ['inschrijving_dicht', 'Inschrijving dicht', 'Teams staan vast; de scraper telt de punten.'],
+];
+const $ = (id) => document.getElementById(id);
+let seizoen = null, wijz = new Map();
+
+const token = () => { try { return localStorage.getItem('tamp_beheer') || ''; } catch { return ''; } };
+async function api(pad, opts = {}) {
+  const r = await fetch(API + '/' + pad, { ...opts, headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token(), ...(opts.headers || {}) } });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw Object.assign(new Error(d.error || ('fout ' + r.status)), { status: r.status });
+  return d;
+}
+
+// --- inloggen ---
+$('stuur').onclick = async () => {
+  const email = $('mail').value.trim().toLowerCase();
+  if (!email.includes('@')) return ($('loginfout').textContent = 'Vul je e-mailadres in.');
+  $('stuur').disabled = true; $('loginfout').textContent = '';
+  try {
+    const r = await fetch(API + '/send-code', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email }) });
+    if (!r.ok) throw new Error();
+    $('stap1').classList.add('verborgen'); $('stap2').classList.remove('verborgen'); $('code').focus();
+  } catch { $('loginfout').textContent = 'Versturen lukte niet. Probeer het later opnieuw.'; }
+  $('stuur').disabled = false;
+};
+$('check').onclick = async () => {
+  const email = $('mail').value.trim().toLowerCase(), code = $('code').value.trim();
+  const r = await fetch(API + '/verify-code', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, code }) });
+  const d = await r.json().catch(() => ({}));
+  if (!d.ok || !d.token) return ($('loginfout').textContent = 'Die code klopt niet.');
+  try { localStorage.setItem('tamp_beheer', d.token); } catch {}
+  start();
+};
+$('mail').onkeydown = (e) => e.key === 'Enter' && $('stuur').click();
+$('code').onkeydown = (e) => e.key === 'Enter' && $('check').click();
+$('uitlog').onclick = () => { try { localStorage.removeItem('tamp_beheer'); } catch {} location.reload(); };
+
+async function start() {
+  if (!token()) return;
+  try {
+    const ik = await api('beheer/ik');
+    if (!ik.beheerder) {
+      $('loginfout').textContent = `${ik.email} staat niet in de TAMpionship-commissie. Klopt dat niet, vraag dan het bestuur.`;
+      return;
+    }
+    $('sub').textContent = 'Ingelogd als ' + ik.email;
+    $('login').classList.add('verborgen'); $('beheer').classList.remove('verborgen');
+    seizoen = await api('beheer/seizoen');
+    wijz.clear(); teken(); aanmeldingen();
+  } catch (e) {
+    if (e.status === 401) { try { localStorage.removeItem('tamp_beheer'); } catch {} }
+    $('loginfout').textContent = e.message;
+  }
+}
+
+// --- weergave ---
+const huidig = (sp) => ({ ...sp, ...(wijz.get(sp.knltb_id) || {}) });
+const vast = () => seizoen.status !== 'concept';
+
+function teken() {
+  $('seizoennaam').textContent = seizoen.naam || (seizoen.jaar ? 'Seizoen ' + seizoen.jaar : 'Nog geen spelers geïmporteerd');
+  $('bijgewerkt').textContent = seizoen.bijgewerkt ? `Laatst opgeslagen ${new Date(seizoen.bijgewerkt).toLocaleString('nl-NL')} door ${seizoen.door}` : '';
+  $('importknop').disabled = vast();
+  $('status').innerHTML = STATUS.map(([k, t]) => `<button data-s="${k}" class="${seizoen.status === k ? 'aan' : ''}">${t}</button>`).join('');
+  $('status').querySelectorAll('button').forEach((b) => (b.onclick = () => zetStatus(b.dataset.s)));
+  $('statusuitleg').textContent = STATUS.find((s) => s[0] === seizoen.status)?.[2] || '';
+  const teams = [...new Set(seizoen.spelers.flatMap((s) => s.teams))].sort((a, b) => a.localeCompare(b, 'nl', { numeric: true }));
+  const keuze = $('team').value;
+  $('team').innerHTML = '<option value="">Alle teams</option>' + teams.map((t) => `<option ${t === keuze ? 'selected' : ''}>${t}</option>`).join('');
+  lijst(); stats();
+}
+
+function lijst() {
+  const zoek = $('zoek').value.trim().toLowerCase(), team = $('team').value, f = $('filter').value;
+  const rijen = seizoen.spelers.map(huidig).filter((s) =>
+    (!zoek || s.naam.toLowerCase().includes(zoek)) && (!team || s.teams.includes(team)) &&
+    (!f || (f === 'aan' && s.actief) || (f === 'uit' && !s.actief) || (f === 'anders' && s.prijs !== s.voorstel) || (f === 'geen' && !Object.keys(s.rating || {}).length) || (f === 'vorig' && s.vorig && s.vorig.prijs !== s.voorstel)));
+  const so = $('sorteer').value;
+  rijen.sort(so === 'naam' ? (a, b) => a.naam.localeCompare(b.naam, 'nl')
+    : so === 'punten' ? (a, b) => (b.vorig?.punten ?? -1) - (a.vorig?.punten ?? -1)
+    : (a, b) => (b.sterkte ?? -99) - (a.sterkte ?? -99));
+  const dis = vast() ? 'disabled' : '';
+  $('lijst').innerHTML = rijen.map((s) => `
+    <tr class="${s.actief ? '' : 'uit'} ${open.has(s.knltb_id) ? 'open' : ''}" data-id="${s.knltb_id}">
+      <td><input type="checkbox" ${s.actief ? 'checked' : ''} ${dis} data-act></td>
+      <td class="naam">${esc(s.naam)} ${wijz.has(s.knltb_id) ? '<span class="gewijzigd">gewijzigd</span>' : ''}</td>
+      <td class="teams">${s.teams.map(esc).join('<br>')}</td>
+      <td class="rt">${fmt(s.rating?.singles)} / ${fmt(s.rating?.doubles)}</td>
+      <td class="kl">${s.uitleg ? `${esc(s.uitleg.klasse.split(' – ')[1] || '')}<br><b>${fmt(s.uitleg.klasse_gem)}</b>` : '–'}</td>
+      <td class="rt">${s.sterkte == null ? '–' : s.sterkte.toFixed(2).replace('.', ',')}</td>
+      <td class="vg">${s.vorig ? `<span class="pp ${s.voorstel > s.vorig.prijs ? 'hoger' : s.voorstel < s.vorig.prijs ? 'lager' : ''}" title="prijs vorig seizoen; groen = formule hoger, rood = formule lager">${s.vorig.prijs}</span>${s.vorig.punten} pt` : '–'}</td>
+      <td><span class="prijzen">${PRIJZEN.map((p) => `<button ${dis} data-p="${p}" class="${s.prijs === p ? 'aan' : ''} ${s.voorstel === p ? 'voorstel' : ''}">${p}</button>`).join('')}</span></td>
+    </tr>${open.has(s.knltb_id) ? detail(s) : ''}`).join('') || '<tr><td colspan="8" class="uitleg">Geen spelers. Importeer eerst de spelerslijst van het seizoen.</td></tr>';
+}
+
+// Uitklaprij: de formule voor deze speler, onderdeel voor onderdeel
+const open = new Set();
+function detail(s) {
+  const u = s.uitleg;
+  if (!u) return `<tr class="detail"><td colspan="8" class="uitleg">Geen klasse of rating bekend: de formule kan geen sterkte berekenen. Voorstel 75.</td></tr>`;
+  const n = (x) => (x == null ? '–' : x.toFixed(2).replace('.', ','));
+  const w = u.gewichten;
+  return `<tr class="detail"><td colspan="8"><div class="som">
+    <span>Klasse</span><span class="w">${n(w.klasse)} × ${n(u.klasse_gem)} =</span><span>+ ${n(u.deel_klasse)} <span class="u">${esc(u.klasse)} (${esc(u.team)}); klassengemiddelde KNLTB, lager = sterker</span></span>
+    <span>Eigen rating</span><span class="w"></span><span>− ${n(u.eigen)} <span class="u">${u.geschat ? 'geen rating bekend: gemiddelde van de teamgenoten' : `gemiddelde van enkel ${fmt(s.rating?.singles)} en dubbel ${fmt(s.rating?.doubles)}`}</span></span>
+    <span>Teamgrootte</span><span class="w">${n(w.team)} / ${u.teamgrootte} =</span><span>+ ${n(u.deel_team)} <span class="u">${u.teamgrootte} spelers in het team vóór het seizoen</span></span>
+    <span class="tot">Sterkte</span><span class="tot"></span><span class="tot">${n(s.sterkte)} → voorstel ${s.voorstel}</span>
+    <span class="u">Ter info</span><span></span><span class="u">teamgemiddelde rating ${n(u.team_gem)}${s.vorig ? ` · vorig seizoen ${s.vorig.prijs} en ${s.vorig.punten} punten` : ''}</span>
+  </div></td></tr>`;
+}
+
+// Gemiddelde punten vorig seizoen per prijsniveau: huidige prijs vs prijs vorig seizoen
+function vergelijk(alle) {
+  const gem = (lst) => (lst.length ? Math.round(lst.reduce((a, s) => a + s.vorig.punten, 0) / lst.length) : '–');
+  const met = alle.filter((s) => s.vorig);
+  const nu = PRIJZEN.slice().reverse().map((p) => gem(met.filter((s) => s.prijs === p))).join(' / ');
+  const toen = PRIJZEN.slice().reverse().map((p) => gem(met.filter((s) => s.vorig.prijs === p))).join(' / ');
+  return `<span>gem. punten bij 150/125/100/75: huidige prijzen ${nu}</span><span>prijzen vorig seizoen ${toen}</span>`;
+}
+
+function stats() {
+  const alle = seizoen.spelers.map(huidig), mee = alle.filter((s) => s.actief);
+  const per = PRIJZEN.map((p) => `${p}: ${mee.filter((s) => s.prijs === p).length}`).join(' · ');
+  const top8 = mee.map((s) => s.prijs).sort((a, b) => b - a).slice(0, 8).reduce((a, b) => a + b, 0);
+  $('stat').innerHTML = `<span>${mee.length} van ${alle.length} spelers doen mee</span><span>${per}</span>` +
+    `<span>8 duurste samen: ${top8} (budget ${BUDGET})</span><span>${alle.filter((s) => s.prijs !== s.voorstel).length} afwijkend van voorstel</span>` +
+    (alle.some((s) => s.vorig) ? vergelijk(alle) : '');
+  $('balkinfo').textContent = wijz.size ? `${wijz.size} speler(s) gewijzigd, nog niet opgeslagen` : 'Alles opgeslagen';
+  $('opslaan').disabled = !wijz.size; $('terug').disabled = !wijz.size;
+}
+
+$('lijst').addEventListener('click', (e) => {
+  const tr = e.target.closest('tr[data-id]'); if (!tr) return;
+  if (e.target.closest('td.naam')) { const i = Number(tr.dataset.id); open.has(i) ? open.delete(i) : open.add(i); return lijst(); }
+  if (vast()) return;
+  const id = Number(tr.dataset.id), sp = seizoen.spelers.find((s) => s.knltb_id === id), w = { ...(wijz.get(id) || {}) };
+  if (e.target.dataset.p) w.prijs = Number(e.target.dataset.p);
+  else if (e.target.matches('[data-act]')) w.actief = e.target.checked;
+  else return;
+  for (const k of Object.keys(w)) if (w[k] === sp[k]) delete w[k];
+  Object.keys(w).length ? wijz.set(id, w) : wijz.delete(id);
+  lijst(); stats();
+});
+['zoek', 'team', 'filter', 'sorteer'].forEach((id) => ($(id).oninput = lijst));
+$('terug').onclick = () => { wijz.clear(); lijst(); stats(); };
+window.onbeforeunload = (e) => { if (wijz.size) { e.preventDefault(); e.returnValue = ''; } };
+
+$('opslaan').onclick = async () => {
+  $('opslaan').disabled = true;
+  try {
+    const d = await api('beheer/seizoen', { method: 'PUT', body: JSON.stringify({ spelers: [...wijz].map(([knltb_id, w]) => ({ knltb_id, ...w })) }) });
+    seizoen = d.seizoen; wijz.clear(); teken();
+  } catch (e) { alertje(e.message); stats(); }
+};
+
+async function zetStatus(s) {
+  if (s === seizoen.status) return;
+  if (wijz.size) return alertje('Sla eerst je wijzigingen op.');
+  try { const d = await api('beheer/seizoen', { method: 'PUT', body: JSON.stringify({ status: s }) }); seizoen = d.seizoen; teken(); }
+  catch (e) { alertje(e.message); }
+}
+
+$('importknop').onclick = (e) => { e.preventDefault(); $('bestand').click(); };
+$('bestand').onchange = async () => {
+  const f = $('bestand').files[0]; if (!f) return;
+  try {
+    const data = JSON.parse(await f.text());
+    await api('beheer/import', { method: 'POST', body: JSON.stringify(data) });
+    seizoen = await api('beheer/seizoen'); wijz.clear(); teken();
+  } catch (e) { alertje('Importeren mislukt: ' + e.message); }
+  $('bestand').value = '';
+};
+
+let aanm = [];
+async function aanmeldingen() {
+  try { aanm = await api('beheer/aanmeldingen'); } catch { aanm = []; }
+  $('aanmeldtel').textContent = `${aanm.length} aangemeld · € ${aanm.length * 5} inleg`;
+  $('aanmeldlijst').innerHTML = aanm.map((a) => `${esc(a.naam)} <span style="color:#6b5a8a">· ${esc(a.mail)} · via ${esc(a.bron)} · ${new Date(a.t).toLocaleDateString('nl-NL')}</span>`).join('<br>') || 'Nog niemand.';
+}
+$('kopieer').onclick = async () => {
+  const tsv = ['naam\tmail\tinleg', ...aanm.map((a) => `${a.naam}\t${a.mail}\t5`)].join('\n');
+  try { await navigator.clipboard.writeText(tsv); alertje('Gekopieerd: plak in een sheet'); } catch { alertje('Kopiëren lukte niet'); }
+};
+
+function alertje(t) { $('balkinfo').textContent = t; $('balkinfo').style.color = '#f87171'; setTimeout(() => ($('balkinfo').style.color = ''), 4000); }
+const fmt = (r) => (r ? r.toFixed(2).replace('.', ',') : '–');
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+start();
+</script>
+</body>
+</html>
